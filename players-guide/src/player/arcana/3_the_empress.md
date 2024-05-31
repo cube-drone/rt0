@@ -4,5 +4,5 @@ The Empress is a symbol of maternal energy.
 It should perhaps be no surprise, then, that, under certain
 circumstances, the Empress is the highest damage build in the game.
 
-ability themes:
+themes:
 * when friends are very threatened, goes into Max Damage mode / Mama Bear

@@ -1,7 +1,7 @@
 # Summary
 
 # Player's Guide
-- [Introduction](./player/1_intro.md)
+- [Introduction](./player/introduction.md)
 - [Creating a Character](./player/creation.md)
 - [Choosing a Major Arcana](./player/choosing_major_arcana.md)
   - [0 - The Fool](./player/arcana/0_the_fool.md)

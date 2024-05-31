@@ -77,6 +77,14 @@ This costs cards from the player's hand, and the GM can determine how many cards
 the action might be. A very time consuming and distracting action, like hacking a computer, might cost all 4 cards,
 whereas a quick action where the battle is still the focus, like deftly leaping across a chasm, might only cost 1 card.
 
+### Allies & Friends
+
+Sometimes a NPC will volunteer to help the players, or the players can recruit NPCs to help!
+
+Characters with Charming can have one NPC Ally.
+Characters with neither Charming or Repulsive can have one NPC Friend.
+Characters with Repulsive cannot have NPC Allies or Friends.
+
 -----
 ## Damage, Shields,
 
