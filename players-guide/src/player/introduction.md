@@ -2,7 +2,7 @@
 
 _Twenty-one haunted teenagers must survive one school year alone on a moonbase with an insane computer._
 
-Remaining Teenagers: Zero, or **RT:0**, for short, is a tabletop roleplaying game.
+Remaining Teenagers: Zero, (or **RT:0** for short), is a tabletop roleplaying game.
 
 In this game, a handful of players will take on the roles of teenagers with mysterious powers,
 while their **GM** (Gamemaster) will help manage the simulation of their year in space.
@@ -11,8 +11,11 @@ while their **GM** (Gamemaster) will help manage the simulation of their year in
 TODO::
 
 * teenagers on the moon
+* in a moonbase built a long time ago
 * don't remember the last month of their lives
-* sinister computer makes them follow rules, do stupid games
+* sinister computer makes them follow rules, play stupid games
+* they think it's a school, but it's a prison
+* the people who stranded them here hoped it would be sufficient
 
 ## Supplies
 
@@ -53,7 +56,7 @@ be up your alley.
 
 ## Vibe & Inspiration Word Cloud:
 
-*loading a pistol and getting back on the rocket-ship* moon's haunted
+![moon's haunted](images/moonhaunted.jpg)
 
 Moon. Insane computer. Cassette futurism.
 Spelunking through abandoned visions of a better future.
@@ -66,3 +69,4 @@ Tarot. Magic powers. Haunted. Apocalyptic.
 A capital-G Game with inscrutable rules that you must follow.
 Coming-of-age. Redemption.
 Facing god and walking backwards into hell.
+Sandwiches.
