@@ -31,7 +31,7 @@ This is the players' Weak Ability. Depending on the ability that's been crossed 
 
 * Strong - Weak (Hits harder in combat)
 * Fast - Slow (Dodges easier in combat)
-* Clever - Dull (Gets to pick more skills)
+* Clever - Dull (Gets to pick more skills, spell bonuses)
 * Wise - Foolish (More card recycle in combat)
 * Lucky - Unlucky (Gets a better deck of cards)
 * Charming - Repulsive (Gets better Ally abilities)
@@ -40,10 +40,8 @@ This is the players' Weak Ability. Depending on the ability that's been crossed 
 
 As an example, a player might be Strong and Clever, but not Lucky, or they might be Fast and Charming, but not Wise.
 
-If a player is Lucky, remove the Two of Cups, the Two of Swords, the Two of Wands, and the Two of Pentacles from their deck.
-
-If a player is Unlucky, remove the Fool from their deck.
-
+If a player is Lucky, remove the Tower and three Aces from their deck.
+If a player is Unlucky, remove the Fool and three Pages from their deck.
 
 ## Skills
 
@@ -68,23 +66,23 @@ Cross Out a skill by drawing a line through it, then writing "Fail" next to it.
 
 TODO::TABLE-IFY
 
-* FINANCIAL AID - Perception & Danger Sense (Wise / Fast / Lucky / Kind) - Crit Success: The High Priestess, Crit Fail: The Devil
-* DRAMA - Deception, Theft, & Stealth (Charming / Fast / Strange) - Crit Success: The Moon, Crit Fail: Judgement
-* CMPT - Hacking & Computers (Clever / Strange) - Crit Success: The Magician, Crit Fail: The Hierophant
-* FREE PERIOD - Breaking & Entering (Clever / Fast) - Crit Success: The Devil, Crit Fail: Justice
-* GYM - Movement, Sport & Dance (Strong / Fast) - Crit Success: Chariot, Crit Fail: The Hanged Man
-* ART - Empathy & Artistic Expression (Wise / Charming / Kind) - Crit Success: The Empress, Crit Fail: Hermit
-* FIRST AID - First Aid & Surgery (Clever / Charming / Kind) - Crit Success: The Sun, Crit Fail: Death
-* OUTDOORS - Exploration & Survival (Wise / Strange) - Crit Success: The Star, Crit Fail: The Hanged Man
-* SHOP - Mechanical & Constructive (Clever / Strong) - Crit Success: Magician, Crit Fail: The Star
-* LAW - Bureaucracy & Legal (Clever / Strange) - Crit Success: The Hierophant, Crit Fail: The Magician
-* SCIENCE - Chemistry, Biology, Physics, Math, & Culinary (Clever / Strange) - Crit Success: The Hierophant, Crit Fail: Temperance
-* MISC - Everything Not Otherwise Covered (Lucky) - Crit Success: The Hanged Man, Crit Fail: The Chariot
+* FINANCIAL AID - Perception & Danger Sense (Wise / Fast / Lucky / Kind)
+* DRAMA - Deception, Theft, & Stealth (Charming / Fast / Strange)
+* CMPT - Hacking & Computers (Clever / Strange)
+* FREE PERIOD - Breaking & Entering (Clever / Fast)
+* GYM - Movement, Sport & Dance (Strong / Fast)
+* ART - Empathy & Artistic Expression (Wise / Charming / Kind)
+* FIRST AID - First Aid & Surgery (Clever / Charming / Kind)
+* OUTDOORS - Exploration & Survival (Wise / Strange)
+* SHOP - Mechanical & Constructive (Clever / Strong)
+* LAW - Bureaucracy & Legal (Clever / Strange)
+* SCIENCE - Chemistry, Biology, Physics, Math, & Culinary (Clever / Strange)
+* MISC - Everything Not Otherwise Covered (Lucky)
 
 
 ### Obsession
 
-each kid has one Skill Obsession, something they're almost supernaturally good at/obsessed with
+Each player has one Skill Obsession, something they're almost supernaturally good at/obsessed with
 it must be attached to one of their existing skills - "Baseball" in "Movement, Sport & Dance", or
 "Pokemon" in "Hacking & Computers".
 
@@ -180,7 +178,7 @@ Certain cards will trigger a Critical Success:
 
 * A Fool is always a Critical Success
 * The World is always a Critical Success
-* Each Skill has an associated Major Arcana that always triggers a Critical Success
+* The Sun is always a Critical Success
 * The player's own Major Arcana card always triggers a Critical Success
 * If the Wheel of Fortune is drawn, the player flips a coin: A Heads triggers a Critical Success.
 
@@ -198,7 +196,8 @@ Certain cards will trigger a Critical Failure:
 
 * If a card is a Critical Success, it can't be a Critical Failure.
 * A Tower is always a Critical Failure.
-* Each Skill has an associated Major Arcana that always triggers a Critical Failure
+* The Devil is always a Critical Failure.
+* Death is always a Critical Failure.
 * If the Wheel of Fortune is drawn, the player flips a coin: A Tails triggers a Critical Failure.
 
 On a Trivial check, a Critical Failure is just a failure: nothing special happens, but
