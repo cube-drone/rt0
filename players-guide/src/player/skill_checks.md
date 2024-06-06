@@ -15,7 +15,12 @@ TODO::ART
 * Lucky - _Things just work out more often for this player._
 * Charming - _Charismatic. Magnetic._
 
-A player must choose 2 Abilities from the set of 6: Strong, Fast, Clever, Wise, Lucky, or Charming.
+#### Soul:
+* Kind - _This player does not want to hurt others._
+* Strange - _This player invites unlikely outcomes._
+
+A player must choose 1 Ability from the set of 7: Strong, Fast, Clever, Wise, Lucky, Charming, or Kind
+Often, a player's Major Arcana will affect their starting set of abilities.
 Choose an ability by circling it on your character sheet.
 
 These are the players' Chosen Abilities.
@@ -29,7 +34,9 @@ This is the players' Weak Ability. Depending on the ability that's been crossed 
 * Clever - Dull (Gets to pick more skills)
 * Wise - Foolish (More card recycle in combat)
 * Lucky - Unlucky (Gets a better deck of cards)
-* Charming - Repulsive
+* Charming - Repulsive (Gets better Ally abilities)
+* Kind - Cruel (Accumulates less Corruption)
+* Strange - Mundane (???)
 
 As an example, a player might be Strong and Clever, but not Lucky, or they might be Fast and Charming, but not Wise.
 
@@ -61,21 +68,19 @@ Cross Out a skill by drawing a line through it, then writing "Fail" next to it.
 
 TODO::TABLE-IFY
 
-* FINANCIAL AID - Perception & Danger Sense (Wise / Fast / Lucky) - Crit Success: The High Priestess, Crit Fail: The Devil
-* DRAMA - Deception, Theft, & Stealth (Charming / Fast) - Crit Success: The Moon, Crit Fail: Judgement
-* CMPT - Hacking & Computers (Clever) - Crit Success: The Magician, Crit Fail: The Hierophant
-* FREE PERIOD - Breaking & Entering (Clever, Fast) - Crit Success: The Devil, Crit Fail: Justice
+* FINANCIAL AID - Perception & Danger Sense (Wise / Fast / Lucky / Kind) - Crit Success: The High Priestess, Crit Fail: The Devil
+* DRAMA - Deception, Theft, & Stealth (Charming / Fast / Strange) - Crit Success: The Moon, Crit Fail: Judgement
+* CMPT - Hacking & Computers (Clever / Strange) - Crit Success: The Magician, Crit Fail: The Hierophant
+* FREE PERIOD - Breaking & Entering (Clever / Fast) - Crit Success: The Devil, Crit Fail: Justice
 * GYM - Movement, Sport & Dance (Strong / Fast) - Crit Success: Chariot, Crit Fail: The Hanged Man
-* ART - Empathy & Artistic Expression (Wise / Charming) - Crit Success: The Empress, Crit Fail: Hermit
-* FIRST AID - First Aid & Surgery (Clever) - Crit Success: The Sun, Crit Fail: Death
-* OUTDOORS - Exploration & Survival (Wise) - Crit Success: The Star, Crit Fail: The Hanged Man
-* SHOP - Mechanical & Constructive (Clever, Strong) - Crit Success: Magician, Crit Fail: The Star
-* LAW - Bureaucracy & Legal (Clever) - Crit Success: The Hierophant, Crit Fail: The Magician
-* SCIENCE - Chemistry, Biology, Physics, Math, & Culinary (Clever) - Crit Success: The Hierophant, Crit Fail: Temperance
+* ART - Empathy & Artistic Expression (Wise / Charming / Kind) - Crit Success: The Empress, Crit Fail: Hermit
+* FIRST AID - First Aid & Surgery (Clever / Charming / Kind) - Crit Success: The Sun, Crit Fail: Death
+* OUTDOORS - Exploration & Survival (Wise / Strange) - Crit Success: The Star, Crit Fail: The Hanged Man
+* SHOP - Mechanical & Constructive (Clever / Strong) - Crit Success: Magician, Crit Fail: The Star
+* LAW - Bureaucracy & Legal (Clever / Strange) - Crit Success: The Hierophant, Crit Fail: The Magician
+* SCIENCE - Chemistry, Biology, Physics, Math, & Culinary (Clever / Strange) - Crit Success: The Hierophant, Crit Fail: Temperance
 * MISC - Everything Not Otherwise Covered (Lucky) - Crit Success: The Hanged Man, Crit Fail: The Chariot
 
-(Strong + Lucky are underrepresented, here, because they provide significant bonuses outside of Skills)
-(Clever + Wise are overrepresented here, because they're some of the weakest outside of Skills)
 
 ### Obsession
 
@@ -83,40 +88,40 @@ each kid has one Skill Obsession, something they're almost supernaturally good a
 it must be attached to one of their existing skills - "Baseball" in "Movement, Sport & Dance", or
 "Pokemon" in "Hacking & Computers".
 
-### FINANCIAL AID - Perception & Danger Sense (Wise / Fast / Lucky) - Crit Success: The High Priestess, Crit Fail: The Devil
+### FINANCIAL AID - Perception & Danger Sense
 TODO::FILLIN
 
-### DRAMA - Deception, Theft, & Stealth (Charming / Fast) - Crit Success: The Moon, Crit Fail: Judgement
+### DRAMA - Deception, Theft, & Stealth
 TODO::FILLIN
 
-### CMPT - Hacking & Computers (Clever) - Crit Success: The Magician, Crit Fail: The Hierophant
+### CMPT - Hacking & Computers
 TODO::FILLIN
 
-### FREE PERIOD - Breaking & Entering (Clever, Fast) - Crit Success: The Devil, Crit Fail: Justice
+### FREE PERIOD - Breaking & Entering
 TODO::FILLIN
 
-### GYM - Movement, Sport & Dance (Strong / Fast) - Crit Success: Chariot, Crit Fail: The Hanged Man
+### GYM - Movement, Sport & Dance
 TODO::FILLIN
 
-### ART - Empathy & Artistic Expression (Wise / Charming) - Crit Success: The Empress, Crit Fail: Hermit
+### ART - Empathy & Artistic Expression
 TODO::FILLIN
 
-### FIRST AID - First Aid & Surgery (Clever) - Crit Success: The Sun, Crit Fail: Death
+### FIRST AID - First Aid & Surgery
 TODO::FILLIN
 
-### OUTDOORS - Exploration & Survival (Wise) - Crit Success: The Star, Crit Fail: The Hanged Man
+### OUTDOORS - Exploration & Survival
 TODO::FILLIN
 
-### SHOP - Mechanical & Constructive (Clever, Strong) - Crit Success: Magician, Crit Fail: The Star
+### SHOP - Mechanical & Constructive
 TODO::FILLIN
 
-### LAW - Bureaucracy & Legal (Clever) - Crit Success: The Hierophant, Crit Fail: Magician
+### LAW - Bureaucracy & Legal
 TODO::FILLIN
 
-### SCIENCE - Chemistry, Biology, Physics, Math, & Culinary (Clever) - Crit Success: The Hierophant, Crit Fail: Temperance
+### SCIENCE - Chemistry, Biology, Physics, Math, & Culinary
 TODO::FILLIN
 
-### MISC - Everything Not Otherwise Covered (Lucky) - Crit Success: The Hanged Man, Crit Fail: The Chariot
+### MISC - Everything Not Otherwise Covered
 TODO::FILLIN
 
 
