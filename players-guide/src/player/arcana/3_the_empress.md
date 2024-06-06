@@ -6,3 +6,5 @@ circumstances, the Empress is the highest damage build in the game.
 
 themes:
 * when friends are very threatened, goes into Max Damage mode / Mama Bear
+* bear
+*
