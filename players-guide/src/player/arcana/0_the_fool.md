@@ -1,9 +1,5 @@
 # 0 - The Fool
 
-The Fool gains the "Lucky" ability, on top of any other abilities they have taken.
-The Fool gains the "Foolish" weak ability, on top of any other weak abilities they have chosen.
-The Fool can not take the "Wise" ability or the "Unlucky" weak ability.
-
 themes:
  - luck, chance, recklessness, hoping things just work out
  - wildcards

@@ -12,6 +12,7 @@
   - [IV - The Emperor](./player/arcana/4_the_emperor.md)
 - [Skill Checks](./player/skill_checks.md)
 - [Combat](./player/combat.md)
+- [Magic](./player/magic.md)
 - [Lore](./player/lore.md)
 - [Abilities](./abilities/index.md)
 - [Glossary](./player/glossary.md)

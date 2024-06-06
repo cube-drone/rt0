@@ -73,27 +73,30 @@ The player discards all cards on all of their Abilities, including The Tower, th
 Place any card on Movement.
 When there are two cards on Movement, discard them and move 1 zone.
 
+If Fast, when there are 1 cards on Movement.
+If Slow, when there are 3 cards on Movement.
 
 ### Skill Checks
 Some actions during battle call for Skill Checks. "I hack the computer while the battle is raging on", or "I force open the door".
 
-This costs cards from the player's hand, and the GM can determine how many cards it costs based on how time-consuming or distracting
-the action might be. A very time consuming and distracting action, like hacking a computer, might cost all 4 cards,
+Attempting the skill check costs cards from the player's hand, and the GM can determine how many cards it costs based on how time-consuming or distracting
+the action might be. A very time consuming and distracting action, like hacking a computer, might cost all 5 cards,
 whereas a quick action where the battle is still the focus, like deftly leaping across a chasm, might only cost 1 card.
+
+Once the player has "paid" for the skill check, while keeping their hand and any current combat cards separate, the player shuffles their discard pile into their deck, then uses the deck to perform a skill check as usual.
 
 ### Allies & Friends
 
-Sometimes a NPC will volunteer to help the players, or the players can recruit NPCs to help!
+Sometimes a NPC will help the players!
 
 Characters with Charming can have one NPC Ally.
 Characters with neither Charming or Repulsive can have one NPC Friend.
 Characters with Repulsive cannot have NPC Allies or Friends.
 
------
-## Damage, Shields,
+### Magic
 
-# Weapon Skill
-Guns <wands/diamonds>
-Swords <swords/spades>
-Improvised <coins/clubs>
-Poisons <cups/hearts>
+Characters can cast spells in battle!
+
+Cleverness, Kindness, and Strangeness all affect players' casting.
+
+-----

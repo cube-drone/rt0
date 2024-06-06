@@ -19,7 +19,7 @@ TODO::ART
 * Kind - _This player does not want to hurt others._
 * Strange - _This player invites unlikely outcomes._
 
-A player must choose 1 Ability from the set of 7: Strong, Fast, Clever, Wise, Lucky, Charming, or Kind
+A player must choose 2 Abilities from the set of 7: Strong, Fast, Clever, Wise, Lucky, Charming, Kind, or Strange
 Often, a player's Major Arcana will affect their starting set of abilities.
 Choose an ability by circling it on your character sheet.
 
@@ -37,6 +37,8 @@ This is the players' Weak Ability. Depending on the ability that's been crossed 
 * Charming - Repulsive (Gets better Ally abilities)
 * Kind - Cruel (Accumulates less Corruption)
 * Strange - Mundane (???)
+
+(It is impossible to have both an Ability and a Weak Ability for the same thing: A player can't be Strong and Weak, or Lucky and Unlucky)
 
 As an example, a player might be Strong and Clever, but not Lucky, or they might be Fast and Charming, but not Wise.
 
