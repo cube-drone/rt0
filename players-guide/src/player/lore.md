@@ -13,4 +13,4 @@ loose-ass ideas:
 * the children are stored in three 7-chambered revolving stasis chambers in an orbiter and "fired" on to the moon-base 7 at a time
 * OK Computer is a helpful computer corrupted by an ancient and vast psychic intelligence attempting to scour the world clean of humans in order to finally _sleep_.
 * timers, counting down over character heads
-*
+* the players need to defeat the other teenagers, and in doing so claim some of their powers
