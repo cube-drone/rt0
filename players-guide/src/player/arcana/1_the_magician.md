@@ -1,6 +1,9 @@
 # I - The Magician
 
-The magician is resourceful, powerful, straightforward. They plan and scheme.
+The Magician gets the Clever Ability.
+
+The Magician is resourceful, powerful, straightforward. They plan and scheme.
+
 
 
 narrative ability:
@@ -13,3 +16,5 @@ themes
  - flashbacks: the magician can have planned ahead
 
 ## Abilities
+
+The Magician starts the game, choosing 1 extra [spell](../magic.md).

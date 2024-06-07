@@ -1,7 +1,7 @@
 # Magic
 Every player starts the game with 1 spell.
-Players with Mundane can only take Aries, Taurus, Cancer, or Leo.
-Players with Clever start with 1 extra spell.
+
+Once a spell is chosen, no other players can choose that spell.
 
 ## ♈︎ Aries - Ram
 
@@ -125,7 +125,7 @@ Only players with Charming may take Ophiuchus.
 
 ### Combat - Shuffle
 Place a Magician on Ophiuchus.
-Draw 3 spells randomly from the set of the Zodiac starting spells. Choose one and activate it.
+Draw 3 spells randomly from the set of unclaimed Zodiac starting spells. Choose one and activate it.
 
 ### Skill - Shuffle
 ??

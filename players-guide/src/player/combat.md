@@ -3,6 +3,25 @@ Combat is triggered any time the players get into a scuffle with an adversary or
 
 The goal of Combat is to hit your opponent until they stop fighting.
 
+## Summary
+Players and adversaries draw hands of cards, then play them into a variety of "bins" that are available to them, corresponding
+with unique combat abilities.
+
+These cards generate Strike and Defend points, which can be used to both generate and offset damage.
+
+## Hit Points
+Players start every combat with 20 HP, a number that resets with _every combat_.
+
+When a player reaches 0 HP, they do not die, but instead must buy 10 more HP. In order to do so, they
+must take 3 Corruption Points.
+
+When a player reaches 0 HP for a second time, they suffer _consequences_, which are generally non-fatal.
+This costs them _more_ Corruption Points, and they wake up in their room the next day with a new Manipulation.
+
+If there is still a lot of time left in the day, the player gets to play as an EDDY for the rest of the day.
+
+A sufficient number of Corruption points will permanently retire the Player, although the exact number is only known by the GM.
+
 ## The Order
 A Round of battle is a cycle where every participant gets one turn.
 
@@ -85,20 +104,7 @@ whereas a quick action where the battle is still the focus, like deftly leaping 
 
 Once the player has "paid" for the skill check, while keeping their hand and any current combat cards separate, the player shuffles their discard pile into their deck, then uses the deck to perform a skill check as usual.
 
-### Allies & Friends
 
-Sometimes a NPC will help the players!
-
-Characters with Charming can have one NPC Ally.
-Characters with neither Charming or Repulsive can have one NPC Friend.
-Characters with Repulsive cannot have NPC Allies or Friends.
-
-### Magic
+## Magic
 
 Characters can cast spells in battle!
-
-Cleverness, Kindness, and Strangeness all affect players' casting.
-
------
-
-### HP and Corruption

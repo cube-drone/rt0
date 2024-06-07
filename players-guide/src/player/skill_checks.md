@@ -15,8 +15,8 @@ TODO::ART
 * Lucky - _Things just work out more often for this player._
 * Charming - _Charismatic. Magnetic._
 
-A player must choose 2 Abilities from the set of 6: Strong, Fast, Clever, Wise, Lucky, Charming
-Often, a player's Major Arcana will affect their starting set of abilities.
+A player must choose 1 Ability from the set of 6: Strong, Fast, Clever, Wise, Lucky, Charming
+The player's Major Arcana will also give them an ability, for free.
 Choose an ability by circling it on your character sheet.
 
 These are the players' Chosen Abilities.

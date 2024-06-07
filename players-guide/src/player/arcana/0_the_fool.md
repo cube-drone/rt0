@@ -1,5 +1,7 @@
 # 0 - The Fool
 
+The Fool gets the Lucky ability.
+
 themes:
  - luck, chance, recklessness, hoping things just work out
  - wildcards
