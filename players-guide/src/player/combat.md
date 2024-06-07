@@ -100,3 +100,5 @@ Characters can cast spells in battle!
 Cleverness, Kindness, and Strangeness all affect players' casting.
 
 -----
+
+### HP and Corruption

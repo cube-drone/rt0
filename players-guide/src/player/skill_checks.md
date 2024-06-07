@@ -15,11 +15,7 @@ TODO::ART
 * Lucky - _Things just work out more often for this player._
 * Charming - _Charismatic. Magnetic._
 
-#### Soul:
-* Kind - _This player does not want to hurt others._
-* Strange - _This player invites unlikely outcomes._
-
-A player must choose 2 Abilities from the set of 7: Strong, Fast, Clever, Wise, Lucky, Charming, Kind, or Strange
+A player must choose 2 Abilities from the set of 6: Strong, Fast, Clever, Wise, Lucky, Charming
 Often, a player's Major Arcana will affect their starting set of abilities.
 Choose an ability by circling it on your character sheet.
 
@@ -31,12 +27,10 @@ This is the players' Weak Ability. Depending on the ability that's been crossed 
 
 * Strong - Weak (Hits harder in combat)
 * Fast - Slow (Dodges easier in combat)
-* Clever - Dull (Gets to pick more skills, spell bonuses)
+* Clever - Dull (Gets to pick more skills, spells)
 * Wise - Foolish (More card recycle in combat)
 * Lucky - Unlucky (Gets a better deck of cards)
-* Charming - Repulsive (Gets better Ally abilities)
-* Kind - Cruel (Accumulates less Corruption)
-* Strange - Mundane (???)
+* Charming - Repulsive (Gets access to some unusual abilities, accumulates less corruption)
 
 (It is impossible to have both an Ability and a Weak Ability for the same thing: A player can't be Strong and Weak, or Lucky and Unlucky)
 
@@ -52,9 +46,6 @@ They can _only_ choose skills if they have the associated Ability.
 (For example: if you are not Charming or Fast, you cannot choose Deception, Theft & Stealth).
 Choose a skill by circling it on your character sheet, then writing an "A+" next to it.
 
-If a player is Clever, they can choose 3 Skills.
-If a player is Dull, they can choose 1 Skill, and they can't choose any skill marked "Clever".
-
 > The A+ is thematic, and you can use anything you want to indicate that this is a preferred skill:
 a gold star sticker, a _unicorn sticker_, a "good work!", whatever floats your boat.
 
@@ -63,67 +54,18 @@ Any Skill Check that the player performs against a Chosen Skill becomes easier
 by one rank: an Impossible check becomes Hard, a Hard check becomes Medium, and so on.
 (See "[Skill Checks](#skill-checks)" for more information on this.)
 
-A player must Cross Out 2 skills. _Any_ check against a Crossed Out Skill becomes Impossible for the player.
+A player must Cross Out 1 skills. _Any_ check against a Crossed Out Skill becomes Impossible for the player.
 Cross Out a skill by drawing a line through it, then writing "Fail" next to it.
 
-TODO::TABLE-IFY
-
-* FINANCIAL AID - Perception & Danger Sense (Wise / Fast / Lucky / Kind)
-* DRAMA - Deception, Theft, & Stealth (Charming / Fast / Strange)
-* CMPT - Hacking & Computers (Clever / Strange)
-* FREE PERIOD - Breaking & Entering (Clever / Fast)
+* FINANCIAL AID - Empathy, Perception & Danger Sense (Fast / Lucky)
+* DRAMA - Deception, Persuasion & Performance (Charming / Fast)
+* SCI - Computers, Chemistry, Biology, Physics & Math (Clever / Charming)
+* FREE BLOCK - Stealth, Breaking & Entering (Clever / Fast)
 * GYM - Movement, Sport & Dance (Strong / Fast)
-* ART - Empathy & Artistic Expression (Wise / Charming / Kind)
-* FIRST AID - First Aid & Surgery (Clever / Charming / Kind)
-* OUTDOORS - Exploration & Survival (Wise / Strange)
-* SHOP - Mechanical & Constructive (Clever / Strong)
-* LAW - Bureaucracy & Legal (Clever / Strange)
-* SCIENCE - Chemistry, Biology, Physics, Math, & Culinary (Clever / Strange)
-* MISC - Everything Not Otherwise Covered (Lucky)
-
-
-### Obsession
-
-Each player has one Skill Obsession, something they're almost supernaturally good at/obsessed with
-it must be attached to one of their existing skills - "Baseball" in "Movement, Sport & Dance", or
-"Pokemon" in "Hacking & Computers".
-
-### FINANCIAL AID - Perception & Danger Sense
-TODO::FILLIN
-
-### DRAMA - Deception, Theft, & Stealth
-TODO::FILLIN
-
-### CMPT - Hacking & Computers
-TODO::FILLIN
-
-### FREE PERIOD - Breaking & Entering
-TODO::FILLIN
-
-### GYM - Movement, Sport & Dance
-TODO::FILLIN
-
-### ART - Empathy & Artistic Expression
-TODO::FILLIN
-
-### FIRST AID - First Aid & Surgery
-TODO::FILLIN
-
-### OUTDOORS - Exploration & Survival
-TODO::FILLIN
-
-### SHOP - Mechanical & Constructive
-TODO::FILLIN
-
-### LAW - Bureaucracy & Legal
-TODO::FILLIN
-
-### SCIENCE - Chemistry, Biology, Physics, Math, & Culinary
-TODO::FILLIN
-
-### MISC - Everything Not Otherwise Covered
-TODO::FILLIN
-
+* AID - First Aid, Exploration & Survival (Wise / Charming)
+* SHOP - Mechanical, Constructive, & Culinary (Wise / Strong)
+* LAW - Bureaucracy, Legal, and Investigative (Wise / Clever)
+* MISC - Everything Not Otherwise Covered (Lucky / Strong)
 
 ## Skill Checks
 
@@ -137,8 +79,8 @@ TODO::FILLIN
 * Easy: Most people could probably do this, most of the time.
 * Medium: A trained person can probably do this, most of the time.
 * Hard: A skilled adult with a lot of training might be able to do this.
-* Unlikely:
-* Impossible: Eating the moon. Performing major surgery with no training.
+* Unlikely: A world-class sniper making a once-in-a-lifetime shot, over a kilometer away.
+* Impossible: Eating the moon. Jumping into space.
 
 ### Resolving a Skill Check
 Skill checks are resolved by having the player draw the top card from their decks.
