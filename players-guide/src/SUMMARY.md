@@ -11,6 +11,7 @@
   - [III - The Empress](./player/arcana/3_the_empress.md)
   - [IV - The Emperor](./player/arcana/4_the_emperor.md)
   - [V - The Hierophant](./player/arcana/5_the_hierophant.md)
+  - [VI - The Lovers](./player/arcana/6_the_lovers.md)
 - [Skill Checks](./player/skill_checks.md)
 - [Combat](./player/combat.md)
 - [Magic](./player/magic.md)

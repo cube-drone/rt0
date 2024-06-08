@@ -44,7 +44,7 @@ At the end of the turn, discard The Magician.
 
 ### Combat - Beam
 Place The Magician on Leo.
-Generate 10 Damage (Clever: 15 Damage / Dull: 5 Damage) or generate 4 Damage (Clever: 6 Damage, Dull: 2 Damage) to all adversaries.
+Generate 10 Ranged Damage (Clever: 15 Damage / Dull: 5 Damage) or generate 4 Ranged Damage (Clever: 6 Damage, Dull: 2 Damage) to all adversaries.
 At the end of the turn, discard The Magician.
 
 ### Skill - Light
@@ -126,7 +126,7 @@ Place a Magician on Pisces. If Dull, place 1 card of any value on Pisces as well
 If Clever, draw the top card of your deck and add it to your hand.
 Search your deck for a card, place it in your hand, and then shuffle the deck.
 
-### Skill - Hook
+### Skill - Grappling Hook
 You can flip Pisces upside-down to immediately throw a spectral grappling hook.
 This can be used to grab distant things, to set up difficult climbs, or to
 rescue from a fall.
