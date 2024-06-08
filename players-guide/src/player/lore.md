@@ -14,3 +14,5 @@ loose-ass ideas:
 * OK Computer is a helpful computer corrupted by an ancient and vast psychic intelligence attempting to scour the world clean of humans in order to finally _sleep_.
 * timers, counting down over character heads
 * the players need to defeat the other teenagers, and in doing so claim some of their powers
+* the player is played in a 12-day cycle: every 3 days they encounter 7 new teenagers, on the final 3 days they face OK Computer
+* this RPG is designed to be played multiple times: there's more lore to be encountered then can be discovered in one run
