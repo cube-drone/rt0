@@ -2,7 +2,6 @@
 
 # Player's Guide
 - [Introduction](./player/introduction.md)
-- [Basic Mechanics](./player/mechanics.md)
 - [Creating a Character](./player/creation.md)
 - [Choosing a Major Arcana](./player/choosing_major_arcana.md)
   - [0 - The Fool](./player/arcana/0_the_fool.md)
@@ -21,3 +20,6 @@
 ----------
 # GM's Guide
 - [Introduction](./gm/introduction.md)
+----------
+# Developer's Notes
+- [Mechanics](./dev/mechanics.md)

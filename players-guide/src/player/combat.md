@@ -97,12 +97,14 @@ If Foolish, when there are 3 cards on Concentrate.
 Once there are >= 20 cards in the Discard pile, the Discard pile is shuffled back into the deck.
 
 ### The Tower
-When The Tower is drawn, it must be played on The Tower, immediately.
-The player discards all cards on all of their Abilities, including The Tower, then shuffles the discard pile back into their deck.
+* When The Tower is drawn, it must be played on The Tower, immediately, interrupting any abilities in play.
+* If an ability calls for card draw and the card drawn is The Tower, the ability does not activate.
+* The player discards all cards on all of their Abilities, including The Tower, then shuffles the discard pile back into their deck and ends their turn.
+* The Tower is a reset - at the end of the Tower turn, the player should have a full deck.
 
 ### Movement
-Place any card on Movement.
-When there are two cards on Movement, discard them and move 1 zone.
+* Place any card on Movement.
+* When there are two cards on Movement, discard them and move 1 zone.
 
 If Fast, when there are 1 cards on Movement.
 If Slow, when there are 3 cards on Movement.
