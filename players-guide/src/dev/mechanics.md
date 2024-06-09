@@ -19,6 +19,7 @@ players need to manage:
 * Abilities & Spells (they select some at the beginning of the game, and find more as they go)
 * Injuries (what happens when HP gets to 0, or bad things happen to them during Exploration)
 * Mutations (what happens when Corruption gets to 10)
+* Position (Melee, Ranged, Flying)
 * Items
 * Hunger (they need to eat once a day)
 * Sleep (they need to sleep every night)
