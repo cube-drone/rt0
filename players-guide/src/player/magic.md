@@ -113,12 +113,13 @@ Only players with Clever can learn Scorpio.
 * Place The Magician on Scorpio (Clever: 0 other cards).
 * While Scorpio has a card on it, the player generates 1 Damage every time they draw a card.
 
-### Skill -
-* Flip
-
-
+### Skill - Puppeteer
+* Flip Scorpio upside-down to summon an _disembodied spectral hand_, controlled by your mind.
+* This hand will stick around for about 30 minutes. It moves about as fast as a regular person would.
+* This hand can lift up to 5lbs.
 
 ## ♓︎ Pisces - Fish
+Players with Foolish cannot learn Pisces.
 
 ### Combat - Fishy
 * Place a Magician on Pisces.
@@ -131,7 +132,7 @@ Only players with Clever can learn Scorpio.
 * Once Pisces is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ♒︎ Aquarius - Water-carrier
-Players with Repulsive cannot learn Aquarius.
+Only players with Charming may learn Aquarius.
 
 ### Combat - Heal
 * Place The Magician on Aquarius.
@@ -140,7 +141,7 @@ Players with Repulsive cannot learn Aquarius.
 * Aquarius cannot be used again this combat.
 
 ### Skill - Heal
-
+// TODO: we need injury rules before healing makes sense
 
 ## ♍︎ Virgo - Maiden
 Only players with Charming may learn Virgo.
