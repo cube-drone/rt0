@@ -24,7 +24,7 @@ const {
 } = require('./tarot.js');
 
 const { Strike, Defend, Concentrate, Tower, Foolish } = require('./abilities.js');
-const { Leo, Cancer, Aries, Taurus } = require('./spells.js');
+const { Leo, Cancer, Aries, Taurus, Gemini, Capricorn, Scorpio, Libra } = require('./spells.js');
 
 function shuffle(array) {
 // Fisher-Yates shuffle algorithm
@@ -50,21 +50,18 @@ class PlayerState {
         this.priority = priority ?? 'default'; // random priority just chooses a random ability to play
 
         this.tags = []; // things like "weak", "strong", "fast", "slow", etc.
-        this.temporaryTags = [];
 
         this.damageMultiplier = 1;
         this.shieldMultiplier = 1;
         this.damageBonus = 0;
         this.shieldBonus = 0;
-        this.rangedDamageBonus = 0;
-        this.rangedDamageMultiplier = 1;
-        this.magicDamageBonus = 0;
-        this.magicDamageMultiplier = 1;
 
         this.totalDamage = 0;
-        this.totalRangedDamage = 0;
-        this.totalMagicDamage = 0;
+        this.damageThisTurn = 0;
+
         this.totalShields = 0;
+        this.shieldsThisTurn = 0;
+
         this.totalTurns = 0;
 
         this.discard = [];
@@ -81,7 +78,6 @@ class PlayerState {
         this.hitPoints = 20;
 
         this.log = [];
-        this.turnOutput = [];
     }
 
     name() {
@@ -89,50 +85,7 @@ class PlayerState {
     }
 
     getTags(){
-        let mergedTags = [];
-        for(let tag of this.tags){
-            mergedTags.push(tag);
-        }
-        for(let tag of this.temporaryTags){
-            if(tag == "strong"){
-                mergedTags = mergedTags.filter(tag => tag !== "weak");
-            }
-            if(tag == "weak"){
-                mergedTags = mergedTags.filter(tag => tag !== "strong");
-            }
-            if(tag == "fast"){
-                mergedTags = mergedTags.filter(tag => tag !== "slow");
-            }
-            if(tag == "slow"){
-                mergedTags = mergedTags.filter(tag => tag !== "fast");
-            }
-            if(tag == "wise"){
-                mergedTags = mergedTags.filter(tag => tag !== "foolish");
-            }
-            if(tag == "foolish"){
-                mergedTags = mergedTags.filter(tag => tag !== "wise");
-            }
-            if(tag == "clever"){
-                mergedTags = mergedTags.filter(tag => tag !== "dull");
-            }
-            if(tag == "dull"){
-                mergedTags = mergedTags.filter(tag => tag !== "clever");
-            }
-            if(tag == "lucky"){
-                mergedTags = mergedTags.filter(tag => tag !== "unlucky");
-            }
-            if(tag == "unlucky"){
-                mergedTags = mergedTags.filter(tag => tag !== "lucky");
-            }
-            if(tag == "charming"){
-                mergedTags = mergedTags.filter(tag => tag !== "boorish");
-            }
-            if(tag == "boorish"){
-                mergedTags = mergedTags.filter(tag => tag !== "charming");
-            }
-            mergedTags.push(tag);
-        }
-        return mergedTags;
+        return this.tags;
     }
 
     addAbility(ability) {
@@ -190,29 +143,31 @@ class PlayerState {
     }
 
     takeTurn() {
+        this.damageThisTurn = 0;
+        this.shieldsThisTurn = 0;
         this.drawHand();
         this.totalTurns++;
-        let newTurnOutput = [];
 
         let sortedAbilities = this.getSortedAbilities();
 
         for(let ability of sortedAbilities){
             if(ability.onTurnStart){
-                let result = ability.onTurnStart(this);
-                if(result){
-                    newTurnOutput.push(result);
-                }
+                ability.onTurnStart(this);
             }
         }
 
         let nextCard = this.hand.pop();
         while (nextCard) {
+            for(let ability of sortedAbilities){
+                if(ability.onCardDrawn){
+                    ability.onCardDrawn(nextCard, this);
+                }
+            }
             if(this.hand.includes('tower')){
                 let potentialTowers = sortedAbilities.filter(ability => ability.name === 'tower');
                 if(potentialTowers.length > 0){
                     let towerAbility = potentialTowers[0];
-                    let result = towerAbility.play('tower', this);
-                    newTurnOutput.push(result);
+                    towerAbility.play('tower', this);
                     return;
                 }
             }
@@ -221,15 +176,7 @@ class PlayerState {
             for (let ability of sortedAbilities) {
                 if(!cardPlayed && ability.accepts(card, this)){
                     cardPlayed = true;
-                    let result = ability.play(card, this);
-                    if (result && result.type === "tower") {
-                        newTurnOutput.push(result);
-                        return;
-                    }
-                    else if (result) {
-                        newTurnOutput.push(result);
-                        break;
-                    }
+                    ability.play(card, this);
                 }
             }
             if(!cardPlayed){
@@ -238,7 +185,11 @@ class PlayerState {
             nextCard = this.hand.pop();
         }
 
-        this.turnOutput.push(newTurnOutput);
+        for(let ability of sortedAbilities){
+            if(ability.onTurnEnd){
+                ability.onTurnEnd(this);
+            }
+        }
     }
 
     takeNTurns(n){
@@ -291,30 +242,25 @@ class PlayerState {
     doDamage(damage) {
         this.log.push(`Dealing ${damage} damage!`);
         this.totalDamage += (damage + this.damageBonus) * this.damageMultiplier;
+        this.damageThisTurn += (damage + this.damageBonus) * this.damageMultiplier;
     }
 
-    doMagicDamage(damage){
-        this.log.push(`Dealing ${damage} magic damage!`);
-        this.totalDamage += (damage + this.magicDamageBonus) * this.magicDamageMultiplier;
-        this.totalMagicDamage += (damage + this.magicDamageBonus) * this.magicDamageMultiplier;
+    doMagicDamage(damage) {
+        this.doDamage(damage);
     }
 
     doRangedDamage(damage){
-        this.log.push(`Dealing ${damage} ranged damage!`);
-        this.totalDamage += (damage + this.rangedDamageBonus) * this.rangedDamageMultiplier;
-        this.totalRangedDamage += (damage + this.rangedDamageBonus) * this.rangedDamageMultiplier;
+        this.doDamage(damage);
     }
 
     doRangedMagicDamage(damage){
-        this.log.push(`Dealing ${damage} magic ranged damage!`);
-        this.totalDamage += (damage + this.magicDamageBonus) * this.magicDamageMultiplier;
-        this.totalMagicDamage += (damage + this.magicDamageBonus + this.rangedDamageBonus) * this.magicDamageMultiplier * this.rangedDamageMultiplier;
-        this.totalRangedDamage += (damage + this.magicDamageBonus + this.rangedDamageBonus) * this.magicDamageMultiplier * this.rangedDamageMultiplier;
+        this.doDamage(damage);
     }
 
     addShields(shields) {
         this.log.push(`Adding ${shields} shields!`);
         this.totalShields += (shields + this.shieldBonus) * this.shieldMultiplier;
+        this.shieldsThisTurn += (shields + this.shieldBonus) * this.shieldMultiplier;
     }
 }
 
@@ -361,6 +307,8 @@ function generateTagsBrick({tags, spells}){
         new Cancer(),
         new Taurus(),
         new Aries(),
+        new Gemini(),
+        new Capricorn(),
     ]
     shuffle(defaultSpells);
     if(spells){
@@ -372,6 +320,10 @@ function generateTagsBrick({tags, spells}){
         if(!tags.includes("dull")){
             brick.addAbility(defaultSpells.pop());
         }
+        if(tags.includes("clever")){
+            brick.addAbility(new Libra());
+            brick.addAbility(new Scorpio());
+        }
     }
 
     if(tags.includes("foolish")){
@@ -382,7 +334,6 @@ function generateTagsBrick({tags, spells}){
 
     return brick;
 }
-
 
 
 function generateUsefulnessHistogram(playerFn, args){
@@ -436,7 +387,7 @@ let histogram = generateUsefulnessHistogram(generateTagsBrick, {spells: []});
 histogram.name = "nospells";
 displayUsefulnessHistogram(histogram);
 
-for(let spell of [new Leo(), new Cancer(), new Aries(), new Taurus()]){
+for(let spell of [new Leo(), new Cancer(), new Aries(), new Taurus(), new Gemini(), new Capricorn(), new Scorpio(), new Libra()]){
     let histogram = generateUsefulnessHistogram(generateTagsBrick, {spells: [spell]});
     histogram.name = spell.name;
     displayUsefulnessHistogram(histogram);
@@ -448,9 +399,6 @@ for(let tag of goodTags){
 }
 for(let tag of badTags){
     let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: [tag]});
-    if(tag === "foolish"){
-        console.log(histogram.lastRun.dumpLog());
-    }
     displayUsefulnessHistogram(histogram);
 }
 

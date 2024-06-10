@@ -6,143 +6,170 @@ Once a spell is chosen, no other players can choose that spell.
 ## ♈︎ Aries - Ram
 
 ### Combat - Ram's Dodge
-Place The Magician on Aries.
-While Aries has The Magician on it, the player is **Fast**.
+* Place The Magician on Aries.
+* While Aries has The Magician on it, any shields the player generates are multiplied by 2. (Clever: 3)
 
 ### Skill - Ram's Agility
-When making any skill check marked "Fast", you can flip Aries upside-down
+* When making any skill check marked "Fast", you can flip Aries upside-down
 to treat that skill as if it were a Chosen Skill for this one skill check.
-Once Aries is upside-down, it can not be used in this way until the next Combat,
+* Once Aries is upside-down, it can not be used in this way until the next Combat,
 or the end of the Day, at which point you should flip it back up.
 
 ## ♉︎ Taurus - Bull
 
 ### Combat - Bull's Strength
-Place The Magician on Aries.
-While Aries has The Magician on it, the player is **Strong**.
+* Place The Magician on Aries.
+* While Taurus has The Magician on it, any damage the player generates is multiplied by 2. (Clever: 3)
 
 ### Skill - Bull's Strength
-When making any "GYM - Movement, Sport & Dance" check, you can flip Taurus upside-down
-then make the check as usual. Any Success becomes a Critical Success.
-Once Taurus is upside-down, it can not be used in this way until the next Combat,
+* When making any skill check marked "Strong", you can flip Taurus upside-down
+to treat that skill as if it were a Chosen Skill for this one skill check.
+* Once Taurus is upside-down, it can not be used in this way until the next Combat,
 or the end of the Day, at which point you should flip it back up.
 
 ## ♋︎ Cancer - Crab
 
 ### Combat - Shell
-Place The Magician on Cancer.
-Generate 10 Defense (Clever: 15 Defense / Dull: 5 Defense) OR all players gain 4 Defense. (Clever: 6 Defense, Dull: 2 Defense)
-At the end of the turn, discard The Magician.
+* Place The Magician on Cancer.
+* Generate 15 Defense (Clever: 30 Defense) OR all players gain 6 Defense. (Clever: 12 Defense, Players with Repulsive cannot use this option.)
+* At the end of the turn, discard The Magician.
 
-### Skill - Protect
-// TODO?
-
+### Skill - Bubble
+* If a player would take an Injury while exploring the Moonbase, you can flip Cancer to
+prevent that Injury.
+* This skill can only be used once per Day.
 
 ## ♌︎ Leo - Lion
 
 ### Combat - Beam
-Place The Magician on Leo.
-Generate 10 Ranged Damage (Clever: 15 Damage / Dull: 5 Damage) or generate 4 Ranged Damage (Clever: 6 Damage, Dull: 2 Damage) to all adversaries.
-At the end of the turn, discard The Magician.
+* Place The Magician on Leo.
+* Generate 15 Magic Damage (Clever: 30 Magic Damage) or generate 6 Magic Damage (Clever: 12 Magic Damage, Players with Repulsive cannot use this option.) to all adversaries in the same Zone.
+* At the end of the turn, discard The Magician.
 
 ### Skill - Light
-You can flip Leo upside-down to touch an object. Until the end of the Day, that object will emit soft, white light,
+* You can flip Leo upside-down to touch an object. Until the end of the Day, that object will emit soft, white light,
 bright enough to illuminate a 30ft dome around the players.
-Once Leo is upside-down, it can not be used in this way until the next Combat,
-or the end of the Day, at which point you should flip it back up.
+* Once Leo is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ♊︎ Gemini - Twin
+Players with Repulsive cannot take Gemini.
 
 ### Combat - Twin
-Place The Magician on Gemini.
-Draw 3 Cards. (Clever: 4 Cards / Dull: 2 Cards)
-At the end of the turn, discard The Magician.
+* Place The Magician on Gemini.
+* Draw 5 Cards. (Clever: 10 Cards)
+* At the end of the turn, discard The Magician.
 
 ### Skill - Twin
-You can flip Gemini upside-down to create an illusory, holographic, silent duplicate of yourself.
-The duplicate cannot interact with, pick up, or touch anything - anything touching the illusory copy will simply go right through.
-The duplicate lasts for about a minute.
-Once Gemini is upside-down, it can not be used in this way until the next Combat,
-or the end of the Day, at which point you should flip it back up.
+* You can flip Gemini upside-down to create an illusory, holographic, silent duplicate of yourself.
+* The duplicate cannot interact with, pick up, or touch anything - anything touching the illusory copy will simply go right through.
+* The duplicate lasts for about thirty minutes.
+* Once Gemini is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ♐︎ Sagittarius - Archer
 
-### Combat -
+### Combat - Arrow
+* Place The Magician on Sagittarius.
+* Generate 10 Ranged Magic Damage (Clever: 20 Ranged Magic Damage) or generate 4 Ranged Magic Damage (Clever: 10 Ranged Magic Damage, Players with Repulsive cannot use this option) to all adversaries.
+* At the end of the turn, discard The Magician.
 
-### Skill -
-
-## ♎︎ Libra - Scales
-
-### Combat - Balance
-Place a Magician on Libra, as well as 1 other card of any value. (Clever: 2 Cards / Dull: 0 Cards)
-Discard 1 card from Sagittarius at the beginning of every turn.
-While Libra has a card on it, the player may exchange damage for defense and vice versa.
-(So, for example, if the player generates 8 damage and 3 defense, they can instead generate 2 damage and 9 defense, or 0 damage and 11 defense, or...)
-
-### Skill -
-
-## ♒︎ Aquarius - Water-carrier
-
-### Combat - Heal
-Place The Magician on Aquarius.
-One player regains 4HP (Clever: 6HP, Dull: 2HP), or all players regain 2HP. (Clever: 3HP, Dull: 1HP)
-At the end of the turn, discard The Magician.
-
-### Skill -
-
-## ♍︎ Virgo - Maiden
-
-### Combat -
-
-### Skill - Clue
-You can flip Virgo upside-down to immediately gain a Narrative Ability token.
-Once Virgo is upside-down, it can not be used in this way until the next Combat,
-or the end of the Day, at which point you should flip it back up.
-
-## ♏︎ Scorpio - Scorpion
-
-### Combat -
-
-### Skill -
+### Skill - Arrow
+* You can flip Sagittarius upside-down to name a person, object, or concept. A spectral arrow will appear, and to the best of its ability, it will point towards that thing.
+* Once Sagittarius is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ♑︎ Capricorn - Goat-horned
 
 ### Combat - Capricious
-Place a Magician on Capricorn.
-Draw the top card from your deck. If it is a Sword, or The Fool, deal 42 Damage. (Clever: 64 Damage, Dull: 26 Damage)
+* Place The Magician on Capricorn.
+* Draw the top card from your deck.
+* If it is a Sword, or a Wand, deal 42 Damage. (Clever: 64 Damage)
+* If it is a Cup, or a Pentacle, gain 42 Shields. (Clever: 64 Shields)
+* If it is a Fool, choose either damage or shields.
+* If any other card: nothing happens.
+* At the end of the turn, discard The Magician.
 
 ### Skill - Goat's Luck
-When any player makes a Skill Check, you can flip Capricorn upside-down.
-If the player making that check draws any Ace, or the Tower, they may draw a second card and use the new card as the result of the skill check.
-Once Capricorn is upside-down, it can not be used in this way until the next Combat,
+* When any player fails a Skill Check, you can flip Capricorn upside-down.
+* They can try again, once.
+* Once Capricorn is upside-down, it can not be used in this way until the next Combat,
 or the end of the Day, at which point you should flip it back up.
+
+## ♎︎ Libra - Scales
+Only players with Clever can learn Libra.
+
+### Combat - Balance
+* Place The Magician on Libra.
+* While Libra has a card on it, the player generates as much damage and defense as the higher of their damage and defense, each turn.
+* (So, for example, if the player generates 5 damage and 0 defense, they have instead generated 5 damage and 5 defense)
+
+### Skill - Investigate
+* You can flip Libra upside-down to immediately gain a Narrative Ability token.
+* Once Libra is upside-down, it can not be used in this way until the next Combat,
+or the end of the Day, at which point you should flip it back up.
+
+## ♏︎ Scorpio - Scorpion
+Only players with Clever can learn Scorpio.
+
+### Combat - Venom
+* Place The Magician on Scorpio (Clever: 0 other cards).
+* While Scorpio has a card on it, the player generates 1 Damage every time they draw a card.
+
+### Skill -
+* Flip
+
+
 
 ## ♓︎ Pisces - Fish
 
 ### Combat - Fishy
-Place a Magician on Pisces. If Dull, place 1 card of any value on Pisces as well.
-If Clever, draw the top card of your deck and add it to your hand.
-Search your deck for a card, place it in your hand, and then shuffle the deck.
+* Place a Magician on Pisces.
+* Search your deck for a card (clever: 2 cards), place it in your hand, and then shuffle the deck.
+* At the end of the turn, discard The Magician.
 
 ### Skill - Grappling Hook
-You can flip Pisces upside-down to immediately throw a spectral grappling hook.
-This can be used to grab distant things, to set up difficult climbs, or to
-rescue from a fall.
-Once Pisces is upside-down, it can not be used in this way until the next Combat,
-or the end of the Day, at which point you should flip it back up.
+* You can flip Pisces upside-down to immediately throw a spectral grappling hook.
+* This can be used to grab distant things, to set up difficult climbs, or to prevent damage from a fall.
+* Once Pisces is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
+
+## ♒︎ Aquarius - Water-carrier
+Players with Repulsive cannot learn Aquarius.
+
+### Combat - Heal
+* Place The Magician on Aquarius.
+* You OR one ally in your Zone regain all hit points. (Clever: You AND one ally regain all hit points.)
+* At the end of the turn, discard The Magician.
+* Aquarius cannot be used again this combat.
+
+### Skill - Heal
+
+
+## ♍︎ Virgo - Maiden
+Only players with Charming may learn Virgo.
+
+### Combat - Charm
+* Place The Magician on Virgo.
+* Select an adversary in combat.
+* While The Magician is on Virgo, that adversary cannot attack the players.
+* If the adversary takes any damage from the players, or if they are the last adversary remaining in combat, discard The Magician.
+
+### Skill - Charm
+* You can flip Virgo upside-down to Charm an intelligent human, creature or system that you encounter.
+* This human, creature, or system will be:
+* * less inclined to attack your party
+* * more inclined to help your party
+* * easier to convince
+* * harder to anger
+* * generally a real sweetie-pie.
+* This effect ends if the target feels seriously threatened, or after 30 minutes.
+* Once Virgo is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ⛎ Ophiuchus - Snake Handler
-Only players with Charming may take Ophiuchus.
+Only players with Charming may learn Ophiuchus.
+
+* At The Beginning of Every Day, Draw 3 random unclaimed Zodiac starting spells and stack them under Ophiuchus.
 
 ### Combat - Shuffle
-Place a Magician on Ophiuchus.
-Draw 3 spells randomly from the set of unclaimed Zodiac starting spells. Choose one and activate it.
+* Place The Magician on Ophiuchus.
+* Choose one of the 3 spells under Ophiuchus. Treat Ophiuchus as that spell for the remainder of combat.
 
 ### Skill - Shuffle
-Flip Ophiuchus to draw three spells randomly from the set of unclaimed Zodiac starting spells.
-These spells become available to the player as skills. If the player uses any of them,
-the effect ends and all three spells are discarded (and returned to the set of unclaimed Zodiac starting spells.)
-Once Pisces is upside-down, it can not be used in this way until the next Combat,
-or the end of the Day, at which point you should flip it back up.
-When Ophiuchus is flipped back up,
-the effect ends and all three spells are discarded (and returned to the set of unclaimed Zodiac starting spells.)
+* Choose one of the 3 spells under Ophiuchus. Treat Ophiuchus as that spell until the next Combat, or the end of the Day.
