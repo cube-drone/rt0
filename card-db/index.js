@@ -23,6 +23,9 @@ const {
     numericalValue
 } = require('./tarot.js');
 
+const { Strike, Defend, Concentrate, Tower, Foolish } = require('./abilities.js');
+const { Leo, Cancer, Aries, Taurus } = require('./spells.js');
+
 function shuffle(array) {
 // Fisher-Yates shuffle algorithm
     let currentIndex = array.length;
@@ -44,9 +47,10 @@ class PlayerState {
         this.hand = [];
         this.handSize = 5;
         this.className = className ?? 'default';
-        this.priority = priority ?? 'random'; // random priority just chooses a random ability to play
+        this.priority = priority ?? 'default'; // random priority just chooses a random ability to play
 
         this.tags = []; // things like "weak", "strong", "fast", "slow", etc.
+        this.temporaryTags = [];
 
         this.damageMultiplier = 1;
         this.shieldMultiplier = 1;
@@ -80,7 +84,61 @@ class PlayerState {
         this.turnOutput = [];
     }
 
+    name() {
+        return `${this.className}-${this.tags.join('-')}`;
+    }
+
+    getTags(){
+        let mergedTags = [];
+        for(let tag of this.tags){
+            mergedTags.push(tag);
+        }
+        for(let tag of this.temporaryTags){
+            if(tag == "strong"){
+                mergedTags = mergedTags.filter(tag => tag !== "weak");
+            }
+            if(tag == "weak"){
+                mergedTags = mergedTags.filter(tag => tag !== "strong");
+            }
+            if(tag == "fast"){
+                mergedTags = mergedTags.filter(tag => tag !== "slow");
+            }
+            if(tag == "slow"){
+                mergedTags = mergedTags.filter(tag => tag !== "fast");
+            }
+            if(tag == "wise"){
+                mergedTags = mergedTags.filter(tag => tag !== "foolish");
+            }
+            if(tag == "foolish"){
+                mergedTags = mergedTags.filter(tag => tag !== "wise");
+            }
+            if(tag == "clever"){
+                mergedTags = mergedTags.filter(tag => tag !== "dull");
+            }
+            if(tag == "dull"){
+                mergedTags = mergedTags.filter(tag => tag !== "clever");
+            }
+            if(tag == "lucky"){
+                mergedTags = mergedTags.filter(tag => tag !== "unlucky");
+            }
+            if(tag == "unlucky"){
+                mergedTags = mergedTags.filter(tag => tag !== "lucky");
+            }
+            if(tag == "charming"){
+                mergedTags = mergedTags.filter(tag => tag !== "boorish");
+            }
+            if(tag == "boorish"){
+                mergedTags = mergedTags.filter(tag => tag !== "charming");
+            }
+            mergedTags.push(tag);
+        }
+        return mergedTags;
+    }
+
     addAbility(ability) {
+        if(!ability.name){
+            throw new Error("Ability must have a name, got " + ability);
+        }
         this.abilities.push(ability);
     }
 
@@ -94,9 +152,13 @@ class PlayerState {
         }
         else{
             sortedAbilities.sort((a, b) => {
-                return (a.priorities()[this.priority] ?? 0) - (b.priorities()[this.priority] ?? 0);
+                return (b.priorities()[this.priority] ?? 0) - (a.priorities()[this.priority] ?? 0);
             });
         }
+        // get all "mandatory" abilities, remove them, and put them at the front
+        let mandatoryAbilities = sortedAbilities.filter(ability => ability.mandatory);
+        sortedAbilities = sortedAbilities.filter(ability => !ability.mandatory);
+        sortedAbilities = mandatoryAbilities.concat(sortedAbilities);
         return sortedAbilities;
     }
 
@@ -106,12 +168,22 @@ class PlayerState {
             this.baseDeck = this.baseDeck.filter(card => card !== 'ace of pentacles');
             this.baseDeck = this.baseDeck.filter(card => card !== 'ace of cups');
             this.baseDeck = this.baseDeck.filter(card => card !== 'ace of wands');
+            this.baseDeck = this.baseDeck.filter(card => card !== 'ace of swords');
+            this.baseDeck = this.baseDeck.filter(card => card !== '2 of pentacles');
+            this.baseDeck = this.baseDeck.filter(card => card !== '2 of cups');
+            this.baseDeck = this.baseDeck.filter(card => card !== '2 of wands');
+            this.baseDeck = this.baseDeck.filter(card => card !== '2 of swords');
         }
         if(this.tags.includes('unlucky')){
             this.baseDeck = this.baseDeck.filter(card => card !== 'fool');
             this.baseDeck = this.baseDeck.filter(card => card !== 'king of pentacles');
             this.baseDeck = this.baseDeck.filter(card => card !== 'king of cups');
             this.baseDeck = this.baseDeck.filter(card => card !== 'king of wands');
+            this.baseDeck = this.baseDeck.filter(card => card !== 'king of swords');
+            this.baseDeck = this.baseDeck.filter(card => card !== 'queen of pentacles');
+            this.baseDeck = this.baseDeck.filter(card => card !== 'queen of cups');
+            this.baseDeck = this.baseDeck.filter(card => card !== 'queen of wands');
+            this.baseDeck = this.baseDeck.filter(card => card !== 'queen of swords');
         }
         this.deck = JSON.parse(JSON.stringify(this.baseDeck));
         this.shuffle();
@@ -123,37 +195,40 @@ class PlayerState {
         let newTurnOutput = [];
 
         let sortedAbilities = this.getSortedAbilities();
+
+        for(let ability of sortedAbilities){
+            if(ability.onTurnStart){
+                let result = ability.onTurnStart(this);
+                if(result){
+                    newTurnOutput.push(result);
+                }
+            }
+        }
+
         let nextCard = this.hand.pop();
         while (nextCard) {
+            if(this.hand.includes('tower')){
+                let potentialTowers = sortedAbilities.filter(ability => ability.name === 'tower');
+                if(potentialTowers.length > 0){
+                    let towerAbility = potentialTowers[0];
+                    let result = towerAbility.play('tower', this);
+                    newTurnOutput.push(result);
+                    return;
+                }
+            }
             let card = nextCard;
             let cardPlayed = false;
             for (let ability of sortedAbilities) {
-                if(ability.accepts(card) && ability.mandatory){
+                if(!cardPlayed && ability.accepts(card, this)){
                     cardPlayed = true;
                     let result = ability.play(card, this);
                     if (result && result.type === "tower") {
                         newTurnOutput.push(result);
                         return;
                     }
-                    if (result) {
+                    else if (result) {
                         newTurnOutput.push(result);
                         break;
-                    }
-                }
-            }
-            if(!cardPlayed){
-                for (let ability of sortedAbilities) {
-                    if(ability.accepts(card) && !ability.mandatory){
-                        cardPlayed = true;
-                        let result = ability.play(card, this);
-                        if (result && result.type === "tower") {
-                            newTurnOutput.push(result);
-                            return;
-                        }
-                        if (result) {
-                            newTurnOutput.push(result);
-                            break;
-                        }
                     }
                 }
             }
@@ -198,6 +273,9 @@ class PlayerState {
         // empty all ability bins
         for (let key in this.abilities) {
             this.abilities[key].bin = [];
+            if(this.abilities[key].onFlush){
+                this.abilities[key].onFlush(this);
+            }
         }
         // shuffle discard into deck
         this.hand = [];
@@ -238,264 +316,15 @@ class PlayerState {
         this.log.push(`Adding ${shields} shields!`);
         this.totalShields += (shields + this.shieldBonus) * this.shieldMultiplier;
     }
-
-
-
 }
 
-class Strike {
-    constructor() {
-        this.name = 'Strike';
-        this.bin = [];
-    }
-
-    priorities() {
-        return {
-            'just-strike': 10,
-            'damage': 2
-        }
-    }
-
-    accepts(card) {
-        return isSwords(card) || isWands(card);
-    }
-
-    totalValueOfBin() {
-        let total = 0;
-        for (let card of this.bin) {
-            total += numericalValue(card);
-        }
-        return total;
-    }
-
-    play(card, state) {
-        this.bin.push(card);
-        if(this.totalValueOfBin() >= 10){
-            state.log.push(`Striking with ${this.bin}`);
-            state.discard = state.discard.concat(this.bin);
-            if(state.tags.includes('strong')){
-                state.doDamage(7);
-            }
-            else if(state.tags.includes('weak')){
-                state.doDamage(3);
-            }
-            else{
-                state.doDamage(5);
-            }
-            this.bin = [];
-            return {type: 'strike', damage: 10};
-        }
-        else{
-            state.log.push(`Playing ${card} to strike, sitting at ${this.totalValueOfBin()}/10.`);
-        }
-    }
-}
-class Defend {
-    constructor() {
-        this.name = 'Defend';
-        this.bin = [];
-    }
-
-    priorities() {
-        return {
-            'just-defend': 10,
-            'defense': 2
-        }
-    }
-
-    accepts(card) {
-        return isCups(card) || isPentacles(card);
-    }
-
-    totalValueOfBin() {
-        let total = 0;
-        for (let card of this.bin) {
-            total += numericalValue(card);
-        }
-        return total;
-    }
-
-    play(card, state) {
-        this.bin.push(card);
-        if(this.totalValueOfBin() >= 10){
-            state.log.push(`Defending with ${this.bin}`);
-            state.discard = state.discard.concat(this.bin);
-            if(state.tags.includes('fast')){
-                state.addShields(7);
-            }
-            else if(state.tags.includes('slow')){
-                state.addShields(3);
-            }
-            else{
-                state.addShields(5);
-            }
-            this.bin = [];
-            return {type: 'defense', shields: 10};
-        }
-        else{
-            state.log.push(`Playing ${card} to defend, sitting at ${this.totalValueOfBin()}/10.`);
-        }
-    }
-}
-
-class Concentrate {
-    constructor() {
-        this.name = 'Concentrate';
-        this.bin = [];
-    }
-
-    priorities() {
-        return {
-            'just-concentrate': 10,
-            'draw': 2
-        }
-    }
-
-    accepts(card) {
-        return isMajorArcana(card);
-    }
-
-    play(card, state) {
-        this.bin.push(card);
-
-        let binLengthRequired = 2;
-        if(state.tags.includes('wise')){
-            binLengthRequired = 1;
-        }
-        else if(state.tags.includes('foolish')){
-            binLengthRequired = 3;
-        }
-
-        if(this.bin.length >= binLengthRequired){
-            state.log.push(`Concentrating with ${this.bin}`);
-            state.discard = state.discard.concat(this.bin);
-            this.bin = [];
-            state.draw();
-            return {type: 'draw', cards: 1};
-        }
-        else{
-            state.log.push(`Playing ${card} to concentrate, sitting at ${this.bin.length}/2.`);
-        }
-    }
-
-}
-
-class Tower {
-    constructor() {
-        this.name = 'Tower';
-        this.type = 'catastrophe';
-        // this is a mandatory ability that must be played when drawn
-        this.mandatory = true;
-    }
-
-    accepts(card) {
-        return card === 'tower';
-    }
-
-    play(card, state) {
-        state.flush();
-        state.log.push("The tower has fallen! Catastrophe strikes!");
-        return {type: "tower"};
-    }
-}
-
-class Leo {
-    constructor() {
-        this.name = 'Leo';
-        this.bin = [];
-    }
-
-    priorities() {
-        return {
-            'damage': 5
-        }
-    }
-
-    accepts(card) {
-        return card === 'magician';
-    }
-
-    totalValueOfBin() {
-        let total = 0;
-        for (let card of this.bin) {
-            total += numericalValue(card);
-        }
-        return total;
-    }
-
-    play(card, state) {
-        this.bin.push(card);
-        if(state.tags.includes('clever')){
-            state.doRangedMagicDamage(15);
-        }
-        else if(state.tags.includes('dull')){
-            state.doRangedMagicDamage(5);
-        }
-        else{
-            state.doRangedMagicDamage(10);
-        }
-        state.log.push(`Casting leo with the magician!`);
-    }
-}
-
-class Cancer {
-    constructor() {
-        this.name = 'Cancer';
-        this.bin = [];
-    }
-
-    priorities() {
-        return {
-            'defense': 5
-        }
-    }
-
-    accepts(card) {
-        return card === 'magician';
-    }
-
-    totalValueOfBin() {
-        let total = 0;
-        for (let card of this.bin) {
-            total += numericalValue(card);
-        }
-        return total;
-    }
-
-    play(card, state) {
-        this.bin.push(card);
-        if(state.tags.includes('clever')){
-            state.addShields(15);
-        }
-        else if(state.tags.includes('dull')){
-            state.addShields(5);
-        }
-        else{
-            state.addShields(10);
-        }
-        state.log.push(`Casting cancer with the magician!`);
-    }
-}
-
-let startingTags = ['strong', 'fast', 'wise', 'clever', 'lucky', 'charming'];
-
+let goodTags = ['strong', 'fast', 'wise', 'clever', 'lucky', 'charming'];
+let badTags = ['weak', 'slow', 'foolish', 'dull', 'unlucky', 'boorish'];
 
 function generateBrick(){
     // "brick" is the most basic character, with no special abilities
     let brick = new PlayerState({className: 'brick'});
 
-    //brick.tags.push('strong');
-    //brick.tags.push('weak');
-    //brick.tags.push('fast');
-    //brick.tags.push('slow');
-    //brick.tags.push('wise');
-    //brick.tags.push('foolish');
-    //brick.tags.push('clever');
-    //brick.tags.push('dull');
-    //brick.tags.push('lucky');
-    //brick.tags.push('unlucky');
-    //brick.tags.push('charming');
-    //brick.tags.push('boorish');
     brick.addAbility(new Strike());
     brick.addAbility(new Defend());
     brick.addAbility(new Concentrate());
@@ -512,49 +341,61 @@ function generateBrick(){
 
     return brick;
 }
-function generateBrick(){
+function generateTagsBrick({tags, spells}){
     // "brick" is the most basic character, with no special abilities
-    let brick = new PlayerState({className: 'weakbrick'});
+    if(!tags){
+        tags = [];
+    }
+    let brick = new PlayerState({className: `${tags.join('-')}-brick`});
 
-    //brick.tags.push('strong');
-    //brick.tags.push('weak');
-    //brick.tags.push('fast');
-    //brick.tags.push('slow');
-    //brick.tags.push('wise');
-    //brick.tags.push('foolish');
-    //brick.tags.push('clever');
-    //brick.tags.push('dull');
-    //brick.tags.push('lucky');
-    //brick.tags.push('unlucky');
-    //brick.tags.push('charming');
-    //brick.tags.push('boorish');
+    for(let tag of tags){
+        brick.tags.push(tag);
+    }
     brick.addAbility(new Strike());
     brick.addAbility(new Defend());
     brick.addAbility(new Concentrate());
     brick.addAbility(new Tower());
 
-    let spells = [
+    let defaultSpells = [
         new Leo(),
-        new Cancer()
+        new Cancer(),
+        new Taurus(),
+        new Aries(),
     ]
-    shuffle(spells);
-    brick.addAbility(spells.pop());
+    shuffle(defaultSpells);
+    if(spells){
+        for(let spell of spells){
+            brick.addAbility(spell);
+        }
+    }
+    else{
+        if(!tags.includes("dull")){
+            brick.addAbility(defaultSpells.pop());
+        }
+    }
+
+    if(tags.includes("foolish")){
+        brick.addAbility(new Foolish());
+    }
 
     brick.buildDeck();
 
     return brick;
 }
 
-function generateUsefulnessHistogram(player){
-    let lastBrick;
+
+
+function generateUsefulnessHistogram(playerFn, args){
+    let lastRun;
     let nTurns = 15;
     let damages = [];
     let shields = [];
-    for(let i = 0; i < 1000; i++){
-        brick.takeNTurns(nTurns);
-        damages.push(brick.totalDamage);
-        shields.push(brick.totalShields);
-        lastBrick = brick;
+    for(let i = 0; i < 5000; i++){
+        let player = playerFn(args)
+        player.takeNTurns(nTurns);
+        damages.push(player.totalDamage);
+        shields.push(player.totalShields);
+        lastRun = player;
     }
 
     let averageDamage = damages.reduce((a, b) => a + b, 0) / damages.length;
@@ -562,25 +403,54 @@ function generateUsefulnessHistogram(player){
     let averageDamagePerTurn = averageDamage / nTurns;
     let averageShieldsPerTurn = averageShields / nTurns;
     let score = averageDamagePerTurn + (averageShieldsPerTurn * 1.05); // we should bias slightly towards damage
+
     return {
         averageDamage,
         averageShields,
         averageDamagePerTurn,
         averageShieldsPerTurn,
         score,
-        lastBrick
+        lastRun,
+        name: lastRun.name()
     }
 }
 
+let brickUsefulness = generateUsefulnessHistogram(generateBrick);
+
 function displayUsefulnessHistogram(histogram){
-    console.log(`Average damage: ${histogram.averageDamage.toFixed(2)}`);
-    console.log(`Average shields: ${histogram.averageShields.toFixed(2)}`);
-    console.log(`Average damage per turn: ${histogram.averageDamagePerTurn.toFixed(2)}`);
-    console.log(`Average shields per turn: ${histogram.averageShieldsPerTurn.toFixed(2)}`);
-    console.log(`Score: ${histogram.score.toFixed(2)}`);
+    if(histogram == null){ throw new Error("histogram is null");}
+    /*
+    console.log(`${histogram.name} Average damage: ${histogram.averageDamage.toFixed(1)}`);
+    console.log(`${histogram.name} Average shields: ${histogram.averageShields.toFixed(1)}`);
+    console.log(`${histogram.name} Average damage per turn: ${histogram.averageDamagePerTurn.toFixed(1)}`);
+    console.log(`${histogram.name} Average shields per turn: ${histogram.averageShieldsPerTurn.toFixed(1)}`);
+    */
+    console.log(`${histogram.name} Score: ${histogram.score.toFixed(1)}`);
+    //console.log(histogram.lastRun.dumpLog());
+    console.log(`${histogram.name} Brick Score: ${(histogram.score - brickUsefulness.score).toFixed(1)}`);
 }
 
-let brick = generateBrick();
-
-let brickUsefulness = generateUsefulnessHistogram(brick);
 displayUsefulnessHistogram(brickUsefulness);
+
+let histogram = generateUsefulnessHistogram(generateTagsBrick, {spells: []});
+histogram.name = "nospells";
+displayUsefulnessHistogram(histogram);
+
+for(let spell of [new Leo(), new Cancer(), new Aries(), new Taurus()]){
+    let histogram = generateUsefulnessHistogram(generateTagsBrick, {spells: [spell]});
+    histogram.name = spell.name;
+    displayUsefulnessHistogram(histogram);
+}
+
+for(let tag of goodTags){
+    let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: [tag]});
+    displayUsefulnessHistogram(histogram);
+}
+for(let tag of badTags){
+    let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: [tag]});
+    if(tag === "foolish"){
+        console.log(histogram.lastRun.dumpLog());
+    }
+    displayUsefulnessHistogram(histogram);
+}
+

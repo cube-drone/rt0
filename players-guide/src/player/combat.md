@@ -102,6 +102,10 @@ Once there are >= 20 cards in the Discard pile, the Discard pile is shuffled bac
 * The player discards all cards on all of their Abilities, including The Tower, then shuffles the discard pile back into their deck and ends their turn.
 * The Tower is a reset - at the end of the Tower turn, the player should have a full deck.
 
+### Foolishness
+* Only add this to your abilities if you have the 'foolish' trait.
+* Every turn in which you draw Minor Arcana, you must discard your lowest Minor Arcana card.
+
 ### Movement
 * Place any card on Movement.
 * When there are two cards on Movement, discard them and move 1 zone.

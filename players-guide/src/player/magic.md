@@ -1,14 +1,13 @@
 # Magic
-Every player starts the game with 1 spell.
+Every player starts the game with 1 spell, except for Dull players, who start the game with 0 spells and cannot learn spells.
 
 Once a spell is chosen, no other players can choose that spell.
 
 ## ♈︎ Aries - Ram
 
 ### Combat - Ram's Dodge
-Place The Magician on Aries, as well as 1 other card of any value. (Clever: 2 Cards / Dull: 0 Cards)
-Discard 1 card from Aries at the beginning of every turn.
-While Aries has a card on it, the player is **Fast**.
+Place The Magician on Aries.
+While Aries has The Magician on it, the player is **Fast**.
 
 ### Skill - Ram's Agility
 When making any skill check marked "Fast", you can flip Aries upside-down
@@ -19,9 +18,8 @@ or the end of the Day, at which point you should flip it back up.
 ## ♉︎ Taurus - Bull
 
 ### Combat - Bull's Strength
-Place The Magician on Taurus, as well as 1 other card of any value. (Clever: 2 Cards / Dull: 0 Cards)
-Discard 1 card from Taurus at the beginning of every turn.
-While Taurus has a card on it, the player is **Strong**.
+Place The Magician on Aries.
+While Aries has The Magician on it, the player is **Strong**.
 
 ### Skill - Bull's Strength
 When making any "GYM - Movement, Sport & Dance" check, you can flip Taurus upside-down
