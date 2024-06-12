@@ -21,8 +21,8 @@ class Leo {
         }
     }
 
-    accepts(card) {
-        return card === 'magician';
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
     }
 
     play(card, state) {
@@ -50,8 +50,8 @@ class Cancer {
         }
     }
 
-    accepts(card) {
-        return card === 'magician';
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
     }
 
     play(card, state) {
@@ -79,8 +79,8 @@ class Aries {
         }
     }
 
-    accepts(card) {
-        return card === 'magician';
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
     }
 
     play(card, state) {
@@ -111,8 +111,8 @@ class Taurus {
         }
     }
 
-    accepts(card) {
-        return card === 'magician';
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
     }
 
     play(card, state) {
@@ -143,8 +143,8 @@ class Gemini{
         }
     }
 
-    accepts(card) {
-        return card === 'magician';
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
     }
 
     play(card, state) {
@@ -180,8 +180,8 @@ class Capricorn {
         }
     }
 
-    accepts(card) {
-        return card === 'magician';
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
     }
 
     play(card, state) {
@@ -230,8 +230,8 @@ class Scorpio {
         }
     }
 
-    accepts(card) {
-        return card === 'magician';
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
     }
 
     play(card, state) {
@@ -262,8 +262,8 @@ class Libra{
         }
     }
 
-    accepts(card) {
-        return card === 'magician';
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
     }
 
     play(card, state) {

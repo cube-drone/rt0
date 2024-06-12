@@ -25,6 +25,7 @@ const {
 
 const { Strike, Defend, Concentrate, Tower, Foolish } = require('./abilities.js');
 const { Leo, Cancer, Aries, Taurus, Gemini, Capricorn, Scorpio, Libra } = require('./spells.js');
+const { KitchenSink, Laughter } = require('./fool.js');
 
 function shuffle(array) {
 // Fisher-Yates shuffle algorithm
@@ -335,6 +336,100 @@ function generateTagsBrick({tags, spells}){
     return brick;
 }
 
+function generateFool({tags}){
+    // "brick" is the most basic character, with no special abilities
+    if(!tags){
+        tags = [];
+    }
+    else{
+        tags = JSON.parse(JSON.stringify(tags));
+    }
+    tags.push("lucky");
+    let brick = new PlayerState({className: `fool`});
+
+    for(let tag of tags){
+        brick.tags.push(tag);
+    }
+    brick.addAbility(new Strike());
+    brick.addAbility(new Defend());
+    brick.addAbility(new Concentrate());
+    brick.addAbility(new Tower());
+
+    //brick.addAbility(new KitchenSink());
+    //brick.addAbility(new Laughter());
+
+    let defaultSpells = [
+        new Leo(),
+        new Cancer(),
+        new Taurus(),
+        new Aries(),
+        new Gemini(),
+        new Capricorn(),
+    ]
+    shuffle(defaultSpells);
+    if(!tags.includes("dull")){
+        brick.addAbility(defaultSpells.pop());
+    }
+    if(tags.includes("clever")){
+        brick.addAbility(new Libra());
+        brick.addAbility(new Scorpio());
+    }
+
+    if(tags.includes("foolish")){
+        brick.addAbility(new Foolish());
+    }
+
+    brick.buildDeck();
+
+    return brick;
+}
+
+function generateMagician({tags}){
+    // "brick" is the most basic character, with no special abilities
+    if(!tags){
+        tags = [];
+    }
+    else{
+        tags = JSON.parse(JSON.stringify(tags));
+    }
+    tags.push("clever");
+    let brick = new PlayerState({className: `magician`});
+
+    for(let tag of tags){
+        brick.tags.push(tag);
+    }
+    brick.addAbility(new Strike());
+    brick.addAbility(new Defend());
+    brick.addAbility(new Concentrate());
+    brick.addAbility(new Tower());
+
+    //brick.addAbility(new KitchenSink());
+    //brick.addAbility(new Laughter());
+
+    let defaultSpells = [
+        new Leo(),
+        new Cancer(),
+        new Taurus(),
+        new Aries(),
+        new Gemini(),
+        new Capricorn(),
+        new Libra(),
+        new Scorpio(),
+    ]
+    shuffle(defaultSpells);
+    brick.addAbility(defaultSpells.pop());
+    brick.addAbility(defaultSpells.pop());
+
+    if(tags.includes("foolish")){
+        brick.addAbility(new Foolish());
+    }
+
+    brick.buildDeck();
+
+    return brick;
+}
+
+
 
 function generateUsefulnessHistogram(playerFn, args){
     let lastRun;
@@ -383,6 +478,7 @@ function displayUsefulnessHistogram(histogram){
 
 displayUsefulnessHistogram(brickUsefulness);
 
+/*
 let histogram = generateUsefulnessHistogram(generateTagsBrick, {spells: []});
 histogram.name = "nospells";
 displayUsefulnessHistogram(histogram);
@@ -392,7 +488,21 @@ for(let spell of [new Leo(), new Cancer(), new Aries(), new Taurus(), new Gemini
     histogram.name = spell.name;
     displayUsefulnessHistogram(histogram);
 }
+*/
 
+let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: ["lucky"]});
+histogram.name = "lucky";
+displayUsefulnessHistogram(histogram);
+histogram = generateUsefulnessHistogram(generateFool, {tags: []});
+displayUsefulnessHistogram(histogram);
+
+histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: ["clever"]});
+histogram.name = "clever";
+displayUsefulnessHistogram(histogram);
+histogram = generateUsefulnessHistogram(generateMagician, {tags: []});
+displayUsefulnessHistogram(histogram);
+
+/*
 for(let tag of goodTags){
     let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: [tag]});
     displayUsefulnessHistogram(histogram);
@@ -401,4 +511,15 @@ for(let tag of badTags){
     let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: [tag]});
     displayUsefulnessHistogram(histogram);
 }
+
+for(let tag of goodTags){
+    if(tag === "lucky"){
+        continue;
+    }
+    let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: [tag, "lucky"]});
+    displayUsefulnessHistogram(histogram);
+    histogram = generateUsefulnessHistogram(generateFool, {tags: [tag]});
+    displayUsefulnessHistogram(histogram);
+}
+*/
 
