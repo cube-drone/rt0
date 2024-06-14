@@ -14,3 +14,4 @@ spend a teaching token:
 themes:
 * defense
 * assistance & support
+* teaching/learning

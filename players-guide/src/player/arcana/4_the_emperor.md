@@ -33,4 +33,4 @@ narrative ability:
 themes:
 * fishing, baseball, barbeque
 * leadership
-* when friends are very threatened, goes into Max Damage mode / Papa Bear
+* making other players more effective

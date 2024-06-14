@@ -14,7 +14,7 @@ themes
  - Literal magician stuff: cards, top hats, bunnies.
  - Flashbacks: the magician can have already planned ahead.
 
-## Signatures
+## Signature Abilities:
 
 ### Pull a Rabbit Out of a Hat
  * Place one card of each suit on Pull a Rabbit Out of a Hat
@@ -31,3 +31,20 @@ themes
  * * Discard the lowest two cards
  * * Use the highest ranked two cards as Magicians for the purpose of triggering spells.
  * * Take 1 Corruption.
+
+
+### Abracadabra
+
+#### And For My Next Trick
+
+### Miser's Dream
+
+#### Devil's Torture Chamber
+
+### Cups and Balls
+
+#### Three Card Monte
+
+### Disappearing Act
+
+#### Levitation
