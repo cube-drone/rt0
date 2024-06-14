@@ -96,6 +96,7 @@ Skill checks are resolved by having the player draw the top card from their deck
 If the card drawn is a Major Arcana - well, it might trigger a Critical Success or
 Critical Failure.
 
+
 ### Success
 Simple: whatever the player was trying to achieve? They succeeded. The thing happens.
 The scene continues, the thing having happened.
@@ -164,3 +165,9 @@ of attempting major surgery, as a teenager, is going to be Unlikely or Impossibl
 maybe they accidentally drop a Junior Mint into the chest cavity of their patient,
 which _should_ cause major complications but, in an unlikely twist of fate actually
 kills what would otherwise have been a fatal infection.
+
+
+### Helping Another Player With a Skill Check
+
+
+### Everybody Making a Skill Check Together

@@ -20,6 +20,8 @@
 ----------
 # GM's Guide
 - [Introduction](./gm/introduction.md)
+- [Locations](./gm/locations.md)
+ - [Swords](./gm/locations/swords.md)
 ----------
 # Developer's Notes
 - [Mechanics](./dev/mechanics.md)

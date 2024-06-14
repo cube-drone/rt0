@@ -86,11 +86,11 @@ Wands, Cups, and Pentacles.
 Tarot decks can be quite expensive. Regular playing cards, on the other hand, can be acquired at
 any gas station.
 
-### From one deck of cards:
+#### From one deck of cards:
 * Write "0 / The Fool" on one of the two provided jokers.
 * remove the other provided joker, and all "rules of draw & stud poker" style inserts.
 
-### From the other deck of cards
+#### From the other deck of cards
 * take the Queens, cross out the Qs, and write "P" nearby, to make Pages in each suit.
 * on 20 of the remaining cards, preferring cards with lots of _space_, cross out the suit and rank ("2 diamonds")
 * Write in:
