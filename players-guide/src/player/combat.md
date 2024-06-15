@@ -126,6 +126,11 @@ When there are 4 cards on Run Away, you may either:
 If Fast, when there are 3 cards on Run Away.
 If Slow, when there are 5 cards on Run Away.
 
+### Friendship
+Friendship can be marked with up to one Corruption Point.
+
+At the end of the Day, if the box is marked with a Corruption Point, draw a new, empty box on Friendship.
+
 ### Skill Checks
 Some actions during battle call for Skill Checks. "I hack the computer while the battle is raging on", or "I force open the door".
 
@@ -137,3 +142,32 @@ Once the player has "paid" for the skill check, while keeping their hand and any
 
 ## Magic
 Characters can cast [spells](./magic.md) in battle!
+
+## Conclusion & Supremacy
+
+The Combat is over when all adversaries have fled or knocked down to 0HP.
+
+Adversaries knocked down to 0HP may have been knocked unconscious, killed, or simply incapacitated: that's
+up to the players and the GM.
+
+When a Combat concludes, open up the Supremacy Worksheet:
+* If every player has full HP, mark one tally in the Supremacy box.
+* If any player has full HP, mark one tally in the Supremacy box.
+* If every player has accumulated 0 Corruption, mark one tally in the Supremacy box.
+* If any player has accumulated 0 Corruption, mark one tally in the Supremacy box.
+
+Accumulated Supremacy makes combat _more difficult_ as the game goes on.
+Every time the players reach a milestone on the Supremacy Worksheet, the GM draws a card and
+gives some or all of the game's adversaries a buff.
+
+However, accumulating Supremacy is good: it's one of the only ways in the game to shed Corruption points, for one!
+
+## A Sample Adversary
+This is _Brock_, an example of the kind of fellow one might get in a scuffle with:
+
+### Brock: A Regular Guy With No Special Qualities Whatsoever, But He Is Definitely a Real Jerk
+HP: 40
+
+* Mobile: If there is nobody to hit in Brock's zone, Brock will move 1 space towards any player on his turn.
+* Minor Arcana: Do 6 melee damage.
+* Major Arcana: Generate 6 shields.
