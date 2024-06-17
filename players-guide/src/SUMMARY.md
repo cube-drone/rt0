@@ -11,6 +11,7 @@
   - [IV - The Emperor](./player/arcana/4_the_emperor.md)
   - [V - The Hierophant](./player/arcana/5_the_hierophant.md)
   - [VI - The Lovers](./player/arcana/6_the_lovers.md)
+  - [ED - Eddy](./player/arcana/eddy.md)
 - [Corruption Points](./player/corruption.md)
 - [Skill Checks](./player/skill_checks.md)
 - [Combat](./player/combat.md)
@@ -24,6 +25,8 @@
 - [Introduction](./gm/introduction.md)
 - [Locations](./gm/locations.md)
  - [Swords](./gm/locations/swords.md)
+ - [Cups](./gm/locations/cups.md)
+- [Factions](./gm/factions.md)
 ----------
 # Developer's Notes
 - [Mechanics](./dev/mechanics.md)

@@ -1,7 +1,7 @@
 # Combat
 Combat is triggered any time the players get into a scuffle with an adversary or adversaries.
 
-The goal of Combat is to deal damage to Adversaries until they stop fighting.
+The goal of Combat is to deal damage to adversaries until they stop fighting.
 
 ## Summary
 Players and adversaries draw hands of cards, then play them into a variety of "bins" that are available to them, corresponding
@@ -129,7 +129,7 @@ If Slow, when there are 5 cards on Run Away.
 ### Friendship
 Friendship can be marked with up to one Corruption Point.
 
-At the end of the Day, if the box is marked with a Corruption Point, draw a new, empty box on Friendship.
+At the end of the Day, if all boxes are marked with a Corruption Point and the player is not Repulsive, draw a new, empty box on Friendship. If the player is Charming, draw an additional empty box on Friendship.
 
 ### Skill Checks
 Some actions during battle call for Skill Checks. "I hack the computer while the battle is raging on", or "I force open the door".
@@ -166,8 +166,10 @@ However, accumulating Supremacy is good: it's one of the only ways in the game t
 This is _Brock_, an example of the kind of fellow one might get in a scuffle with:
 
 ### Brock: A Regular Guy With No Special Qualities Whatsoever, But He Is Definitely a Real Jerk
-HP: 40
+HP: 30
 
+* Simple: Brock draws 1 card per turn.
 * Mobile: If there is nobody to hit in Brock's zone, Brock will move 1 space towards any player on his turn.
-* Minor Arcana: Do 6 melee damage.
-* Major Arcana: Generate 6 shields.
+* Swords, Wands: "Punch", Do 8 melee damage.
+* Cups, Pentacles: "Dodge", Generate 6 shields.
+* Major Arcana: "Pocket Sand!", Make one player in melee range "Weak" until the beginning of Brock's next turn.

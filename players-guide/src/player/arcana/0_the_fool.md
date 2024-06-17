@@ -21,7 +21,7 @@ _Concoct either an unlikely weapon or an unlikely helmet from detritus in the se
 * Place The Fool on the Kitchen Sink.
 * Place any card on either Unlikely Weapon or Unlikely Helmet.
 * At the end of the turn, discard The Fool.
-* Mark 3 Corruption Points on Kitchen Sink to flip it to No More Mister Knife Guy.
+* Mark 3 Corruption Points on Kitchen Sink to gain No More Mister Knife Guy.
 
 #### Item - Unlikely Weapon
 * You cannot play a card on Unlikely Weapon unless through the Kitchen Sink ability.
@@ -61,7 +61,7 @@ _Stop fighting and just laugh for a while._
 * Place The Fool on Laughter, as well as _any other cards from your hand that you choose_.
 * Remove all cards but The Fool from your deck for the remainder of the Day.
 * At the end of the turn, discard The Fool.
-* Mark 3 Corruption Points on Laughter to flip it to Slaughter.
+* Mark 3 Corruption Points on Laughter to gain Slaughter.
 
 #### Slaughter
 _The laughter is growing increasingly deranged and it doesn't seem like you control it anymore._
@@ -83,7 +83,7 @@ _Your fighting style has been described as "unpredictable" and "lurching"_
 * * Gain 2 Shields (Fast: 3 Shields, Slow: 1 Shield), plus one extra damage for every token on Drunk & Disorderly
 * * Add a token to Drunk & Disorderly
 * At the end of the day, remove all tokens from Drunk & Disorderly
-* Mark 3 Corruption Points on Drunk & Disorderly to flip it to Assault & Battery
+* Mark 3 Corruption Points on Drunk & Disorderly to gain Assault & Battery
 
 #### Assault & Battery
 _Your fighting style has been described as "brutal" and "surprising"_

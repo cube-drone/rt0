@@ -34,3 +34,15 @@ themes:
 * fishing, baseball, barbeque
 * leadership
 * making other players more effective
+
+
+### Walk it Off
+* Place The Emperor on Walk it Off.
+* One player may take a single Critical, Major, or Minor Injury and ignore its negative effects _until the end of combat_.
+* At the end of the turn, discard The Emperor.
+* Mark 3 Corruption Points on Walk it Off to gain Play Through the Pain.
+
+#### Play Through The Pain
+* Place The Emperor on Play Through the Pain.
+* All players may take all Critical, Major, or Minor Injuries and ignore their negative effects _until the end of combat_.
+* At the end of the turn, discard The Emperor.

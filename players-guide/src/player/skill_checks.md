@@ -52,9 +52,8 @@ a gold star sticker, a _unicorn sticker_, a "good work!", whatever floats your b
 The chosen skills are the player's Chosen Skills.
 Any Skill Check that the player performs against a Chosen Skill becomes easier
 by one rank: an Impossible check becomes Hard, a Hard check becomes Medium, and so on.
-(See "[Skill Checks](#skill-checks)" for more information on this.)
 
-A player must Cross Out 1 skills. _Any_ check against a Crossed Out Skill becomes Impossible for the player.
+A player must Cross Out 1 skill. _Any_ check against a Crossed Out Skill becomes Impossible for the player.
 Cross Out a skill by drawing a line through it, then writing "Fail" next to it.
 
 * FINANCIAL AID - Empathy, Perception & Danger Sense (Fast / Lucky)
@@ -74,7 +73,7 @@ TODO::FILLIN
 
 ### Determining the Difficulty of a Skill Check
 
-* Automatic: Breathing. Walking.
+* Automatic: Breathing. Walking. (The GM probably should not be calling for Automatic skill checks.)
 * Trivial: Making toast.
 * Easy: Most people could probably do this, most of the time.
 * Medium: A trained person can probably do this, most of the time.
@@ -82,20 +81,49 @@ TODO::FILLIN
 * Unlikely: A world-class sniper making a once-in-a-lifetime shot, over a kilometer away.
 * Impossible: Eating the moon. Jumping into space.
 
+### Inconsequential Skill Checks
+
+In general, the GM should not be calling for skill checks unless there is something at stake.
+
+Sometimes the player will request to perform an action that turns out to have no real stakes:
+this check is Inconsequential.
+
+Inconsequential is not the same as Automatic or Trivial:
+"Breathing" and "walking" are automatic, whereas
+"hacking into a computer that doesn't have any useful secrets on it" or "searching a completely empty room"
+are skills checks that are Hard but Inconsequential.
+
+Depending on how generous the GM is feeling towards the players, if the players seem like they are
+going to spend a lot of time or resources on a check that turns out to be Inconsequential, the GM can
+warn them that this is going to be the case: the check, pass or fail, is unlikely to have a real
+effect on the story. They can even skip the check itself and grant automatic failure or success.
+"You quickly and successfully search the empty room. There is nothing here. It is an empty room."
+
 ### Resolving a Skill Check
 Skill checks are resolved by having the player draw the top card from their decks.
 
 * Automatic: The player can not fail this check. You shouldn't have even made them draw a card.
-* Trivial: Only fails on a Critical Failure.
-* Easy: Success on any card >= 5, or any Major Arcana, otherwise fails
-* Medium: Success on any card >= 10, or any Major Arcana, otherwise fails
-* Hard: Success on any Major Arcana, otherwise fails
-* Unlikely: Success on a Critical Success, otherwise fails
+* Trivial: Only fails on a [Critical Failure](#critical-failure).
+* Easy: Fails on any Minor Arcana <= 5, otherwise succeeds.
+* Medium: Fails on any Minor Arcana <= 10, otherwise succeeds.
+* Hard: Fails on any Minor Arcana, otherwise succeeds.
+* Unlikely: Success on a [Critical Success](#critical-success), otherwise fails
 * Impossible: The player can not succeed at this check. You shouldn't have even made them draw a card.
 
 If the card drawn is a Major Arcana - well, it might trigger a Critical Success or
 Critical Failure.
 
+### Bonus / Penalty
+If the player has a significant, concrete _advantage_ on a skill check - for example,
+deciphering a lab result when they have recently aced a chemistry course covering that
+exact topic, they get a "Bonus" on that check. While they have Bonus,
+they draw two cards and use whichever of the two cards they would prefer.
+
+If the player has a significant, concrete _disadvantage_ on a skill check - for example,
+climbing a wall with a Broken Leg, they get a "Penalty" on that check. While they have Penalty,
+they draw two cards and use whichever card the GM decides is the worst of the two.
+
+Bonus and Penalty cancel one another out, and do not stack.
 
 ### Success
 Simple: whatever the player was trying to achieve? They succeeded. The thing happens.
@@ -104,15 +132,12 @@ The scene continues, the thing having happened.
 ### Failure
 If the player fails a roll, the thing they were trying to achieve? It doesn't happen.
 
-However, the player can negotiate with the GM to convert
-their Failure into a Success At A Terrible Cost.
+The player can spend 1 Corruption Point to retry the check.
 
-The GM can deny this request: No matter _what_ the player spends, they cannot climb
-from the Moon to the Earth by simply rolling an Impossible check and converting their
-Failure to a Success At A Terrible Cost.
-
-### Success At A Terrible Cost.
-(TODO: flesh this out)
+If they retry the check this way 3 times, the GM can allow them to succeed automatically,
+which they should do so long as the check isn't for something ridiculous (players can not,
+under any circumstances, jump from the Moon to the Earth, even with an automatic victory
+on a skill check.)
 
 ### Sometimes There Are Consequences Either Way
 Succeed at breaking down a heavy door? It's possible that the sound of this will
@@ -145,11 +170,26 @@ Certain cards will trigger a Critical Failure:
 * Death is always a Critical Failure.
 * If the Wheel of Fortune is drawn, the player flips a coin: A Tails triggers a Critical Failure.
 
-On a Trivial check, a Critical Failure is just a failure: nothing special happens, but
-it was unlikely that the player would have failed, so that alone is special.
+A Critical Failure indicates that something about the failure was a little
+bit _extra bad_. Whatever the consequences are for failure, really lean into them a little bit.
 
-On other checks, a Critical Failure indicates that something about the failure was a little
-bit _extra bad_. Something goes wrong with this failure.
+### How Much Success/Failure?
+
+If the player needed a face card or Major Arcana to succeed, and they drew a 9, or a 10, that's a
+closer failure than if they had drawn a 1 or a 2. If they needed to draw a Major Arcana and they draw a Magician (2),
+that's a closer success than if they had drawn a Judgement (20).
+
+The GM is free to interpret "close successes" or "close failures" as the player narrowly succeeding
+or failing, if they want. They also _don't have to_, if it doesn't make sense for the check.
+
+### Interpreted Success/Failure
+
+If the GM is able to, they're also encouraged to tie the drawn Tarot card's meaning to the result in some way.
+For example: if the player draws a Chariot and succeeds, outline that the task was difficult but it was possible
+thanks to the player's perserverance. If they draw a Magician and succeed, then the task was technically difficult
+but possible thanks to the player's skill. If they draw a Seven of Swords, and fail, it was because
+they got too greedy and snatched defeat from the jaws of victory. If they draw a Nine of Swords, and fail,
+it was because they were sad that they bought too many swords.
 
 ### Happenstance
 When a Critical Success or Critical Failure is triggered by The Fool or the Wheel of Fortune:
@@ -166,8 +206,22 @@ maybe they accidentally drop a Junior Mint into the chest cavity of their patien
 which _should_ cause major complications but, in an unlikely twist of fate actually
 kills what would otherwise have been a fatal infection.
 
+### Multiple Players Making a Skill Check Together
+Let's imagine that every player is about to search a room, or every player is about to try
+to stealth into a facility, or every player is pulling on a lever to try and move it.
 
-### Helping Another Player With a Skill Check
+This is a "everybody making a skill check together" moment.
 
+#### Only One Player Needs to Succeed ("Searching a Room")
 
-### Everybody Making a Skill Check Together
+If this is the case, than whichever player draws the highest card succeeds "the most" and is the player
+who actually accomplishes the task at hand. If no player succeeds, the whole task fails.
+
+#### Every Player Needs to Succeed ("Sneaking Past Some Executare")
+
+When doing a check like this, only _two_ players need to succeed at the check.
+
+#### One Player Helps Another ("Pulling a Lever")
+
+If the helping player can make an argument for how, exactly, they're helping
+("I'll distract the shopkeeper while Marieta robs him blind!"), grant the player making the check [Bonus](#bonus--penalty).
