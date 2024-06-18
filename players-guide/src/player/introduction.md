@@ -5,7 +5,7 @@ _Seven haunted teenagers must survive one school year on a moonbase with an insa
 Remaining Teenagers: Zero, (or **RT:0** for short), is a sci-fi/fantasy tabletop roleplaying game played with Tarot decks.
 
 In this game, a handful of players will take on the roles of teenagers with mysterious powers,
-while their **GM** (Gamemaster) will help manage the simulation of their school year on the moon.
+while their **GM** (Game Manager) will help manage the simulation of their school year on the moon.
 
 ## Story
 
@@ -131,7 +131,7 @@ any gas station.
 This game features _teenagers dying_. Like, quite a bit and fairly unavoidably.
 
 Beyond that, the content of the game is going to be largely a conversation with
-your Gamemaster. Be sure to familiarize yourselves with the [Safety Tools](./safety.md).
+your GM. Be sure to familiarize yourselves with the [Safety Tools](./safety.md).
 
 ## Disclaimer Vis-a-Vis Occult Shenanigans
 
