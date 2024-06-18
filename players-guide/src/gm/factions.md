@@ -1,5 +1,7 @@
 # Factions
 
+In general, the players will be aligned against _one of the factions at a time_.
+
 ## Swords
 <!--
 Swords are strong against the Heirophant (traditionalist, authoritarian tendencies)
@@ -18,7 +20,7 @@ Executare when they're not around superiors - it's just easier.
 The enforcement arm of Moon Unit Zappa, the Executare are putatively responsible for keeping
 the peace on the Moon.
 
-You'll know them from their crimson utility shirts, blue gloves, and belts well-stocked with
+You'll know them from their crimson utility shirts, baby blue gloves, and belts well-stocked with
 various and sundry weapons - tasers, batons, and pepper spray. They _would_ all carry firearms
 were it not for a handful of incidents early in the moon's history where a suddenly depressurized
 corner of Moon Unit Zappa claimed dozens of lives. Many still carry firearms, anyways.
@@ -65,6 +67,9 @@ He's consistently putting up impressive numbers of imprisonments and executions
 
 He sees pedophiles and junkies wherever he looks, and he looks everywhere.
 
+### Problems
+If the players anger the Executare, they will be branded Criminals, and must take special care
+not to draw attention to themselves lest they attract a cloud of security.
 
 ## Cups
 <!--
@@ -105,6 +110,10 @@ where nobody could harm him, bother him, or even appear on his radar.
 
 His service staff are myriad and tuned exactly to his preferences.
 
+### Problems
+
+If the players anger the Anonymous, they become Invisible: most people won't see or acknowledge their
+existence, making it quite difficult to navigate their day-to-day.
 
 ## Pentacles
 
@@ -116,21 +125,37 @@ a small consortium of companies are allowed to operate and compete on the Moon.
 In a large sense there is no _real_ government on the moon: only the negotiations of the consortium
 boards and CEOs.
 
+But The Company isn't just the folks at the top: anybody who's bought in to the goals and direction
+of the various moon organizations fully, anybody who's _drunk the Kool-Aid_ :tm: so-to-speak, is a
+Company Man - or Company Woman, or Company Enby. The Company would like you to know that it is
+extremely committed to diversity and inclusion, so long as it does not impact the bottom line in
+any measuable way.
+
+A Company Person can be identified by one of a few different uniforms. You'll find them wearing a
+collared shirt and a puffy vest (the chests of finance workers, in particular, tend towards "too chilly"),
+a collared shirt under a thin sweater, a collared blouse (collars are evergreen), a blazer over jeans and a T-shirt (the "business mullet"), or the ever-classic tight black long-sleeved t-shirt with tailored jeans and sneakers.
+
+The color story of Company members tends towards the black, brown, mustard and navy blue.
+
 ### The Ravenous
 
 Unbearably fat demons with coins for eyes, they can eat anything: metal, vehicles, walls - anything.
 
 Coins are the suit of materialism, finances, and practicality - but when their accumulation becomes
-
+//TODO
 
 ### The Devil
 
 WorldWide CEO and charismatic frontwoman Lucy Ferrina.
+// TODO
 
 ### Temperance
 
-???
+// TODO it's a wild stranger who is particularly helpful at dealing with The Company
 
+### Problems
+If the players anger the Company, they will lose access to their bank accounts, and will not be able
+to accumulate or spend any credits while on the station.
 
 ## Wands
 
@@ -157,16 +182,39 @@ As for the many technological marvels promised by Moon Unit Zappa to turn the Mo
 society? Most of them don't work terribly well. Even corporate technology is prone to constant
 malfunction, but SYSDFOSS technology rarely works at all.
 
+SYSDFOSS part-owner/contributors can be identified by their mauve jumpsuits: a color chosen by
+committee to be minimally offensive to the most possible people.
+
 ### The Bound
 
-When Moon Citizens give in to the sense of helplessness
+When Moon Citizens give in to the sense of helplessness engendered by a system designed
+to impede them at every turn, they give their hearts over to The Bound.
 
 ### The Hanged Man
 
+// TODO: incredibly powerful, technically, but utterly unable to help in practice
 
-## Also
+### Problems
 
-### The Ouroborous
+// what happens when you make the local strata angry?
+// fines
+// meetings
+// you find an official looking document on your door that you need to deal with
+
+
+# Also
+
+## The Ouroborous
 
 They legitimately do not exist. They are a fantasy cooked up by the Executare.
 Circles are everywhere because circles are a _commonly used shape_.
+
+However, the anti-Ouroborous conspiracy theory community keeps getting larger and larger.
+These are an ever-increasing number of people shadow-boxing with reality itself and _losing, badly_.
+The wild tales of what the Ouroborous are up to increase in scope and madness on every
+successive iteration: they're Satan worshippers, they control the Earth government, they're
+abusing their mind control powers to sneak pro-Ouroboros messaging into children's
+television programming.
+
+### The Moon
+delusion and madness ahoy

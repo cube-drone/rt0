@@ -23,10 +23,10 @@
 ----------
 # GM's Guide
 - [Introduction](./gm/introduction.md)
+- [Factions](./gm/factions.md)
 - [Locations](./gm/locations.md)
  - [Swords](./gm/locations/swords.md)
  - [Cups](./gm/locations/cups.md)
-- [Factions](./gm/factions.md)
 ----------
 # Developer's Notes
 - [Mechanics](./dev/mechanics.md)
