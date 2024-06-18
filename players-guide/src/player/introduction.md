@@ -7,6 +7,9 @@ Remaining Teenagers: Zero, (or **RT:0** for short), is a sci-fi/fantasy tabletop
 In this game, a handful of players will take on the roles of teenagers with mysterious powers,
 while their **GM** (Game Manager) will help manage the simulation of their school year on the moon.
 
+RT:0 is intended to be played with 3-4 players and one GM.
+It might also work with other player counts!
+
 ## Story
 
 Paradise Lua is the first ever moon colony. Fully privately funded and operating outside of the
