@@ -1,4 +1,4 @@
-# Injuries & Healing
+# Injuries, Healing, and Death
 
 When players take HP damage in combat, they recover it as soon as the combat is resolved:
 they might be scraped up but this is accounted for in the player's natural resilience.
@@ -66,8 +66,6 @@ one might fail at preparing raw meat and end up with *Upset Stomach / Farts Ahoy
 If a player receives a second Major injury while they already have a Major Injury, instead give them
 a Critical Injury.
 
-Generally, the AID or MISC check to downgrade Major injuries to Minor ones is Hard, at least.
-
 ### Broken Arm
 * While you have a Broken Arm, you are `Weak`.
 * This overrides any character traits you might already have (if you were Strong, now you are Weak).
@@ -131,6 +129,23 @@ Generally, the AID or MISC check to downgrade Major injuries to Minor ones is Ha
 ## Death
 Death is entirely optional! Players can, of course, always take more corruption to avoid this unfortunate result.
 
-The rules for player death are, unfortunately, only available to the GM.
+The exact rules for player death are, unfortunately, only available to the GM.
+
 Be assured, however, that this player character will no longer remain playable.
+
 The amount of corruption the player has taken on _will_ be factored in.
+
+## Full Corruption
+Again, exactly what happens when there are no Corruption spaces left to fill on the character sheet remains a mystery,
+for now, but presume that going far enough down this path will end up at a point where the character becomes
+no longer playable.
+
+## Eddy, and Creating a New Player Character
+
+If a player doesn't have access to a playable character for one reason or another
+(Death, Full Corruption, heck, even simple unconsciousness or being trapped in a room somewhere), they can grab
+ an [Eddy](./arcana/eddy.md). Eddy is a low-impact temporary player character designed for just such an occasion!
+
+ If the player would like to continue, with a new Player Character, they must choose a new Major Arcana.
+ A pod containing their player is _shot on to the moon_. If a NPC with their same arcana exists, the NPC is fated
+ to die within the fortnight.

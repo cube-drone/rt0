@@ -3,6 +3,7 @@
 # Player's Guide
 - [Introduction](./player/introduction.md)
 - [Safety Tools & Session Zero](./player/safety.md)
+- [Corruption Points](./player/corruption.md)
 - [Creating a Character](./player/creation.md)
 - [Choosing a Major Arcana](./player/choosing_major_arcana.md)
   - [0 - The Fool](./player/arcana/0_the_fool.md)
@@ -13,11 +14,10 @@
   - [V - The Hierophant](./player/arcana/5_the_hierophant.md)
   - [VI - The Lovers](./player/arcana/6_the_lovers.md)
   - [ED - Eddy](./player/arcana/eddy.md)
-- [Corruption Points](./player/corruption.md)
 - [Skill Checks](./player/skill_checks.md)
 - [Combat](./player/combat.md)
 - [Magic](./player/magic.md)
-- [Injuries & Healing](./player/injuries.md)
+- [Injuries, Healing & Death](./player/injuries.md)
 - [Lore](./player/lore.md)
 - [Glossary](./player/glossary.md)
 ----------

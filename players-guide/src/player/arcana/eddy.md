@@ -4,6 +4,8 @@ Eddy is not so much a chooseable, playable major arcana as they are a temporary 
 for players who maybe only intend to stay for a single session, or for players who've died and
 would like to participate in the rest of the session as a temporary character.
 
+The GM is encouraged to have an Eddy or two tucked away, for a rainy day.
+
 Eddy is a friendly robot who bumbles along and helps out the players.
 
 Eddies are sentient and cheerfully desire to help out, but bumbling.
