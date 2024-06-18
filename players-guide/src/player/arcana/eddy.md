@@ -6,6 +6,8 @@ would like to participate in the rest of the session as a temporary character.
 
 Eddy is a friendly robot who bumbles along and helps out the players.
 
+Eddies are sentient and cheerfully desire to help out, but bumbling.
+
 Eddy is a nickname: Eddy's full name is Ed25519, but they go by "Eddy" for short.
 
 Eddy is not the only "Eddy" - there are dozens of Eddy-class robots who might stop in and help the players out.
@@ -35,11 +37,11 @@ Eddy is not the only "Eddy" - there are dozens of Eddy-class robots who might st
 
 ## Skills
 
-Each Eddy can choose only one Skill.
+Each Eddy can choose only one Skill. That Skill is related to the automated task they perform around Paradise Lua.
 
 ## Combat
 
-Combat scaling doesn't apply to Eddies: if there are 3 players and 2 Eddies, the combat should be designed for 2 Eddies.
+Combat scaling doesn't apply to Eddies: if there are 3 players and 2 Eddies, the combat should be designed for 3 players.
 
 ## Shared Deck
 

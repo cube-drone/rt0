@@ -2,6 +2,7 @@
 
 # Player's Guide
 - [Introduction](./player/introduction.md)
+- [Safety Tools & Session Zero](./player/safety.md)
 - [Creating a Character](./player/creation.md)
 - [Choosing a Major Arcana](./player/choosing_major_arcana.md)
   - [0 - The Fool](./player/arcana/0_the_fool.md)
@@ -18,7 +19,6 @@
 - [Magic](./player/magic.md)
 - [Injuries & Healing](./player/injuries.md)
 - [Lore](./player/lore.md)
-- [Abilities](./abilities/index.md)
 - [Glossary](./player/glossary.md)
 ----------
 # GM's Guide

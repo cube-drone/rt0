@@ -1,39 +1,52 @@
 # Introduction
 
-_Twenty-one haunted teenagers must survive one school year alone on a moonbase with an insane computer._
+_Seven haunted teenagers must survive one school year on a moonbase with an insane computer._
 
 Remaining Teenagers: Zero, (or **RT:0** for short), is a sci-fi/fantasy tabletop roleplaying game played with Tarot decks.
 
 In this game, a handful of players will take on the roles of teenagers with mysterious powers,
 while their **GM** (Gamemaster) will help manage the simulation of their school year on the moon.
 
+## Story
+
+Paradise Lua is the first ever moon colony. Fully privately funded and operating outside of the
+boundaries of any government entity,  it was marketed as both a luxurious
+land-ownership opportunity for the hyper rich and a brave new frontier for the common man.
+After it's founding more than 15 years ago, however, news and footage from Paradise Lua has trailed off.
+Nobody seems interested in space anymore. What happened up there?
+
+Then, Paradise Lua quietly announced their ACCELER8 program. 8 exceptional teenagers from Earth would
+be invited to a prestigious private academy on the moon: The Zakharov Institute.
+It made the news, and thousands of teenagers applied, but only 8 were chosen.
+
+1 died in transit.
+
+The remaining teenagers must survive their school year on Paradise Lua.
+
+Bad News: Paradise Lua is a dangerous place.
+
+Good News: The teenagers quickly discover reservoirs of inexplicable psychic powers.
+
+Bad News: Using these powers comes at a terrible cost.
+
 ## Vibe & Inspiration Word Cloud:
 
 ![moon's haunted](images/moonhaunted.jpg)
 
+* Someone needed to write a game that uses a Tarot deck as a resolution mechanism.
 * Moon. Insane computer. Cassette futurism.
-* Spelunking through abandoned visions of a better future.
+* Hex-crawl spelunking through abandoned visions of a better future.
 * Slay the Spire (the video game).
 * Citizen Sleeper (the video game).
-* Retro-tech. Cult. Conspiracy. Paranoia (the RPG).
-* Paranoia (the concept). Heart (the RPG).
+* Retro-tech. Cult. Conspiracy.
+* Paranoia (the RPG). Paranoia (the concept).
+* Heart (the RPG).
 * Danganronpa. Persona. The SCP Foundation.
 * Neil Gaiman (the human being). Charles Stross (also a human being).
 * Tarot. Magic powers. Haunted. Apocalyptic.
 * Inscrutable rules that you _must_ follow.
-* Coming-of-age. Redemption.
 * Facing god and walking backwards into hell.
-* Sandwiches.
-
-## Story
-TODO::
-
-* teenagers on the moon
-* in a moonbase built a long time ago
-* don't remember the last month of their lives
-* sinister computer makes them follow rules, play stupid games
-* they think it's a school, but it's a prison
-* the people who stranded them here hoped it would be sufficient
+* Coming-of-age. Redemption.
 
 ## A Quick Overview of Gameplay
 
@@ -56,15 +69,9 @@ These Tarot decks can be _unique_ and _interesting_ (if players wish to buy fanc
 but the game is planned around the standard, public-domain
 [78-card Rider Waite Tarot](https://en.wikipedia.org/wiki/Rider%E2%80%93Waite_Tarot) -
 if you _do_ choose to use an unusual deck, make sure it has 78 cards, and if it makes any substititions for the original deck
-(say, "coins" instead of "pentacles"), make sure you know what they are.
+("coins" instead of "pentacles" is common), make sure you know what they are.
 
-if there are shared card pools? (TODO: are there?)
-The game is _slightly easier to play_ if each deck is distinguishable from one another in some way.
-
-if there are NPC checks? (TODO: are there?)
 The gamemaster should also have a deck of tarot cards.
-
-The gamemaster should have a single coin, with a Heads side and a Tails side.
 
 Each player should have a large, colorful, permanent pen or marker.
 A different color for each player is thematically appropriate but not strictly necessary.
@@ -134,3 +141,10 @@ occult beliefs which are not taken terribly _seriously_.
 If you are a deep believer in these concepts, either out of religious aversion
 to them, or spiritual attraction to them, elements of this game may not
 be up your alley.
+
+## Contribution:
+
+Remaining Teenagers: Zero is an open RPG.
+It is released under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Source code for this book is available on [GitHub](https://github.com/cube-drone/rt0).

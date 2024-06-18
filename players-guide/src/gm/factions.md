@@ -17,13 +17,13 @@ In their employee manual they are instructed to always use the term "Executive L
 Private Security & Enforcement" in full, but even the Executare have taken to calling themselves
 Executare when they're not around superiors - it's just easier.
 
-The enforcement arm of Moon Unit Zappa, the Executare are putatively responsible for keeping
+The enforcement arm of Paradise Lua, the Executare are putatively responsible for keeping
 the peace on the Moon.
 
 You'll know them from their crimson utility shirts, baby blue gloves, and belts well-stocked with
 various and sundry weapons - tasers, batons, and pepper spray. They _would_ all carry firearms
 were it not for a handful of incidents early in the moon's history where a suddenly depressurized
-corner of Moon Unit Zappa claimed dozens of lives. Many still carry firearms, anyways.
+corner of Paradise Lua claimed dozens of lives. Many still carry firearms, anyways.
 
 Most of the Executare believe that the Moon is controlled by a fanciful conspiracy called
 "The Ouroborous", and regard anything with a circle on it a sign of the
@@ -104,7 +104,7 @@ people close themselves off to these things.
 
 Herman Ito, reclusive billionaire. A small, old man with round sunglasses.
 Owner of, among others, Itophonic Headphones, Ito Getaways, ItoVR,
-He wasn't the face of the Moon Unit Zappa project, but he was always
+He wasn't the face of the Paradise Lua project, but he was always
 the financial backing. His goal was to completely insulate himself from humanity, to create a sanctuary
 where nobody could harm him, bother him, or even appear on his radar.
 
@@ -119,7 +119,7 @@ existence, making it quite difficult to navigate their day-to-day.
 
 ### The Company
 
-Moon Unit Zappa was originally formed by WorldWide, but it is not operated as a total monopoly:
+Paradise Lua was originally formed by WorldWide, but it is not operated as a total monopoly:
 a small consortium of companies are allowed to operate and compete on the Moon.
 
 In a large sense there is no _real_ government on the moon: only the negotiations of the consortium
@@ -161,7 +161,7 @@ to accumulate or spend any credits while on the station.
 
 ### The System
 
-The democratic government of Moon Unit Zappa has been cordoned off to one co-operatively owned company,
+The democratic government of Paradise Lua has been cordoned off to one co-operatively owned company,
 "System for Democracy, Freedom, and Open Source Software", SYSDFOSS, that argues amongst itself ineffectually in a loop, seemingly eternally, and which rarely accomplishes anything.
 
 SYSDFOSS has been made broadly responsible for filling in the cracks of society left by the large
@@ -178,11 +178,11 @@ completely impossible.
 The bureaucratic procedures necessary for SYSDFOSS to accomplish _anything_ seem insurmountably
 complicated and self-referential.
 
-As for the many technological marvels promised by Moon Unit Zappa to turn the Moon into a utopian
+As for the many technological marvels promised by Paradise Lua to turn the Moon into a utopian
 society? Most of them don't work terribly well. Even corporate technology is prone to constant
 malfunction, but SYSDFOSS technology rarely works at all.
 
-SYSDFOSS part-owner/contributors can be identified by their mauve jumpsuits: a color chosen by
+SYSDFOSS part-owner/contributors can be identified by their mauve jumpsuits: a color and cut chosen by
 committee to be minimally offensive to the most possible people.
 
 ### The Bound
@@ -214,7 +214,8 @@ These are an ever-increasing number of people shadow-boxing with reality itself 
 The wild tales of what the Ouroborous are up to increase in scope and madness on every
 successive iteration: they're Satan worshippers, they control the Earth government, they're
 abusing their mind control powers to sneak pro-Ouroboros messaging into children's
-television programming.
+television programming. Many of the anti-Ouroborous are convinced that the Earth is flat,
+despite being able to look at it from the Moon's viewports.
 
 ### The Moon
 delusion and madness ahoy
