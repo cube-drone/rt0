@@ -45,12 +45,12 @@ themes
  * You can not use And For My Next Trick again, today.
 
 ### Miser's Dream
-// generate some money?! something with a lot of coins? :D
+// generate some money?! something with a lot of coins? all suits can also be pentacles? :D
 
-#### Devil's Torture Chamber
-
-### Cups and Balls
+#### Cups and Balls
 // all suits now also count as cups?
+
+### Devil's Torture Chamber
 
 #### Three Card Monte
 
