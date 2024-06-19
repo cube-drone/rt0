@@ -20,6 +20,14 @@
 - [Injuries, Healing & Death](./player/injuries.md)
 - [Money & Equipment](./player/equipment.md)
 - [Lore](./player/lore.md)
+- [Card Index](./player/card_index.md)
+  - [0 - The Fool](./player/card_index/0_fool.md)
+  - [1 - The Magician](./player/card_index/1_magician.md)
+  - [2 - The High Priestess](./player/card_index/2_high_priestess.md)
+  - [3 - The Empress](./player/card_index/3_the_empress.md)
+  - [4 - The Emperor](./player/card_index/4_the_emperor.md)
+  - [5 - The Hierophant](./player/card_index/5_the_hierophant.md)
+  - [6 - The Lovers](./player/card_index/6_the_lovers.md)
 - [Glossary](./player/glossary.md)
 ----------
 # GM's Guide
