@@ -25,8 +25,8 @@ themes
  * Mark 3 Corruption points on Pull a Rabbit Out of a Hat to flip it to Saw a Woman in Half
 
 #### Saw a Woman in Half
- * Place one card of each suit on Pull a Rabbit Out of a Hat
- * Cards sitting on Pull a Rabbit Out of a Hat remain there.
+ * Place one card of each suit on Saw a Woman in Half
+ * Cards sitting on Saw a Woman in Half remain there.
  * When all four cards are present
  * * Discard the lowest two cards
  * * Use the highest ranked two cards as Magicians for the purpose of triggering spells.

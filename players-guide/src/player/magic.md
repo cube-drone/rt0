@@ -136,12 +136,13 @@ Only players with Charming may learn Aquarius.
 
 ### Combat - Heal
 * Place The Magician on Aquarius.
-* You OR one ally in your Zone regain all hit points. (Clever: You AND one ally regain all hit points.)
+* You OR one ally in your Zone regain all hit points OR downgrade a Major Injury to its associated Minor Injury or remove a Minor Injury entirely.
 * At the end of the turn, discard The Magician.
-* Aquarius cannot be used again this combat.
+* Aquarius cannot be used again this Day.
 
 ### Skill - Heal
-// TODO: we need injury rules before healing makes sense
+* You can flip Aquarius upside-down to downgrade a Major Injury to its associated Minor Injury, or remove a Minor Injury entirely.
+* Once Pisces is upside-down, it can not be used in this way until the next Day
 
 ## ♍︎ Virgo - Maiden
 Only players with Charming may learn Virgo.

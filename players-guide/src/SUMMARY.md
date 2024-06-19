@@ -18,6 +18,7 @@
 - [Combat](./player/combat.md)
 - [Magic](./player/magic.md)
 - [Injuries, Healing & Death](./player/injuries.md)
+- [Money & Equipment](./player/equipment.md)
 - [Lore](./player/lore.md)
 - [Glossary](./player/glossary.md)
 ----------

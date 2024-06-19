@@ -55,14 +55,14 @@ Bad News: Using these powers comes at a terrible cost.
 
 In a modern table-top roleplaying game, players design a "character" for themselves, choosing their attributes and qualities.
 
-The **GM** will describe a scene to the players, and then players will respond by describing
+The **GM** (Game Manager) will describe a scene to the players, and then players will respond by describing
 how their character would respond to that situation.
 
 While players are exploring the moon, they will manage most of their interactions using [Skill Checks](./skill_checks.md),
 short interactions where they draw cards from their Tarot decks to determine success or failure at a variety of tasks.
 
 Periodically, players will enter [Combat](./combat.md), where they will draw hands of cards and play them to
-deal damage and block damage to a variety of _moon adversaries_.
+deal damage to and block damage from a variety of _moon adversaries_.
 
 ## Supplies
 
