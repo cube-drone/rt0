@@ -1,7 +1,10 @@
 # Magic
-Every player starts the game with 1 spell, except for Dull players, who start the game with no spells and cannot learn spells.
+Every player starts the game with 1 spell, except for **Dull** players,
+who start the game with no spells and cannot learn spells.
 
 Once a spell is chosen, no other players can choose that spell.
+
+The set of spells that no player has chosen remains in the game: some effects take advantage of the set of unchosen spells.
 
 ## ♈︎ Aries - Ram
 
@@ -119,11 +122,11 @@ Only players with Clever can learn Scorpio.
 * This hand can lift up to 5lbs.
 
 ## ♓︎ Pisces - Fish
-Players with Foolish cannot learn Pisces.
+Players with **Foolish** cannot learn Pisces.
 
 ### Combat - Fishy
 * Place a Magician on Pisces.
-* Search your deck for a card (clever: 2 cards), place it in your hand, and then shuffle the deck.
+* Search your deck for a card (Clever: 2 cards), place it in your hand, and then shuffle the deck.
 * At the end of the turn, discard The Magician.
 
 ### Skill - Grappling Hook
@@ -132,7 +135,7 @@ Players with Foolish cannot learn Pisces.
 * Once Pisces is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ♒︎ Aquarius - Water-carrier
-Only players with Charming may learn Aquarius.
+Only players with **Charming** may learn Aquarius.
 
 ### Combat - Heal
 * Place The Magician on Aquarius.
@@ -145,7 +148,7 @@ Only players with Charming may learn Aquarius.
 * Once Pisces is upside-down, it can not be used in this way until the next Day
 
 ## ♍︎ Virgo - Maiden
-Only players with Charming may learn Virgo.
+Only players with **Charming** may learn Virgo.
 
 ### Combat - Charm
 * Place The Magician on Virgo.
@@ -165,13 +168,13 @@ Only players with Charming may learn Virgo.
 * Once Virgo is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ⛎ Ophiuchus - Snake Handler
-Only players with Charming may learn Ophiuchus.
+Only players with **Charming** may learn Ophiuchus.
 
-* At The Beginning of Every Day, Draw 3 random unclaimed Zodiac starting spells and stack them under Ophiuchus.
+* At The Beginning of Every Day, Draw 3 random unclaimed spells, look at them, and stack them under Ophiuchus.
 
 ### Combat - Shuffle
 * Place The Magician on Ophiuchus.
-* Choose one of the 3 spells under Ophiuchus. Treat Ophiuchus as that spell for the remainder of combat.
+* Choose one of the 3 spells under Ophiuchus. Cast that spell (as if a Magician had been played on it) and treat Ophiuchus as that spell until the end of combat.
 
 ### Skill - Shuffle
 * Choose one of the 3 spells under Ophiuchus. Treat Ophiuchus as that spell until the next Combat, or the end of the Day.
