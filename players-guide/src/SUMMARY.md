@@ -28,6 +28,11 @@
   - [4 - The Emperor](./player/card_index/4_the_emperor.md)
   - [5 - The Hierophant](./player/card_index/5_the_hierophant.md)
   - [6 - The Lovers](./player/card_index/6_the_lovers.md)
+  - [7 - The Chariot](./player/card_index/7_the_chariot.md)
+  - [8 - Strength](./player/card_index/8_strength.md)
+  - [9 - The Hermit](./player/card_index/9_hermit.md)
+  - [10 - Wheel of Fortune](./player/card_index/10_wheel_of_fortune.md)
+  - [11 - Justice](./player/card_index/11_justice.md)
 - [Glossary](./player/glossary.md)
 ----------
 # GM's Guide
