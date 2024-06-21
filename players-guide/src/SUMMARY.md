@@ -33,6 +33,12 @@
   - [9 - The Hermit](./player/card_index/9_hermit.md)
   - [10 - Wheel of Fortune](./player/card_index/10_wheel_of_fortune.md)
   - [11 - Justice](./player/card_index/11_justice.md)
+  - [12 - The Hanged Man](./player/card_index/12_the_hanged_man.md)
+  - [13 - Death](./player/card_index/13_death.md)
+  - [14 - Temperance](./player/card_index/14_temperance.md)
+  - [15 - The Devil](./player/card_index/15_the_devil.md)
+  - [16 - The Tower](./player/card_index/16_the_tower.md)
+  - [17 - The Star](./player/card_index/17_the_star.md)
 - [Glossary](./player/glossary.md)
 ----------
 # GM's Guide

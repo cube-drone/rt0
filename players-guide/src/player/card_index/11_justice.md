@@ -46,6 +46,9 @@ a _reasonable amount of vengeance_. An eye for an eye. Reciprocal justice.
 Thus the scales: for every harm done to you, an equivalent amount of harm must be done in turn.
 It's only fair.
 
+Some people believe in non-retributive justice: restorative justice. Forgiveness, rehabilitation.
+Doing what's best for _society_. But that doesn't satisfy our lust for vengeance.
+
 Jurisprudence is supposed to sound clinical, boring, legal, but at it's heart,
 it is a tall frosty Big Gulp full of _violence_.
 
