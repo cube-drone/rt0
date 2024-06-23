@@ -41,10 +41,51 @@ Eddy is not the only "Eddy" - there are dozens of Eddy-class robots who might st
 
 Each Eddy can choose only one Skill. That Skill is related to the automated task they perform around Paradise Lua.
 
+## Shared Deck
+
+You may not have enough tarot decks to support all Eddies: for this reason, none of their abilities are deck-modifying. They can just draw cards from the DM deck.
+
 ## Combat
 
 Combat scaling doesn't apply to Eddies: if there are 3 players and 2 Eddies, the combat should be designed for 3 players.
 
-## Shared Deck
+Eddies are nonthreatening and Adversaries won't target them unless no other targets are available.
 
-You may not have enough tarot decks to support all Eddies: for this reason, none of their abilities are deck-modifying. They can just draw cards from the DM deck.
+Eddies have 20 Hit Points, like players do.
+
+In every combat phase, Eddies go before players, draw a 5 card hand, and can play _only two cards out of the five_, discarding
+the other three.
+
+### Any Card:
+* Move 1 zone.
+
+### Sword or Wand:
+* Deal 2 melee damage.
+
+### Cup or Pentacle:
+* Gain 2 shields, OR give another player in the same zone 2 shields.
+
+### Major Arcana:
+*
+
+### Tower:
+* Explode, dealing 5 magic ranged damage to everyone, friend or foe, in the same zone.
+* Take 20 Hit Points of damage.
+
+### High Priestess:
+* Reveal an Adversary's Intent, if it's hidden.
+
+### The Hierophant:
+* Choose a player: they may draw an extra card.
+
+### The Chariot:
+* Move to any position on the map.
+
+## There's Always More Eddies
+
+If an Eddy is destroyed (either in combat or as a result of poor decision making in a non-combat scene), an essentially
+identical Eddy will roll up in the next scene (after the combat, or in the next room) and introduce themself to the players.
+
+_"Hi, I'm Eddy 2!"_
+
+_"Hi, I'm Eddy 3!"_

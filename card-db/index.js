@@ -25,7 +25,7 @@ const {
 
 const { Strike, Defend, Concentrate, Tower, Foolish } = require('./abilities.js');
 const { Leo, Cancer, Aries, Taurus, Gemini, Capricorn, Scorpio, Libra } = require('./spells.js');
-const { KitchenSink, Laughter } = require('./fool.js');
+const { KitchenSink, KnifeGuy, Laughter, Slaughter, Blackjack, HitMe } = require('./fool.js');
 
 function shuffle(array) {
 // Fisher-Yates shuffle algorithm
@@ -51,6 +51,14 @@ class PlayerState {
         this.priority = priority ?? 'default'; // random priority just chooses a random ability to play
 
         this.tags = []; // things like "weak", "strong", "fast", "slow", etc.
+
+        this.corruption = 1;
+        if(this.tags.includes('charming')){
+            this.corruption = 2;
+        }
+        if(this.tags.includes('repulsive')){
+            this.corruption = 0;
+        }
 
         this.damageMultiplier = 1;
         this.shieldMultiplier = 1;
@@ -266,7 +274,7 @@ class PlayerState {
 }
 
 let goodTags = ['strong', 'fast', 'wise', 'clever', 'lucky', 'charming'];
-let badTags = ['weak', 'slow', 'foolish', 'dull', 'unlucky', 'boorish'];
+let badTags = ['weak', 'slow', 'foolish', 'dull', 'unlucky', 'repulsive'];
 
 function generateBrick(){
     // "brick" is the most basic character, with no special abilities
@@ -355,9 +363,6 @@ function generateFool({tags}){
     brick.addAbility(new Concentrate());
     brick.addAbility(new Tower());
 
-    //brick.addAbility(new KitchenSink());
-    //brick.addAbility(new Laughter());
-
     let defaultSpells = [
         new Leo(),
         new Cancer(),
@@ -378,6 +383,13 @@ function generateFool({tags}){
     if(tags.includes("foolish")){
         brick.addAbility(new Foolish());
     }
+
+    brick.addAbility(new KitchenSink());
+    brick.addAbility(new KnifeGuy());
+    brick.addAbility(new Laughter());
+    brick.addAbility(new Slaughter());
+    brick.addAbility(new Blackjack());
+    brick.addAbility(new HitMe());
 
     brick.buildDeck();
 
@@ -428,7 +440,6 @@ function generateMagician({tags}){
 
     return brick;
 }
-
 
 
 function generateUsefulnessHistogram(playerFn, args){
@@ -496,6 +507,15 @@ displayUsefulnessHistogram(histogram);
 histogram = generateUsefulnessHistogram(generateFool, {tags: []});
 displayUsefulnessHistogram(histogram);
 
+histogram = generateUsefulnessHistogram(generateFool, {tags: ['charming', 'dull']});
+displayUsefulnessHistogram(histogram);
+histogram = generateUsefulnessHistogram(generateFool, {tags: ['fast', 'repulsive']});
+displayUsefulnessHistogram(histogram);
+histogram = generateUsefulnessHistogram(generateFool, {tags: ['clever', 'repulsive']});
+displayUsefulnessHistogram(histogram);
+histogram = generateUsefulnessHistogram(generateFool, {tags: ['strong', 'dull']});
+displayUsefulnessHistogram(histogram);
+
 histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: ["clever"]});
 histogram.name = "clever";
 displayUsefulnessHistogram(histogram);
@@ -522,4 +542,3 @@ for(let tag of goodTags){
     displayUsefulnessHistogram(histogram);
 }
 */
-

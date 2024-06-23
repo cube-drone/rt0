@@ -25,15 +25,12 @@ A sufficient number of Corruption points will permanently retire the Player, alt
 ## The Order
 A Round of battle is a cycle where every participant gets one turn.
 
-The Round is divided into three Periods.
+First, an Intent is drawn for every Adversary. This is a card that determines what the Adversary will
+do on their turn. Some Adversaries draw Intents face-up, some draw Intents face down.
 
-At the beginning of the Round, the GM will draw cards to determine _what each adversary will do, this turn_. This is public knowledge.
+Then, players each take a turn. Fast players first, then players without Fast or Slow, then Slow players.
 
-In the Fast Period, all Fast players take a turn, then all Fast adversaries act.
-In the Middle Period, all players who aren't Fast or Slow take a turn, then all adversaries who aren't Fast or Slow act.
-In the Slow Period, all Slow players take a turn, then all Slow adversaries act.
-
-Players in the same Period can take their turns simultaneously.
+Finally, each Adversary does whatever their Intent indicates that they will do.
 
 ## Movement
 Whenever a fight is triggered, the room the players are standing in becomes a Battle Arena.
@@ -67,31 +64,28 @@ If the player cannot draw up to 5 cards, they should reshuffle their discard pil
 Every player has The Gutter, a collection of Default Abilities:
 
 ### Unarmed Strike (Melee)
-Place Minor Arcana cards of suit Wands or Swords on Strike.
-Cards sitting on Strike remain there.
-When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Strike and deal 5 Damage, or 2 Ranged Damage.
+* Place Minor Arcana cards of suit Wands or Swords on Strike.
+* Cards sitting on Strike remain there.
+* When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Strike and deal 5 Damage, or 2 Ranged Damage.
 
-If Strong, 7/3 damage.
-If Weak, 3/1 damage.
+* If Strong, 7/3 damage.
+* If Weak, 3/1 damage.
 
 ### Defend
-Place Minor Arcana cards of suit Cups or Pentacles on Defend.
-Cards sitting on Defend remain there.
-When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Defend and generate 5 Shields.
+* Place Minor Arcana cards of suit Cups or Pentacles on Defend.
+* Cards sitting on Defend remain there.
+* When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Defend and generate 5 Shields.
 
-Shields are temporary, and last until the beginning of your next turn. You can spend a Shield rather than losing a Hit Point.
+* Shields are temporary, and last until the beginning of your next turn. You can spend a Shield rather than losing a Hit Point.
 
-If Fast, 7 shields.
-If Slow, 3 shields.
+* If Fast, 7 shields.
+* If Slow, 3 shields.
 
 ### Concentrate
-Place Major Arcana on Concentrate.
-When there are two cards on Concentrate, discard them and draw a new card, immediately.
-
-(note: halving the cost of Concentrate is like being Strong and Fast at the same time)
-
-If Wise, when there are 1 cards on Concentrate.
-If Foolish, when there are 3 cards on Concentrate.
+* Place Major Arcana on Concentrate.
+* When there are two cards on Concentrate, discard them and draw a new card, immediately.
+* If Wise, when there are 1 cards on Concentrate.
+* If Foolish, when there are 3 cards on Concentrate.
 
 ### Discard Pile
 Once there are >= 20 cards in the Discard pile, the Discard pile is shuffled back into the deck.
@@ -112,6 +106,42 @@ Once there are >= 20 cards in the Discard pile, the Discard pile is shuffled bac
 
 If Fast, when there are 1 cards on Movement.
 If Slow, when there are 3 cards on Movement.
+
+### Good Idea!
+* Only players with Charming may use Good Idea!
+* Place The Hierophant on Good Idea!
+* Choose another player: they may draw three extra cards this turn.
+* Discard the card played on Good Idea at the end of the turn.
+
+### Third Eye
+* Only players with Wise may use Third Eye.
+* Place The High Priestess on Third Eye.
+* Reveal a hidden Intent, or force an Adversary to re-draw an intent.
+* Discard the card played on Third Eye at the end of the turn.
+
+### Flex
+* Only players with Strong may use Flex.
+* Place The Emperor on Flex.
+* Any non-magical damage generated this turn is doubled.
+* Discard The Emperor at the end of the turn.
+
+### Blur
+* Only players with Fast may use Blur.
+* Place The Chariot on Blur.
+* Any left-over shields at the end of this turn are rolled over to the next turn.
+* Discard The Chariot at the end of the turn.
+
+### Study
+* Only players with Clever may use Study.
+* Place Hermit on Study.
+* Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest. (This may trigger The Tower.)
+* Discard Hermit at the end of the turn.
+
+### Take a Chance
+* Only players with Lucky may use Take a Chance.
+* Place Wheel of Fortune on Take a Chance.
+* Flip a coin. On a Heads, choose one of Good Idea!, Third Eye, Flex, Blur, or Study, and use that ability as if you had played a card there.
+* Discard Wheel of Fortune at the end of the turn.
 
 ### Run Away
 Place any card on Run Away.

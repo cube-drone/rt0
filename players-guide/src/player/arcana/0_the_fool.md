@@ -58,45 +58,41 @@ _Where do these knives keep coming from? Why do you always seem to have one?_
 ### Laughter
 _Stop fighting and just laugh for a while._
 
-* Place The Fool on Laughter, as well as _any other cards from your hand that you choose_.
+* Place The Fool on Laughter, as well as _any other Minor Arcana from your hand that you choose_.
 * Remove all cards but The Fool from your deck for the remainder of the Day.
+* Deal damage equal to the numerical values of all removed cards.
 * At the end of the turn, discard The Fool.
 * Mark 3 Corruption Points on Laughter to gain Slaughter.
 
 #### Slaughter
 _The laughter is growing increasingly deranged and it doesn't seem like you control it anymore._
 
-* Place The Fool on Slaughter, as well as one additional card from your hand, and take 1 Corruption.
+* Place The Fool on Slaughter, as well as one additional Minor Arcana card from your hand, and take 1 Corruption.
 * Remove the card from your deck permanently.
+* Deal damage equal to five times the numerical value of the removed card.
 * Slaughter can not be used more than once per day.
 * At the end of the turn, discard The Fool.
 
 
-### Drunk & Disorderly
+### Blackjack
 _Your fighting style has been described as "unpredictable" and "lurching"_
 
-* Place Minor Arcana cards of suit Cups or Swords on Drunk & Disorderly.
-* Cards sitting on Drunk & Disorderly remain there.
-* When the sum of the numerical values on the cards reaches (or exceeds) 10:
-* * Discard all cards on Drunk & Disorderly
-* * Deal 2 Damage (Strong: 3 Damage, Weak: 1 Damage), plus one extra damage for every token on Drunk & Disorderly
-* * Gain 2 Shields (Fast: 3 Shields, Slow: 1 Shield), plus one extra damage for every token on Drunk & Disorderly
-* * Add a token to Drunk & Disorderly
-* At the end of the day, remove all tokens from Drunk & Disorderly
-* Mark 3 Corruption Points on Drunk & Disorderly to gain Assault & Battery
+* Place Minor Arcana cards of suit Cups or Swords on Blackjack.
+* Cards sitting on Blackjack remain there.
+* When the sum of the numerical values on the cards reaches (or exceeds) 21:
+* * Discard all cards on Blackjack
+* * Deal 2 Damage (Strong: 3 Damage, Weak: 1 Damage), plus one extra damage for every token on Blackjack
+* * Gain 2 Shields (Fast: 3 Shields, Slow: 1 Shield), plus one extra damage for every token on Blackjack
+* * Add a token to Blackjack
+* At the end of the combat, remove all tokens from Blackjack
+* Mark 3 Corruption Points on Blackjack to gain Hit Me
 
-#### Assault & Battery
+#### Hit Me
 _Your fighting style has been described as "brutal" and "surprising"_
 
-* Place Minor Arcana cards of suit Cups or Swords on Assault & Battery.
-* Cards sitting on Assault & Battery remain there.
-* When the sum of the numerical values on the cards reaches (or exceeds) 10:
-* * Discard all cards on Assault & Battery
-* * Deal 3 Damage (Strong: 4 Damage, Weak: 2 Damage), plus 2 extra damage for every token on Drunk & Disorderly
-* * Gain 3 Shields (Fast: 3 Shields, Slow: 2 Shields), plus 2 extra damage for every token on Drunk & Disorderly
-* * Add a token to Assault & Battery
-* * If there 3 or more tokens on Assault & Battery, take 1 Corruption
-* At the end of the day, remove all tokens from Assault & Battery
+* Place The Fool on Hit Me
+* Take 1 Corruption Point and put 3 tokens on Blackjack
+* Discard The Fool from Hit Me
 
 ### Throwaway Joke
 _Reaching into your side pockets, you retrieve a random object that will either help or hurt._
