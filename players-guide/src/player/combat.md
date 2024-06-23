@@ -113,11 +113,11 @@ If Slow, when there are 3 cards on Movement.
 * Choose another player: they may draw three extra cards this turn.
 * Discard the card played on Good Idea at the end of the turn.
 
-### Third Eye
-* Only players with Wise may use Third Eye.
-* Place The Empress on Third Eye.
+### Feint
+* Only players with Wise may use Feint.
+* Place The Moon on Feint.
 * Reveal a hidden Intent, or force an Adversary to re-draw an intent.
-* Discard the card played on Third Eye at the end of the turn.
+* Discard the card played on Feint at the end of the turn.
 
 ### Flex
 * Only players with Strong may use Flex.
