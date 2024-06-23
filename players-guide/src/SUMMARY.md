@@ -39,6 +39,10 @@
   - [15 - The Devil](./player/card_index/15_the_devil.md)
   - [16 - The Tower](./player/card_index/16_the_tower.md)
   - [17 - The Star](./player/card_index/17_the_star.md)
+  - [18 - The Moon](./player/card_index/18_the_moon.md)
+  - [19 - The Sun](./player/card_index/19_the_sun.md)
+  - [20 - Judgement](./player/card_index/20_judgement.md)
+  - [21 - The World](./player/card_index/21_the_world.md)
 - [Glossary](./player/glossary.md)
 ----------
 # GM's Guide
