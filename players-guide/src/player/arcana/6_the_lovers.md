@@ -1,4 +1,4 @@
-# VI - The Lovers
+# VI - The Lovers / XV - The Devil
 
 there are two of them, and they are in some kind of a relationship: the player plays as both
 siblings, best friends, twins

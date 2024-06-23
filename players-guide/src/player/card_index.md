@@ -1,9 +1,10 @@
-# Card Index
+# A Brief Guide to the Tarot
 
 While every Tarot deck includes a little booklet explaining the cards and their meanings and interpretations,
-they are also included here, for the sake of completeness.
+I have also included one here, for the sake of completeness.
 
-* [Major Arcana](./card_index/major_arcana.md)
+A passing familiarity with some of this stuff may enhance the _thematic resonance_ of various elements of the
+game.
 
 ## A Note on Cartomancy
 
@@ -12,15 +13,15 @@ all the time: with access to a telescope the size of a building and a brain-melt
 it's possible to do things like predict the precise location of stars in the sky years in advance,
 determine the time and location of future eclipses, and predict exactly when the sun will rise and set.
 
-After thousands of years we've found a priesthood who, when they roll the bones and read the tea leaves,
-_actually come out with the correct answer_ on the other side, which is absolutely bananas when you
-think about it. The prognostication olympics have been cancelled because ballistics team took home
+After thousands of years we've finally found a priesthood who, when **they** read the tea leaves,
+_actually come out with the correct answer_. Absolutely bananas.
+The prognostication olympics have been cancelled because ballistics team took home
 every medal for 4 centuries straight. Astrology didn't even have a chance.
 
 Technically, ballistics _should_ be able to tell you which pip
 on a numbered die will come up when you roll the bones, or what the weather will be like tomorrow,
 but when it comes down to complex systems like fluid, or even the bounces of a handful of small rocks,
-chaos theory intervenes to make predictions essentially impossible: most things exist in systems
+chaos intervenes to make predictions essentially impossible: most things exist in systems
 so complex that _ballistics calculations work, but microscopic changes in initial position and velocity
  produce wildly different outcomes_, so models can't reliably produce exact predictions.
 
