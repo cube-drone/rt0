@@ -4,9 +4,8 @@ In general, the players will be aligned against _one of the factions at a time_.
 
 ## Swords
 <!--
-Swords are strong against the Heirophant (traditionalist, authoritarian tendencies)
-and weak against the Magician (thought and mastery) -
-which, I guess, means that they have some armor-piercing/armor-reduction but take extra damage from magic?
+Swords are weak against the Magician (thought and mastery) -
+which, I guess, means that they take extra damage from magic?
 -->
 
 ### The Executare
@@ -74,7 +73,7 @@ not to draw attention to themselves lest they attract a cloud of security.
 ## Cups
 <!--
 Cups are generally weak against all of the Arcana, there are just a lot of them,
-so players with lots of block (The Hierophant) and AoE effects are going to do better in Cups-heavy battles.
+so players with lots of AoE effects are going to do better in Cups-heavy battles.
 -->
 
 ### The Anonymous
@@ -204,18 +203,21 @@ to impede them at every turn, they give their hearts over to The Bound.
 
 # Also
 
-## The Ouroborous
+## The Antiouro
 
-They legitimately do not exist. They are a fantasy cooked up by the Executare.
-Circles are everywhere because circles are a _commonly used shape_.
+The Ouroborous legitimately do not exist. They are a fantasy cooked up by the Executare.
+The secret symbol of the Ouroborous, cicles, are everywhere because circles are a _commonly used shape_.
 
 However, the anti-Ouroborous conspiracy theory community keeps getting larger and larger.
 These are an ever-increasing number of people shadow-boxing with reality itself and _losing, badly_.
+
 The wild tales of what the Ouroborous are up to increase in scope and madness on every
 successive iteration: they're Satan worshippers, they control the Earth government, they're
 abusing their mind control powers to sneak pro-Ouroboros messaging into children's
 television programming. Many of the anti-Ouroborous are convinced that the Earth is flat,
-despite being able to look at it from the Moon's viewports.
+despite being able to _look directly at it_ from the Moon's viewports.
 
 ### The Moon
+
+Lunette Quigley, shaman of the Anti-Ouroborous
 delusion and madness ahoy

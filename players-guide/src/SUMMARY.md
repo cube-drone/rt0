@@ -18,7 +18,6 @@
 - [Magic](./player/magic.md)
 - [Injuries, Healing & Death](./player/injuries.md)
 - [Money & Equipment](./player/equipment.md)
-- [Lore](./player/lore.md)
 - [Playlist](./player/playlist.md)
 - [A Brief Guide to the Tarot](./player/card_index.md)
   - [Swords](./player/card_index/swords.md)
@@ -51,6 +50,7 @@
 ----------
 # GM's Guide
 - [Introduction](./gm/introduction.md)
+- [Lore](./gm/lore.md)
 - [Factions](./gm/factions.md)
 - [Locations](./gm/locations.md)
  - [Swords](./gm/locations/swords.md)
