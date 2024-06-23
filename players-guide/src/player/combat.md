@@ -115,7 +115,7 @@ If Slow, when there are 3 cards on Movement.
 
 ### Third Eye
 * Only players with Wise may use Third Eye.
-* Place The High Priestess on Third Eye.
+* Place The Empress on Third Eye.
 * Reveal a hidden Intent, or force an Adversary to re-draw an intent.
 * Discard the card played on Third Eye at the end of the turn.
 
