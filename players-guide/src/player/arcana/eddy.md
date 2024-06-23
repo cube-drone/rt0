@@ -65,20 +65,31 @@ In every combat phase, Eddies go before players, draw a 5 card hand, and can pla
 * Gain 2 shields, OR give another player in the same zone 2 shields.
 
 ### Major Arcana:
-*
+* Deal 1 melee damage AND give another player in the same zone 1 shield.
 
-### Tower:
+### The Tower:
 * Explode, dealing 5 magic ranged damage to everyone, friend or foe, in the same zone.
 * Take 20 Hit Points of damage.
 
+### The Fool:
+* Choose any Eddy ability, use that ability.
+
 ### High Priestess:
 * Reveal an Adversary's Intent, if it's hidden.
+
+### The Empress / The Emperor:
+* Restore 2 Hit Points to a player in the same zone.
 
 ### The Hierophant:
 * Choose a player: they may draw an extra card.
 
 ### The Chariot:
 * Move to any position on the map.
+
+### Wheel of Fortune:
+* Flip a coin.
+* On a Heads, choose any Eddy ability, use that ability.
+* On a Tails, trigger The Tower.
 
 ## There's Always More Eddies
 

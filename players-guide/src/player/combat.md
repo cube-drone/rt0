@@ -144,17 +144,14 @@ If Slow, when there are 3 cards on Movement.
 * Discard Wheel of Fortune at the end of the turn.
 
 ### Run Away
-Place any card on Run Away.
+* Place any card on Run Away.
 
-Once a card has been placed on Run Away, the next card must be either one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.
-(So, for example, when a 5 of Swords and 6 of Pentacles are placed on Run Away, the next card must be a 4, or 7, of any Suit.)
-When there are 4 cards on Run Away, you may either:
-
-* Move yourself to any unoccupied Zone in the current Battle Arena.
-* Remove yourself from battle entirely. Your participation in this combat is over! The GM decides where you are hiding.
-
-If Fast, when there are 3 cards on Run Away.
-If Slow, when there are 5 cards on Run Away.
+* Once a card has been placed on Run Away, the next card must be either one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.
+* (So, for example, when a 5 of Swords and 6 of Pentacles are placed on Run Away, the next card must be a 4, or 7, of any Suit.)
+When there are 4 cards (Fast: 3 / Slow: 5) on Run Away, you may either:
+* * Move yourself to any unoccupied Zone in the current Battle Arena.
+* * Remove yourself from battle entirely. Your participation in this combat is over! The GM decides where you are hiding.
+* Then: Discard all cards on Run Away
 
 ### Friendship
 Friendship can be marked with up to one Corruption Point.

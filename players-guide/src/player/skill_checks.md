@@ -39,8 +39,8 @@ As an example, a player might be Strong and Clever, but not Lucky, or they might
 
 ## Lucky or Unlucky
 
-If a player is Lucky, remove the Tower and all Aces and Twos from their deck.
-If a player is Unlucky, remove the Fool and all Kings and Queens from their deck.
+If a player is Lucky, remove all Aces and Twos from their deck.
+If a player is Unlucky, remove all Kings and Queens from their deck.
 
 ## Skills
 
@@ -72,7 +72,62 @@ Cross Out a skill by drawing a line through it, then writing "Fail" next to it.
 ## Skill Checks
 
 ### Determining the Skill for a Skill Check
-TODO::FILLIN
+What is the task the player is hoping to perform, and under which skill does it fit?
+
+Here are some examples of tasks that might fit under each category:
+
+#### FINANCIAL AID - Empathy, Perception & Danger Sense
+* Determining if someone is lying to you.
+* Searching a room for traps.
+* Noticing something bad about to happen to you.
+* Helping someone work through an emotional issue.
+
+#### DRAMA - Deception, Persuasion & Performance
+* Convincingly lying to someone else.
+* Talking.
+* Disguising yourself as someone else.
+* Performing in a musical.
+* Forging a note.
+* Painting.
+* Knowing stuff about pop culture and art history.
+
+#### SCI - Computers, Chemistry, Biology, Physics & Math
+* Hacking into a computer to gain some secrets.
+* An incredible bank shot in pool.
+* Picking out the drugs least likely to harm you while robbing a pharmacy.
+* Guessing valuable information about non-human Adversaries.
+
+#### FREE BLOCK - Stealth, Breaking & Entering
+* Picking a lock.
+* Doing things without drawing attention or while remaining hidden.
+* Knowing stuff about security systems.
+
+#### GYM - Movement, Sport & Dance
+* Climbing a wall.
+* Forcing through a door.
+* Swimming, holding one's breath for a long time.
+* Executing the legendary and forbidden "Chaos Dunk"
+* Doing "The Angle Brackets", the dance craze sweeping Paradise Lua
+
+#### AID - First Aid, Exploration & Survival
+* Bandaging a wounded ally.
+* Navigating without getting lost.
+* Knowing which crates in a warehouse are likely to have useful supplies in them.
+
+#### SHOP - Mechanical, Constructive & Culinary
+* Creating a useful weapon out of found trash.
+* Building an impromptu wall.
+* Turning something inedible (raw flour) into food.
+
+#### LAW - Bureaucracy, Legal, & Investigative
+* Searching a room for clues or useful items.
+* Getting tech support to help with an issue.
+* Checks against individuals who are bureaucratically "locked"
+* * (For example: A cashier can't help you with your problem, _unless_ you can convince them they're allowed to)
+
+#### MISC - Everything Else
+* It doesn't fit into the above categories
+* ???
 
 ### Determining the Difficulty of a Skill Check
 
@@ -216,15 +271,19 @@ to stealth into a facility, or every player is pulling on a lever to try and mov
 This is a "everybody making a skill check together" moment.
 
 #### Only One Player Needs to Succeed ("Searching a Room")
-
 If this is the case, than whichever player draws the highest card succeeds "the most" and is the player
 who actually accomplishes the task at hand. If no player succeeds, the whole task fails.
 
 #### Every Player Needs to Succeed ("Sneaking Past Some Executare")
 
 When doing a check like this, only _two_ players need to succeed at the check.
+If any player gets a Critical Success, they succeed for everyone.
+If any player gets a Critical Failure, they fail for everyone.
 
 #### One Player Helps Another ("Pulling a Lever")
 
 If the helping player can make an argument for how, exactly, they're helping
-("I'll distract the shopkeeper while Marieta robs him blind!"), grant the player making the check [Bonus](#bonus--penalty).
+("I'll distract the shopkeeper while Marieta robs him blind!"), and they succeed at whatever
+they're doing, grant the player making the check [Bonus](#bonus--penalty).
+
+If they fail at whatever they're doing to help, grant the player making the check [Penalty](#bonus--penalty).

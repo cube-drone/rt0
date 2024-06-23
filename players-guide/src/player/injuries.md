@@ -76,21 +76,21 @@ a Critical Injury.
 ### Broken Leg
 * While you have a Broken Leg, you are `Slow`.
 * This overrides any character traits you might already have (if you were Fast, now you are Slow).
-* A successful AID check can downgrade this to a Splinted Leg.
+* A successful AID (First Aid) check can downgrade this to a Splinted Leg.
 * After one night of rest, mark Broken Leg.
 * After a second night of rest, downgrade this to Massive, Painful Scar.
 
 ### Concussion
 * While you have a Concussion, you are `Foolish`.
 * This overrides any character traits you might already have (if you were Wise, now you are Foolish).
-* A successful AID check can downgrade this to Dizzy.
+* A successful AID (First Aid) check can downgrade this to Dizzy.
 * After one night of rest, mark Concussion.
 * After a second night of rest, downgrade this to Massive, Painful Scar.
 
 ### Delerium
 * While you have Delerium, you are `Dull`, and you cannot cast spells.
 * This overrides any character traits you might already have (if you were Clever, now you are Dull).
-* A successful AID check can downgrade this to Loopy.
+* A successful FINANCIAL AID (Empathy) check can downgrade this to Loopy.
 * After one night of rest, mark Delerium.
 * After a second night of rest, downgrade this to Massive, Painful Scar.
 
@@ -98,20 +98,20 @@ a Critical Injury.
 * While you have Curse, you are `Unlucky`.
 * This overrides any character traits you might already have (if you were Lucky, now you are Unlucky).
 * Adjust your deck accordingly.
-* A successful MISC check can downgrade this to Hex.
+* A successful MISC (???) check can downgrade this to Hex.
 * After one night of rest, mark Curse.
 * After a second night of rest, downgrade this to Massive, Painful Scar.
 
 ### Unresolved Trauma
 * While you have Unresolved Trauma, you are `Repulsive`.
 * If you have spells or abilities that can only be used if you are Charming, you can not use them.
-* A successful AID check can downgrade this to Stress.
+* A successful FINANCIAL AID (Empathy) check can downgrade this to Stress.
 * After one night of rest, mark Unresolved Trauma.
 * After a second night of rest, downgrade this to Massive, Painful Scar.
 
 ### Bleeding Out
 * While you are in combat, you lose 3HP/turn
-* A successful AID check can downgrade this to Bandaged Wound.
+* A successful AID (First Aid) check can downgrade this to Bandaged Wound.
 * After one night of rest, the player dies.
 * That's right, don't _go to sleep_ while you're _bleeding out_. You need *medical attention*. That's _free medical advice_.
 

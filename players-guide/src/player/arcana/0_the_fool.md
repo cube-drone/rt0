@@ -1,7 +1,7 @@
 # 0 - The Fool
 
-* The Fool gets the Lucky ability.
-* The Fool treats "The Fool" as a wildcard and can use it in place of any other card, in any situation.
+* The Fool gets the **Lucky** ability.
+* The Fool treats "The Fool" as a true wildcard and can use it in place of any other card, in any situation.
 
 themes:
  - luck, chance, recklessness, hoping things just work out
@@ -10,8 +10,8 @@ themes:
  - the fool starts out as a joke character but their abilities snowball over time
 
 ## Narrative Ability: YOLO
-* generate a yolo token: when the fool takes an action that is random, reckless, or foolish, they can request that the GM provide them with a narrative ability token
-* spend a yolo token: the fool can request to the GM that the universe provides a hint, accident, mistake or deus ex machina to move the plot forward
+* Generate a YOLO token: when the fool takes an action that is random, reckless, or foolish, they can request that the GM provide them with a narrative ability token.
+* Spend a YOLO token: the fool can request to the GM that the universe provides a hint, accident, mistake or deus ex machina to move the plot forward.
 
 ## Signature Abilities:
 
@@ -91,8 +91,20 @@ _Your fighting style has been described as "unpredictable" and "lurching"_
 _Your fighting style has been described as "brutal" and "surprising"_
 
 * Place The Fool on Hit Me
-* Take 1 Corruption Point and put 3 tokens on Blackjack
+* Take 1 Corruption Point or discard a Justice from your hand to put 3 tokens on Blackjack
 * Discard The Fool from Hit Me
+
+### Everyone Loves a Parade
+_You're being extremely distracting_.
+
+* Place any card on Everyone Loves a Parade.
+* Once a card has been placed on Everyone Loves a Parade, the next card must be either one higher than the highest card on Run Away, or one lower than the lowest card on Everyone Loves a Parade.
+* (So, for example, when a 5 of Swords and 6 of Pentacles are placed on Run Away, the next card must be a 4, or 7, of any Suit.)
+* When there are 3 cards on Everyone Loves a Parade, every Adversary is forced to redraw their Intent, then discard all cards on Everyone Loves a Parade
+* Mark 3 Corruption Points on Everyone Loves a Parade to gain You're Driving Me Crazy
+
+### You're Driving Me Crazy
+* When Everyone Loves a Parade's effect triggers, you may also take 1 Corruption Point or discard a Chariot from your hand to force one adversary to discard their Intent for the turn.
 
 ### Throwaway Joke
 _Reaching into your side pockets, you retrieve a random object that will either help or hurt._
@@ -105,5 +117,14 @@ _Reaching into your side pockets, you retrieve a random object that will either 
 * * If it is a Wand, deal 1 Ranged Damage.
 * * If it is a Pentacle, everybody gains 1 Shield.
 * Discard the Minor Arcana, and any card drawn.
+* Mark 3 Corruption Points on Throwaway Joke to gain Surprise Twist
 
-### Lethal Twist
+### Surprise Twist
+
+* While using Throwaway Joke:
+* * If the card drawn is Magician, add it to your hand
+* * If the card drawn is Death, deal 150 Magic Ranged Damage.
+* * If the card drawn is the Wheel of Fortune, flip a coin: on a heads, deal 50 Magic Ranged Damage. On a Tails: take 1 Corruption Point.
+* * If the card drawn is The Chariot, you may move 1 Zone
+* * If the card drawn is Judgement, deal 8 Magic Ranged Damage to all Adversaries
+* * If the card drawn is The Tower: take 1 Corruption Point
