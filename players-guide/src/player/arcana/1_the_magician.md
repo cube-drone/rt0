@@ -21,7 +21,7 @@ themes
  * Cards sitting on Pull a Rabbit Out of a Hat remain there.
  * When all four cards are present:
  * * Discard the lowest three cards
- * * Use the highest ranked card as a Magician for the purpose of triggering a spell.
+ * * Draw the the highest ranked card into hand, and treat it as a Magician (for example, to trigger a spell).
  * Mark 3 Corruption points on Pull a Rabbit Out of a Hat to gain Saw a Woman in Half
 
 #### Saw a Woman in Half
@@ -40,17 +40,24 @@ themes
 
 #### And For My Next Trick
  * Place a Magician on And For My Next Trick
- * Draw all unchosen spells. You can use these spell for the rest of the Day.
+ * Draw all unchosen spells. You can use these spells for the rest of the Day.
  * Take 1 Corruption.
  * You can not use And For My Next Trick again, today.
 
-### Miser's Dream
-// generate some money?! something with a lot of coins? all suits can also be pentacles? :D
+### Check Behind Your Ears
+ * Place any card of suit Pentacles on Check Behind Your Ears
+ * Deal 1 damage.
+ * Produce the numeric value of that card in Credits for the player.
+ * Mark 3 Corruption points on Check Behind Your Ears to gain Miser's Dream
 
-#### Cups and Balls
+#### Miser's Dream
+ * Any time a card is played on Check Behind Your Ears, draw a card from the top of your deck.
+ * If that card is a Tower, gain 1 Corruption Point.
+
+### Cups and Balls
 // all suits now also count as cups?
-
-### Devil's Torture Chamber
+ * Place any card of suit Cups on Cups and Balls
+ * Deal 1 damage.
 
 #### Three Card Monte
 

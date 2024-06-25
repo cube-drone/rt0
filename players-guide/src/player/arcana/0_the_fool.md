@@ -122,9 +122,16 @@ _Reaching into your side pockets, you retrieve a random object that will either 
 ### Surprise Twist
 
 * While using Throwaway Joke:
-* * If the card drawn is Magician, add it to your hand
+* * If the card drawn is The Hierophant, The Emperor, The Hermit, The Moon, add it to your hand
+* * If the card drawn is The Chariot, you may move 1 Zone and add it to your hand
 * * If the card drawn is Death, deal 150 Magic Ranged Damage.
 * * If the card drawn is the Wheel of Fortune, flip a coin: on a heads, deal 50 Magic Ranged Damage. On a Tails: take 1 Corruption Point.
-* * If the card drawn is The Chariot, you may move 1 Zone
-* * If the card drawn is Judgement, deal 8 Magic Ranged Damage to all Adversaries
+* * If the card drawn is Judgement, deal 10 Magic Ranged Damage to all Adversaries and take 1 Corruption Point.
+* * If the card drawn is The World, heal everybody's HP to full and take 1 Corruption Point.
 * * If the card drawn is The Tower: take 1 Corruption Point
+
+### Normal
+* Mark 10 Corruption Points on Normal to gain Demi-Horror
+
+### Demi-Horror
+* ???

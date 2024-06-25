@@ -122,9 +122,9 @@ a Critical Injury.
 
 ## Using Corruption Points to Heal Injuries
 
-* For 1 Corruption Point, a Minor Injury can vanish entirely.
-* For 3 Corruption Points, a Major Injury can vanish entirely.
-* For 4 Corruption Points, a Critical Injury can vanish entirely.
+* For 2 Corruption Points, a Minor Injury can vanish entirely.
+* For 4 Corruption Points, a Major Injury can vanish entirely.
+* For 6 Corruption Points, a Critical Injury can vanish entirely.
 
 ## Death
 Death is entirely optional! Players can, of course, always take more corruption to avoid this unfortunate result.

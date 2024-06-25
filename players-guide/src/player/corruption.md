@@ -9,3 +9,9 @@ As you gain Corruption Points, you can allocate them to various places on your c
 
 When you don't have anywhere else on your character sheet to add a Corruption Point? Well.
 Well that's quite bad.
+
+## Hands, Eyes, Silhouettes, Glitches, Biblically Accurate Angels
+
+(TODO: do art, put it here)
+(ref images:)
+![corruption](../images/corruption-board.png)

@@ -39,8 +39,8 @@ As an example, a player might be Strong and Clever, but not Lucky, or they might
 
 ## Lucky or Unlucky
 
-If a player is Lucky, remove all Aces and Twos from their deck.
-If a player is Unlucky, remove all Kings and Queens from their deck.
+If a player is Lucky, remove all Aces and Twos, as well as the Tower, from their deck.
+If a player is Unlucky, remove all Kings and Queens, as well as the Fool, from their deck.
 
 ## Skills
 
