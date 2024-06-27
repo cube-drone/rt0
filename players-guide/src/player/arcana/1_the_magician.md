@@ -55,11 +55,29 @@ themes
  * If that card is a Tower, gain 1 Corruption Point.
 
 ### Cups and Balls
-// all suits now also count as cups?
- * Place any card of suit Cups on Cups and Balls
- * Deal 1 damage.
+ * Place the Page of Cups on Cups and Balls
+ * While the Page of Cups is on Cups and Balls:
+ * * All cards now count as Cups, for all players but not Adversaries, on top of counting as their original Suit.
+ * * Major Arcana have a numerical value in Cups equivalent to their "number".
+ * * (For example, a Three of Swords is now a Three of Swords and Cups, Death is Death _and_ a 13 of Cups)
+ * Discard the Page of Cups at the end of combat.
+ * Mark 3 Corruption Points on Cups and Balls to gain ???.
 
-#### Three Card Monte
+
+
+### Three Card Monte
+ * Place any Cup on Three Card Monte
+ * Discard three cards from hand, and draw three.
+ * If any cards drawn this way are the Tower, gain 1 Corruption point.
+ * Discard the Cup on Three Card Monte at the end of the turn.
+ * Mark 3 Corruption Points on Three Card Monte to gain Smoke and Mirrors.
+
+#### Smoke and Mirrors
+ * Place the Page of Pentacles on Smoke & Mirrors, as well as any other card from your hand.
+ * When you take damage, you can choose instead to discard a card from Smoke and Mirrors to take no damage.
+ * When there are no cards left on Smoke and Mirrors,
+ * this is much too powerful, where's the downside?
+
 
 ### Disappearing Act
 // good way to back out of a dangerous position in battle

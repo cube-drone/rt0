@@ -11,6 +11,7 @@ The set of spells that no player has chosen remains in the game: some effects ta
 ### Combat - Ram's Dodge
 * Place The Magician on Aries.
 * While Aries has The Magician on it, any shields the player generates are multiplied by 2. (Clever: 3)
+* You may discard The Magician from Aries any time you like.
 
 ### Skill - Ram's Agility
 * When making any skill check marked "Fast", you can flip Aries upside-down
@@ -21,8 +22,9 @@ or the end of the Day, at which point you should flip it back up.
 ## ♉︎ Taurus - Bull
 
 ### Combat - Bull's Strength
-* Place The Magician on Aries.
+* Place The Magician on Taurus.
 * While Taurus has The Magician on it, any damage the player generates is multiplied by 2. (Clever: 3)
+* You may discard The Magician from Taurus any time you like.
 
 ### Skill - Bull's Strength
 * When making any skill check marked "Strong", you can flip Taurus upside-down

@@ -1,6 +1,6 @@
 # 15 - The Devil
 
-![the devil](../../images/tarot/15-the-devil.jpg)
+![the devil](../../images/tarot/15-devil.jpg)
 
 **Addiction, Dependency, Excess**
 

@@ -34,7 +34,7 @@ Bad News: Using these powers comes at a terrible cost.
 
 ## Vibe & Inspiration Word Cloud:
 
-![moon's haunted](images/moonhaunted.jpg)
+![moon's haunted](../images/moonhaunted.jpg)
 
 * Someone needed to write a game that uses a Tarot deck as a resolution mechanism.
 * Moon. Insane computer. Cassette futurism.
