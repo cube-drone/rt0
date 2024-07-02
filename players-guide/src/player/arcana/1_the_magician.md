@@ -51,7 +51,7 @@ themes
  * Mark 3 Corruption points on Check Behind Your Ears to gain Miser's Dream
 
 #### Miser's Dream
- * Any time a card is played on Check Behind Your Ears, draw a card from the top of your deck.
+ * Any time a card is played on Check Behind Your Ears, you may draw a card from the top of your deck.
  * If that card is a Tower, gain 1 Corruption Point.
 
 ### Cups and Balls
@@ -63,23 +63,32 @@ themes
  * Discard the Page of Cups at the end of combat.
  * Mark 3 Corruption Points on Cups and Balls to gain ???.
 
-
+### Magic Wand
+ * Place the Page of Wands on Magic Wand, and gain 2 Corruption Points
+ * While the Page of Wands is on Magic Wnad:
+ * * All Wands now count as Magicians, on top of counting as their original Suit and Value.
+ * Discard the Page of Wands at the end of combat.
 
 ### Three Card Monte
  * Place any Cup on Three Card Monte
- * Discard three cards from hand, and draw three.
- * If any cards drawn this way are the Tower, gain 1 Corruption point.
+ * Discard two cards from hand, and draw two.
  * Discard the Cup on Three Card Monte at the end of the turn.
- * Mark 3 Corruption Points on Three Card Monte to gain Smoke and Mirrors.
+ * Mark 3 Corruption Points on Three Card Monte to gain Is This Your Card
 
-#### Smoke and Mirrors
- * Place the Page of Pentacles on Smoke & Mirrors, as well as any other card from your hand.
- * When you take damage, you can choose instead to discard a card from Smoke and Mirrors to take no damage.
- * When there are no cards left on Smoke and Mirrors,
- * this is much too powerful, where's the downside?
-
+### Is This Your Card
+ * At any time during combat:
+ * * Name any single card from your deck
+ * * Draw 5 cards into hand
+ * * If one of the 5 cards is not the card that you named, gain 1 Corruption Point.
+ * * Is This Your Card cannot be used more than 1 time in a combat round.
 
 ### Disappearing Act
-// good way to back out of a dangerous position in battle
+ * Place The Moon on Disappearing Act
+ * Move to any Zone in the current combat.
+ * Discard The Moon at the end of the turn.
+ * Mark 3 Corruption Points on Disappearing Act to gain Smoke and Mirrors
 
-#### Levitation
+#### Smoke and Mirrors
+ * Place The Moon on Smoke and Mirrors and gain 1 Corruption point.
+ * The next time you would take damage, instead discard The Moon, and move to any Zone in the current combat.
+ * Discard The Moon at the end of combat.

@@ -38,7 +38,7 @@ _Concoct either an unlikely weapon or an unlikely helmet from detritus in the se
 #### No More Mister Knife Guy
 _Where do these knives keep coming from? Why do you always seem to have one?_
 
-* Place The Fool on No More Mister Knife Guy and take 1 Corruption.
+* Place The Fool on No More Mister Knife Guy and take 1 Corruption Point.
 * Place any card on either Sharp Knife or Spectral Cap n' Bells.
 * At the end of the turn, discard The Fool.
 
@@ -67,7 +67,7 @@ _Stop fighting and just laugh for a while._
 #### Slaughter
 _The laughter is growing increasingly deranged and it doesn't seem like you control it anymore._
 
-* Place The Fool on Slaughter, as well as one additional Minor Arcana card from your hand, and take 1 Corruption.
+* Place The Fool on Slaughter, as well as one additional Minor Arcana card from your hand, and take 1 Corruption Point.
 * Remove the card from your deck permanently.
 * Deal damage equal to five times the numerical value of the removed card.
 * Slaughter can not be used more than once per day.
@@ -98,7 +98,7 @@ _Your fighting style has been described as "brutal" and "surprising"_
 _You're being extremely distracting_.
 
 * Place any card on Everyone Loves a Parade.
-* Once a card has been placed on Everyone Loves a Parade, the next card must be either one higher than the highest card on Run Away, or one lower than the lowest card on Everyone Loves a Parade.
+* Once a card has been placed on Everyone Loves a Parade, the next card must be either one higher than the highest card on Everyone Loves a Parade, or one lower than the lowest card on Everyone Loves a Parade.
 * (So, for example, when a 5 of Swords and 6 of Pentacles are placed on Run Away, the next card must be a 4, or 7, of any Suit.)
 * When there are 3 cards on Everyone Loves a Parade, every Adversary is forced to redraw their Intent, then discard all cards on Everyone Loves a Parade
 * Mark 3 Corruption Points on Everyone Loves a Parade to gain You're Driving Me Crazy
@@ -107,7 +107,7 @@ _You're being extremely distracting_.
 * When Everyone Loves a Parade's effect triggers, you may also take 1 Corruption Point or discard a Chariot from your hand to force one adversary to discard their Intent for the turn.
 
 ### Throwaway Joke
-_Reaching into your side pockets, you retrieve a random object that will either help or hurt._
+_Reaching into your side pockets, you retrieve a random object that will either help or hurt: a rock, some gum, an old ticket..._
 
 * Place any Minor Arcana on Throwaway Joke.
 * Draw the top card from the deck.
@@ -120,6 +120,7 @@ _Reaching into your side pockets, you retrieve a random object that will either 
 * Mark 3 Corruption Points on Throwaway Joke to gain Surprise Twist
 
 ### Surprise Twist
+_Reaching into your side pockets, you retrieve a random object that will either help or hurt: a very long pistol, a full-sized two-handed hammer, a car, a bomb..._
 
 * While using Throwaway Joke:
 * * If the card drawn is The Hierophant, The Emperor, The Hermit, The Moon, add it to your hand
@@ -129,9 +130,3 @@ _Reaching into your side pockets, you retrieve a random object that will either 
 * * If the card drawn is Judgement, deal 10 Magic Ranged Damage to all Adversaries and take 1 Corruption Point.
 * * If the card drawn is The World, heal everybody's HP to full and take 1 Corruption Point.
 * * If the card drawn is The Tower: take 1 Corruption Point
-
-### Normal
-* Mark 10 Corruption Points on Normal to gain Demi-Horror
-
-### Demi-Horror
-* ???
