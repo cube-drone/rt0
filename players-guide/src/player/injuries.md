@@ -137,8 +137,7 @@ The amount of corruption the player has taken on _will_ be factored in.
 
 ## Full Corruption
 Again, exactly what happens when there are no Corruption spaces left to fill on the character sheet remains a mystery,
-for now, but presume that going far enough down this path will end up at a point where the character becomes
-no longer playable.
+for now (GM: It's explained in the GM's guide!), but presume that going far enough down this path will end up at a point where the character becomes no longer playable.
 
 ## Eddy, and Creating a New Player Character
 
@@ -147,5 +146,6 @@ If a player doesn't have access to a playable character for one reason or anothe
  an [Eddy](./arcana/eddy.md). Eddy is a low-impact temporary player character designed for just such an occasion!
 
  If the player would like to continue, with a new Player Character, they must choose a new Major Arcana.
- A pod containing their player is _shot on to the moon_. If a NPC with their same arcana exists, the NPC is fated
+
+ A pod containing their player is _shot on to the moon_. If a NPC matching their arcana exists, that NPC is fated
  to die within the fortnight.

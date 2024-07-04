@@ -91,7 +91,7 @@ and The World.
 The remaining 56 cards are called the **Minor Arcana**: These are 14 cards, divided into 4 suits: Swords,
 Wands, Cups, and Pentacles.
 
-### How To Make a Tarot Deck out of Two Decks of Playing Cards and a Permanent Marker
+### How To Make a Tarot Deck With Two Decks of Playing Cards and a Permanent Marker
 
 Tarot decks can be quite expensive. Regular playing cards, on the other hand, can be acquired at
 any gas station.
@@ -120,7 +120,7 @@ any gas station.
 * 14 / Temperance
 * 15 / The Devil
 * 16 / The Tower
-* 17 / THe Star
+* 17 / The Star
 * 18 / The Moon
 * 19 / The Sun
 * 20 / Judgement
