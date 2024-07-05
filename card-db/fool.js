@@ -256,6 +256,128 @@ class HitMe{
     }
 }
 
+class ThrowawayJoke {
+    constructor(){
+        this.name = 'Throwaway Joke';
+        this.bin = [];
+    }
+
+    priorities(){
+        return {
+            'default': 4,
+        }
+    }
+
+    accepts(card){
+        return isMinorArcana(card) && numericalValue(card) <= 5;
+    }
+
+    play(card, state){
+        state.log.push(`Playing ${card} to make a throwaway joke!`);
+
+        let topCard = state.deck.pop();
+
+        if(topCard == "tower"){
+            state.hand.push(card);
+            state.log.push(`The joke was too good! Tower was drawn, ${card} was returned to hand.`);
+        }
+
+        state.discard.push(card);
+        state.discard.push(topCard);
+        /*
+            * * If it is a Sword, deal 3 Damage.
+            * * If it is a Cup, gain 3 Shields
+            * * If it is a Wand, deal 1 Ranged Damage.
+            * * If it is a Pentacle, everybody gains 1 Shield.
+        */
+        if(isSwords(topCard)){
+            state.doDamage(3);
+        }
+        if(isWands(topCard)){
+            state.doRangedDamage(1);
+        }
+        if(isCups(topCard)){
+            state.addShields(3);
+        }
+        if(isPentacles(topCard)){
+            state.addShields(1);
+        }
+    }
+}
+
+class SurpriseTwist{
+    constructor(){
+        this.name = 'Surprise Twist';
+        this.bin = [];
+    }
+
+    priorities(){
+        return {
+            'default': 5,
+        }
+    }
+
+    accepts(card, state){
+        if(state.corruption <= 0){
+            return false;
+        }
+        return isMinorArcana(card) && numericalValue(card) <= 5;
+    }
+
+    play(card, state){
+        state.log.push(`Playing ${card} to make a surprise twist!`);
+
+        let topCard = state.deck.pop();
+
+        if(topCard == "tower"){
+            state.corruption -= 1;
+            state.hand.push(card);
+            state.log.push(`The twist was too good! Tower was drawn, ${card} was returned to hand.`);
+        }
+
+        state.discard.push(card);
+        if(topCard == "fool" || topCard == "hierophant" || topCard == "emperor" || topCard == "chariot" || topCard == "hermit" || topCard == "moon" || topCard == "chariot"){
+            state.hand.push(topCard);
+            return;
+        }
+        if(topCard == "death"){
+            state.doDamage(150);
+            return;
+        }
+        if(topCard == "wheel of fortune"){
+            let coinFlip = Math.random() < 0.5;
+            if(coinFlip){
+                state.doRangedDamage(50);
+            }
+            else{
+                state.corruption -= 1;
+            }
+        }
+        if(topCard == "judgement"){
+            state.doRangedDamage(30);
+            state.corruption -= 1;
+        }
+        if(topCard == "world"){
+            state.addShields(40);
+            state.corruption -= 1;
+        }
+        if(isSwords(topCard)){
+            state.doDamage(3);
+        }
+        if(isWands(topCard)){
+            state.doRangedDamage(1);
+        }
+        if(isCups(topCard)){
+            state.addShields(3);
+        }
+        if(isPentacles(topCard)){
+            state.addShields(1);
+        }
+        state.discard.push(topCard);
+    }
+
+}
+
 
 
 module.exports = {
@@ -264,5 +386,7 @@ module.exports = {
     Laughter,
     Slaughter,
     Blackjack,
-    HitMe
+    HitMe,
+    ThrowawayJoke,
+    SurpriseTwist
 }

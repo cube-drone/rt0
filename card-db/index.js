@@ -1,31 +1,8 @@
-const {
-    deck,
-    getDeck,
-    isCard,
-    majorArcana,
-    getMajorArcana,
-    isMajorArcana,
-    minorArcana,
-    getMinorArcana,
-    isMinorArcana,
-    cups,
-    getCups,
-    isCups,
-    swords,
-    getSwords,
-    isSwords,
-    wands,
-    getWands,
-    isWands,
-    pentacles,
-    getPentacles,
-    isPentacles,
-    numericalValue
-} = require('./tarot.js');
+const { getDeck } = require('./tarot.js');
 
-const { Strike, Defend, Concentrate, Tower, Foolish } = require('./abilities.js');
+const { Strike, Defend, Concentrate, Tower, Foolish, GoodIdea, Feint, Flex, Blur, Study, TakeAChance } = require('./abilities.js');
 const { Leo, Cancer, Aries, Taurus, Gemini, Capricorn, Scorpio, Libra } = require('./spells.js');
-const { KitchenSink, KnifeGuy, Laughter, Slaughter, Blackjack, HitMe } = require('./fool.js');
+const { KitchenSink, KnifeGuy, Laughter, Slaughter, Blackjack, HitMe, ThrowawayJoke, SurpriseTwist } = require('./fool.js');
 
 function shuffle(array) {
 // Fisher-Yates shuffle algorithm
@@ -61,9 +38,16 @@ class PlayerState {
         }
 
         this.damageMultiplier = 1;
+        this.temporaryDamageMultiplier = 1; // only lasts this turn
+
         this.shieldMultiplier = 1;
+        this.temporaryShieldMultiplier = 1; // only lasts this turn
+
         this.damageBonus = 0;
+        this.temporaryDamageBonus = 0; // only lasts this turn
+
         this.shieldBonus = 0;
+        this.temporaryShieldBonus = 0; // only lasts this turn
 
         this.totalDamage = 0;
         this.damageThisTurn = 0;
@@ -199,6 +183,9 @@ class PlayerState {
                 ability.onTurnEnd(this);
             }
         }
+
+        this.temporaryDamageMultiplier = 1;
+        this.temporaryShieldMultiplier = 1;
     }
 
     takeNTurns(n){
@@ -250,8 +237,9 @@ class PlayerState {
 
     doDamage(damage) {
         this.log.push(`Dealing ${damage} damage!`);
-        this.totalDamage += (damage + this.damageBonus) * this.damageMultiplier;
-        this.damageThisTurn += (damage + this.damageBonus) * this.damageMultiplier;
+        let thatsALottaDamage = (damage + this.damageBonus + this.temporaryDamageBonus) * this.damageMultiplier * this.temporaryDamageMultiplier;
+        this.totalDamage += thatsALottaDamage;
+        this.damageThisTurn += thatsALottaDamage;
     }
 
     doMagicDamage(damage) {
@@ -268,8 +256,16 @@ class PlayerState {
 
     addShields(shields) {
         this.log.push(`Adding ${shields} shields!`);
-        this.totalShields += (shields + this.shieldBonus) * this.shieldMultiplier;
-        this.shieldsThisTurn += (shields + this.shieldBonus) * this.shieldMultiplier;
+        let thatsALottaShields = (shields + this.shieldBonus + this.temporaryShieldBonus) * this.shieldMultiplier * this.temporaryShieldMultiplier;
+        this.totalShields += thatsALottaShields;
+        this.shieldsThisTurn += thatsALottaShields;
+    }
+
+    redrawIntent(){
+        // the idea is that players will only redraw enemy intents if the alternative is better, so
+        //  (at least in our modeling) we should treat it as a temporary multiplier to block
+        this.log.push(`Redrawing intent!`);
+        this.temporaryShieldMultiplier = 1.4;
     }
 }
 
@@ -326,63 +322,47 @@ function generateTagsBrick({tags, spells}){
         }
     }
     else{
-        if(!tags.includes("dull")){
-            brick.addAbility(defaultSpells.pop());
-        }
         if(tags.includes("clever")){
-            brick.addAbility(new Libra());
-            brick.addAbility(new Scorpio());
+            let cleverSpells = [
+                new Scorpio(),
+                new Libra()
+            ]
+            shuffle(cleverSpells);
+            brick.addAbility(cleverSpells.pop());
+        }
+        else if(!tags.includes("dull")){
+            brick.addAbility(defaultSpells.pop());
         }
     }
 
     if(tags.includes("foolish")){
         brick.addAbility(new Foolish());
     }
-
-    brick.buildDeck();
+    if(tags.includes("strong")){
+        brick.addAbility(new Flex());
+    }
+    if(tags.includes("fast")){
+        brick.addAbility(new Blur());
+    }
+    if(tags.includes("wise")){
+        brick.addAbility(new Feint());
+    }
+    if(tags.includes("clever")){
+        brick.addAbility(new Study());
+    }
+    if(tags.includes("charming")){
+        brick.addAbility(new GoodIdea());
+    }
+    if(tags.includes("lucky")){
+        brick.addAbility(new TakeAChance());
+    }
 
     return brick;
 }
 
 function generateFool({tags}){
     // "brick" is the most basic character, with no special abilities
-    if(!tags){
-        tags = [];
-    }
-    else{
-        tags = JSON.parse(JSON.stringify(tags));
-    }
-    tags.push("lucky");
-    let brick = new PlayerState({className: `fool`});
-
-    for(let tag of tags){
-        brick.tags.push(tag);
-    }
-    brick.addAbility(new Strike());
-    brick.addAbility(new Defend());
-    brick.addAbility(new Concentrate());
-    brick.addAbility(new Tower());
-
-    let defaultSpells = [
-        new Leo(),
-        new Cancer(),
-        new Taurus(),
-        new Aries(),
-        new Gemini(),
-        new Capricorn(),
-    ]
-    shuffle(defaultSpells);
-    if(!tags.includes("dull")){
-        brick.addAbility(defaultSpells.pop());
-    }
-    if(tags.includes("clever")){
-        brick.addAbility(new Libra());
-        brick.addAbility(new Scorpio());
-    }
-
-    if(tags.includes("foolish")){
-        brick.addAbility(new Foolish());
-    }
+    let brick = generateTagsBrick({tags})
 
     brick.addAbility(new KitchenSink());
     brick.addAbility(new KnifeGuy());
@@ -391,52 +371,11 @@ function generateFool({tags}){
     brick.addAbility(new Blackjack());
     brick.addAbility(new HitMe());
 
-    brick.buildDeck();
-
     return brick;
 }
 
 function generateMagician({tags}){
-    // "brick" is the most basic character, with no special abilities
-    if(!tags){
-        tags = [];
-    }
-    else{
-        tags = JSON.parse(JSON.stringify(tags));
-    }
-    tags.push("clever");
-    let brick = new PlayerState({className: `magician`});
-
-    for(let tag of tags){
-        brick.tags.push(tag);
-    }
-    brick.addAbility(new Strike());
-    brick.addAbility(new Defend());
-    brick.addAbility(new Concentrate());
-    brick.addAbility(new Tower());
-
-    //brick.addAbility(new KitchenSink());
-    //brick.addAbility(new Laughter());
-
-    let defaultSpells = [
-        new Leo(),
-        new Cancer(),
-        new Taurus(),
-        new Aries(),
-        new Gemini(),
-        new Capricorn(),
-        new Libra(),
-        new Scorpio(),
-    ]
-    shuffle(defaultSpells);
-    brick.addAbility(defaultSpells.pop());
-    brick.addAbility(defaultSpells.pop());
-
-    if(tags.includes("foolish")){
-        brick.addAbility(new Foolish());
-    }
-
-    brick.buildDeck();
+    let brick = generateTagsBrick({tags, nSpells: 2})
 
     return brick;
 }
@@ -449,6 +388,7 @@ function generateUsefulnessHistogram(playerFn, args){
     let shields = [];
     for(let i = 0; i < 5000; i++){
         let player = playerFn(args)
+        player.buildDeck();
         player.takeNTurns(nTurns);
         damages.push(player.totalDamage);
         shields.push(player.totalShields);
@@ -501,6 +441,7 @@ for(let spell of [new Leo(), new Cancer(), new Aries(), new Taurus(), new Gemini
 }
 */
 
+/*
 let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: ["lucky"]});
 histogram.name = "lucky";
 displayUsefulnessHistogram(histogram);
@@ -521,8 +462,8 @@ histogram.name = "clever";
 displayUsefulnessHistogram(histogram);
 histogram = generateUsefulnessHistogram(generateMagician, {tags: []});
 displayUsefulnessHistogram(histogram);
+*/
 
-/*
 for(let tag of goodTags){
     let histogram = generateUsefulnessHistogram(generateTagsBrick, {tags: [tag]});
     displayUsefulnessHistogram(histogram);
@@ -532,6 +473,7 @@ for(let tag of badTags){
     displayUsefulnessHistogram(histogram);
 }
 
+/*
 for(let tag of goodTags){
     if(tag === "lucky"){
         continue;

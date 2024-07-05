@@ -208,10 +208,200 @@ class Foolish{
     }
 }
 
+class GoodIdea{
+    constructor(){
+        this.name = 'Good Idea';
+    }
+
+    priorities(){
+        return {
+            'draw': 2,
+            'default': 4,
+        }
+    }
+
+    accepts(card){
+        return card == "hierophant";
+    }
+
+    play(card, state){
+        state.discard.push(card);
+
+        // technically, it's choose another player, but for the sake of calculation we're going to say "ourselves"
+
+        state.draw();
+        state.draw();
+        state.draw();
+    }
+}
+
+class Feint{
+    constructor(){
+        this.name = 'Feint';
+    }
+
+    priorities(){
+        return {
+            'block': 3,
+            'default': 4,
+        }
+    }
+
+    accepts(card){
+        return card === 'moon';
+    }
+
+    play(card, state){
+        state.discard.push(card);
+        state.log.push(`Feinting with ${card}`);
+
+        state.redrawIntent();
+    }
+}
+
+class Flex {
+    constructor() {
+        this.name = 'Flex';
+    }
+
+    priorities() {
+        return {
+            'damage': 2,
+            'default': 4,
+        }
+    }
+
+    accepts(card) {
+        return card === "emperor";
+    }
+
+    play(card, state) {
+        state.discard.push(card);
+        state.log.push(`Flexing with ${card}`);
+
+        state.temporaryDamageMultiplier = 2;
+    }
+}
+
+class Blur {
+    constructor() {
+        this.name = 'Blur';
+    }
+
+    priorities() {
+        return {
+            'block': 2,
+            'default': 4,
+        }
+    }
+
+    accepts(card) {
+        return card === "chariot";
+    }
+
+    play(card, state){
+        state.discard.push(card);
+        state.log.push(`Blurring with ${card}`);
+
+        // technically blur rolls over leftover shields to next turn, but let's just call that a 1.5 multiplier
+        state.temporaryShieldMultiplier = 1.5;
+    }
+}
+
+class Study {
+    constructor(){
+        this.name = 'Study';
+    }
+
+    priorities(){
+        return {
+            'draw': 2,
+            'default': 4,
+        }
+    };
+
+    accepts(card){
+        return card === 'hermit';
+    }
+
+    play(card, state){
+        // remove the top four cards from the deck
+        let cards = state.deck.splice(0, 4);
+
+        // what card do we want to select?
+        let cardToSelect = cards[0];
+        if (cards.includes('tower')) {
+            state.log.push(`Studying with ${card} and found the tower! Catastrophe strikes!`);
+            cardToSelect = 'tower';
+        }
+        else if(cards.filter(card => isMajorArcana(card)).length >= 1){
+            state.log.push(`Studying with ${card} and found the fool! Honk honk! `);
+            cardToSelect = cards.filter(card => isMajorArcana(card))[0];
+        }
+        else {
+            // find the highest value card
+            let highestValue = 0;
+            for (let card of cards) {
+                let value = numericalValue(card);
+                if (value > highestValue) {
+                    highestValue = value;
+                    cardToSelect = card;
+                }
+            }
+        }
+
+        // do the hermit thing
+        let cardsToPutBack = cards.filter(card => card !== cardToSelect);
+        state.deck = cardsToPutBack.concat(state.deck);
+        state.shuffle();
+        state.hand.push(cardToSelect);
+
+        state.discard.push(card);
+    }
+}
+
+class TakeAChance{
+    constructor(){
+        this.name = 'Take A Chance';
+    }
+
+    priorities(){
+        return {
+            'draw': 2,
+            'default': 3,
+        }
+    }
+
+    accepts(card){
+        return card === 'wheel of fortune';
+    }
+
+    play(card, state){
+        // just do "Good Idea", about half the time
+        let flip = Math.random() > 0.5;
+        if(flip){
+            let gi = new GoodIdea();
+
+            return gi.play(card, state);
+        }
+        else{
+            state.discard.push(card);
+        }
+
+    }
+
+}
+
 module.exports = {
     Strike,
     Defend,
     Concentrate,
     Tower,
-    Foolish
+    Foolish,
+    GoodIdea,
+    Feint,
+    Flex,
+    Blur,
+    Study,
+    TakeAChance
 }

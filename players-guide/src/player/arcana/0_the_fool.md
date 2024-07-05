@@ -111,6 +111,7 @@ _Reaching into your side pockets, you retrieve a random object that will either 
 
 * Place any Minor Arcana on Throwaway Joke.
 * Draw the top card from the deck.
+* * If it is the Tower, trigger the Tower's effect.
 * * If it is a Major Arcana, nothing happens.
 * * If it is a Sword, deal 3 Damage.
 * * If it is a Cup, gain 3 Shields
@@ -123,7 +124,7 @@ _Reaching into your side pockets, you retrieve a random object that will either 
 _Reaching into your side pockets, you retrieve a random object that will either help or hurt: a very long pistol, a full-sized two-handed hammer, a car, a bomb..._
 
 * While using Throwaway Joke:
-* * If the card drawn is The Hierophant, The Emperor, The Hermit, The Moon, add it to your hand
+* * If the card drawn is The Fool, The Hierophant, The Emperor, The Hermit, or The Moon, add it to your hand
 * * If the card drawn is The Chariot, you may move 1 Zone and add it to your hand
 * * If the card drawn is Death, deal 150 Magic Ranged Damage.
 * * If the card drawn is the Wheel of Fortune, flip a coin: on a heads, deal 50 Magic Ranged Damage. On a Tails: take 1 Corruption Point.
