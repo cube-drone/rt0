@@ -1,6 +1,6 @@
 function reportCardTemplate({}){
     return `
-        <div id="reportcard" class="report-card">
+    <div id="reportcard" class="report-card">
         <header>
             <h2>Report Card / Student Name: </h2>
             <div class="student-name"></div>
@@ -51,8 +51,7 @@ function reportCardTemplate({}){
             <p> <span class="keyword">penalty</span> on a skill check: draw an additional card and choose the worst one.</p>
 
             <h3>Corruption Retry</h3>
-            <p> Take a corruption point to retry a failed skill check. It will be easier this time: a hard check becomes medium,
-            a medium becomes easy...</p>
+            <p> Take a corruption point to retry a failed skill check: this time, one step easier. </p>
 
         </div>
 
@@ -144,8 +143,17 @@ function reportCardTemplate({}){
         <div class="skill skill-corruption">
             <div class="corruption-circle box-right"></div>
             <div class="corruption-circle box-right"></div>
-            <h3>Corruption</h3>
+            <div class="corruption-circle box-right"></div>
+            <h3>Skill Corruption</h3>
             <p> When all circles are filled, gain a skill and cross out a skill. </p>
+        </div>
+
+        <div class="skill magic-corruption">
+            <div class="corruption-circle box-right"></div>
+            <div class="corruption-circle box-right"></div>
+            <div class="corruption-circle box-right"></div>
+            <h3>Magic Corruption</h3>
+            <p> When all circles are filled, gain a magic spell if not <span class="keyword">Dull</span>. </p>
         </div>
 
         <div class="skill finaid">
@@ -210,7 +218,7 @@ function reportCardTemplate({}){
             <div class="skill-attributes">Lucky / Strong</div>
             <div class="box box-bottom-right"></div>
         </div>
-        </div>
+    </div>
     `;
 
 }

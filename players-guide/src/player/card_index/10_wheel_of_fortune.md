@@ -25,7 +25,7 @@ Of!
 Fortune!
 
 The idea of the Wheel of Fortune,
-the [Rota Fortunae](https://en.wikipedia.org/wiki/Rota_Fortunae)
+the [Rota Fortunae](https://en.wikipedia.org/wiki/Rota_Fortunae),
 goes back thousands of years, to the point where it was already a time-worn cliché
 by Ancient Roman standards. King or peasant, whoever you are, you spend your life bound to the Wheel of Fortune:
 sometimes you're up while other people are down. Sometimes you're down while other people are up, and the turns

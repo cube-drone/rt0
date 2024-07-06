@@ -6,6 +6,7 @@ const fs = require('fs');
 
 const { pages } = require('./templates/base.html.js');
 const { reportCardTemplate } = require('./templates/reportcard.html.js');
+const { combatTemplate, combatTemplatePageTwo, magicTemplate } = require('./templates/combat.html.js');
 
 
 function writeContentsToFile({title, contents, filename}) {
@@ -14,13 +15,16 @@ function writeContentsToFile({title, contents, filename}) {
 }
 
 let reportCard = reportCardTemplate({});
+let combat = combatTemplate({});
+let combat2 = combatTemplatePageTwo({});
+let magic = magicTemplate({});
 
 function testPrint(){
     let contents = [
         reportCard,
-        "<h2>Page Two</h2>",
-        "<h3>Page Three</h2>",
-        "<h4>Page Four</h2>"
+        combat,
+        combat2,
+        magic,
     ];
     writeContentsToFile({title: 'Hello Printshop', contents, filename: 'hello.html'});
 

@@ -150,7 +150,7 @@ Only players with **Charming** may learn Aquarius.
 
 ### Skill - Heal
 * You can flip Aquarius upside-down to downgrade a Major Injury to its associated Minor Injury, or remove a Minor Injury entirely.
-* Once Pisces is upside-down, it can not be used in this way until the next Day
+* Once Aquarius is upside-down, it can not be used in this way until the next Day
 
 ## ♍︎ Virgo - Maiden
 Only players with **Charming** may learn Virgo.
@@ -173,13 +173,15 @@ Only players with **Charming** may learn Virgo.
 * Once Virgo is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ⛎ Ophiuchus - Snake Handler
-Only players with **Charming** may learn Ophiuchus.
+Only players with **Lucky** may learn Ophiuchus.
 
-* At The Beginning of Every Day, Draw 3 random unclaimed spells, look at them, and stack them under Ophiuchus.
-
-### Combat - Shuffle
+### Combat - ???
 * Place The Magician on Ophiuchus.
-* Choose one of the 3 spells under Ophiuchus. Cast that spell (as if a Magician had been played on it) and treat Ophiuchus as that spell until the end of combat.
+* Something magical happens.
+* What happens?
+* The GM decides.
+* Maybe it will be helpful.
 
-### Skill - Shuffle
-* Choose one of the 3 spells under Ophiuchus. Treat Ophiuchus as that spell until the next Combat, or the end of the Day.
+### Skill - ???
+* The GM decides what happens.
+* Ophiuchus can not be used again until the next Combat.

@@ -86,10 +86,7 @@ Every player has The Gutter, a collection of Default Abilities:
 * If Wise, when there are 1 cards on Concentrate.
 * If Foolish, when there are 3 cards on Concentrate.
 
-### Discard Pile
-Once there are >= 20 cards in the Discard pile, the Discard pile is shuffled back into the deck.
-
-### The Tower
+### Catastrophe
 * Any time The Tower is drawn, it must be played immediately, interrupting any abilities in play.
 * If an ability calls for card draw and the card drawn is The Tower, the ability **does not activate**.
 * The player discards all cards on all of their Abilities, including The Tower, then shuffles the discard pile back into their deck and ends their turn.
@@ -99,12 +96,29 @@ Once there are >= 20 cards in the Discard pile, the Discard pile is shuffled bac
 * Only add this to your abilities if you have the 'foolish' trait.
 * Every turn in which you draw Minor Arcana, you must discard your lowest Minor Arcana card.
 
-### Movement
-* Place any card on Movement.
-* When there are two cards on Movement, discard them and move 1 zone.
+### Movement/Skill
+* Place any card on Movement/Skill.
+* When there are 2 (Fast: 1, Slow: 3) cards on Movement, discard them and either move 1 zone OR make a Skill Check.
 
-If Fast, when there are 1 cards on Movement.
-If Slow, when there are 3 cards on Movement.
+Some actions during battle call for Skill Checks. "I hack the computer while the battle is raging on", or "I force open the door".
+
+Once the player has "paid" for the skill check, while keeping their hand and any current combat cards separate, the player shuffles their discard pile into their deck, then uses the deck to perform a skill check as usual.
+
+### Run Away
+* Place any card on Run Away.
+
+* Once a card has been placed on Run Away, the next card must be either one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.
+* (So, for example, when a 5 of Swords and 6 of Pentacles are placed on Run Away, the next card must be a 4, or 7, of any Suit.)
+When there are 4 cards (Fast: 3 / Slow: 5) on Run Away, you may either:
+* * Move yourself to any unoccupied Zone in the current Battle Arena.
+* * Remove yourself from battle entirely. Your participation in this combat is over! The GM decides where you are hiding.
+* Then: Discard all cards on Run Away
+
+### Friendship
+Friendship can be marked with up to one Corruption Point.
+
+At the end of the Day, if all boxes are marked with a Corruption Point and the player is not Repulsive, draw a new, empty box on Friendship. If the player is Charming, draw an additional empty box on Friendship.
+
 
 ### Good Idea!
 * Only players with Charming may use Good Idea!
@@ -142,29 +156,6 @@ If Slow, when there are 3 cards on Movement.
 * Flip a coin. On a Heads, choose one of Good Idea!, Third Eye, Flex, Blur, or Study, and use that ability as if you had played a card there.
 * Discard Wheel of Fortune at the end of the turn.
 
-### Run Away
-* Place any card on Run Away.
-
-* Once a card has been placed on Run Away, the next card must be either one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.
-* (So, for example, when a 5 of Swords and 6 of Pentacles are placed on Run Away, the next card must be a 4, or 7, of any Suit.)
-When there are 4 cards (Fast: 3 / Slow: 5) on Run Away, you may either:
-* * Move yourself to any unoccupied Zone in the current Battle Arena.
-* * Remove yourself from battle entirely. Your participation in this combat is over! The GM decides where you are hiding.
-* Then: Discard all cards on Run Away
-
-### Friendship
-Friendship can be marked with up to one Corruption Point.
-
-At the end of the Day, if all boxes are marked with a Corruption Point and the player is not Repulsive, draw a new, empty box on Friendship. If the player is Charming, draw an additional empty box on Friendship.
-
-### Skill Checks
-Some actions during battle call for Skill Checks. "I hack the computer while the battle is raging on", or "I force open the door".
-
-Attempting the skill check costs cards from the player's hand, and the GM can determine how many cards it costs based on how time-consuming or distracting
-the action might be. A very time consuming and distracting action, like hacking a computer, might cost all 5 cards,
-whereas a quick action where the battle is still the focus, like deftly leaping across a chasm, might only cost 1 card.
-
-Once the player has "paid" for the skill check, while keeping their hand and any current combat cards separate, the player shuffles their discard pile into their deck, then uses the deck to perform a skill check as usual.
 
 ## Magic
 Characters can cast [spells](./magic.md) in battle!
