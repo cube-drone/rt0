@@ -1,27 +1,36 @@
 # ED - Eddy
 
-Eddy is not so much a chooseable, playable major arcana as they are a temporary character, intended
-for players who maybe only intend to stay for a single session, or for players who've died and
-would like to participate in the rest of the session as a temporary character.
+Eddy is not so much a chooseable, playable Major Arcana as they are a temporary, lightweight character, intended
+for players who maybe only intend to stay for a single session, for players who've died and
+would like to participate in the rest of the session as a temporary character,
+for players who aren't excited by loads of tactical choices in battle,
+for younger players, for less experienced players,
+or for players who exceed the _recommended player count_ for RT: 0.
 
-The GM is encouraged to have an Eddy or two tucked away, for a rainy day.
+(_Having too many players can make turns drag on forever, so having a fifth or six player play as an Eddy can hopefully clear things up a bit._)
+
+The GM is encouraged to print off a few Eddy character sheets and tuck them away, for a rainy day.
 
 Eddy is a friendly robot who bumbles along and helps out the players.
 
-Eddies are sentient and cheerfully desire to help out, but bumbling.
-
 Eddy is a nickname: Eddy's full name is Ed25519, but they go by "Eddy" for short.
 
+Eddies are sentient and cheerful. Each Eddy has a single primary function that they perform around
+Paradise Lua - maybe "sweeping", "vacuuming", "repairing pipes", "lubricating doors" - something along
+these lines. After choosing your Eddy's skill (see below: each Eddy gets one skill), you should determine
+what your Eddy's job on Paradise Lua _is_.
+
 Eddy is not the only "Eddy" - there are dozens of Eddy-class robots who might stop in and help the players out.
+
 
 ## Eddy Names:
 
 * Ada (ADA 83)
 * Al (ALGOL 68)
-* Pascal
-* Simula (SIMULA 67)
-* Modula (MODULA 2)
-* Eiffel (EIFFEL 65)
+* Cal (Pascal/Intercal)
+* Sim (SIMULA 67)
+* Mod (MODULA 2)
+* Phil (EIFFEL 65)
 * Mac (HMAC)
 * Ipey (IPAddr)
 * Emdy (MD5)
@@ -31,6 +40,8 @@ Eddy is not the only "Eddy" - there are dozens of Eddy-class robots who might st
 * Pearl (PERL)
 * Julia
 * Dylan
+* See
+* Sharp
 * Dee
 * Sequel (SQL)
 * Lithp (Lisp)
@@ -41,9 +52,23 @@ Eddy is not the only "Eddy" - there are dozens of Eddy-class robots who might st
 
 Each Eddy can choose only one Skill. That Skill is related to the automated task they perform around Paradise Lua.
 
+For example:
+
+* An Eddy with FINANCIAL AID might be responsible for watching a perimeter for security.
+* An Eddy with DRAMA might be responsible for acting as an automated cashier in a convenience store.
+* An Eddy with SCI might be a laboratory assistant.
+* An Eddy with FREE BLOCK might be a door lubricator/maintainer.
+* An Eddy with GYM might be a duct cleaner.
+* An Eddy with AID might be an auto-nurse.
+* An Eddy with SHOP might be a constructor or fabricator.
+* An Eddy with LAW might work as a clerk.
+* An Eddy with MISC might be responsible for sorting screws by varying size, which has given it a lot of time to browse Luapedia.
+
 ## Shared Deck
 
-You may not have enough tarot decks to support all Eddies: for this reason, none of their abilities are deck-modifying. They can just draw cards from the DM deck.
+You may not have enough extra tarot decks to support all Eddies: for this reason, none of their abilities are deck-modifying.
+
+They can all share a deck, or if necessary, they can just draw cards from the DM deck.
 
 ## Combat
 
@@ -68,6 +93,7 @@ In every combat phase, Eddies go before players, draw a 5 card hand, and can pla
 * Deal 1 melee damage AND give another player in the same zone 1 shield.
 
 ### The Tower:
+* If The Tower is drawn, The Tower must be played.
 * Explode, dealing 5 magic ranged damage to everyone, friend or foe, in the same zone.
 * Take 20 Hit Points of damage.
 
@@ -85,6 +111,9 @@ In every combat phase, Eddies go before players, draw a 5 card hand, and can pla
 
 ### The Chariot:
 * Move to any position on the map.
+
+### The Hanged Man:
+* Choose an Adversary in the same Zone: they cannot move this turn.
 
 ### Wheel of Fortune:
 * Flip a coin.

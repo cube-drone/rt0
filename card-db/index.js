@@ -110,7 +110,6 @@ class PlayerState {
 
     buildDeck() {
         if(this.tags.includes('lucky')){
-            this.baseDeck = this.baseDeck.filter(card => card !== 'tower');
             this.baseDeck = this.baseDeck.filter(card => card !== 'ace of pentacles');
             this.baseDeck = this.baseDeck.filter(card => card !== 'ace of cups');
             this.baseDeck = this.baseDeck.filter(card => card !== 'ace of wands');
@@ -121,7 +120,6 @@ class PlayerState {
             this.baseDeck = this.baseDeck.filter(card => card !== '2 of swords');
         }
         if(this.tags.includes('unlucky')){
-            this.baseDeck = this.baseDeck.filter(card => card !== 'fool');
             this.baseDeck = this.baseDeck.filter(card => card !== 'king of pentacles');
             this.baseDeck = this.baseDeck.filter(card => card !== 'king of cups');
             this.baseDeck = this.baseDeck.filter(card => card !== 'king of wands');

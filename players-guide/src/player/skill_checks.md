@@ -1,19 +1,25 @@
 # Skills
 
-A player must choose 2 Skills.
-They can _only_ choose skills if they have the associated Ability.
+A player must choose 1 Skill.
+They can _only_ choose a skill if they have the associated Ability.
 (For example: if you are not Charming or Fast, you cannot choose Deception, Theft & Stealth).
-Choose a skill by circling it on your character sheet, then writing an "A+" next to it.
+Choose a skill by writing an "A+" next to it.
 
 > The A+ is thematic, and you can use anything you want to indicate that this is a preferred skill:
-a gold star sticker, a _unicorn sticker_, a "good work!", whatever floats your boat.
+circle it, use a gold star sticker, a _unicorn sticker_, a "good work!", whatever floats your boat.
 
 The chosen skills are the player's Chosen Skills.
+
 Any Skill Check that the player performs against a Chosen Skill becomes easier
 by one rank: an Impossible check becomes Hard, a Hard check becomes Medium, and so on.
 
-A player must Cross Out 1 skill. _Any_ check against a Crossed Out Skill becomes Impossible for the player.
-Cross Out a skill by drawing a line through it, then writing "Fail" next to it.
+A player must Cross Out 1 skill.
+Cross Out a Skill by writing an "F" next to it.
+
+> The F is thematic, and you can use anything you want to indicate that this is a crossed out skill:
+cross it out, write "SEE ME AFTER CLASS", put a sad-face sticker on it...
+
+_Any_ check against a Crossed Out Skill becomes Unlikely for the player.
 
 * FINANCIAL AID - Empathy, Perception & Danger Sense (Fast / Lucky)
 * DRAMA - Deception, Persuasion & Performance (Charming / Fast)
@@ -119,7 +125,7 @@ Skill checks are resolved by having the player draw the top card from their deck
 * Automatic: The player can not fail this check. You shouldn't have even made them draw a card.
 * Trivial: Only fails on a [Critical Failure](#critical-failure).
 * Easy: Fails on any Minor Arcana <= 5, otherwise succeeds.
-* Medium: Fails on any Minor Arcana <= 10, otherwise succeeds.
+* Medium: Fails on any Minor Arcana <= 9, otherwise succeeds.
 * Hard: Fails on any Minor Arcana, otherwise succeeds.
 * Unlikely: Success on a [Critical Success](#critical-success), otherwise fails
 * Impossible: The player can not succeed at this check. You shouldn't have even made them draw a card.

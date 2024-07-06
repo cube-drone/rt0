@@ -12,13 +12,8 @@ These cards generate Strike and Defend points, which can be used to both generat
 ## Hit Points
 Players start every combat with 20 HP, a number that resets with _every combat_.
 
-When a player reaches 0 HP, they do not die, but instead must buy 10 more HP. In order to do so, they
-must take 3 Corruption Points.
-
-When a player reaches 0 HP for a second time, they suffer _consequences_, which are generally non-fatal.
-This costs them _more_ Corruption Points, and they wake up in their room the next day with a new Manipulation.
-
-If there is still a lot of time left in the day, the player gets to play as an EDDY for the rest of the day.
+When a player reaches 0 HP, they do not die, but instead must buy 15 more HP. In order to do so, they
+must take a Major Injury.
 
 A sufficient number of Corruption points will permanently retire the Player, although the exact number is only known by the GM.
 
@@ -45,12 +40,16 @@ Some rooms are Cramped, these are represented by a 1x1 grid. (Which is, notably,
 
 ## A Turn
 
-On a turn, a player draws 4 cards from their deck. If there are not enough cards in their deck
-to draw 5 cards, they shuffle their discard pile into their deck, and then draw 4 cards from their deck.
+At the beginning of their turn, a player draws 5 cards from their deck.
+If they have cards in their hand already at the beginning of their turn, they may keep them.
 
-These 5 cards constitute the player's "hand" for the turn.
+If there are not enough cards in their deck to draw 5 cards,
+they shuffle their discard pile into their deck, and then draw 5 cards from their deck.
 
-If the player cannot draw up to 5 cards, they should reshuffle their discard pile to make a fresh deck.
+These cards constitute the player's "hand" for the turn.
+
+The player plays cards on the various Combat abilities available to their character.
+If a player can not play a card, it is discarded at the end of the turn: there is no saving of cards for the next hand.
 
 ## Numerical Values of Tarot Cards
 * Ace - 1
@@ -68,8 +67,8 @@ Every player has The Gutter, a collection of Default Abilities:
 * Cards sitting on Strike remain there.
 * When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Strike and deal 5 Damage, or 2 Ranged Damage.
 
-* If Strong, 7/3 damage.
-* If Weak, 3/1 damage.
+* If Strong, (7/3 Ranged) damage.
+* If Weak, (3/1 Ranged) damage.
 
 ### Defend
 * Place Minor Arcana cards of suit Cups or Pentacles on Defend.
@@ -91,8 +90,8 @@ Every player has The Gutter, a collection of Default Abilities:
 Once there are >= 20 cards in the Discard pile, the Discard pile is shuffled back into the deck.
 
 ### The Tower
-* When The Tower is drawn, it must be played on The Tower, immediately, interrupting any abilities in play.
-* If an ability calls for card draw and the card drawn is The Tower, the ability does not activate.
+* Any time The Tower is drawn, it must be played immediately, interrupting any abilities in play.
+* If an ability calls for card draw and the card drawn is The Tower, the ability **does not activate**.
 * The player discards all cards on all of their Abilities, including The Tower, then shuffles the discard pile back into their deck and ends their turn.
 * The Tower is a reset - at the end of the Tower turn, the player should have a full deck.
 
