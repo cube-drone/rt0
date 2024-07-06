@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Good Idea!</name>
+    <keywords>
+        <k>Good Idea!</k>
+    </keywords>
+    <description>
+* Only players with Charming may use Good Idea!.
+* Place The Hierophant on Good Idea!.
+* Choose another player: they draw 3 cards.
+* Discard the card played on Good Idea! at the end of the turn.
+    </description>
+    <type>
+        Charming
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

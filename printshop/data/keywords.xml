@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lists>
+    <abilities>
+        <k>Strong</k>
+        <k>Weak</k>
+        <k>Fast</k>
+        <k>Slow</k>
+        <k>Lucky</k>
+        <k>Unlucky</k>
+        <k>Wise</k>
+        <k>Foolish</k>
+        <k>Charming</k>
+        <k>Repulsive</k>
+    </abilities>
+    <nouns>
+        <k>Day</k>
+        <k>Skill</k>
+        <k>Ability</k>
+        <k>Combat</k>
+    </nouns>
+    <tarot>
+        <k>The Fool</k>
+        <k>The Magician</k>
+        <k>The High Priestess</k>
+        <k>The Empress</k>
+        <k>The Emperor</k>
+        <k>The Hierophant</k>
+        <k>The Lovers</k>
+        <k>The Chariot</k>
+        <k>Strength</k>
+        <k>The Hermit</k>
+        <k>Wheel of Fortune</k>
+        <k>Justice</k>
+        <k>The Hanged Man</k>
+        <k>Death</k>
+        <k>Temperance</k>
+        <k>The Devil</k>
+        <k>The Tower</k>
+        <k>The Star</k>
+        <k>The Moon</k>
+        <k>The Sun</k>
+        <k>Judgement</k>
+        <k>The World</k>
+        <k>Swords</k>
+        <k>Wands</k>
+        <k>Cups</k>
+        <k>Pentacles</k>
+    </tarot>
+</lists>
