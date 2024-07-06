@@ -92,9 +92,12 @@ Every player has The Gutter, a collection of Default Abilities:
 * The player discards all cards on all of their Abilities, including The Tower, then shuffles the discard pile back into their deck and ends their turn.
 * The Tower is a reset - at the end of the Tower turn, the player should have a full deck.
 
-### Foolishness
+### Foolish
 * Only add this to your abilities if you have the 'foolish' trait.
-* Every turn in which you draw Minor Arcana, you must discard your lowest Minor Arcana card.
+* Players with Foolish must use Foolish, every turn.
+* Play any card on Foolish.
+* Make a funny face at the GM, or a silly noise, or honk, or blow a raspberry, or say "Farts ahoy!" in your best pirate voice.
+* Discard the card played on Foolish at the end of the turn.
 
 ### Movement/Skill
 * Place any card on Movement/Skill.
@@ -119,7 +122,6 @@ Friendship can be marked with up to one Corruption Point.
 
 At the end of the Day, if all boxes are marked with a Corruption Point and the player is not Repulsive, draw a new, empty box on Friendship. If the player is Charming, draw an additional empty box on Friendship.
 
-
 ### Good Idea!
 * Only players with Charming may use Good Idea!
 * Place The Hierophant on Good Idea!
@@ -136,26 +138,27 @@ At the end of the Day, if all boxes are marked with a Corruption Point and the p
 * Only players with Strong may use Flex.
 * Place The Emperor on Flex.
 * Any non-magical damage generated this turn is doubled.
-* Discard The Emperor at the end of the turn.
+* Discard the card played on Flex at the end of the turn.
 
 ### Blur
 * Only players with Fast may use Blur.
 * Place The Chariot on Blur.
 * Any left-over shields at the end of this turn are rolled over to the next turn.
-* Discard The Chariot at the end of the turn.
+* Discard the card played on Blur at the end of the turn.
 
 ### Study
 * Only players with Clever may use Study.
 * Place Hermit on Study.
 * Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest. (This may trigger The Tower.)
-* Discard Hermit at the end of the turn.
+* Discard the card played on Study at the end of the turn.
 
 ### Take a Chance
 * Only players with Lucky may use Take a Chance.
 * Place Wheel of Fortune on Take a Chance.
-* Flip a coin. On a Heads, choose one of Good Idea!, Third Eye, Flex, Blur, or Study, and use that ability as if you had played a card there.
-* Discard Wheel of Fortune at the end of the turn.
-
+* Draw & discard the top card from your deck.
+* * If it was an Ace through 9, do nothing.
+* * Otherwise, choose one of Good Idea!, Third Eye, Flex, Blur, or Study, and use that ability as if you had played a card there.
+* Discard the card played on Take a Chance at the end of the turn.
 
 ## Magic
 Characters can cast [spells](./magic.md) in battle!
@@ -174,10 +177,6 @@ When a Combat concludes, open up the Supremacy Worksheet:
 * If any player has accumulated 0 Corruption, mark one tally in the Supremacy box.
 
 Accumulated Supremacy makes combat _more difficult_ as the game goes on.
-Every time the players reach a milestone on the Supremacy Worksheet, the GM draws a card and
-gives some or all of the game's adversaries a buff.
-
-However, accumulating Supremacy is good: it's one of the only ways in the game to shed Corruption points, for one!
 
 ## A Sample Adversary
 This is _Brock_, an example of the kind of fellow one might get in a scuffle with:

@@ -4,11 +4,12 @@
 
 **Mirror Images, Illusions, Apophenia, Lies, Fear, Anxiety**
 
-I know that a crawfish just _hanging out_ makes **me* anxious.
+I know that a crawfish just _hanging out_ makes **me** anxious.
 
 I guess the interpretation is that one of these two dogs,
-and one of these two towers - isn't real at all. Maybe also the
-crayfish. Maybe the various barriers on this pathway are just made up.
+and one of these two towers - isn't real at all.
+The various barriers on this pathway are just made up, they're mirror images,
+they're howling at the moon.
 
 This is the card of seeing patterns where patterns do not exist.
 

@@ -314,6 +314,11 @@ h1, h2, h3, h4, h5, h6{
     font-size: large;
 }
 
+.card-moon{
+    /* XVIII is just so long */
+    font-size: medium !important;
+}
+
 .combat{
     height: 199mm;
     padding: 0 10px;
@@ -380,11 +385,20 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
 }
 
+.combat-ability ul, .narrative-ability ul{
+    margin-top: 0;
+}
+
 .narrative-ability {
     border: 1px solid black;
     overflow: hidden;
     padding: 2px;
     position: relative;
+}
+
+.combat-ability-top h2{
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .combat-ability-top .strongweak {
@@ -414,7 +428,7 @@ h1, h2, h3, h4, h5, h6{
 
 .tarot-top {
     width: 70mm;
-    height: 30mm;
+    height: 50mm;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-top: 2px solid black;
@@ -430,14 +444,49 @@ h1, h2, h3, h4, h5, h6{
     grid-column: 1;
 }
 
+.feint{
+    grid-row: 1 / 6;
+    grid-column: 2;
+}
+
+.flex{
+    grid-row: 1 / 6;
+    grid-column: 3;
+}
+
+.blur{
+    grid-row: 9 / 13;
+    grid-column: 1;
+}
+
+.study{
+    grid-row: 9 / 13;
+    grid-column: 2;
+}
+
+.takeachance{
+    grid-row: 8 / 13;
+    grid-column: 3;
+}
+
+.foolish {
+    grid-row: 6 / 9;
+    grid-column: 1;
+}
+
+.scissors {
+    grid-row: 6 / 9;
+    grid-column: 2;
+}
+
 
 .aquarius{
-    grid-row: 1 / 9;
+    grid-row: 1 / 8;
     grid-column: 2;
 }
 
 .aquarius-narrative{
-    grid-row: 9 / 14;
+    grid-row: 8 / 11;
     grid-column: 2;
 }
 
@@ -447,16 +496,56 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .virgo-narrative{
-    grid-row: 8 / 14;
+    grid-row: 8 / 12;
     grid-column: 1;
 }
 
 .ophiuchus{
-    grid-row: 1 / 8;
+    grid-row: 1 / 7;
     grid-column: 3;
 }
 
 .ophiuchus-narrative{
-    grid-row: 8 / 14;
+    grid-row: 7 / 11;
+    grid-column: 3;
+}
+
+.aries{
+    grid-row: 1 / 5;
+    grid-column: 1;
+}
+
+.aries-narrative{
+    grid-row: 5 / 7;
+    grid-column: 1;
+}
+
+.taurus{
+    grid-row: 9 / 14;
+    grid-column: 1;
+}
+
+.taurus-narrative{
+    grid-row: 7 / 9;
+    grid-column: 1;
+}
+
+.cancer{
+    grid-row: 1 / 6;
+    grid-column: 2;
+}
+
+.cancer-narrative{
+    grid-row: 6 / 9;
+    grid-column: 2;
+}
+
+.leo{
+    grid-row: 1 / 6;
+    grid-column: 3;
+}
+
+.leo-narrative{
+    grid-row: 6 / 9;
     grid-column: 3;
 }

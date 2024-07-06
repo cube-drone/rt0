@@ -36,7 +36,7 @@ function combatTemplate({}){
                 <li> Place Cups or Pentacles on <span class="keyword">Defend</span>.</li>
                 <li> Cards sitting on <span class="keyword">Defend</span> remain there.</li>
                 <li> When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on <span class="keyword">Defend</span> and gain
-                    5 (<strong>7</strong>/<em>3</em>) Shields </li>
+                    5 (<strong>7</strong>/<em>3</em>) <span class="keyword">Shields</span> </li>
             </ul>
 
             <div class="strongweak">
@@ -160,10 +160,20 @@ function combatTemplate({}){
                             <li> At the end of their turn, any cards left in their hand are Discarded. </li>
                         </ul>
                 </li>
-                <li> After all players have taken their turn, all <span class="keyword">Adversary</span> <span class="keyword">Intents</span> are executed. </li>
+                <li> After all players have taken their turn, all <span class="keyword">Adversary</span> <span class="keyword">Intents</span> are executed and discarded. </li>
+                <li> Discard any <span class="keyword">Shields</span> that were not used. </li>
             </ul>
 
         </div>
+
+        <div class="combat-ability combat-ability-bottom numbers">
+            <ul>
+                <li><strong>Ace</strong> - 1</li>
+                <li><strong>Page, Knight, Queen, King</strong> - 10</li>
+            </ul>
+        </div>
+
+
 
     </div>
     `;
@@ -179,18 +189,145 @@ function combatTemplatePageTwo({}){
                 <div class="card card-major">V</div>
             </div>
 
-            <h2>Good Idea</h2>
+            <h2>Good Idea!</h2>
             <ul>
-                <li> Only players with <span class="keyword">Charming</span> may use <span class="keyword">Good Idea</span>.</li>
-                <li> Place <span class="keyword">The Hierophant</span> on <span class="keyword">Good Idea</span>.</li>
+                <li> Only players with <span class="keyword">Charming</span> may use <span class="keyword">Good Idea!</span>.</li>
+                <li> Place <span class="keyword">The Hierophant</span> on <span class="keyword">Good Idea!</span>.</li>
                 <li> Choose another player: they draw 3 cards.</li>
-                <li> Discard the card played on <span class="keyword">Good Idea</span> at the end of the turn.</li>
+                <li> Discard the card played on <span class="keyword">Good Idea!</span> at the end of the turn.</li>
 
             <div class="strongweak">
                 <strong>Charming</strong>
             </div>
 
         </div>
+
+        <div class="combat-ability combat-ability-top feint">
+
+            <div class="tarot-bottom">
+                <div class="card card-major card-moon">XVIII</div>
+            </div>
+
+            <h2>Feint</h2>
+            <ul>
+                <li> Only players with <span class="keyword">Wise</span> may use <span class="keyword">Feint</span>.</li>
+                <li> Place <span class="keyword">The Moon</span> on <span class="keyword">Feint</span>.</li>
+                <li> Reveal a hidden <span class="keyword">Intent</span> <span class="keyword">and</span> </li>
+                <li> You may force an <span class="keyword">Adversary</span> to redraw an <span class="keyword">Intent</span>.</li>
+                <li> Discard the card played on <span class="keyword">Feint</span> at the end of the turn.</li>
+
+            <div class="strongweak">
+                <strong>Wise</strong>
+            </div>
+
+        </div>
+
+        <div class="combat-ability combat-ability-top flex">
+
+            <div class="tarot-bottom">
+                <div class="card card-major card-moon">IV</div>
+            </div>
+
+            <h2>Flex</h2>
+            <ul>
+                <li> Only players with <span class="keyword">Strong</span> may use <span class="keyword">Flex</span>.</li>
+                <li> Place <span class="keyword">The Emperor</span> on <span class="keyword">Flex</span>.</li>
+                <li> While there is a card on <span class="keyword">Flex</span>, any damage generated is multiplied by 2. </li>
+                <li> Discard the card played on <span class="keyword">Flex</span> at the end of the turn.</li>
+            </ul>
+
+            <div class="strongweak">
+                <strong>Strong</strong>
+            </div>
+
+        </div>
+
+        <div class="combat-ability combat-ability-bottom blur">
+            <div class="strongweak">
+                <strong>Fast</strong>
+            </div>
+
+            <h2>Blur</h2>
+            <ul>
+                <li> Only players with <span class="keyword">Fast</span> may use <span class="keyword">Blur</span>.</li>
+                <li> Place <span class="keyword">The Chariot</span> on <span class="keyword">Blur</span>.</li>
+                <li> While there is a card on <span class="keyword">Blur</span>, your Shields are not discarded at the end of the round. </li>
+                <li> Discard the card played on <span class="keyword">Blur</span> at the beginning of your next turn.</li>
+            </ul>
+
+            <div class="tarot-top">
+                <div class="card card-major">VII</div>
+            </div>
+        </div>
+
+        <div class="combat-ability combat-ability-bottom study">
+            <div class="strongweak">
+                <strong>Clever</strong>
+            </div>
+
+            <h2>Study</h2>
+            <ul>
+                <li> Only players with <span class="keyword">Clever</span> may use <span class="keyword">Study</span>.</li>
+                <li> Place <span class="keyword">The Hermit</span> on <span class="keyword">Study</span>.</li>
+                <li> Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest. </li>
+                <li> Discard the card played on <span class="keyword">Blur</span> at the end of the turn.</li>
+            </ul>
+
+            <div class="tarot-top">
+                <div class="card card-major">VIII</div>
+            </div>
+        </div>
+
+        <div class="combat-ability combat-ability-bottom takeachance">
+            <div class="strongweak">
+                <strong>Lucky</strong>
+            </div>
+
+            <h2>Take a Chance</h2>
+            <ul>
+                <li> Only players with <span class="keyword">Lucky</span> may use <span class="keyword">Take a Chance</span>.</li>
+                <li> Place <span class="keyword">Wheel of Fortune</span> on <span class="keyword">Take a Chance</span>.</li>
+                <li> Draw & discard the top card from your deck.
+                    <ul>
+                        <li>If it was a Ace through 9, do nothing.</li>
+                        <li> Otherwise, choose one of Good Idea!, Third Eye, Flex, Blur, or Study, and use that ability as if you had played a card there. </li>
+                    </ul>
+                </li>
+                <li> Discard the card played on <span class="keyword">Take a Chance</span> at the end of the turn.</li>
+            </ul>
+
+            <div class="tarot-top">
+                <div class="card card-major">X</div>
+            </div>
+        </div>
+
+        <div class="combat-ability combat-ability-top foolish">
+            <h2>Foolish</h2>
+            <ul>
+                <li> Players with <span class="keyword">Foolish</span> <strong>must</strong> use <span class="keyword">Foolish</span> if they are able to, once per turn.</li>
+                <li> Play any card on <span class="keyword">Foolish</span>. </li>
+                <li> Make a funny face at the GM, or a silly noise, or honk,  or blow a raspberry, or say "Farts ahoy!" in your best pirate voice. </li>
+                <li> Discard the card played on <span class="keyword">Foolish</span> at the end of the turn.</li>
+            </ul>
+
+            <div class="strongweak">
+                <em>Foolish</em>
+            </div>
+        </div>
+
+        <div class="combat-ability combat-ability-top scissors">
+            <h2>Scissors & Glue</h2>
+            <ul>
+                <li> Use <span class="keyword">Scissors & Glue</span> to take the set of abilities and spells that you can actually use and paste them on
+                    to a single sheet for <span class="keyword">Convenient Access</span>. </li>
+            </ul>
+
+            <div class="strongweak">
+                <strong>Clever</strong>
+            </div>
+        </div>
+
+
 
     </div>
     `
@@ -231,7 +368,7 @@ function magicTemplate({}){
 
             <h2> ♍︎ Virgo - Charm <small>(Skill)</small></h2>
             <ul>
-                <li> Charm an intelligent human, creature or system that you encounter. </li>
+                <li> Once per <span class="keyword">Day</span>, Charm an intelligent human, creature or system that you encounter. </li>
                 <li> This human, creature, or system will be:
                     <ul>
                         <li> less inclined to attack your party </li>
@@ -242,7 +379,6 @@ function magicTemplate({}){
                     </ul>
                 </li>
                 <li> This effect ends if the target feels seriously threatened, or after 30 minutes. </li>
-                <li> Once <span class="keyword">Virgo</span> is used in this way, it can not be used again until the next Combat, or the end of the Day. </li>
             </ul>
 
             <div class="box box-bottom-right"></div>
@@ -338,8 +474,139 @@ function magicTemplate({}){
     </div>`;
 }
 
+function magicTemplatePageTwo({}){
+    return `
+    <div id="magic" class="combat">
+        <div class="combat-ability combat-ability-top magic aries">
+
+            <div class="tarot-bottom">
+                <div class="card card-major">I</div>
+            </div>
+
+            <h2> ♈︎ Aries - Ram <small>(Combat)</small></h2>
+            <ul>
+                <li> Place <span class="keyword">The Magician</span> on <span class="keyword">Aries</span>.</li>
+                <li> While <span class="keyword">Aries</span> has a card on it, any shields the player generates are multiplied by 2 (<strong>Clever: 3</strong>). </li>
+                <li> You may discard the card played on <span class="keyword">Aries</span> whenever you choose.</li>
+            </ul>
+
+            <div class="strongweak">
+                <strong>Magic</strong>
+            </div>
+
+        </div>
+
+        <div class="narrative-ability narrative-ability-bottom magic aries-narrative">
+
+            <h2> ♈︎ Aries - Agility <small>(Skill)</small></h2>
+            <ul>
+                <li> Use Aries to make a Skill check for a skill marked "Fast" as if it were <span class="keyword">Easy</span>, once per <span class="keyword">Day</span></li>
+            </ul>
+
+            <div class="box box-bottom-right"></div>
+        </div>
+
+        <div class="combat-ability combat-ability-bottom magic taurus">
+
+            <div class="strongweak">
+                <strong>Magic</strong>
+            </div>
+
+            <h2> ♉︎ Taurus - Rage <small>(Combat)</small></h2>
+            <ul>
+                <li> Place <span class="keyword">The Magician</span> on <span class="keyword">Taurus</span>.</li>
+                <li> While <span class="keyword">Taurus</span> has a card on it, any damage the player generates is multiplied by 2 (<strong>Clever: 3</strong>). </li>
+                <li> You may discard the card played on <span class="keyword">Taurus</span> whenever you choose.</li>
+            </ul>
+
+            <div class="tarot-top">
+                <div class="card card-major">I</div>
+            </div>
+
+        </div>
+
+        <div class="narrative-ability narrative-ability-bottom magic taurus-narrative">
+
+            <h2> ♉︎ Taurus - Strength <small>(Skill)</small></h2>
+            <ul>
+                <li> Use Taurus to make a Skill check for a skill marked "Strong" as if it were <span class="keyword">Easy</span>, once per <span class="keyword">Day</span></li>
+            </ul>
+
+            <div class="box box-bottom-right"></div>
+        </div>
+
+        <div class="combat-ability combat-ability-top magic cancer">
+
+            <div class="tarot-bottom">
+                <div class="card card-major">I</div>
+            </div>
+
+            <h2> ♋︎ Cancer - Shell <small>(Combat)</small></h2>
+            <ul>
+                <li> Place <span class="keyword">The Magician</span> on <span class="keyword">Cancer</span>.</li>
+                <li> Either: <ul>
+                    <li> Generate 15 <span class="keyword">Shields</span> (<strong>Clever</strong>: 30) <span class="keyword">or</span></li>
+                    <li> Generate 8 <span class="keyword">Shields</span> and 8 <span class="keyword">Shields</span> for all allies in your <span class="keyword">Zone</span> (<strong>Clever</strong>: 16 each) </li>
+                <li> Discard the card played on <span class="keyword">Cancer</span> at the end of the turn.</li>
+            </ul>
+
+            <div class="strongweak">
+                <strong>Magic</strong>
+            </div>
+
+        </div>
+
+        <div class="narrative-ability narrative-ability-bottom magic cancer-narrative">
+
+            <h2> ♋︎ Cancer - Bubble <small>(Skill)</small></h2>
+            <ul>
+                <li> Use Cancer to spawn a small, hard, magical force-field around you while exploring Paradise Lua, once per <span class="keyword">Day</span></li>
+                <li> The bubble lasts for 30 minutes, and holds enough air for all 30 of those minutes. </li>
+                <li> If fall damage were a problem (on the Moon, where gravity is not so harsh a mistress), the bubble would protect you from that, too. </li>
+            </ul>
+
+            <div class="box box-bottom-right"></div>
+        </div>
+
+        <div class="combat-ability combat-ability-top magic leo">
+
+            <div class="tarot-bottom">
+                <div class="card card-major">I</div>
+            </div>
+
+            <h2> ♌︎ Leo - Beam <small>(Combat)</small></h2>
+            <ul>
+                <li> Place <span class="keyword">The Magician</span> on <span class="keyword">Leo</span>.</li>
+                <li> Either: <ul>
+                    <li> Generate 15 Damage (<strong>Clever</strong>: 30) <span class="keyword">or</span></li>
+                    <li> Generate 8 Damage for all <span class="keyword">Adversaries</span> in your <span class="keyword">Zone</span> (<strong>Clever</strong>: 16 each) </li>
+                <li> Discard the card played on <span class="keyword">Leo</span> at the end of the turn.</li>
+            </ul>
+
+            <div class="strongweak">
+                <strong>Magic</strong>
+            </div>
+
+        </div>
+
+        <div class="narrative-ability narrative-ability-bottom magic leo-narrative">
+
+            <h2> ♌︎ Leo - Light <small>(Skill)</small></h2>
+            <ul>
+                <li> As often as you want, you can use Leo to cast a bright light in a 30 foot radius around you. </li>
+                <li> Once per <span class="keyword">Day</span>, you can use Leo to dramatically reduce the weight of an object. </li>
+            </ul>
+
+            <div class="box box-bottom-right"></div>
+        </div>
+
+
+    </div>`;
+}
+
 module.exports = {
     combatTemplate,
     combatTemplatePageTwo,
     magicTemplate,
+    magicTemplatePageTwo,
 }

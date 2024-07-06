@@ -1,6 +1,6 @@
 # Introduction
 
-_Seven haunted teenagers must survive one school year on a moonbase with an insane computer._
+_Haunted teenagers must survive one school year on a moonbase with an insane computer._
 
 Remaining Teenagers: Zero, (or **RT:0** for short), is a sci-fi/fantasy tabletop roleplaying game played with Tarot decks.
 
@@ -45,7 +45,7 @@ Bad News: Using these powers comes at a terrible cost.
 * Paranoia (the RPG). Paranoia (the concept).
 * Heart (the RPG).
 * Danganronpa. Persona. The SCP Foundation.
-* Neil Gaiman (the human being). Charles Stross (also a human being).
+* Neil Gaiman (the human being). Charles Stross (also a human being, presumably).
 * Tarot. Magic powers. Haunted. Apocalyptic.
 * Inscrutable rules that you _must_ follow.
 * Facing god and walking backwards into hell.
@@ -101,30 +101,30 @@ any gas station.
 * remove the other provided joker, and all "rules of draw & stud poker" style inserts.
 
 #### From the other deck of cards
-* take the Queens, cross out the Qs, and write "P" nearby, to make Pages in each suit.
+* Take the Queens, cross out the Qs, and write "P" nearby, to make Pages in each suit. (You may also consider drawing moustaches on them.)
 * on 20 of the remaining cards, preferring cards with lots of _space_, cross out the suit and rank ("2 diamonds")
 * Write in:
-* 1 / The Magician
-* 2 / The High Priestess
-* 3 / The Empress
-* 4 / The Emperor
-* 5 / The Hierophant
-* 6 / The Lovers
-* 7 / The Chariot
-* 8 / Strength
-* 9 / The Hermit
-* 10 / Wheel of Fortune
-* 11 / Justice
-* 12 / The Hanged Man
-* 13 / Death
-* 14 / Temperance
-* 15 / The Devil
-* 16 / The Tower
-* 17 / The Star
-* 18 / The Moon
-* 19 / The Sun
-* 20 / Judgement
-* 21 / The World
+* I / The Magician
+* II / The High Priestess
+* III / The Empress
+* IV / The Emperor
+* V / The Hierophant
+* VI / The Lovers
+* VII / The Chariot
+* VIII / Strength
+* IX / The Hermit
+* X / Wheel of Fortune
+* XI / Justice
+* XII / The Hanged Man
+* XIII / Death
+* XIV / Temperance
+* XV / The Devil
+* XVI / The Tower
+* XVII / The Star
+* XVIII / The Moon
+* XIX / The Sun
+* XX / Judgement
+* XXI / The World
 * Somewhere memorable, write: "Clubs -> Wands, Spades -> Swords, Hearts -> Cups, Diamonds -> Pentacles"
 * Add the Pages and the newly created Major Arcana to the first deck. Remove the remaining cards.
 * The final deck should have 78 cards in it.

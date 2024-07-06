@@ -10,54 +10,45 @@ The set of spells that no player has chosen remains in the game: some effects ta
 
 ### Combat - Ram's Dodge
 * Place The Magician on Aries.
-* While Aries has The Magician on it, any shields the player generates are multiplied by 2. (Clever: 3)
-* You may discard The Magician from Aries any time you like.
+* While Aries has a card on it, any shields the player generates are multiplied by 2. (Clever: 3)
+* You may discard the card from Aries any time you like.
 
-### Skill - Ram's Agility
-* When making any skill check marked "Fast", you can flip Aries upside-down
-to treat that skill as if it were a Chosen Skill for this one skill check.
-* Once Aries is upside-down, it can not be used in this way until the next Combat,
-or the end of the Day, at which point you should flip it back up.
+### Skill - Agility
+* Use Aries to make a Skill check for a skill marked "Fast" as if it were Easy, once per day.
 
 ## ♉︎ Taurus - Bull
 
-### Combat - Bull's Strength
+### Combat - Rage
 * Place The Magician on Taurus.
-* While Taurus has The Magician on it, any damage the player generates is multiplied by 2. (Clever: 3)
-* You may discard The Magician from Taurus any time you like.
+* While Taurus has a card on it, any damage the player generates is multiplied by 2. (Clever: 3)
+* You may discard the card from Taurus any time you like.
 
-### Skill - Bull's Strength
-* When making any skill check marked "Strong", you can flip Taurus upside-down
-to treat that skill as if it were a Chosen Skill for this one skill check.
-* Once Taurus is upside-down, it can not be used in this way until the next Combat,
-or the end of the Day, at which point you should flip it back up.
+### Skill - Strength
+* Use Taurus to make a Skill check for a skill marked "Strong" as if it were Easy, once per day.
 
 ## ♋︎ Cancer - Crab
 
 ### Combat - Shell
 * Place The Magician on Cancer.
-* Generate 15 Defense (Clever: 30 Defense) OR all players gain 6 Defense. (Clever: 12 Defense, Players with Repulsive cannot use this option.)
-* At the end of the turn, discard The Magician.
+* Generate 15 Shields (Clever: 30 Shields) OR generate 8 Shields for yourself and 8 Shields for all allies in your Zone. (Clever: 16 Shields)
+* At the end of the turn, discard the card on Cancer.
 
 ### Skill - Bubble
-* If a player would take an Injury while exploring the Moonbase, you can flip Cancer to
-prevent that Injury.
-* This skill can only be used once per Day.
+* Spawn a small, hard, magical force-field around you while exploring Paradise Lua, once per day.
+* The bubble lasts for 30 minutes, and can protect from all manner of small injury, including fall damage.
 
 ## ♌︎ Leo - Lion
 
 ### Combat - Beam
 * Place The Magician on Leo.
-* Generate 15 Magic Damage (Clever: 30 Magic Damage) or generate 6 Magic Damage (Clever: 12 Magic Damage, Players with Repulsive cannot use this option.) to all adversaries in the same Zone.
-* At the end of the turn, discard The Magician.
+* Generate 15 Magic Damage (Clever: 30 Magic Damage) or generate 8 Magic Damage (Clever: 16 Magic Damage) to all adversaries in the same Zone.
+* At the end of the turn, discard the card on Leo.
 
 ### Skill - Light
-* You can flip Leo upside-down to touch an object. Until the end of the Day, that object will emit soft, white light,
-bright enough to illuminate a 30ft dome around the players.
-* Once Leo is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
+* As often as you want, you can use Leo to cast a bright light in a 30 foot radius around you.
+* Once per Day, you can use Leo to dramatically reduce the weight of an object.
 
 ## ♊︎ Gemini - Twin
-Players with Repulsive cannot take or use Gemini.
 
 ### Combat - Twin
 * Place The Magician on Gemini.
@@ -74,7 +65,7 @@ Players with Repulsive cannot take or use Gemini.
 
 ### Combat - Arrow
 * Place The Magician on Sagittarius.
-* Generate 10 Magic Ranged Damage (Clever: 20 Ranged Magic Damage) or generate 4 Magic Ranged Damage (Clever: 10 Ranged Magic Damage, Players with Repulsive cannot use this option) to all adversaries.
+* Generate 10 Magic Ranged Damage (Clever: 20 Ranged Magic Damage) or generate 4 Magic Ranged Damage (Clever: 10 Ranged Magic Damage) to all adversaries.
 * At the end of the turn, discard The Magician.
 
 ### Skill - Arrow
