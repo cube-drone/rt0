@@ -483,7 +483,7 @@ function magicTemplatePageTwo({}){
                 <div class="card card-major">I</div>
             </div>
 
-            <h2> ♈︎ Aries - Ram <small>(Combat)</small></h2>
+            <h2> ♈︎ Aries - Dodge <small>(Combat)</small></h2>
             <ul>
                 <li> Place <span class="keyword">The Magician</span> on <span class="keyword">Aries</span>.</li>
                 <li> While <span class="keyword">Aries</span> has a card on it, any shields the player generates are multiplied by 2 (<strong>Clever: 3</strong>). </li>
@@ -577,9 +577,12 @@ function magicTemplatePageTwo({}){
             <h2> ♌︎ Leo - Beam <small>(Combat)</small></h2>
             <ul>
                 <li> Place <span class="keyword">The Magician</span> on <span class="keyword">Leo</span>.</li>
-                <li> Either: <ul>
-                    <li> Generate 15 Damage (<strong>Clever</strong>: 30) <span class="keyword">or</span></li>
-                    <li> Generate 8 Damage for all <span class="keyword">Adversaries</span> in your <span class="keyword">Zone</span> (<strong>Clever</strong>: 16 each) </li>
+                <li> Either:
+                    <ul>
+                        <li> Generate 15 Damage (<strong>Clever</strong>: 30) <span class="keyword">or</span></li>
+                        <li> Generate 8 Damage for all <span class="keyword">Adversaries</span> in your <span class="keyword">Zone</span> (<strong>Clever</strong>: 16 each) </li>
+                    </ul>
+                </li>
                 <li> Discard the card played on <span class="keyword">Leo</span> at the end of the turn.</li>
             </ul>
 
@@ -600,13 +603,65 @@ function magicTemplatePageTwo({}){
             <div class="box box-bottom-right"></div>
         </div>
 
+        <div class="combat-ability combat-ability-bottom magic gemini">
 
+            <div class="strongweak">
+                <strong>Magic</strong>
+            </div>
+
+            <h2> ♊︎ Gemini - Twin <small>(Combat)</small></h2>
+            <ul>
+                <li> Place <span class="keyword">The Magician</span> on <span class="keyword">Gemini</span>.</li>
+                <li> Draw 5 Cards (<strong>Clever</strong>: 10) </li>
+                <li> Discard the card played on <span class="keyword">Gemini</span> at the end of the turn.</li>
+            </ul>
+
+            <div class="tarot-top">
+                <div class="card card-major">I</div>
+            </div>
+
+        </div>
+
+        <div class="narrative-ability narrative-ability-bottom magic gemini-narrative">
+
+            <h2> ♊︎ Gemini - Clone <small>(Skill)</small></h2>
+            <ul>
+                <li> Once per <span class="keyword">Day</span>, you can create an illusory, holographic, silent duplicate of yourself. </li>
+                <li> The duplicate cannot interact with, pick up, or touch anything - anything touching the illusory copy will simply go right through. </li>
+                <li> The duplicate lasts for about thirty minutes. </li>
+            </ul>
+
+            <div class="box box-bottom-right"></div>
+        </div>
     </div>`;
+}
+
+function magicTemplatePageThree({}){
+    return `
+
+    `
+}
+
+function combatPages(){
+    return [
+        combatTemplate({}),
+        combatTemplatePageTwo({})
+    ];
+}
+
+function magicPages(){
+    return [
+        magicTemplate({}),
+        magicTemplatePageTwo({}),
+        magicTemplatePageThree({})
+    ];
 }
 
 module.exports = {
     combatTemplate,
     combatTemplatePageTwo,
+    combatPages,
     magicTemplate,
     magicTemplatePageTwo,
+    magicPages,
 }

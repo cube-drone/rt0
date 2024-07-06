@@ -36,6 +36,8 @@ The set of spells that no player has chosen remains in the game: some effects ta
 ### Skill - Bubble
 * Spawn a small, hard, magical force-field around you while exploring Paradise Lua, once per day.
 * The bubble lasts for 30 minutes, and can protect from all manner of small injury, including fall damage.
+* The bubble holds enough air for all 30 of those minutes.
+* If fall damage were a problem on the Moon, (_ it generally isn't_), the bubble would protect you from that, too.
 
 ## ♌︎ Leo - Lion
 
@@ -56,10 +58,9 @@ The set of spells that no player has chosen remains in the game: some effects ta
 * At the end of the turn, discard The Magician.
 
 ### Skill - Twin
-* You can flip Gemini upside-down to create an illusory, holographic, silent duplicate of yourself.
+* Once per day, you can create an illusory, holographic, silent duplicate of yourself.
 * The duplicate cannot interact with, pick up, or touch anything - anything touching the illusory copy will simply go right through.
 * The duplicate lasts for about thirty minutes.
-* Once Gemini is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
 
 ## ♐︎ Sagittarius - Archer
 
@@ -69,8 +70,7 @@ The set of spells that no player has chosen remains in the game: some effects ta
 * At the end of the turn, discard The Magician.
 
 ### Skill - Arrow
-* You can flip Sagittarius upside-down to name a person, object, or concept. A spectral arrow will appear, and to the best of its ability, it will point towards that thing.
-* Once Sagittarius is upside-down, it can not be used in this way until the next Combat, or the end of the Day, at which point you should flip it back up.
+* Once per day, name a person, object, or concept. A spectral arrow will appear, and to the best of its ability, it will point towards that thing.
 
 ## ♑︎ Capricorn - Goat-horned
 

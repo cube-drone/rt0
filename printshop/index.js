@@ -6,7 +6,7 @@ const fs = require('fs');
 
 const { pages } = require('./templates/base.html.js');
 const { reportCardTemplate } = require('./templates/reportcard.html.js');
-const { combatTemplate, combatTemplatePageTwo, magicTemplate, magicTemplatePageTwo } = require('./templates/combat.html.js');
+const {combatPages, magicPages} = require('./templates/combat.html.js');
 
 
 function writeContentsToFile({title, contents, filename}) {
@@ -15,18 +15,14 @@ function writeContentsToFile({title, contents, filename}) {
 }
 
 let reportCard = reportCardTemplate({});
-let combat = combatTemplate({});
-let combat2 = combatTemplatePageTwo({});
-let magic = magicTemplate({});
-let magic2 = magicTemplatePageTwo({});
+let combats = combatPages({});
+let magics = magicPages({});
 
-function testPrint(){
+function fullPrint(){
     let contents = [
         reportCard,
-        combat,
-        combat2,
-        magic,
-        magic2
+        ...combats,
+        ...magics,
     ];
     writeContentsToFile({title: 'Hello Printshop', contents, filename: 'hello.html'});
 
@@ -39,7 +35,7 @@ function main() {
         fs.mkdirSync('printables');
     }
 
-    testPrint();
+    fullPrint();
 
     // copy the entire static directory to printables/static
     if(!fs.existsSync('printables/static')){
