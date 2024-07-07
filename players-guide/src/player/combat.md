@@ -1,31 +1,72 @@
 # Combat
-Combat is triggered any time the players get into a scuffle with an adversary or adversaries.
+Combat is triggered any time the players get into a scuffle with an Adversary or Adversaries.
 
-The goal of Combat is to deal damage to adversaries until they stop fighting.
+The goal of Combat is to deal damage to Adversaries until they stop fighting.
 
 ## Summary
 Players and adversaries draw hands of cards, then play them into a variety of "bins" that are available to them, corresponding
 with unique combat abilities.
 
-These cards generate Strike and Defend points, which can be used to both generate and offset damage.
+The [Combat Abilities](/generated/printables/combat.html) are abilities that are available to every player, in combat.
+
+Players also have access to [Magic](./magic.md) as well as a suite of abilities provided by their [Major Arcana](./choosing_major_arcana.md).
+
+These cards mostly are involved with generating [Damage](#damage) and [Shields](#shield).
 
 ## Hit Points
 Players start every combat with 20 HP, a number that resets with _every combat_.
 
+> This can be represented with a 20-sided-die, a stack of 20 poker chips, or by writing the number on a scrap of paper.
+
 When a player reaches 0 HP, they do not die, but instead must buy 15 more HP. In order to do so, they
-must take a Major Injury.
+must take a [Major Injury](./injuries.md).
 
-A sufficient number of Corruption points will permanently retire the Player, although the exact number is only known by the GM.
+## A Round, and Turn Order
 
-## The Order
 A Round of battle is a cycle where every participant gets one turn.
 
-First, an Intent is drawn for every Adversary. This is a card that determines what the Adversary will
-do on their turn. Some Adversaries draw Intents face-up, some draw Intents face down.
+First, an Intent is drawn for every Adversary. This is a tarot card drawn from the GM's deck
+that determines what the Adversary will do on their turn.
+Most Adversaries draw Intents face-up, making their intentions clear to the players up-front,
+some Adversaries draw Intents face down.
 
 Then, players each take a turn. Fast players first, then players without Fast or Slow, then Slow players.
 
+"What if there are more than one player who can take a turn at the same time?"
+
+They can decide between themselves who goes first. Players cannot play simultaneously.
+
+> ##### Why _can't_ players play simultaneously?
+> I'm pretty sure that there's a way for players operating at the same time to trigger some kind of infinite loop.
+> Player A gives player B more cards, which allow Player B to give player A more cards...
+>
+> If you want to speed things up, you're free to house-rule this restriction away.
+
 Finally, each Adversary does whatever their Intent indicates that they will do.
+
+At the end of the Round, every player discards any Shield that they accumulated but did not use to block Damage from an Adversary.
+
+## A Turn
+
+At the beginning of their turn, a player draws 5 cards from their deck.
+If they have cards in their hand already at the beginning of their turn, they may keep them.
+
+If there are not enough cards in their deck to draw 5 cards,
+they shuffle their discard pile into their deck, and then draw 5 cards from their deck.
+
+These cards constitute the player's "hand" for the turn.
+
+The player plays cards on the various Combat abilities available to their character.
+If a player can not play a card, it is discarded at the end of the turn: there is no saving of cards for the next hand.
+
+## Damage
+
+Damage! When a player or Adversary generates Damage, it reduces the Hit Points of a target of their choice.
+
+Most Damage is melee-range: see "[Movement](#movement)" below.
+
+When an Adversary's Hit Points reach 0, they are no longer participants in the combat. The player who pushed the Adversary
+over the line gets to decide whether they killed, incapacitated, or scared off the Adversary.
 
 ## Movement
 
@@ -42,18 +83,15 @@ Some rooms are large, these are represented by a 5x5 grid.
 
 Some rooms are cramped, these are represented by a 1x1 grid. (_Which is, notably, just a single square. Sorry, ranged abilities!_)
 
-## A Turn
+## Shield
 
-At the beginning of their turn, a player draws 5 cards from their deck.
-If they have cards in their hand already at the beginning of their turn, they may keep them.
+Players and Adversaries can generate Shield. For each Shield generated, the player can offset a single point of Damage received:
+so if a player takes 8 Damage, but has 5 Shield, they only end up losing 3 HP.
 
-If there are not enough cards in their deck to draw 5 cards,
-they shuffle their discard pile into their deck, and then draw 5 cards from their deck.
+Shield is temporary, and only lasts for, essentially, the next damage phase after the Shield was generated.
 
-These cards constitute the player's "hand" for the turn.
-
-The player plays cards on the various Combat abilities available to their character.
-If a player can not play a card, it is discarded at the end of the turn: there is no saving of cards for the next hand.
+* At the end of all player turns, (after every Player has dealt Damage), all Adversary Shields are discarded.
+* At the end of a combat Round, (after every Adversary has dealt Damage), all player Shields are discarded.
 
 ## Numerical Values of Tarot Cards
 

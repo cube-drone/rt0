@@ -11,6 +11,10 @@ And, in fact, looking at some of these things will help contextualize... all of 
 The [Report Card](/generated/printables/reportcard.html)
 is where we define player [Abilities](./abilities.md) and [Skills](./skill_checks.md).
 
+## Combat Abilities
+
+The [Combat Abilities](/generated/printables/combat.html)
+are abilities that are available to every player, in combat.
 
 ## Everything In One Big Package
 

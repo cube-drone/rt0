@@ -1,0 +1,542 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Full Print</title>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body class="">
+    <div class="page">
+        <div class="content">
+            
+    <div id="combat" class="ability-grid">
+
+        
+            
+        <style>
+        .grid-strike{
+            grid-row: 1 / 6;
+            grid-column: 1;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top strike grid-strike">
+
+                <div class="tarot-bottom">
+                    <div class="card card-minor card-sword">⚔</div><div class="card card-minor card-wand">⌇</div>
+                </div>
+
+                <h2>Unarmed Strike</h2>
+                <ul>
+<li>Place <span class="keyword">Wands</span> or <span class="keyword">Swords</span> on <span class="keyword">Unarmed Strike</span>.</li>
+<li>Cards sitting on <span class="keyword">Unarmed Strike</span> remain there.</li>
+<li>When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on <span class="keyword">Unarmed Strike</span> and<ul>
+<li>deal 5 (<span class="keyword">Strong</span>: 7 / <span class="keyword">Weak</span>: 3) <span class="keyword">Damage</span> or</li>
+<li>deal 2 (<span class="keyword">Strong</span>: 3 / <span class="keyword">Weak</span>: 1) <span class="keyword">Ranged</span> <span class="keyword">Damage</span>.</li>
+</ul>
+</li>
+</ul>
+
+
+                
+
+                <div class="strongweak">
+                    <strong class='strength-strong strength'>Strong</strong> / <em class='weakness-weak weakness'>Weak</em>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-runaway{
+            grid-row: 6 / 13;
+            grid-column: 1;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-bottom runaway grid-runaway">
+                <div class="strongweak">
+                    <strong class='strength-fast strength'>Fast</strong> / <em class='weakness-slow weakness'>Slow</em>
+                </div>
+
+                <h2>Run Away</h2>
+                <ul>
+<li>Place any card on <span class="keyword">Run Away</span>.</li>
+<li>Once a card has been placed on <span class="keyword">Run Away</span>, the next card<strong> must </strong>either be one higher than the highest card on <span class="keyword">Run Away</span>, or one lower than the lowest card on <span class="keyword">Run Away</span>.</li>
+<li>When there are 4 cards (<span class="keyword">Fast</span>: 3, <span class="keyword">Slow</span>: 5) on <span class="keyword">Run Away</span>:<ul>
+<li>Move yourself to any unoccupied <span class="keyword">Zone</span> in the current <span class="keyword">Room</span> or</li>
+<li>Remove yourself from battle entirely. Your participation in this combat is over! The <span class="keyword">GM</span> decides where you are hiding.</li>
+</ul>
+</li>
+<li>Then: discard all cards on <span class="keyword">Run Away</span>.</li>
+</ul>
+
+
+                
+
+                <div class="tarot-top">
+                    <div class="card card-2">2</div><div class="card card-3">3</div><div class="card card-4">4</div><div class="card card-5">5</div>
+                </div>
+
+            </div>
+        
+
+        
+            
+        <style>
+        .grid-defend{
+            grid-row: 1 / 6;
+            grid-column: 2;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top defend grid-defend">
+
+                <div class="tarot-bottom">
+                    <div class="card card-minor card-cup">∪</div><div class="card card-minor card-pentacle">⊕</div>
+                </div>
+
+                <h2>Defend</h2>
+                <ul>
+<li>Place <span class="keyword">Cups</span> or <span class="keyword">Pentacles</span> on <span class="keyword">Defend</span>.</li>
+<li>When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on <span class="keyword">Defend</span> and<ul>
+<li>generate 5 (<span class="keyword">Fast</span>: 7 / <span class="keyword">Slow</span>: 3) <span class="keyword">Shield</span>.</li>
+</ul>
+</li>
+</ul>
+
+
+                
+
+                <div class="strongweak">
+                    <strong class='strength-fast strength'>Fast</strong> / <em class='weakness-slow weakness'>Slow</em>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-movement{
+            grid-row: 9 / 13;
+            grid-column: 2;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-bottom movement grid-movement">
+                <div class="strongweak">
+                    <strong class='strength-fast strength'>Fast</strong> / <em class='weakness-slow weakness'>Slow</em>
+                </div>
+
+                <h2>Movement / Skill</h2>
+                <ul>
+<li>Place any card on <span class="keyword">Movement</span> / <span class="keyword">Skill</span>.</li>
+<li>When there are 2 (<span class="keyword">Fast</span>: 1, <span class="keyword">Slow</span>: 3) cards on <span class="keyword">Movement</span> / <span class="keyword">Skill</span>:<ul>
+<li>Discard all cards on <span class="keyword">Movement</span> / <span class="keyword">Skill</span> and</li>
+<li>Move 1 <span class="keyword">Zone</span> or</li>
+<li>Shuffle your discard pile into your deck, then make a skill check.</li>
+</ul>
+</li>
+</ul>
+
+
+                
+
+                <div class="tarot-top">
+                    <div class="card card-any">?</div>
+                </div>
+
+            </div>
+        
+
+        
+            
+        <style>
+        .grid-concentrate{
+            grid-row: 1 / 6;
+            grid-column: 3;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top concentrate grid-concentrate">
+
+                <div class="tarot-bottom">
+                    <div class="card card-major">M</div>
+                </div>
+
+                <h2>Concentrate</h2>
+                <ul>
+<li>Place Major Arcana cards on <span class="keyword">Concentrate</span>.</li>
+<li>Cards sitting on <span class="keyword">Concentrate</span> remain there.</li>
+<li>When there are 2 (<span class="keyword">Wise</span>: 1, <span class="keyword">Foolish</span>: 3) cards on <span class="keyword">Concentrate</span>:<ul>
+<li>discard all cards on <span class="keyword">Concentrate</span> and</li>
+<li>draw a new card</li>
+</ul>
+</li>
+</ul>
+
+
+                
+
+                <div class="strongweak">
+                    <strong class='strength-wises strength'>Wise</strong> / <em class='weakness-foolish weakness'>Foolish</em>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-friendship{
+            grid-row: 6 / 9;
+            grid-column: 3;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top friendship grid-friendship">
+                <h2>Friendship</h2>
+                <ul>
+<li>Corruption<strong> may </strong>be marked on <span class="keyword">Friendship</span>.</li>
+<li>At the end of the day, draw 1 (<span class="keyword">Charming</span>: 2) empty corruption circles on <span class="keyword">Friendship</span>.</li>
+<li>Players with <span class="keyword">Repulsive</span><strong> may </strong>not use <span class="keyword">Friendship</span>.</li>
+</ul>
+
+
+                
+        <div class="corruption-container">
+            <div class="corruption-circle"></div>
+        </div>
+
+
+                
+
+                <div class="strongweak">
+                    <strong class='strength-charming strength'>Charming</strong> / <em class='weakness-repulsive weakness'>Repulsive</em>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-catastrophe{
+            grid-row: 9 / 13;
+            grid-column: 3;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-bottom catastrophe grid-catastrophe">
+                <div class="strongweak">
+                    
+                </div>
+
+                <h2>Catastrophe</h2>
+                <ul>
+<li>Any time <span class="keyword">The Tower</span> is drawn, it<strong> must </strong>be played immediately and before any other cards: on <span class="keyword">Catastrophe</span>.</li>
+<li>The player discards all cards on all of their abilities, including <span class="keyword">The Tower</span>, then shuffles the discard pile back into their deck and ends their turn.</li>
+<li>If <span class="keyword">Lucky</span>, gain 10 <span class="keyword">Shield</span>.</li>
+</ul>
+
+
+                
+
+                <div class="tarot-top">
+                    <div class="card card-tower card-major">XVI</div>
+                </div>
+
+            </div>
+        
+
+        <style>
+            .turn {
+                grid-row: 6 / 9;
+                grid-column: 2;
+                font-size: x-small;
+            }
+        </style>
+
+        <div class="combat-ability combat-ability-bottom turn">
+            <ul>
+                <li>First, draw an <span class="keyword">Intent</span> for each <span class="keyword">Adversary</span>.</li>
+                <li>
+                    Each player takes a turn. Players can choose which order they take their turns, but <span class="keyword">Fast</span> players must go first,
+                    and <span class="keyword">Slow</span> players must go last.
+                </li>
+                <li>
+                    On each player's turn:
+                        <ul>
+                            <li> They draw 5 cards from their deck, then play the cards in any order. </li>
+                            <li> At the end of their turn, any cards left in their hand are Discarded. </li>
+                        </ul>
+                </li>
+                <li> After all players have taken their turn, each <span class="keyword">Adversary</span> discards all Shields, then executes and discards their <span class="keyword">Intent</span>. </li>
+                <li> Discard any Player <span class="keyword">Shields</span> that were not used. </li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+        </div>
+    </div>
+<div class="page">
+        <div class="content">
+            
+    <div id="combat-two" class="ability-grid">
+
+        
+            
+        <style>
+        .grid-goodidea{
+            grid-row: 1 / 6;
+            grid-column: 1;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top goodidea grid-goodidea">
+
+                <div class="tarot-bottom">
+                    <div class="card card-hierophant card-major">V</div>
+                </div>
+
+                <h2>Good Idea!</h2>
+                <ul>
+<li>Only players with <span class="keyword">Charming</span> can use <span class="keyword">Good Idea</span>!.</li>
+<li>Place <span class="keyword">The Hierophant</span> on <span class="keyword">Good Idea</span>!.</li>
+<li>Choose another player: they draw 3 cards.</li>
+<li>Discard the card played on <span class="keyword">Good Idea</span>! at the end of the turn.</li>
+</ul>
+
+
+                
+
+                <div class="strongweak">
+                    <strong class='strength-charming strength'>Charming</strong>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-foolish{
+            grid-row: 6 / 9;
+            grid-column: 1;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top foolish grid-foolish">
+                <h2>Honk</h2>
+                <ul>
+<li>Players with <span class="keyword">Foolish</span><strong> must </strong>use <span class="keyword">Honk</span>, once per turn.</li>
+<li>Any player can use <span class="keyword">Honk</span>.</li>
+<li>Play any card on <span class="keyword">Honk</span>, then discard it.</li>
+<li>Make a funny face at the <span class="keyword">GM</span>, or a silly noise, or honk, or blow a raspberry, or say &quot;Farts ahoy!&quot; in your best pirate voice.</li>
+</ul>
+
+
+                
+
+                
+
+                <div class="strongweak">
+                    <em class='weakness-foolish weakness'>Foolish</em>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-blur{
+            grid-row: 9 / 13;
+            grid-column: 1;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-bottom blur grid-blur">
+                <div class="strongweak">
+                    <strong class='strength-fast strength'>Fast</strong>
+                </div>
+
+                <h2>Blur</h2>
+                <ul>
+<li>Only players with <span class="keyword">Fast</span> can use <span class="keyword">Blur</span>.</li>
+<li>Place <span class="keyword">The Chariot</span> on <span class="keyword">Blur</span>.</li>
+<li>Generate 5 <span class="keyword">Shield</span>.</li>
+<li>While there is a card on <span class="keyword">Blur</span>, your <span class="keyword">Shield</span> are not discarded at the end of the round.</li>
+<li>Discard the card played on <span class="keyword">Blur</span> at the beginning of your next turn.</li>
+</ul>
+
+
+                
+
+                <div class="tarot-top">
+                    <div class="card card-chariot card-major">VII</div>
+                </div>
+
+            </div>
+        
+
+        
+            
+        <style>
+        .grid-feint{
+            grid-row: 1 / 6;
+            grid-column: 2;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top feint grid-feint">
+
+                <div class="tarot-bottom">
+                    <div class="card card-moon card-major">XVIII</div>
+                </div>
+
+                <h2>Feint</h2>
+                <ul>
+<li>Only players with <span class="keyword">Wise</span> can use <span class="keyword">Feint</span>.</li>
+<li>Place <span class="keyword">The Moon</span> on <span class="keyword">Feint</span>.<ul>
+<li>Reveal a hidden <span class="keyword">Intent</span> and</li>
+<li>You<strong> may </strong>force an <span class="keyword">Adversary</span> to redraw an <span class="keyword">Intent</span>.</li>
+</ul>
+</li>
+<li>Discard the card played on <span class="keyword">Feint</span> at the end of the turn.</li>
+</ul>
+
+
+                
+
+                <div class="strongweak">
+                    <strong class='strength-wises strength'>Wise</strong>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-scissors{
+            grid-row: 6 / 9 ;
+            grid-column: 2;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top scissors grid-scissors">
+                <h2>Scissors & Glue</h2>
+                <ul>
+<li>Take the set of combat abilities and spells that you can actually <em>use</em>.</li>
+<li>Cut them out of the printout.</li>
+<li>Paste them on to a single page for <span class="keyword">Convenient Access</span>.</li>
+</ul>
+
+
+                
+
+                
+
+                <div class="strongweak">
+                    <strong class='strength-clever strength'>Clever</strong>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-study{
+            grid-row: 9 / 13;
+            grid-column: 2;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-bottom study grid-study">
+                <div class="strongweak">
+                    <strong class='strength-clever strength'>Clever</strong>
+                </div>
+
+                <h2>Study</h2>
+                <ul>
+<li>Only players with Clever can use <span class="keyword">Study</span>.</li>
+<li>Place <span class="keyword">The Hermit</span> on <span class="keyword">Study</span>.</li>
+<li>Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest.</li>
+<li>Discard the card played on <span class="keyword">Study</span> at the start of your turn.</li>
+</ul>
+
+
+                
+
+                <div class="tarot-top">
+                    <div class="card card-hermit card-major">IX</div>
+                </div>
+
+            </div>
+        
+
+        
+            
+        <style>
+        .grid-flex{
+            grid-row: 1 / 6;
+            grid-column: 3;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-top flex grid-flex">
+
+                <div class="tarot-bottom">
+                    <div class="card card-emperor card-major">IV</div>
+                </div>
+
+                <h2>Flex</h2>
+                <ul>
+<li>Only players with <span class="keyword">Strong</span> can use <span class="keyword">Flex</span>.</li>
+<li>Place <span class="keyword">The Emperor</span> on <span class="keyword">Flex</span>.</li>
+<li>While there is a card on <span class="keyword">Flex</span>, any damage generated is multiplied by 2.</li>
+<li>Discard the card played on <span class="keyword">Flex</span> at the end of the turn.</li>
+</ul>
+
+
+                
+
+                <div class="strongweak">
+                    <strong class='strength-strong strength'>Strong</strong>
+                </div>
+            </div>
+        
+        
+            
+        <style>
+        .grid-takeachance{
+            grid-row: 8 / 13;
+            grid-column: 3;
+        }
+        </style>
+    
+            <div class="combat-ability combat-ability-bottom takeachance grid-takeachance">
+                <div class="strongweak">
+                    <strong class='strength-lucky strength'>Lucky</strong>
+                </div>
+
+                <h2>Take a Chance</h2>
+                <ul>
+<li>Only players with <span class="keyword">Lucky</span> can use <span class="keyword">Take a Chance</span>.</li>
+<li>Place The <span class="keyword">Wheel of Fortune</span> on <span class="keyword">Take a Chance</span>.</li>
+<li>Draw &amp; discard the top card of your deck.<ul>
+<li>If it was an Ace through 9, do nothing.</li>
+<li>Otherwise, choose one of <span class="keyword">Good Idea</span>!, <span class="keyword">Feint</span>, <span class="keyword">Flex</span>, <span class="keyword">Blur</span>, or <span class="keyword">Study</span>, and use that ability as if you had played a card there.</li>
+</ul>
+</li>
+<li>Discard the card played on <span class="keyword">Take a Chance</span> at the end of the turn.</li>
+</ul>
+
+
+                
+
+                <div class="tarot-top">
+                    <div class="card card-wheel card-major">X</div>
+                </div>
+
+            </div>
+        
+
+    </div>
+    
+        </div>
+    </div>
+    </body>
+    </html>

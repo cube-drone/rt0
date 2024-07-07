@@ -53,33 +53,33 @@ So, for example, you could play The Magician (I) after The Fool (0), or The Love
 * Players with Repulsive may not use Friendship.
 
 ## Flex
-* Only players with Strong may use Flex.
+* Only players with Strong can use Flex.
 * Place The Emperor on Flex.
 * While there is a card on Flex, any damage generated is multiplied by 2.
 * Discard the card played on Flex at the end of the turn.
 
 ## Blur
-* Only players with Fast may use Blur.
+* Only players with Fast can use Blur.
 * Place The Chariot on Blur.
 * Generate 5 Shield.
 * While there is a card on Blur, your Shield are not discarded at the end of the round.
 * Discard the card played on Blur at the beginning of your next turn.
 
 ## Feint
-* Only players with Wise may use Feint.
+* Only players with Wise can use Feint.
 * Place The Moon on Feint.
   * Reveal a hidden Intent and
   * You may force an Adversary to redraw an Intent.
 * Discard the card played on Feint at the end of the turn.
 
 ## Study
-* Only players with Clever may use Study.
+* Only players with Clever can use Study.
 * Place The Hermit on Study.
 * Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest.
 * Discard the card played on Study at the start of your turn.
 
 ## Take a Chance
-* Only players with Lucky may use Take a Chance.
+* Only players with Lucky can use Take a Chance.
 * Place The Wheel of Fortune on Take a Chance.
 * Draw & discard the top card of your deck.
   * If it was an Ace through 9, do nothing.
@@ -87,14 +87,14 @@ So, for example, you could play The Magician (I) after The Fool (0), or The Love
 * Discard the card played on Take a Chance at the end of the turn.
 
 ## Good Idea!
-* Only players with Charming may use Good Idea!.
+* Only players with Charming can use Good Idea!.
 * Place The Hierophant on Good Idea!.
 * Choose another player: they draw 3 cards.
 * Discard the card played on Good Idea! at the end of the turn.
 
 ## Honk
 * Players with Foolish must use Honk, once per turn.
-* Play any card on Honk.
+* Any player can use Honk.
+* Play any card on Honk, then discard it.
 * Make a funny face at the GM, or a silly noise, or honk, or blow a raspberry, or say "Farts ahoy!" in your best pirate voice.
-* Discard the card played on Honk at the end of the turn.
 

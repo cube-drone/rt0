@@ -50,6 +50,15 @@ function fullPrint({data}){
     writeContentsToFile({title: 'Full Print', contents, filename: 'full.html'});
 }
 
+function combatPrint({data}){
+    let combats = combatPages(data);
+
+    let contents = [
+        ...combats,
+    ];
+    writeContentsToFile({title: 'Full Print', contents, filename: 'combat.html'});
+}
+
 function reportCardPrint({data}){
     let reportCard = reportCardTemplate(data);
     writeContentsToFile({title: 'Report Card', contents: [reportCard], filename: 'reportcard.html'});
@@ -68,6 +77,7 @@ function main() {
 
     fullPrint({data});
     reportCardPrint({data});
+    combatPrint({data});
 
     let combatMarkdown = generateCombatMarkdown({data});
     let spellsMarkdown = generateMagicMarkdown({data});

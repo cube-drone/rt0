@@ -47,6 +47,7 @@ Bad News: Using these powers comes at a terrible cost.
 * Danganronpa. Persona. The SCP Foundation.
 * Neil Gaiman (the human being). Charles Stross (also a human being, presumably).
 * Tarot. Magic powers. Haunted. Apocalyptic.
+* <small>Maybe a little Homestuck</small>.
 * Inscrutable rules that you _must_ follow.
 * Facing god and walking backwards into hell.
 * Coming-of-age. Redemption.

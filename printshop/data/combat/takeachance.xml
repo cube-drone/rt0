@@ -7,7 +7,7 @@
         <card>Wheel of Fortune</card>
     </helper>
     <description>
-* Only players with Lucky may use Take a Chance.
+* Only players with Lucky can use Take a Chance.
 * Place The Wheel of Fortune on Take a Chance.
 * Draw &amp; discard the top card of your deck.
   * If it was an Ace through 9, do nothing.

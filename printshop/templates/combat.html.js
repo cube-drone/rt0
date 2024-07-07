@@ -177,13 +177,12 @@ function combatTemplate({combat}){
                 <li>
                     On each player's turn:
                         <ul>
-                            <li> They draw 5 cards from their deck. </li>
-                            <li> They may play cards on their Abilities. </li>
+                            <li> They draw 5 cards from their deck, then play the cards in any order. </li>
                             <li> At the end of their turn, any cards left in their hand are Discarded. </li>
                         </ul>
                 </li>
-                <li> After all players have taken their turn, all <span class="keyword">Adversary</span> <span class="keyword">Intents</span> are executed and discarded. </li>
-                <li> Discard any <span class="keyword">Shields</span> that were not used. </li>
+                <li> After all players have taken their turn, each <span class="keyword">Adversary</span> discards all Shields, then executes and discards their <span class="keyword">Intent</span>. </li>
+                <li> Discard any Player <span class="keyword">Shields</span> that were not used. </li>
             </ul>
 
         </div>

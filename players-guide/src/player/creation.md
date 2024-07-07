@@ -9,5 +9,6 @@ See [Abilities](./abilities.md).
 
 See [Skill Checks](./skill_checks.md).
 
-## Choose a Starsign
+## Choose a Spell
+
 See [Magic](./magic.md).

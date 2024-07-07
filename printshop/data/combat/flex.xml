@@ -7,7 +7,7 @@
         <card>The Emperor</card>
     </helper>
     <description>
-* Only players with Strong may use Flex.
+* Only players with Strong can use Flex.
 * Place The Emperor on Flex.
 * While there is a card on Flex, any damage generated is multiplied by 2.
 * Discard the card played on Flex at the end of the turn.

@@ -7,7 +7,7 @@
         <card>The Hermit</card>
     </helper>
     <description>
-* Only players with Clever may use Study.
+* Only players with Clever can use Study.
 * Place The Hermit on Study.
 * Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest.
 * Discard the card played on Study at the start of your turn.
