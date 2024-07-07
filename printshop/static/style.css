@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: medium !important;
 }
 
-.combat{
+.ability-grid{
     height: 199mm;
     padding: 0 10px;
     display: grid;
@@ -396,84 +396,4 @@ h1, h2, h3, h4, h5, h6{
     margin: auto;
     display: flex;
     justify-content: center;
-}
-
-.aquarius{
-    grid-row: 1 / 8;
-    grid-column: 2;
-}
-
-.aquarius-narrative{
-    grid-row: 8 / 11;
-    grid-column: 2;
-}
-
-.virgo{
-    grid-row: 1 / 8;
-    grid-column: 1;
-}
-
-.virgo-narrative{
-    grid-row: 8 / 12;
-    grid-column: 1;
-}
-
-.ophiuchus{
-    grid-row: 1 / 7;
-    grid-column: 3;
-}
-
-.ophiuchus-narrative{
-    grid-row: 7 / 11;
-    grid-column: 3;
-}
-
-.aries{
-    grid-row: 1 / 5;
-    grid-column: 1;
-}
-
-.aries-narrative{
-    grid-row: 5 / 7;
-    grid-column: 1;
-}
-
-.taurus{
-    grid-row: 9 / 14;
-    grid-column: 1;
-}
-
-.taurus-narrative{
-    grid-row: 7 / 9;
-    grid-column: 1;
-}
-
-.cancer{
-    grid-row: 1 / 6;
-    grid-column: 2;
-}
-
-.cancer-narrative{
-    grid-row: 6 / 9;
-    grid-column: 2;
-}
-
-.leo{
-    grid-row: 1 / 6;
-    grid-column: 3;
-}
-
-.leo-narrative{
-    grid-row: 6 / 9;
-    grid-column: 3;
-}
-
-.gemini{
-    grid-row: 9 / 14;
-    grid-column: 2;
-}
-
-.gemini-narrative{
-    grid-row: 9 / 14;
-    grid-column: 3;
 }

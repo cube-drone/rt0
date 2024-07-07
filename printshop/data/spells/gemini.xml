@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Gemini</name>
+    <symbol>♊︎</symbol>
+    <slug>gemini</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Twin</combatName>
+    <combatDescription>
+* Place The Magician on Gemini.
+* Draw 5 Cards (Clever: 10)
+* Discard the card played on Gemini at the end of the turn.
+    </combatDescription>
+    <skillName>Clone </skillName>
+    <skillDescription>
+* Once per Day, you can create an illusory, holographic, silent duplicate of yourself.
+* The duplicate cannot interact with, pick up, or touch anything - anything touching the illusory copy will simply go right through.
+* The duplicate lasts for about thirty minutes.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

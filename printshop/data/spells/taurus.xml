@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Taurus</name>
+    <symbol>♉︎</symbol>
+    <slug>taurus</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Rage</combatName>
+    <combatDescription>
+* Place The Magician on Taurus.
+* While Taurus has a card on it, any damage the player generates is multiplied by 2 (Clever: 3).
+* You may discard the card played on Taurus whenever you choose.
+    </combatDescription>
+    <skillName>Strength</skillName>
+    <skillDescription>
+* Use Taurus to make a Skill check for a skill marked "Strong" as if it were Easy, once per Day.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

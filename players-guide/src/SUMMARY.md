@@ -15,6 +15,7 @@
 - [Combat](./player/combat.md)
   - [Basic Combat Skills](./player/generated/basic_combat.md)
 - [Magic](./player/magic.md)
+  - [Basic Spells](./player/generated/basic_spells.md)
 - [Injuries, Healing & Death](./player/injuries.md)
 - [Money & Equipment](./player/equipment.md)
 - [Food, Water, & Sleep](./player/food.md)

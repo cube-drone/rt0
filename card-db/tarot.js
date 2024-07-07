@@ -183,6 +183,16 @@ function numericalValue(card){
     }
 }
 
+function randomHand(size){
+    let hand = [];
+    let deck = getDeck();
+    for(let i = 0; i < size; i++){
+        let card = deck[Math.floor(Math.random() * deck.length)];
+        hand.push(card);
+    }
+    return hand;
+}
+
 // the "get" functions produce a deep copy
 // (the arrays are frozen to prevent modification)
 module.exports = {
@@ -207,5 +217,6 @@ module.exports = {
     pentacles,
     getPentacles,
     isPentacles,
-    numericalValue
+    numericalValue,
+    randomHand,
 };

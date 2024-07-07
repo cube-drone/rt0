@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Scorpio</name>
+    <symbol>♏︎</symbol>
+    <slug>scorpio</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Venom</combatName>
+    <combatDescription>
+* Place The Magician on Scorpio
+* You may choose to discard The Magician from Libra at any time. (It is automatically discarded at end of combat.)
+* While Scorpio has a card on it, the player generates 1 Magic Damage every time they draw a card.
+    </combatDescription>
+    <skillName>Puppet</skillName>
+    <skillDescription>
+* Once per Day, summon an disembodied spectral hand, controlled by your mind.
+* This hand will stick around for about 30 minutes. It moves about as fast as a regular person would.
+* This hand can lift up to 5lbs.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Pisces</name>
+    <symbol>♓︎</symbol>
+    <slug>pisces</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Fishing</combatName>
+    <combatDescription>
+* Place a Magician on Pisces.
+* Search your deck for a card (Clever: 2 cards), place it in your hand, and then shuffle the deck.
+* At the end of the turn, discard The Magician.
+    </combatDescription>
+    <skillName>Hook</skillName>
+    <skillDescription>
+* Any time you want, throw a spectral grappling hook.
+* This can be used to grab distant things or to set up difficult climbs.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

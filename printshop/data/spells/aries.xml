@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Aries</name>
+    <symbol>♈︎</symbol>
+    <slug>aries</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Dodge</combatName>
+    <combatDescription>
+* Place The Magician on Aries.
+* While Aries has a card on it, any shields the player generates are multiplied by 2 (Clever: 3).
+* You may discard the card played on Aries whenever you choose.
+    </combatDescription>
+    <skillName>Agility</skillName>
+    <skillDescription>
+* Use Aries to make a Skill check for a skill marked "Fast" as if it were Easy, once per Day.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

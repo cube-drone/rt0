@@ -30,17 +30,41 @@ function listKeywords(keywords){
     return list;
 }
 
-function prepare(doc, keywords){
-    doc.descriptionHtml = marked(doc.description);
+function renderAndReplace(text, keywords){
+    /*
+    * 1. Render the text as markdown
+    * 2. Bold certain words ("may", "must")
+    * 3. Highlight keywords like "Zone" and "The Magician"
+    */
+    let html = marked(text);
 
-    for(let boldword of [' and ', ' or ', ' may ', ' must ']){
+    for(let boldword of [' may ', ' must ']){
         let re = new RegExp(boldword, 'g');
-        doc.descriptionHtml = doc.descriptionHtml.replace(re, `<strong>${boldword}</strong>`);
+        html = html.replace(re, `<strong>${boldword}</strong>`);
     }
     for(let keyword of keywords){
         let re = new RegExp(keyword, 'g');
-        doc.descriptionHtml = doc.descriptionHtml.replace(re, `<span class="keyword">${keyword}</span>`);
+        html = html.replace(re, `<span class="keyword">${keyword}</span>`);
     }
+
+    return html;
+
+}
+
+function prepare(doc, keywords){
+    if(doc.description && doc.description.length > 0){
+        doc.descriptionHtml = renderAndReplace(doc.description, keywords);
+    }
+    if(doc.extraDescription && doc.extraDescription.length > 0){
+        doc.extraDescriptionHtml = renderAndReplace(doc.extraDescription, keywords);
+    }
+    if(doc.combatDescription && doc.combatDescription.length > 0){
+        doc.combatDescriptionHtml = renderAndReplace(doc.combatDescription, keywords);
+    }
+    if(doc.skillDescription && doc.skillDescription.length > 0){
+        doc.skillDescriptionHtml = renderAndReplace(doc.skillDescription, keywords);
+    }
+
     return doc;
 }
 
@@ -64,14 +88,30 @@ function prepareData(){
         keywords.push(doc.ability.name);
     }
 
+    let spellFiles = fs.readdirSync('data/spells');
+    let spellData = {};
+    for (let file of spellFiles){
+        let doc = read(`data/spells/${file}`);
+        let name = file.replace('.xml', '');
+        spellData[name] = doc.spell;
+        if(doc.spell.keywords && doc.spell.keywords.k){
+            keywords.push(doc.spell.keywords.k);
+        }
+        keywords.push(doc.spell.name);
+    }
+
     keywords = [...new Set(keywords)];
 
     for(let key of Object.keys(combatData)){
         combatData[key] = prepare(combatData[key], keywords);
     }
+    for(let key of Object.keys(spellData)){
+        spellData[key] = prepare(spellData[key], keywords);
+    }
 
     return {
         combat: combatData,
+        spells: spellData,
         keywordObj,
         keywords,
     };

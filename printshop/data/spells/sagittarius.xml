@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Sagittarius</name>
+    <symbol>♐︎</symbol>
+    <slug>sagittarius</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Arrow</combatName>
+    <combatDescription>
+* Place The Magician on Sagittarius.
+* Either:
+   * Deal 10 Magic Ranged Damage (Clever: 20) or
+   * Deal 5 Magic Ranged Damage (Clever: 10) to all Adversaries.
+* At the end of the turn, discard The Magician.
+    </combatDescription>
+    <skillName>Arrow</skillName>
+    <skillDescription>
+* Once per day, name a person, object, or concept. A spectral arrow will appear, and to the best of its ability, it will point towards that thing.
+* This arrow is only visible to you, and it only lasts for 30 minutes.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

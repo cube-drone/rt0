@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Capricorn</name>
+    <symbol>♑︎</symbol>
+    <slug>capricorn</slug>
+    <helper>
+        <card>The Magician</card>
+        <card>Any</card>
+    </helper>
+    <combatName>Capricious</combatName>
+    <combatDescription>
+* Place The Magician on Capricorn, along with one other card.
+* The other card must be The High Priestess, The Empress, The Lovers, The Devil, Strength, The Star, The World, or any Queen.
+* These cards must be played on the same turn.
+* Either:
+   * Deal 30 Magic Damage (Clever: 60) or
+   * Gain 30 Shield (Clever: 60).
+* At the end of the turn, discard all cards placed on Capricorn.
+    </combatDescription>
+    <skillName>Loop</skillName>
+    <skillDescription>
+* Once per Day, when any player fails a Skill Check, you can use Capricorn to allow them to try again.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Cancer</name>
+    <symbol>♋︎</symbol>
+    <slug>cancer</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Shell</combatName>
+    <combatDescription>
+* Place The Magician on Cancer.
+* Either:
+   * Generate 15 Shields (Clever: 30) or
+   * Generate 8 Shields and 8 Shields for all allies in your Zone (Clever: 16 each)
+* Discard the card played on Cancer at the end of the turn.
+    </combatDescription>
+    <skillName>Bubble</skillName>
+    <skillDescription>
+* Use Cancer to spawn a small, hard, magical force-field around you while exploring Paradise Lua, once per Day
+* The bubble lasts for 30 minutes, and holds enough air for all 30 of those minutes.
+* If fall damage were a problem (on the Moon, where gravity is not so harsh a mistress), the bubble would protect you from that, too.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

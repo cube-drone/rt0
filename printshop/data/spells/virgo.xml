@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Virgo</name>
+    <symbol>♍︎</symbol>
+    <slug>virgo</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Charm</combatName>
+    <combatDescription>
+* Only players with Charming may use or learn Virgo.
+* Place The Magician on Virgo.
+* Choose an Adversary in your Zone:
+   * They must discard their current Intent.
+   * While a card remains on Virgo, if the Adversary draws a new Intent, and it is not a Sword, discard it.
+   * When the Adversary draws a Sword, discard the card used to play Virgo.
+   * If you or any ally damages the Adversary, discard the card used to play Virgo.
+* If you are Clever, you may target any Adversary, regardless of location.
+    </combatDescription>
+    <skillName>Charm</skillName>
+    <skillDescription>
+* Once per Day, Charm an intelligent human, creature or system that you encounter.
+* Some creatures may be immune to this effect.
+* This human, creature, or system will be:
+   * less inclined to attack your party
+   * more inclined to help your party
+   * easier to convince
+   * harder to anger
+   * generally a real sweetie-pie.
+* This effect ends if the target feels seriously threatened, or after 30 minutes.
+    </skillDescription>
+    <type>
+        Magic / Charming
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

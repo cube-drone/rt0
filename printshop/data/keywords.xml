@@ -25,10 +25,16 @@
         <k>Combat</k>
         <k>Intent</k>
         <k>Adversary</k>
+        <k>Adversaries</k>
         <k>Ally</k>
         <k>Shield</k>
         <k>Convenient Access</k>
         <k>GM</k>
+        <k>Trivial</k>
+        <k>Easy</k>
+        <k>Medium</k>
+        <k>Hard</k>
+        <k>Unlikely</k>
     </nouns>
     <tarot>
         <k>The Fool</k>
@@ -57,5 +63,9 @@
         <k>Wands</k>
         <k>Cups</k>
         <k>Pentacles</k>
+        <k>Page</k>
+        <k>Knight</k>
+        <k>Queen</k>
+        <k>King</k>
     </tarot>
 </lists>

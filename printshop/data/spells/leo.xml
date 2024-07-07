@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Leo</name>
+    <symbol>♌︎</symbol>
+    <slug>leo</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <combatName>Beam</combatName>
+    <combatDescription>
+* Place The Magician on Leo.
+* Either:
+   * Deal 15 Magic Damage (Clever: 30) or
+   * Deal 8 Magic Damage to all Adversaries in your Zone (Clever: 16 each)
+* Discard the card played on Leo at the end of the turn.
+    </combatDescription>
+    <skillName>Light</skillName>
+    <skillDescription>
+* As often as you want, you can use Leo to cast a bright light in a 30 foot radius around you.
+* Once per Day, you can use Leo to dramatically reduce the weight of an object.
+    </skillDescription>
+    <type>
+        Magic
+    </type>
+    <category>
+        Spell
+    </category>
+
+</spell>

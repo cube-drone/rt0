@@ -62,6 +62,44 @@ function generateCombatMarkdown({data}){
     return markdown;
 }
 
+function generateMagicMarkdown({data}){
+    let markdown = '';
+
+    const addToMarkdown = ({name, slug, symbol, combatName, combatDescription, skillName, skillDescription, extraDescription}) => {
+        markdown += `## ${symbol} ${name}\n`;
+
+        if(extraDescription){
+            markdown += extraDescription;
+            markdown += '\n\n';
+        }
+
+        markdown += `### Combat - ${combatName}\n`
+        markdown += combatDescription;
+        markdown += '\n\n';
+
+        markdown += `### Skill - ${skillName}\n`
+        markdown += skillDescription;
+        markdown += '\n\n';
+    }
+
+    addToMarkdown(data.spells.aries);
+    addToMarkdown(data.spells.taurus);
+    addToMarkdown(data.spells.cancer);
+    addToMarkdown(data.spells.leo);
+    addToMarkdown(data.spells.gemini);
+    addToMarkdown(data.spells.sagittarius);
+    addToMarkdown(data.spells.capricorn);
+    addToMarkdown(data.spells.libra);
+    addToMarkdown(data.spells.scorpio);
+    addToMarkdown(data.spells.pisces);
+    addToMarkdown(data.spells.aquarius);
+    addToMarkdown(data.spells.virgo);
+    addToMarkdown(data.spells.ophiuchus);
+
+    return markdown;
+}
+
+
 function main() {
 
     // prepare the data
@@ -75,6 +113,7 @@ function main() {
     fullPrint({data});
 
     let combatMarkdown = generateCombatMarkdown({data});
+    let spellsMarkdown = generateMagicMarkdown({data});
     // write the markdown to ../players-guide/src/player/generated/basic_combat.md
     let writeFileSync = (filename, contents) => {
         console.log(`writing ${filename}...`);
@@ -82,6 +121,7 @@ function main() {
         console.log(`OK`);
     }
     writeFileSync('../players-guide/src/player/generated/basic_combat.md', combatMarkdown);
+    writeFileSync('../players-guide/src/player/generated/basic_spells.md', spellsMarkdown);
 
 
     // copy the entire static directory to printables/static
