@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Honk</name>
+    <slug>foolish</slug>
+    <description>
+* Players with Foolish must use Honk.
+* Play any card on Honk.
+* Make a funny face at the GM, or a silly noise, or honk, or blow a raspberry, or say "Farts ahoy!" in your best pirate voice.
+* Discard the card played on Honk at the end of the turn.
+    </description>
+    <type>
+        Foolish
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

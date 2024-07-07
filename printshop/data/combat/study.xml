@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Study</name>
+    <slug>study</slug>
+    <helper>
+        <card>The Hermit</card>
+    </helper>
+    <description>
+* Only players with Clever may use Study.
+* Place The Hermit on Study.
+* Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest.
+* Discard the card played on Study at the start of your turn.
+    </description>
+    <type>
+        Clever
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

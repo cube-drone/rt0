@@ -18,6 +18,11 @@
         <k>Skill</k>
         <k>Ability</k>
         <k>Combat</k>
+        <k>Intent</k>
+        <k>Adversary</k>
+        <k>Ally</k>
+        <k>Shield</k>
+        <k>Convenient Access</k>
     </nouns>
     <tarot>
         <k>The Fool</k>

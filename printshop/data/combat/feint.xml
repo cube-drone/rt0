@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Feint</name>
+    <slug>feint</slug>
+    <helper>
+        <card>The Moon</card>
+    </helper>
+    <description>
+* Only players with Wise may use Feint.
+* Place The Moon on Feint.
+  * Reveal a hidden Intent and
+  * You may force an Adversary to redraw an Intent.
+* Discard the card played on Feint at the end of the turn.
+    </description>
+    <type>
+        Wise
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

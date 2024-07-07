@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Flex</name>
+    <slug>flex</slug>
+    <helper>
+        <card>The Emperor</card>
+    </helper>
+    <description>
+* Only players with Strong may use Flex.
+* Place The Emperor on Flex.
+* While there is a card on Flex, any damage generated is multiplied by 2.
+* Discard the card played on Flex at the end of the turn.
+    </description>
+    <type>
+        Strong
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

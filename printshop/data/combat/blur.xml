@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Blur</name>
+    <slug>blur</slug>
+    <helper>
+        <card>The Chariot</card>
+    </helper>
+    <description>
+* Only players with Fast may use Blur.
+* Place The Chariot on Blur.
+* Generate 5 Shield.
+* While there is a card on Blur, your Shield are not discarded at the end of the round.
+* Discard the card played on Blur at the beginning of your next turn.
+    </description>
+    <type>
+        Fast
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

@@ -2,6 +2,10 @@
 
 <ability>
     <name>Good Idea!</name>
+    <slug>goodidea</slug>
+    <helper>
+        <card>The Hierophant</card>
+    </helper>
     <keywords>
         <k>Good Idea!</k>
     </keywords>

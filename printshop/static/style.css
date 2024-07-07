@@ -439,26 +439,6 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
 }
 
-.goodidea{
-    grid-row: 1 / 6;
-    grid-column: 1;
-}
-
-.feint{
-    grid-row: 1 / 6;
-    grid-column: 2;
-}
-
-.flex{
-    grid-row: 1 / 6;
-    grid-column: 3;
-}
-
-.blur{
-    grid-row: 9 / 13;
-    grid-column: 1;
-}
-
 .study{
     grid-row: 9 / 13;
     grid-column: 2;

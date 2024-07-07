@@ -33,8 +33,13 @@ function listKeywords(keywords){
 function prepare(doc, keywords){
     doc.descriptionHtml = marked(doc.description);
 
+    for(let boldword of [' and ', ' or ', ' may ', ' must ']){
+        let re = new RegExp(boldword, 'g');
+        doc.descriptionHtml = doc.descriptionHtml.replace(re, `<strong>${boldword}</strong>`);
+    }
     for(let keyword of keywords){
-        doc.descriptionHtml = doc.descriptionHtml.replace(keyword, `<span class="keyword">${keyword}</span>`);
+        let re = new RegExp(keyword, 'g');
+        doc.descriptionHtml = doc.descriptionHtml.replace(re, `<span class="keyword">${keyword}</span>`);
     }
     return doc;
 }
@@ -72,5 +77,6 @@ function prepareData(){
     };
 }
 
-let data = prepareData();
-console.dir(data, {depth: 3});
+module.exports = {
+    prepareData,
+};

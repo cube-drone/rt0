@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Take a Chance</name>
+    <slug>takeachance</slug>
+    <helper>
+        <card>Wheel of Fortune</card>
+    </helper>
+    <description>
+* Only players with Lucky may use Take a Chance.
+* Place The Wheel of Fortune on Take a Chance.
+* Draw &amp; discard the top card of your deck.
+  * If it was an Ace through 9, do nothing.
+  * Otherwise, choose one of Good Idea!, Feint, Flex, Blur, or Study, and use that ability as if you had played a card there.
+* Discard the card played on Take a Chance at the end of the turn.
+    </description>
+    <type>
+        Lucky
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

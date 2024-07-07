@@ -1,3 +1,102 @@
+let {helperToCard} = require('./littlecard.html.js');
+
+function strengthsAndWeaknesses(text){
+    text = text.replace("Strong", "<strong class='strength-strong strength'>Strong</strong>");
+    text = text.replace("Weak", "<em class='weakness-weak weakness'>Weak</em>");
+    text = text.replace("Fast", "<strong class='strength-fast strength'>Fast</strong>");
+    text = text.replace("Slow", "<em class='weakness-slow weakness'>Slow</em>");
+    text = text.replace("Wise", "<strong class='strength-wises strength'>Wise</strong>");
+    text = text.replace("Foolish", "<em class='weakness-foolish weakness'>Foolish</em>");
+    text = text.replace("Charming", "<strong class='strength-charming strength'>Charming</strong>");
+    text = text.replace("Repulsive", "<em class='weakness-repulsive weakness'>Repulsive</em>");
+    text = text.replace("Clever", "<strong class='strength-clever strength'>Clever</strong>");
+    text = text.replace("Dull", "<em class='weakness-dull weakness'>Dull</strong>");
+    text = text.replace("Lucky", "<strong class='strength-lucky strength'>Lucky</strong>");
+    text = text.replace("Unlucky", "<em class='weakness-unlucky weakness'>Unlucky</em>");
+
+    return text;
+}
+
+function combatAbility({name, slug, description, descriptionHtml, helper, type, category, row, column}){
+
+    let top = row.startsWith('1');
+    let bottom = row.endsWith('13');
+
+    let helpHtml = '';
+    if(helper){
+        let helpers = helper.card;
+        if(!Array.isArray(helpers)){
+            helpers = [helpers];
+        }
+        helpHtml = helpers.map(helperToCard).join('');
+    }
+
+    let style = `
+        <style>
+        .grid-${slug}{
+            grid-row: ${row};
+            grid-column: ${column};
+        }
+        </style>
+    `;
+
+    let typeHtml = strengthsAndWeaknesses(type);
+
+    if(top){
+        return `
+            ${style}
+            <div class="combat-ability combat-ability-top ${slug} grid-${slug}">
+
+                <div class="tarot-bottom">
+                    ${helpHtml}
+                </div>
+
+                <h2>${name}</h2>
+                ${descriptionHtml}
+
+                <div class="strongweak">
+                    ${typeHtml}
+                </div>
+            </div>
+        `
+    }
+    else if(bottom){
+        return `
+            ${style}
+            <div class="combat-ability combat-ability-bottom ${slug} grid-${slug}">
+                <div class="strongweak">
+                    ${typeHtml}
+                </div>
+
+                <h2>${name}</h2>
+                ${descriptionHtml}
+
+                <div class="tarot-top">
+                    ${helpHtml}
+                </div>
+
+            </div>
+        `
+    }
+    else {
+        return `
+            ${style}
+            <div class="combat-ability combat-ability-top ${slug} grid-${slug}">
+                <h2>${name}</h2>
+                ${descriptionHtml}
+
+                ${helpHtml ? `<div class="tarot-bottom">${helpHtml}</div>` : ''}
+
+                <div class="strongweak">
+                    ${typeHtml}
+                </div>
+            </div>
+        `
+    }
+
+}
+
+
 function combatTemplate({}){
     return `
     <div id="combat" class="combat">
@@ -90,8 +189,6 @@ function combatTemplate({}){
                 <div class="card card-run">4</div>
                 <div class="card card-run">5</div>
             </div>
-
-
         </div>
 
         <div class="combat-ability combat-ability-bottom movement">
@@ -179,155 +276,20 @@ function combatTemplate({}){
     `;
 }
 
-function combatTemplatePageTwo({}){
+function combatTemplatePageTwo({combat}){
     return `
     <div id="combat-two" class="combat">
 
-        <div class="combat-ability combat-ability-top goodidea">
+        ${combatAbility({...combat.goodidea, row: '1 / 6', column: '1'})}
+        ${combatAbility({...combat.honk, row: '6 / 9', column: '1'})}
+        ${combatAbility({...combat.blur, row: '9 / 13', column: '1'})}
 
-            <div class="tarot-bottom">
-                <div class="card card-major">V</div>
-            </div>
+        ${combatAbility({...combat.feint, row: '1 / 6', column: '2'})}
+        ${combatAbility({...combat.scissors, row: '6 / 9 ', column: '2'})}
+        ${combatAbility({...combat.study, row: '9 / 13', column: '2'})}
 
-            <h2>Good Idea!</h2>
-            <ul>
-                <li> Only players with <span class="keyword">Charming</span> may use <span class="keyword">Good Idea!</span>.</li>
-                <li> Place <span class="keyword">The Hierophant</span> on <span class="keyword">Good Idea!</span>.</li>
-                <li> Choose another player: they draw 3 cards.</li>
-                <li> Discard the card played on <span class="keyword">Good Idea!</span> at the end of the turn.</li>
-
-            <div class="strongweak">
-                <strong>Charming</strong>
-            </div>
-
-        </div>
-
-        <div class="combat-ability combat-ability-top feint">
-
-            <div class="tarot-bottom">
-                <div class="card card-major card-moon">XVIII</div>
-            </div>
-
-            <h2>Feint</h2>
-            <ul>
-                <li> Only players with <span class="keyword">Wise</span> may use <span class="keyword">Feint</span>.</li>
-                <li> Place <span class="keyword">The Moon</span> on <span class="keyword">Feint</span>.</li>
-                <li> Reveal a hidden <span class="keyword">Intent</span> <span class="keyword">and</span> </li>
-                <li> You may force an <span class="keyword">Adversary</span> to redraw an <span class="keyword">Intent</span>.</li>
-                <li> Discard the card played on <span class="keyword">Feint</span> at the end of the turn.</li>
-
-            <div class="strongweak">
-                <strong>Wise</strong>
-            </div>
-
-        </div>
-
-        <div class="combat-ability combat-ability-top flex">
-
-            <div class="tarot-bottom">
-                <div class="card card-major card-moon">IV</div>
-            </div>
-
-            <h2>Flex</h2>
-            <ul>
-                <li> Only players with <span class="keyword">Strong</span> may use <span class="keyword">Flex</span>.</li>
-                <li> Place <span class="keyword">The Emperor</span> on <span class="keyword">Flex</span>.</li>
-                <li> While there is a card on <span class="keyword">Flex</span>, any damage generated is multiplied by 2. </li>
-                <li> Discard the card played on <span class="keyword">Flex</span> at the end of the turn.</li>
-            </ul>
-
-            <div class="strongweak">
-                <strong>Strong</strong>
-            </div>
-
-        </div>
-
-        <div class="combat-ability combat-ability-bottom blur">
-            <div class="strongweak">
-                <strong>Fast</strong>
-            </div>
-
-            <h2>Blur</h2>
-            <ul>
-                <li> Only players with <span class="keyword">Fast</span> may use <span class="keyword">Blur</span>.</li>
-                <li> Place <span class="keyword">The Chariot</span> on <span class="keyword">Blur</span>.</li>
-                <li> While there is a card on <span class="keyword">Blur</span>, your Shields are not discarded at the end of the round. </li>
-                <li> Discard the card played on <span class="keyword">Blur</span> at the beginning of your next turn.</li>
-            </ul>
-
-            <div class="tarot-top">
-                <div class="card card-major">VII</div>
-            </div>
-        </div>
-
-        <div class="combat-ability combat-ability-bottom study">
-            <div class="strongweak">
-                <strong>Clever</strong>
-            </div>
-
-            <h2>Study</h2>
-            <ul>
-                <li> Only players with <span class="keyword">Clever</span> may use <span class="keyword">Study</span>.</li>
-                <li> Place <span class="keyword">The Hermit</span> on <span class="keyword">Study</span>.</li>
-                <li> Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest. </li>
-                <li> Discard the card played on <span class="keyword">Blur</span> at the end of the turn.</li>
-            </ul>
-
-            <div class="tarot-top">
-                <div class="card card-major">VIII</div>
-            </div>
-        </div>
-
-        <div class="combat-ability combat-ability-bottom takeachance">
-            <div class="strongweak">
-                <strong>Lucky</strong>
-            </div>
-
-            <h2>Take a Chance</h2>
-            <ul>
-                <li> Only players with <span class="keyword">Lucky</span> may use <span class="keyword">Take a Chance</span>.</li>
-                <li> Place <span class="keyword">Wheel of Fortune</span> on <span class="keyword">Take a Chance</span>.</li>
-                <li> Draw & discard the top card from your deck.
-                    <ul>
-                        <li>If it was a Ace through 9, do nothing.</li>
-                        <li> Otherwise, choose one of Good Idea!, Third Eye, Flex, Blur, or Study, and use that ability as if you had played a card there. </li>
-                    </ul>
-                </li>
-                <li> Discard the card played on <span class="keyword">Take a Chance</span> at the end of the turn.</li>
-            </ul>
-
-            <div class="tarot-top">
-                <div class="card card-major">X</div>
-            </div>
-        </div>
-
-        <div class="combat-ability combat-ability-top foolish">
-            <h2>Foolish</h2>
-            <ul>
-                <li> Players with <span class="keyword">Foolish</span> <strong>must</strong> use <span class="keyword">Foolish</span> if they are able to, once per turn.</li>
-                <li> Play any card on <span class="keyword">Foolish</span>. </li>
-                <li> Make a funny face at the GM, or a silly noise, or honk,  or blow a raspberry, or say "Farts ahoy!" in your best pirate voice. </li>
-                <li> Discard the card played on <span class="keyword">Foolish</span> at the end of the turn.</li>
-            </ul>
-
-            <div class="strongweak">
-                <em>Foolish</em>
-            </div>
-        </div>
-
-        <div class="combat-ability combat-ability-top scissors">
-            <h2>Scissors & Glue</h2>
-            <ul>
-                <li> Use <span class="keyword">Scissors & Glue</span> to take the set of abilities and spells that you can actually use and paste them on
-                    to a single sheet for <span class="keyword">Convenient Access</span>. </li>
-            </ul>
-
-            <div class="strongweak">
-                <strong>Clever</strong>
-            </div>
-        </div>
-
-
+        ${combatAbility({...combat.flex, row: '1 / 6', column: '3'})}
+        ${combatAbility({...combat.takeachance, row: '8 / 13', column: '3'})}
 
     </div>
     `
@@ -642,18 +604,18 @@ function magicTemplatePageThree({}){
     `
 }
 
-function combatPages(){
+function combatPages(data){
     return [
-        combatTemplate({}),
-        combatTemplatePageTwo({})
+        combatTemplate(data),
+        combatTemplatePageTwo(data)
     ];
 }
 
-function magicPages(){
+function magicPages(data){
     return [
-        magicTemplate({}),
-        magicTemplatePageTwo({}),
-        magicTemplatePageThree({})
+        magicTemplate(data),
+        magicTemplatePageTwo(data),
+        magicTemplatePageThree(data)
     ];
 }
 
