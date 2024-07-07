@@ -145,9 +145,6 @@ If you are a deep believer in these concepts, either out of religious aversion
 to them, or spiritual attraction to them, elements of this game may not
 be up your alley.
 
-## Contribution:
-
-Remaining Teenagers: Zero is an open RPG.
-It is released under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+## Source:
 
 Source code for this book is available on [GitHub](https://github.com/cube-drone/rt0).
