@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Unarmed Strike</name>
+    <slug>strike</slug>
+    <helper>
+        <card>Sword</card>
+        <card>Wand</card>
+    </helper>
+    <description>
+* Place Wands or Swords on Unarmed Strike.
+* Cards sitting on Unarmed Strike remain there.
+* When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Unarmed Strike and
+  * deal 5 (Strong: 7 / Weak: 3) Damage or
+  * deal 2 (Strong: 3 / Weak: 1) Ranged Damage.
+    </description>
+    <type>
+        Strong / Weak
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

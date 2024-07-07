@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Concentrate</name>
+    <slug>concentrate</slug>
+    <helper>
+        <card>Major Arcana</card>
+    </helper>
+    <description>
+* Place Major Arcana cards on Concentrate.
+* Cards sitting on Concentrate remain there.
+* When there are 2 (Wise: 1, Foolish: 3) cards on Concentrate:
+  * discard all cards on Concentrate and
+  * draw a new card
+    </description>
+    <type>
+        Wise / Foolish
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

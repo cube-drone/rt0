@@ -97,72 +97,13 @@ function combatAbility({name, slug, description, descriptionHtml, helper, type, 
 }
 
 
-function combatTemplate({}){
+function combatTemplate({combat}){
     return `
     <div id="combat" class="combat">
 
-        <div class="combat-ability combat-ability-top unarmed-strike">
-
-            <div class="tarot-bottom">
-                <div class="card card-sword">⚔</div>
-                <div class="card card-wand">⌇</div>
-            </div>
-
-            <h2>Unarmed Strike</h2>
-            <ul>
-                <li> Place Wands or Swords on <span class="keyword">Unarmed Strike</span>.</li>
-                <li> Cards sitting on <span class="keyword">Unarmed Strike</span> remain there.</li>
-                <li> When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on <span class="keyword">Unarmed Strike</span> and deal
-                    5 (<strong>7</strong>/<em>3</em>) Damage <span class="keyword">or</span> 2 (<strong>3</strong>/<em>1</em>) Ranged Damage.</li>
-            </ul>
-
-            <div class="strongweak">
-                <strong>Strong</strong> / <em>Weak</em>
-            </div>
-
-
-        </div>
-
-        <div class="combat-ability combat-ability-top defend">
-
-            <div class="tarot-bottom">
-                <div class="card card-cup">∪</div>
-                <div class="card card-pentacle">⊕</div>
-            </div>
-
-            <h2>Defend</h2>
-            <ul>
-                <li> Place Cups or Pentacles on <span class="keyword">Defend</span>.</li>
-                <li> Cards sitting on <span class="keyword">Defend</span> remain there.</li>
-                <li> When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on <span class="keyword">Defend</span> and gain
-                    5 (<strong>7</strong>/<em>3</em>) <span class="keyword">Shields</span> </li>
-            </ul>
-
-            <div class="strongweak">
-                <strong>Fast</strong> / <em>Slow</em>
-            </div>
-
-        </div>
-
-        <div class="combat-ability combat-ability-top concentrate">
-
-            <div class="tarot-bottom">
-                <div class="card card-major">M</div>
-                <div class="card card-major">M</div>
-            </div>
-
-            <h2>Concentrate</h2>
-            <ul>
-                <li> Place Major Arcana cards on <span class="keyword">Concentrate</span>.</li>
-                <li> Cards sitting on <span class="keyword">Concentrate</span> remain there.</li>
-                <li> When there are 2 (<strong>1</strong>/<em>3</em>) cards on <span class="keyword">Concentrate</span>, discard them and draw a new card, immediately.</li>
-            </ul>
-
-            <div class="strongweak">
-                <strong>Wise</strong> / <em>Foolish</em>
-            </div>
-
-        </div>
+        ${combatAbility({...combat.strike, row: '1 / 6', column: '1'})}
+        ${combatAbility({...combat.defend, row: '1 / 6', column: '2'})}
+        ${combatAbility({...combat.concentrate, row: '1 / 6', column: '3'})}
 
         <div class="combat-ability combat-ability-bottom run-away">
 
@@ -262,15 +203,6 @@ function combatTemplate({}){
             </ul>
 
         </div>
-
-        <div class="combat-ability combat-ability-bottom numbers">
-            <ul>
-                <li><strong>Ace</strong> - 1</li>
-                <li><strong>Page, Knight, Queen, King</strong> - 10</li>
-            </ul>
-        </div>
-
-
 
     </div>
     `;

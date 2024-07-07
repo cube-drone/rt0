@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Defend</name>
+    <slug>defend</slug>
+    <helper>
+        <card>Cup</card>
+        <card>Pentacle</card>
+    </helper>
+    <description>
+* Place Cups or Pentacles on Defend.
+* When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Defend and
+  * generate 5 (Fast: 7 / Slow: 3) Shield.
+    </description>
+    <type>
+        Fast / Slow
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>
