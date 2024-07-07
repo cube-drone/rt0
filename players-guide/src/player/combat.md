@@ -106,6 +106,8 @@ Shield is temporary, and only lasts for, essentially, the next damage phase afte
 ## Magic
 Characters can cast [spells](./magic.md) in battle!
 
+Spells work just like combat abilities, but they generally require The Magician to be played to activate them.
+
 ## Conclusion & Supremacy
 
 The Combat is over when all adversaries have fled or been knocked down to 0HP.
