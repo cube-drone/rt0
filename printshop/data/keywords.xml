@@ -15,6 +15,11 @@
     </abilities>
     <nouns>
         <k>Day</k>
+        <k>Room</k>
+        <k>Zone</k>
+        <k>Damage</k>
+        <k>Ranged</k>
+        <k>Magic</k>
         <k>Skill</k>
         <k>Ability</k>
         <k>Combat</k>
@@ -23,6 +28,7 @@
         <k>Ally</k>
         <k>Shield</k>
         <k>Convenient Access</k>
+        <k>GM</k>
     </nouns>
     <tarot>
         <k>The Fool</k>

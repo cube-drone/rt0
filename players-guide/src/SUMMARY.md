@@ -13,6 +13,7 @@
 - [Abilities](./player/abilities.md)
 - [Skill Checks](./player/skill_checks.md)
 - [Combat](./player/combat.md)
+  - [Basic Combat Skills](./player/generated/basic_combat.md)
 - [Magic](./player/magic.md)
 - [Injuries, Healing & Death](./player/injuries.md)
 - [Money & Equipment](./player/equipment.md)

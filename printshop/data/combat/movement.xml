@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Movement / Skill</name>
+    <keywords>
+        <k>Movement</k>
+    </keywords>
+    <slug>movement</slug>
+    <helper>
+        <card>Any</card>
+    </helper>
+    <description>
+* Place any card on Movement / Skill.
+* When there are 2 (Fast: 1, Slow: 3) cards on Movement / Skill:
+  * Discard all cards on Movement / Skill and
+  * Move 1 Zone or
+  * Shuffle your discard pile into your deck, then make a skill check.
+
+    </description>
+    <extraDescription>
+Some actions during battle call for Skill Checks. "I hack the computer while the battle is raging on", or "I force open the door".
+
+Once the player has "paid" for the skill check, while keeping their hand and any current combat cards separate, the player shuffles their discard pile into their deck, then uses the deck to perform a skill check as usual.
+    </extraDescription>
+    <type>
+        Fast / Slow
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

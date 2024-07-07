@@ -27,7 +27,39 @@ function fullPrint({data}){
         ...magics,
     ];
     writeContentsToFile({title: 'Hello Printshop', contents, filename: 'hello.html'});
+}
 
+function generateCombatMarkdown({data}){
+    let markdown = '';
+
+    const addToMarkdown = ({name, slug, description, type, category, extraDescription}) => {
+        markdown += `## ${name}\n`;
+        markdown += description;
+        if(extraDescription){
+            markdown += '\n\n';
+            markdown += extraDescription;
+        }
+        markdown += '\n\n';
+    }
+
+    addToMarkdown(data.combat.strike);
+    addToMarkdown(data.combat.defend);
+    addToMarkdown(data.combat.concentrate);
+    addToMarkdown(data.combat.movement);
+    addToMarkdown(data.combat.runaway);
+    addToMarkdown(data.combat.catastrophe);
+    addToMarkdown(data.combat.friendship);
+
+    addToMarkdown(data.combat.flex);
+    addToMarkdown(data.combat.blur);
+    addToMarkdown(data.combat.feint);
+    addToMarkdown(data.combat.study);
+    addToMarkdown(data.combat.takeachance);
+    addToMarkdown(data.combat.goodidea);
+
+    addToMarkdown(data.combat.honk);
+
+    return markdown;
 }
 
 function main() {
@@ -41,6 +73,16 @@ function main() {
     }
 
     fullPrint({data});
+
+    let combatMarkdown = generateCombatMarkdown({data});
+    // write the markdown to ../players-guide/src/player/generated/basic_combat.md
+    let writeFileSync = (filename, contents) => {
+        console.log(`writing ${filename}...`);
+        fs.writeFileSync(filename, contents);
+        console.log(`OK`);
+    }
+    writeFileSync('../players-guide/src/player/generated/basic_combat.md', combatMarkdown);
+
 
     // copy the entire static directory to printables/static
     if(!fs.existsSync('printables/static')){

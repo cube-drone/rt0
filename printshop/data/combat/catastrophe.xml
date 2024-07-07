@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Catastrophe</name>
+    <slug>catastrophe</slug>
+    <helper>
+        <card>The Tower</card>
+    </helper>
+    <description>
+* Any time The Tower is drawn, it must be played immediately and before any other cards: on Catastrophe.
+* The player discards all cards on all of their abilities, including The Tower, then shuffles the discard pile back into their deck and ends their turn.
+* If Lucky, gain 10 Shield.
+    </description>
+    <category>
+        Combat
+    </category>
+
+</ability>

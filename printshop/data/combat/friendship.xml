@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Friendship</name>
+    <slug>friendship</slug>
+    <description>
+* Corruption may be marked on Friendship.
+* At the end of the day, draw 1 (Charming: 2) empty corruption circles on Friendship.
+* Players with Repulsive may not use Friendship.
+    </description>
+    <extraHtml>
+<![CDATA[
+        <div class="corruption-container">
+            <div class="corruption-circle"></div>
+        </div>
+]]>
+    </extraHtml>
+    <type>
+        Charming / Repulsive
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

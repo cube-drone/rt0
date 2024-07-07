@@ -17,7 +17,7 @@ function strengthsAndWeaknesses(text){
     return text;
 }
 
-function combatAbility({name, slug, description, descriptionHtml, helper, type, category, row, column}){
+function combatAbility({name, slug, description, descriptionHtml, extraHtml, helper, type, category, row, column}){
 
     let top = row.startsWith('1');
     let bottom = row.endsWith('13');
@@ -40,7 +40,14 @@ function combatAbility({name, slug, description, descriptionHtml, helper, type, 
         </style>
     `;
 
-    let typeHtml = strengthsAndWeaknesses(type);
+    let typeHtml = '';
+    if(type){
+        typeHtml = strengthsAndWeaknesses(type);
+    }
+
+    if(!extraHtml){
+        extraHtml = '';
+    }
 
     if(top){
         return `
@@ -53,6 +60,8 @@ function combatAbility({name, slug, description, descriptionHtml, helper, type, 
 
                 <h2>${name}</h2>
                 ${descriptionHtml}
+
+                ${extraHtml}
 
                 <div class="strongweak">
                     ${typeHtml}
@@ -71,6 +80,8 @@ function combatAbility({name, slug, description, descriptionHtml, helper, type, 
                 <h2>${name}</h2>
                 ${descriptionHtml}
 
+                ${extraHtml}
+
                 <div class="tarot-top">
                     ${helpHtml}
                 </div>
@@ -84,6 +95,8 @@ function combatAbility({name, slug, description, descriptionHtml, helper, type, 
             <div class="combat-ability combat-ability-top ${slug} grid-${slug}">
                 <h2>${name}</h2>
                 ${descriptionHtml}
+
+                ${extraHtml}
 
                 ${helpHtml ? `<div class="tarot-bottom">${helpHtml}</div>` : ''}
 
@@ -102,86 +115,22 @@ function combatTemplate({combat}){
     <div id="combat" class="combat">
 
         ${combatAbility({...combat.strike, row: '1 / 6', column: '1'})}
+        ${combatAbility({...combat.runaway, row: '6 / 13', column: '1'})}
+
         ${combatAbility({...combat.defend, row: '1 / 6', column: '2'})}
+        ${combatAbility({...combat.movement, row: '9 / 13', column: '2'})}
+
         ${combatAbility({...combat.concentrate, row: '1 / 6', column: '3'})}
+        ${combatAbility({...combat.friendship, row: '6 / 9', column: '3'})}
+        ${combatAbility({...combat.catastrophe, row: '9 / 13', column: '3'})}
 
-        <div class="combat-ability combat-ability-bottom run-away">
-
-            <div class="strongweak">
-                <strong>Fast</strong> / <em>Slow</em>
-            </div>
-
-            <h2>Run Away</h2>
-            <ul>
-                <li> Place any card on <span class="keyword">Run Away</span>.</li>
-                <li> Once a card has been placed on <span class="keyword">Run Away</span>,
-                    the next card must be either one higher than the highest card on <span class="keyword">Run Away</span>,
-                    or one lower than the lowest card on <span class="keyword">Run Away</span>.
-                </li>
-                <li> When there are 4 cards (<strong>3</strong>/<em>5</em>) on <span class="keyword">Run Away</span>, you may either: </li>
-                <li> Move yourself to any unoccupied Zone in the current Battle Arena. </li>
-                <li> Remove yourself from battle entirely. Your participation in this combat is over! The GM decides where you are hiding. </li>
-                <li> Then: Discard all cards on <span class="keyword">Run Away</span> </li>
-            </ul>
-
-            <div class="tarot-top">
-                <div class="card card-run">2</div>
-                <div class="card card-run">3</div>
-                <div class="card card-run">4</div>
-                <div class="card card-run">5</div>
-            </div>
-        </div>
-
-        <div class="combat-ability combat-ability-bottom movement">
-            <div class="strongweak">
-                <strong>Fast</strong> / <em>Slow</em>
-            </div>
-
-            <h2>Movement / Skill</h2>
-            <ul>
-                <li> Place any card on <span class="keyword">Movement</span>.</li>
-                <li> When there are 2 (<strong>1</strong>/<em>3</em>) cards on <span class="keyword">Movement / Skill</span>, discard them and either
-                    <ul>
-                        <li> Move 1 <span class="keyword">zone</span> <span class="keyword">or</span></li>
-                        <li> Shuffle your discard pile into your deck, then make a skill check.</li>
-                    </uL.
-                </li>
-            </ul>
-
-            <div class="tarot-top">
-                <div class="card card-any">?</div>
-            </div>
-        </div>
-
-        <div class="combat-ability combat-ability-bottom friendship">
-            <div class="strongweak">
-                <strong>Charming</strong>
-            </div>
-
-            <h2>Friendship</h2>
-            <ul>
-                <li> <span class="keyword">Corruption</span> may be marked on <span class="keyword">Friendship</span></li>
-                <li> At the end of the <span class="keyword">day</span>, draw 1 (<strong>2</strong>) empty corruption circles on <span class="keyword">Friendship</span></li>
-                <li> Players with <span class="keyword">Repulsive</span> may not use <span class="keyword">Friendship</span></li>
-            </ul>
-
-            <div class="corruption-container">
-                <div class="corruption-circle"></div>
-            </div>
-
-        </div>
-
-        <div class="combat-ability combat-ability-bottom tower">
-            <h2>Catastrophe</h2>
-            <ul>
-                <li> Any time <span class="keyword">The Tower</span> is drawn, it must be played immediately and before any other cards on <span class="keyword">Catastrophe</span>.</li>
-                <li> The player discards all cards on all of their Abilities, including <span class="keyword">The Tower</span>, then shuffles the discard pile back into their deck and ends their turn.</li>
-            </ul>
-
-            <div class="tarot-top">
-                <div class="card card-major">XVI</div>
-            </div>
-        </div>
+        <style>
+            .turn {
+                grid-row: 6 / 9;
+                grid-column: 2;
+                font-size: x-small;
+            }
+        </style>
 
         <div class="combat-ability combat-ability-bottom turn">
             <ul>

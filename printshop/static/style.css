@@ -330,47 +330,6 @@ h1, h2, h3, h4, h5, h6{
     row-gap: 2mm;
 }
 
-.unarmed-strike{
-    grid-row: 1 / 6;
-    grid-column: 1;
-}
-
-.defend {
-    grid-row: 1 / 6;
-    grid-column: 2;
-}
-
-.concentrate{
-    grid-row: 1 / 6;
-    grid-column: 3;
-}
-
-.run-away{
-    grid-row: 7 / 13;
-    grid-column: 1;
-}
-
-.movement{
-    grid-row: 9 / 13;
-    grid-column: 2;
-}
-
-.friendship{
-    grid-row: 6 / 9;
-    grid-column: 3;
-}
-
-.tower {
-    grid-row: 9 / 13;
-    grid-column: 3;
-}
-
-.turn {
-    grid-row: 6 / 9;
-    grid-column: 2;
-    font-size: x-small;
-}
-
 .corruption-container{
     width: 50%;
     margin: auto;
@@ -438,27 +397,6 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     justify-content: center;
 }
-
-.study{
-    grid-row: 9 / 13;
-    grid-column: 2;
-}
-
-.takeachance{
-    grid-row: 8 / 13;
-    grid-column: 3;
-}
-
-.foolish {
-    grid-row: 6 / 9;
-    grid-column: 1;
-}
-
-.scissors {
-    grid-row: 6 / 9;
-    grid-column: 2;
-}
-
 
 .aquarius{
     grid-row: 1 / 8;

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Run Away</name>
+    <slug>runaway</slug>
+    <helper>
+        <card>2</card>
+        <card>3</card>
+        <card>4</card>
+        <card>5</card>
+    </helper>
+    <description>
+* Place any card on Run Away.
+* Once a card has been placed on Run Away, the next card must either be one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.
+* When there are 4 cards (Fast: 3, Slow: 5) on Run Away:
+  * Move yourself to any unoccupied Zone in the current Room or
+  * Remove yourself from battle entirely. Your participation in this combat is over! The GM decides where you are hiding.
+* Then: discard all cards on Run Away.
+    </description>
+    <extraDescription>
+You might be wondering: "Can I make a run out of Major Arcana?". The answer is yes! (_Although you might want to save them for other things._)
+
+You can use Major Arcana cards to make a run - using the numerical value of their Roman Numerals:
+
+So, for example, you could play The Magician (I) after The Fool (0), or The Lovers (VI) after The Chariot (VII).
+    </extraDescription>
+    <type>
+        Fast / Slow
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>
