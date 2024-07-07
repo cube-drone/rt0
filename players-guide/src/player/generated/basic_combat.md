@@ -93,7 +93,7 @@ So, for example, you could play The Magician (I) after The Fool (0), or The Love
 * Discard the card played on Good Idea! at the end of the turn.
 
 ## Honk
-* Players with Foolish must use Honk.
+* Players with Foolish must use Honk, once per turn.
 * Play any card on Honk.
 * Make a funny face at the GM, or a silly noise, or honk, or blow a raspberry, or say "Farts ahoy!" in your best pirate voice.
 * Discard the card played on Honk at the end of the turn.

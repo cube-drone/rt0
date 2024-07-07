@@ -26,7 +26,7 @@ function fullPrint({data}){
         ...combats,
         ...magics,
     ];
-    writeContentsToFile({title: 'Hello Printshop', contents, filename: 'hello.html'});
+    writeContentsToFile({title: 'Full Print', contents, filename: 'full.html'});
 }
 
 function generateCombatMarkdown({data}){
@@ -122,7 +122,6 @@ function main() {
     }
     writeFileSync('../players-guide/src/player/generated/basic_combat.md', combatMarkdown);
     writeFileSync('../players-guide/src/player/generated/basic_spells.md', spellsMarkdown);
-
 
     // copy the entire static directory to printables/static
     if(!fs.existsSync('printables/static')){

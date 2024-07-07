@@ -104,7 +104,7 @@ function reportCardTemplate({}){
             <div class="box box-right"></div>
             <div class="weak-ability">
                 <h4 class="ability-title">Foolish</h4>
-                <div class="ability-description"><span class="keyword">Foolish</span> characters gain the <span class="keyword">Foolish</span> ability, costing them cards in combat.</div>
+                <div class="ability-description"><span class="keyword">Foolish</span> characters gain the <span class="keyword">Honk</span> ability, costing them cards in combat.</div>
             </div>
         </div>
         <div class="ability lucky">

@@ -2,6 +2,7 @@
 
 # Player's Guide
 - [Introduction](./player/introduction.md)
+- [Printables](./player/printables.md)
 - [Safety Tools & Session Zero](./player/safety.md)
 - [Corruption Points](./player/corruption.md)
 - [Creating a Character](./player/creation.md)
