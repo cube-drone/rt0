@@ -52,6 +52,7 @@
 ----------
 # GM's Guide
 - [Introduction](./gm/introduction.md)
+- [An Introductory Adventure](./gm/adventure.md)
 - [Lore](./gm/lore.md)
 - [Factions](./gm/factions.md)
 - [Locations](./gm/locations.md)
