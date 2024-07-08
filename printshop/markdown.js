@@ -70,7 +70,61 @@ function generateMagicMarkdown({data}){
     return markdown;
 }
 
+function generateMagicianMarkdown({data}){
+    let markdown = '';
+
+    markdown += `# 1 - The Magician\n\n`;
+
+    markdown += `[Magician Character Sheet](/generated/printables/magician.html)\n\n`;
+
+    markdown += `## Description\n\n`;
+    markdown += data.arcana.magician.description;
+    markdown += '\n\n';
+
+    markdown += data.arcana.magician.special;
+    markdown += '\n\n';
+
+    markdown += data.arcana.magician.narrativeAbility;
+    markdown += '\n\n';
+
+    const addToMarkdown = ({name, description, extraDescription, corruption}) => {
+        markdown += `### ${name}\n`;
+        if(corruption){
+            markdown += `_Corruption Upgrade: Mark 3 Corruption Points on ${name} to Unlock it._\n\n`;
+        }
+
+        markdown += description;
+        if(extraDescription){
+            markdown += '\n\n';
+            markdown += extraDescription;
+        }
+        markdown += '\n\n';
+    }
+
+    markdown += `## Combat Abilities\n\n`;
+    addToMarkdown(data.arcana.magician.abilities.rabbit);
+    addToMarkdown(data.arcana.magician.abilities.saw);
+
+    addToMarkdown(data.arcana.magician.abilities.nexttrick);
+    addToMarkdown(data.arcana.magician.abilities.abracadabra);
+
+    addToMarkdown(data.arcana.magician.abilities.miser);
+    addToMarkdown(data.arcana.magician.abilities.checkears);
+
+    addToMarkdown(data.arcana.magician.abilities.cupsandballs);
+    addToMarkdown(data.arcana.magician.abilities.magicwand);
+
+    addToMarkdown(data.arcana.magician.abilities.yourcard);
+    addToMarkdown(data.arcana.magician.abilities.threecardmonte);
+
+    addToMarkdown(data.arcana.magician.abilities.disappearing);
+    addToMarkdown(data.arcana.magician.abilities.smoke);
+
+    return markdown;
+}
+
 module.exports = {
     generateCombatMarkdown,
     generateMagicMarkdown,
+    generateMagicianMarkdown
 }

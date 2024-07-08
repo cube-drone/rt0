@@ -3,14 +3,14 @@
 <arcana>
     <name>The Magician</name>
     <slug>magician</slug>
+    <description>
+A resourceful, powerful, schemer, The Magician gets access to more spells than any other Arcana.
+    </description>
     <special>
 * The Magician can treat The Fool as a second The Magician card.
 * The Magician gains the Clever ability.
 * The Magician learns one extra spell at the start of the game.
     </special>
-    <description>
-A resourceful, powerful, schemer, The Magician gets access to more spells than any other Arcana.
-    </description>
     <narrativeAbility>
 
 ### Skill: This Was All Part of My Plan

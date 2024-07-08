@@ -8,7 +8,7 @@
 - [Creating a Character](./player/creation.md)
 - [Choosing a Major Arcana](./player/choosing_major_arcana.md)
   - [0 - The Fool](./player/arcana/0_the_fool.md)
-  - [I - The Magician](./player/arcana/1_the_magician.md)
+  - [I - The Magician](./player/generated/magician.md)
   - [II - The High Priestess](./player/arcana/2_the_high_priestess.md)
   - [ED - Eddy](./player/arcana/eddy.md)
 - [Abilities](./player/abilities.md)

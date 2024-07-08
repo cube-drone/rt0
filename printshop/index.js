@@ -9,7 +9,7 @@ const { reportCardTemplate } = require('./templates/reportcard.html.js');
 const {combatPages, magicPages, arcanaPages, magicianPages} = require('./templates/combat.html.js');
 const { prepareData } = require('./data.js');
 
-const { generateCombatMarkdown, generateMagicMarkdown } = require('./markdown.js');
+const { generateCombatMarkdown, generateMagicMarkdown, generateMagicianMarkdown } = require('./markdown.js');
 
 let writeFileSync = (filename, contents) => {
     console.log(`✍️ writing ${filename}...`);
@@ -89,9 +89,11 @@ function main() {
 
     let combatMarkdown = generateCombatMarkdown({data});
     let spellsMarkdown = generateMagicMarkdown({data});
+    let magicianMarkdown = generateMagicianMarkdown({data});
     // write the markdown to ../players-guide/src/player/generated/basic_combat.md
     writeFileSync('../players-guide/src/player/generated/basic_combat.md', combatMarkdown);
     writeFileSync('../players-guide/src/player/generated/basic_spells.md', spellsMarkdown);
+    writeFileSync('../players-guide/src/player/generated/magician.md', magicianMarkdown);
 
     // copy the entire static directory to printables/static
     if(!fs.existsSync('printables/static')){
