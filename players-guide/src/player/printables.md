@@ -16,6 +16,18 @@ is where we define player [Abilities](./abilities.md) and [Skills](./skill_check
 The [Combat Abilities](/generated/printables/combat.html)
 are abilities that are available to every player, in combat.
 
+## Spells
+
+The [Spells](/generated/printables/spells.html).
+Players can cast spells. These are... they.
+
+## Character Sheets
+
+* The Fool.
+* [The Magician](/generated/printables/magician.html).
+* The High Priestess.
+
+
 ## Everything In One Big Package
 
 [Everything](/generated/printables/full.html).

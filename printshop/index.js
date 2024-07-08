@@ -52,6 +52,11 @@ function fullPrint({data}){
     writeContentsToFile({title: 'Full Print', contents, filename: 'full.html'});
 }
 
+function spellsPrint({data}){
+    let magics = magicPages(data);
+    writeContentsToFile({title: 'Spells', contents: magics, filename: 'spells.html'});
+}
+
 function combatPrint({data}){
     let combats = combatPages(data);
 
@@ -85,6 +90,7 @@ function main() {
     fullPrint({data});
     reportCardPrint({data});
     combatPrint({data});
+    spellsPrint({data});
     magicianPrint({data});
 
     let combatMarkdown = generateCombatMarkdown({data});
