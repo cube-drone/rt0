@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Is This Your Card</name>
+    <slug>yourcard</slug>
+    <description>
+* At any time during your turn:
+   * Name any single card from your deck.
+   * Draw 4 cards.
+   * If the named card is not among the drawn cards, take 1 Corruption Point.
+   * If The Tower is one of the drawn cards, take 1 Corruption Point.
+   * Is This Your Card cannot be used more than once per turn.
+    </description>
+    <type>
+        Magician
+    </type>
+    <category>
+        Upgrade
+    </category>
+</ability>

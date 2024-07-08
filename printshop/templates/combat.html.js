@@ -384,6 +384,8 @@ function magicianPageTwo({arcana}){
     <div id="magician" class="ability-grid">
         ${arcanaAbility({...arcana.magician.abilities.magicwand, row: '5 / 8', column: '1', corruption: true})}
         ${arcanaAbility({...arcana.magician.abilities.cupsandballs, row: '1 / 5', column: '1'})}
+        ${arcanaAbility({...arcana.magician.abilities.yourcard, row: '4 / 8', column: '2', corruption: true})}
+        ${arcanaAbility({...arcana.magician.abilities.threecardmonte, row: '1 / 4', column: '2'})}
     </div>
     `
 }

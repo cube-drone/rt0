@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Three Card Monte</name>
+    <slug>threecardmonte</slug>
+    <helper>
+        <card>Cup</card>
+    </helper>
+    <description>
+* Place any card of suit Cups on Three Card Monte
+* Discard two cards from hand, and draw two cards.
+* Discard any cards on Three Card Monte at the end of the turn.
+</description>
+    <upgrade>Is This Your Card</upgrade>
+    <upgradeSlug>yourcard</upgradeSlug>
+    <type>
+        Magician
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>
