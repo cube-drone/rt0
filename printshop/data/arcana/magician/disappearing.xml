@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Disappearing Act</name>
+    <slug>disappearing</slug>
+    <helper>
+        <card>The Moon</card>
+    </helper>
+    <description>
+* Place The Moon on Disappearing Act.
+* Discard The Moon on any time during your turn to:
+    * Move to any Zone in the current combat.
+    </description>
+    <upgrade>Smoke and Mirrors</upgrade>
+    <upgradeSlug>smoke</upgradeSlug>
+</ability>

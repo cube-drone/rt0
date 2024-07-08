@@ -15,14 +15,8 @@
 * When all four cards are present:
    * Discard the lowest three cards
    * Draw the the highest ranked card into hand, and, for the rest of the turn, treat it as The Magician (for example, to trigger a spell).
-</description>
+    </description>
     <upgrade>Saw In Half</upgrade>
     <upgradeSlug>saw</upgradeSlug>
-    <type>
-        Magician
-    </type>
-    <category>
-        Combat
-    </category>
 
 </ability>

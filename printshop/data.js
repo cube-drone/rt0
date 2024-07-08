@@ -67,6 +67,9 @@ function prepare(doc, keywords){
     if(doc.special && doc.special.length > 0){
         doc.specialHtml = renderAndReplace(doc.special, keywords);
     }
+    if(doc.narrativeAbility && doc.narrativeAbility.length > 0){
+        doc.narrativeAbilityHtml = renderAndReplace(doc.narrativeAbility, keywords);
+    }
 
     return doc;
 }

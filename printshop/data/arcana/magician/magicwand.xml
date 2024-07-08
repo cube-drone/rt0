@@ -9,10 +9,7 @@
    * While the Page of Wands is on Cups and Balls:
    * All Wands now count as the Magician, as well as counting as their original suit and value.
     </description>
-    <type>
-        Magician
-    </type>
-    <category>
-        Upgrade
-    </category>
+    <corruption>
+        true
+    </corruption>
 </ability>

@@ -13,11 +13,4 @@
 </description>
     <upgrade>Miser's Dream</upgrade>
     <upgradeSlug>miser</upgradeSlug>
-    <type>
-        Magician
-    </type>
-    <category>
-        Combat
-    </category>
-
 </ability>

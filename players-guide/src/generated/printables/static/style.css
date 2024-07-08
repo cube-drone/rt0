@@ -29,6 +29,7 @@ li {
     border: 1px dashed #CCC;
     page-break-after: always;
     page-break-inside: avoid;
+    background: url("./dot-grid.png") repeat;
 }
 
 div {
@@ -125,6 +126,7 @@ h1, h2, h3, h4, h5, h6{
     grid-row: 5 / 14;
     border: 1px solid black;
     padding: 2px;
+    background-color: white;
 }
 
 .report-card .skill-check-helper .skill-card-description{
@@ -143,6 +145,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 2px;
     overflow: hidden;
     position: relative;
+    background-color: white;
 }
 
 .report-card .strong{
@@ -186,6 +189,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 2px;
     overflow: hidden;
     position: relative;
+    background-color: white;
 }
 
 .report-card .skill .skill-attributes{
@@ -342,6 +346,7 @@ h1, h2, h3, h4, h5, h6{
     overflow: hidden;
     padding: 5px;
     position: relative;
+    background-color: white;
 }
 
 .combat-ability ul, .narrative-ability ul{
@@ -353,10 +358,10 @@ h1, h2, h3, h4, h5, h6{
     overflow: hidden;
     padding: 2px;
     position: relative;
+    background-color: white;
 }
 
 .combat-ability-top h2{
-    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -374,7 +379,7 @@ h1, h2, h3, h4, h5, h6{
 
 .tarot-bottom {
     width: 70mm;
-    height: 25mm;
+    height: 20mm;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
@@ -409,7 +414,7 @@ h1, h2, h3, h4, h5, h6{
 .upgrade-top{
     position: absolute;
     bottom: 2px;
-    left: 2px;
+    right: 2px;
 }
 
 .upgrade-bottom{

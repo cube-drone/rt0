@@ -13,11 +13,5 @@
 </description>
     <upgrade>For My Next Trick</upgrade>
     <upgradeSlug>nexttrick</upgradeSlug>
-    <type>
-        Magician
-    </type>
-    <category>
-        Combat
-    </category>
 
 </ability>

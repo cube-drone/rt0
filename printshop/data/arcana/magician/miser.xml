@@ -7,10 +7,7 @@
 * Any time a card is played on Check Behind Your Ears, you may draw a card.
 * If the card drawn in this way is a Tower, take 1 Corruption Point.
     </description>
-    <type>
-        Magician
-    </type>
-    <category>
-        Upgrade
-    </category>
+    <corruption>
+        true
+    </corruption>
 </ability>

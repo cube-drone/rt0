@@ -11,10 +11,5 @@
    * If The Tower is one of the drawn cards, take 1 Corruption Point.
    * Is This Your Card cannot be used more than once per turn.
     </description>
-    <type>
-        Magician
-    </type>
-    <category>
-        Upgrade
-    </category>
+    <corruption>true</corruption>
 </ability>

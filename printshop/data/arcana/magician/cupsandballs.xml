@@ -15,11 +15,4 @@
 </description>
     <upgrade>Magic Wand</upgrade>
     <upgradeSlug>magicwand</upgradeSlug>
-    <type>
-        Magician
-    </type>
-    <category>
-        Combat
-    </category>
-
 </ability>

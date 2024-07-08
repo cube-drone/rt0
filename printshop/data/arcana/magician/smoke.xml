@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Smoke &amp; Mirrors</name>
+    <slug>smoke</slug>
+    <description>
+* You may discard The Moon from Disappearing Act at any time, even on an Adversary's turn.
+   * If you do, move to any Zone in the current combat
+   * Take no damage for the remainder of the round.
+   * Take 1 Corruption Point.
+    </description>
+    <corruption>true</corruption>
+</ability>

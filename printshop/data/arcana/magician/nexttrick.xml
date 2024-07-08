@@ -8,10 +8,7 @@
    * Take 1 Corruption Point
    * While there is a card on Abracadabra, you can use _any_ spell as if you had learned it.
     </description>
-    <type>
-        Magician
-    </type>
-    <category>
-        Upgrade
-    </category>
+    <corruption>
+        true
+    </corruption>
 </ability>
