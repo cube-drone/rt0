@@ -6,7 +6,7 @@
     <description>
 * Corruption may be marked on Friendship.
 * At the end of the day, draw 1 (Charming: 2) empty corruption circles on Friendship.
-* Players with Repulsive may not use Friendship.
+* Players with Strange may not use Friendship.
     </description>
     <extraHtml>
 <![CDATA[
@@ -16,7 +16,7 @@
 ]]>
     </extraHtml>
     <type>
-        Charming / Repulsive
+        Charming / Strange
     </type>
     <category>
         Combat

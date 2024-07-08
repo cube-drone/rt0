@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<arcana>
+    <name>The Magician</name>
+    <slug>magician</slug>
+    <special>
+* The Magician can treat The Fool as a second The Magician card.
+* The Magician gains the Clever ability.
+* The Magician learns one extra spell at the start of the game.
+    </special>
+    <description>
+A resourceful, powerful, schemer, The Magician gets access to more spells than any other Arcana.
+    </description>
+    <type>
+        Magician
+    </type>
+    <category>
+        Combat
+    </category>
+</arcana>

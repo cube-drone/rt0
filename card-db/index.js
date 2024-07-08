@@ -33,7 +33,7 @@ class PlayerState {
         if(this.tags.includes('charming')){
             this.corruption = 2;
         }
-        if(this.tags.includes('repulsive')){
+        if(this.tags.includes('strange')){
             this.corruption = 0;
         }
 
@@ -268,7 +268,7 @@ class PlayerState {
 }
 
 let goodTags = ['strong', 'fast', 'wise', 'clever', 'lucky', 'charming'];
-let badTags = ['weak', 'slow', 'foolish', 'dull', 'unlucky', 'repulsive'];
+let badTags = ['weak', 'slow', 'foolish', 'dull', 'unlucky', 'strange'];
 
 function generateBrick(){
     // "brick" is the most basic character, with no special abilities
@@ -448,9 +448,9 @@ displayUsefulnessHistogram(histogram);
 
 histogram = generateUsefulnessHistogram(generateFool, {tags: ['charming', 'dull']});
 displayUsefulnessHistogram(histogram);
-histogram = generateUsefulnessHistogram(generateFool, {tags: ['fast', 'repulsive']});
+histogram = generateUsefulnessHistogram(generateFool, {tags: ['fast', 'strange']});
 displayUsefulnessHistogram(histogram);
-histogram = generateUsefulnessHistogram(generateFool, {tags: ['clever', 'repulsive']});
+histogram = generateUsefulnessHistogram(generateFool, {tags: ['clever', 'strange']});
 displayUsefulnessHistogram(histogram);
 histogram = generateUsefulnessHistogram(generateFool, {tags: ['strong', 'dull']});
 displayUsefulnessHistogram(histogram);

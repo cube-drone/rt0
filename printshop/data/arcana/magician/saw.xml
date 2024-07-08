@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Saw in Half</name>
+    <slug>saw</slug>
+    <description>
+* When Pull a Rabbit's effect triggers, you may choose to, instead:
+    * Take 1 Corruption Point
+    * Draw all four cards into hand, and, for the rest of the turn, treat each of them them as The Magician (for example, to trigger a spell).
+</description>
+    <type>
+        Magician
+    </type>
+    <category>
+        Combat
+    </category>
+</ability>

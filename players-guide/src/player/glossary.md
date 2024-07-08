@@ -7,4 +7,4 @@
 * **Major Arcana** - One of the 22 unique cards in the Tarot - e.g. "The Fool", "The Star", "The World"
 * **Minor Arcana** - One of the 56 suited cards in the Tarot - e.g. "Two of Cups", "Page of Swords"
 * **Arcana** - A player's chosen Major Arcana. Like a "class" in a class-based RPG.
-* **Weakness** - One of the abilities a player has chosen the weakness for - e.g. "Repulsive", or "Unlucky".
+* **Weakness** - One of the abilities a player has chosen the weakness for - e.g. "Strange", or "Unlucky".

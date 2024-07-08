@@ -50,7 +50,7 @@ So, for example, you could play The Magician (I) after The Fool (0), or The Love
 ## Friendship
 * Corruption may be marked on Friendship.
 * At the end of the day, draw 1 (Charming: 2) empty corruption circles on Friendship.
-* Players with Repulsive may not use Friendship.
+* Players with Strange may not use Friendship.
 
 ## Flex
 * Only players with Strong can use Flex.

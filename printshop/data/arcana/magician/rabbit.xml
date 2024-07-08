@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Rabbit Out of a Hat</name>
+    <slug>rabbit</slug>
+    <helper>
+        <card>Cups</card>
+        <card>Swords</card>
+        <card>Wands</card>
+        <card>Pentacles</card>
+    </helper>
+    <description>
+* Place one card of each suit on Rabbit Out of a Hat
+* Cards sitting on Rabbit Out of a Hat remain there.
+* When all four cards are present:
+   * Discard the lowest three cards
+   * Draw the the highest ranked card into hand, and, for the rest of the turn, treat it as The Magician (for example, to trigger a spell).
+</description>
+    <upgrade>Saw In Half</upgrade>
+    <upgradeSlug>saw</upgradeSlug>
+    <type>
+        Magician
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

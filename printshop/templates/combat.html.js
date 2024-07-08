@@ -8,7 +8,7 @@ function strengthsAndWeaknesses(text){
     text = text.replace("Wise", "<strong class='strength-wises strength'>Wise</strong>");
     text = text.replace("Foolish", "<em class='weakness-foolish weakness'>Foolish</em>");
     text = text.replace("Charming", "<strong class='strength-charming strength'>Charming</strong>");
-    text = text.replace("Repulsive", "<em class='weakness-repulsive weakness'>Repulsive</em>");
+    text = text.replace("Strange", "<em class='weakness-strange weakness'>Strange</em>");
     text = text.replace("Clever", "<strong class='strength-clever strength'>Clever</strong>");
     text = text.replace("Dull", "<em class='weakness-dull weakness'>Dull</strong>");
     text = text.replace("Lucky", "<strong class='strength-lucky strength'>Lucky</strong>");

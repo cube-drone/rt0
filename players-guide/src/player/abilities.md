@@ -27,7 +27,7 @@ This is the opposite of one of the Abilities:
 * Dull - _Slow-witted, mundane. Dull characters can't use magic at all._
 * Foolish - _Foolish characters waste cards on things that don't matter._
 * Unlucky - _Unlucky characters get a worse deck._
-* Repulsive - _Unfriendly, cruel, callous. Repulsive characters are less resistant to corruption._
+* Strange - _Unfriendly, cruel, callous. Strange characters are less resistant to corruption._
 
 _It is impossible to have both an Ability and a Weakness for the same thing: A player can't be Strong and Weak at the same time, or Lucky and Unlucky at the same time._
 

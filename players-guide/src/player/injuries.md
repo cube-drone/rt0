@@ -125,10 +125,10 @@ a Critical Injury.
 * After a second night of rest, downgrade this to Massive, Painful Scar.
 
 ### Unresolved Trauma
-* While you have Unresolved Trauma, you are `Repulsive`.
+* While you have Unresolved Trauma, you are `Strange`.
 * You can not use "Charming" skills.
-* This overrides any character traits you might already have (if you were Charming, now you are Repulsive).
-* If you were already `Repulsive`: take one Corruption point at the end of every Combat.
+* This overrides any character traits you might already have (if you were Charming, now you are Strange).
+* If you were already `Strange`: take one Corruption point at the end of every Combat.
 * If you have spells or abilities that can only be used if you are Charming, you can not use them.
 * A successful FINANCIAL AID (Empathy) check can downgrade this to Stress.
 * After one night of rest, mark Unresolved Trauma.
