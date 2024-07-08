@@ -325,9 +325,9 @@ h1, h2, h3, h4, h5, h6{
     display: grid;
     grid-template-rows: repeat(12, 1fr);
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: small;
     column-gap: 2mm;
     row-gap: 2mm;
+    font-size: x-small;
 }
 
 .corruption-container{
@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6{
 .combat-ability {
     border: 1px solid black;
     overflow: hidden;
-    padding: 2px;
+    padding: 5px;
     position: relative;
 }
 
@@ -374,13 +374,13 @@ h1, h2, h3, h4, h5, h6{
 
 .tarot-bottom {
     width: 70mm;
-    height: 30mm;
+    height: 25mm;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
     border-bottom-left-radius: 5mm;
     border-bottom-right-radius: 5mm;
-    margin: auto;
+    margin: -5px auto 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -396,4 +396,22 @@ h1, h2, h3, h4, h5, h6{
     margin: auto;
     display: flex;
     justify-content: center;
+}
+
+.upgrade{
+    border: 1px solid black;
+    padding: 2px;
+    width: 100% - 4px;
+    margin: 2px;
+    text-align: center;
+}
+
+.upgrade-top{
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+
+.upgrade-bottom{
+    margin-bottom: 10px;
 }

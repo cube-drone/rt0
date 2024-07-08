@@ -4,10 +4,10 @@
     <name>Rabbit Out of a Hat</name>
     <slug>rabbit</slug>
     <helper>
-        <card>Cups</card>
-        <card>Swords</card>
-        <card>Wands</card>
-        <card>Pentacles</card>
+        <card>Cup</card>
+        <card>Sword</card>
+        <card>Wand</card>
+        <card>Pentacle</card>
     </helper>
     <description>
 * Place one card of each suit on Rabbit Out of a Hat

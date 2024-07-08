@@ -64,6 +64,9 @@ function prepare(doc, keywords){
     if(doc.skillDescription && doc.skillDescription.length > 0){
         doc.skillDescriptionHtml = renderAndReplace(doc.skillDescription, keywords);
     }
+    if(doc.special && doc.special.length > 0){
+        doc.specialHtml = renderAndReplace(doc.special, keywords);
+    }
 
     return doc;
 }
@@ -100,7 +103,39 @@ function prepareData(){
         keywords.push(doc.spell.name);
     }
 
+    let arcanaFiles = fs.readdirSync('data/arcana');
+    let arcanaData = {};
+    for (let file of arcanaFiles){
+        // if the file is a directory, skip it
+        if(fs.lstatSync(`data/arcana/${file}`).isDirectory()){
+            continue;
+        }
+        let doc = read(`data/arcana/${file}`);
+        let name = file.replace('.xml', '');
+        arcanaData[name] = doc.arcana;
+        arcanaData[name].abilities = {};
+        if(doc.arcana.keywords && doc.arcana.keywords.k){
+            keywords.push(doc.arcana.keywords.k);
+        }
+        keywords.push(doc.arcana.name);
+
+        let arcanaAbilityFiles = fs.readdirSync(`data/arcana/${name}`);
+        for (let file of arcanaAbilityFiles){
+            let doc = read(`data/arcana/${name}/${file}`);
+            let abilityName = file.replace('.xml', '');
+            arcanaData[name].abilities[abilityName] = doc.ability;
+
+            if(doc.ability.keywords && doc.ability.keywords.k){
+                keywords.push(doc.ability.keywords.k);
+            }
+            keywords.push(doc.ability.name);
+        }
+
+    }
+
     keywords = [...new Set(keywords)];
+    // sort the keywords so that the longest keywords are first
+    keywords = keywords.sort((a, b) => b.length - a.length);
 
     for(let key of Object.keys(combatData)){
         combatData[key] = prepare(combatData[key], keywords);
@@ -108,10 +143,20 @@ function prepareData(){
     for(let key of Object.keys(spellData)){
         spellData[key] = prepare(spellData[key], keywords);
     }
+    for(let key of Object.keys(arcanaData)){
+        arcanaData[key] = prepare(arcanaData[key], keywords);
+
+        for(let abilityKey of Object.keys(arcanaData[key].abilities)){
+            arcanaData[key].abilities[abilityKey] = prepare(arcanaData[key].abilities[abilityKey], keywords);
+        }
+    }
+
+    //console.dir(arcanaData, {depth: 3});
 
     return {
         combat: combatData,
         spells: spellData,
+        arcana: arcanaData,
         keywordObj,
         keywords,
     };

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Miser's Dream</name>
+    <slug>miser</slug>
+    <description>
+* Any time a card is played on Check Behind Your Ears, you may draw a card.
+* If the card drawn in this way is a Tower, take 1 Corruption Point.
+    </description>
+    <type>
+        Magician
+    </type>
+    <category>
+        Upgrade
+    </category>
+</ability>

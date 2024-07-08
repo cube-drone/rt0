@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Abracadabra</name>
+    <slug>abracadabra</slug>
+    <helper>
+        <card>The Magician</card>
+    </helper>
+    <description>
+* Place a Magician on Abracadabra
+* Choose a spell that nobody has learned. While there is a card on Abracadabra, you can use this spell as if you had learned it.
+* Discard the Magician whenever you want.
+</description>
+    <upgrade>For My Next Trick</upgrade>
+    <upgradeSlug>nexttrick</upgradeSlug>
+    <type>
+        Magician
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Check Behind Your Ears</name>
+    <slug>checkears</slug>
+    <helper>
+        <card>Pentacle</card>
+    </helper>
+    <description>
+* Place any card of suit Pentacles on Check Behind Your Ears and discard it, immediately.
+* Deal 1 Damage
+* Produce the numeric value of the card played on Check Behind Your Ears, in Credits, for the player, in the form of a credit chit.
+</description>
+    <upgrade>Miser's Dream</upgrade>
+    <upgradeSlug>miser</upgradeSlug>
+    <type>
+        Magician
+    </type>
+    <category>
+        Combat
+    </category>
+
+</ability>

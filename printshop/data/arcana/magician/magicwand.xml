@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Magic Wand</name>
+    <slug>magicwand</slug>
+    <description>
+* Instead of playing a Page of Cups on Cups and Balls, you may play the Page of Wands:
+   * Gain 2 Corruption Points.
+   * While the Page of Wands is on Cups and Balls:
+   * All Wands now count as the Magician, as well as counting as their original suit and value.
+    </description>
+    <type>
+        Magician
+    </type>
+    <category>
+        Upgrade
+    </category>
+</ability>

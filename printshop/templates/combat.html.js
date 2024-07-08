@@ -19,7 +19,7 @@ function strengthsAndWeaknesses(text){
 
 function combatAbility({name, slug, description, descriptionHtml, extraHtml, helper, type, category, row, column}){
 
-    let top = row.startsWith('1');
+    let top = row.startsWith('1') && !row.startsWith('10');
     let bottom = row.endsWith('13');
 
     let helpHtml = '';
@@ -144,30 +144,134 @@ function spellSkill({name, symbol, skillName, slug, skillDescription, skillDescr
     `
 }
 
+function arcanaAbility({name, slug, description, descriptionHtml, extraHtml, helper, type, category, row, column, upgrade, corruption}){
+
+    let top = row.startsWith('1') && !row.startsWith('10');
+    let bottom = row.endsWith('13');
+
+    let helpHtml = '';
+    if(helper){
+        let helpers = helper.card;
+        if(!Array.isArray(helpers)){
+            helpers = [helpers];
+        }
+        helpHtml = helpers.map(helperToCard).join('');
+    }
+
+    let style = `
+        <style>
+        .grid-${slug}{
+            grid-row: ${row};
+            grid-column: ${column};
+        }
+        </style>
+    `;
+
+    let typeHtml = '';
+    if(type){
+        typeHtml = strengthsAndWeaknesses(type);
+    }
+
+    if(!extraHtml){
+        extraHtml = '';
+    }
+
+    let upgradeHtml = '';
+    if(corruption){
+        upgradeHtml = `
+
+        <div class="upgrade ${bottom ? 'upgrade-bottom' : 'upgrade-top'}">
+            <h3> Corruption Unlock: </h3>
+
+            <div class="corruption-circle box-left"></div>
+            <div class="corruption-circle box-left"></div>
+            <div class="corruption-circle box-left"></div>
+
+            <div style="clear: both;"></div>
+        </div>
+        `;
+    }
+
+    if(top){
+        return `
+            ${style}
+            <div class="combat-ability combat-ability-top ${slug} grid-${slug}">
+
+                <div class="tarot-bottom">
+                    ${helpHtml}
+                </div>
+
+                <h2>${name}</h2>
+                ${descriptionHtml}
+
+                ${extraHtml}
+
+                ${upgradeHtml}
+
+            </div>
+        `
+    }
+    else if(bottom){
+        return `
+            ${style}
+            <div class="combat-ability combat-ability-bottom ${slug} grid-${slug}">
+                <h2>${name}</h2>
+                ${descriptionHtml}
+
+                ${extraHtml}
+
+                ${upgradeHtml}
+
+                <div class="tarot-top">
+                    ${helpHtml}
+                </div>
+
+            </div>
+        `
+    }
+    else {
+        return `
+            ${style}
+            <div class="combat-ability combat-ability-top ${slug} grid-${slug}">
+                <h2>${name}</h2>
+                ${descriptionHtml}
+
+                ${extraHtml}
+
+                ${helpHtml ? `<div class="tarot-bottom">${helpHtml}</div>` : ''}
+
+                ${upgradeHtml}
+            </div>
+        `
+    }
+
+}
+
 
 function combatTemplate({combat}){
     return `
     <div id="combat" class="ability-grid">
 
-        ${combatAbility({...combat.strike, row: '1 / 6', column: '1'})}
-        ${combatAbility({...combat.runaway, row: '6 / 13', column: '1'})}
+        ${combatAbility({...combat.strike, row: '1 / 5', column: '1'})}
+        ${combatAbility({...combat.runaway, row: '9 / 13', column: '1'})}
 
-        ${combatAbility({...combat.defend, row: '1 / 6', column: '2'})}
+        ${combatAbility({...combat.defend, row: '1 / 5', column: '2'})}
         ${combatAbility({...combat.movement, row: '9 / 13', column: '2'})}
 
-        ${combatAbility({...combat.concentrate, row: '1 / 6', column: '3'})}
-        ${combatAbility({...combat.friendship, row: '6 / 9', column: '3'})}
+        ${combatAbility({...combat.concentrate, row: '1 / 5', column: '3'})}
+        ${combatAbility({...combat.friendship, row: '5 / 9', column: '3'})}
         ${combatAbility({...combat.catastrophe, row: '9 / 13', column: '3'})}
 
         <style>
             .turn {
-                grid-row: 6 / 9;
-                grid-column: 2;
+                grid-row: 5 / 9;
+                grid-column: 1;
                 font-size: x-small;
             }
         </style>
 
-        <div class="combat-ability combat-ability-bottom turn">
+        <div class="combat-ability combat-ability-top turn">
+            <h2> Combat </h2>
             <ul>
                 <li>First, draw an <span class="keyword">Intent</span> for each <span class="keyword">Adversary</span>.</li>
                 <li>
@@ -195,16 +299,15 @@ function combatTemplatePageTwo({combat}){
     return `
     <div id="combat-two" class="ability-grid">
 
-        ${combatAbility({...combat.goodidea, row: '1 / 6', column: '1'})}
-        ${combatAbility({...combat.honk, row: '6 / 9', column: '1'})}
+        ${combatAbility({...combat.goodidea, row: '1 / 5', column: '1'})}
+        ${combatAbility({...combat.honk, row: '5 / 9', column: '1'})}
         ${combatAbility({...combat.blur, row: '9 / 13', column: '1'})}
 
-        ${combatAbility({...combat.feint, row: '1 / 6', column: '2'})}
-        ${combatAbility({...combat.scissors, row: '6 / 9 ', column: '2'})}
+        ${combatAbility({...combat.feint, row: '1 / 5', column: '2'})}
         ${combatAbility({...combat.study, row: '9 / 13', column: '2'})}
 
-        ${combatAbility({...combat.flex, row: '1 / 6', column: '3'})}
-        ${combatAbility({...combat.takeachance, row: '8 / 13', column: '3'})}
+        ${combatAbility({...combat.flex, row: '1 / 5', column: '3'})}
+        ${combatAbility({...combat.takeachance, row: '9 / 13', column: '3'})}
 
     </div>
     `
@@ -214,12 +317,12 @@ function magicTemplate({spells}){
     return `
     <div id="magic" class="ability-grid">
 
-        ${spellCombat({...spells.virgo, row: '1 / 8', column: '1'})}
-        ${spellSkill({...spells.virgo, row: '8 / 12', column: '1'})}
-        ${spellCombat({...spells.aquarius, row: '1 / 8', column: '2'})}
-        ${spellSkill({...spells.aquarius, row: '8 / 11', column: '2'})}
-        ${spellCombat({...spells.ophiuchus, row: '1 / 8', column: '3'})}
-        ${spellSkill({...spells.ophiuchus, row: '8 / 12', column: '3'})}
+        ${spellCombat({...spells.virgo, row: '1 / 7', column: '1'})}
+        ${spellSkill({...spells.virgo, row: '7 / 11', column: '1'})}
+        ${spellCombat({...spells.aquarius, row: '1 / 7', column: '2'})}
+        ${spellSkill({...spells.aquarius, row: '7 / 10', column: '2'})}
+        ${spellCombat({...spells.ophiuchus, row: '1 / 7', column: '3'})}
+        ${spellSkill({...spells.ophiuchus, row: '7 / 10', column: '3'})}
 
     </div>`;
 }
@@ -263,6 +366,28 @@ function magicTemplatePageThree({spells}){
     `
 }
 
+function magicianPage({arcana}){
+    return `
+    <div id="magician" class="ability-grid">
+        ${arcanaAbility({...arcana.magician.abilities.saw, row: '6 / 9', column: '1', corruption: true})}
+        ${arcanaAbility({...arcana.magician.abilities.rabbit, row: '9 / 13', column: '1'})}
+        ${arcanaAbility({...arcana.magician.abilities.nexttrick, row: '7 / 10', column: '2', corruption: true})}
+        ${arcanaAbility({...arcana.magician.abilities.abracadabra, row: '10 / 13', column: '2'})}
+        ${arcanaAbility({...arcana.magician.abilities.miser, row: '7 / 10', column: '3', corruption: true})}
+        ${arcanaAbility({...arcana.magician.abilities.checkears, row: '10 / 13', column: '3'})}
+    </div>
+    `
+}
+
+function magicianPageTwo({arcana}){
+    return `
+    <div id="magician" class="ability-grid">
+        ${arcanaAbility({...arcana.magician.abilities.magicwand, row: '5 / 8', column: '1', corruption: true})}
+        ${arcanaAbility({...arcana.magician.abilities.cupsandballs, row: '1 / 5', column: '1'})}
+    </div>
+    `
+}
+
 function combatPages(data){
     return [
         combatTemplate(data),
@@ -278,6 +403,20 @@ function magicPages(data){
     ];
 }
 
+function arcanaPages(data){
+    return [
+        magicianPage(data),
+        magicianPageTwo(data),
+    ];
+}
+
+function magicianPages(data){
+    return [
+        magicianPage(data),
+        magicianPageTwo(data),
+    ];
+}
+
 module.exports = {
     combatTemplate,
     combatTemplatePageTwo,
@@ -285,4 +424,6 @@ module.exports = {
     magicTemplate,
     magicTemplatePageTwo,
     magicPages,
+    arcanaPages,
+    magicianPages,
 }

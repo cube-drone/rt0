@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>And For My Next Trick</name>
+    <slug>nexttrick</slug>
+    <description>
+* When Abracadabra's effect triggers, you may choose to, instead:
+   * Take 1 Corruption Point
+   * While there is a card on Abracadabra, you can use _any_ spell as if you had learned it.
+    </description>
+    <type>
+        Magician
+    </type>
+    <category>
+        Upgrade
+    </category>
+</ability>

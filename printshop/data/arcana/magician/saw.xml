@@ -5,13 +5,13 @@
     <slug>saw</slug>
     <description>
 * When Pull a Rabbit's effect triggers, you may choose to, instead:
-    * Take 1 Corruption Point
-    * Draw all four cards into hand, and, for the rest of the turn, treat each of them them as The Magician (for example, to trigger a spell).
+   * Take 1 Corruption Point
+   * Draw all four cards into hand, and, for the rest of the turn, treat **each** of them them as The Magician (for example, to trigger a spell).
 </description>
     <type>
         Magician
     </type>
     <category>
-        Combat
+        Upgrade
     </category>
 </ability>

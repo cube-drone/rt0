@@ -6,7 +6,7 @@ const fs = require('fs');
 
 const { pages } = require('./templates/base.html.js');
 const { reportCardTemplate } = require('./templates/reportcard.html.js');
-const {combatPages, magicPages} = require('./templates/combat.html.js');
+const {combatPages, magicPages, arcanaPages} = require('./templates/combat.html.js');
 const { prepareData } = require('./data.js');
 
 const { generateCombatMarkdown, generateMagicMarkdown } = require('./markdown.js');
@@ -41,11 +41,13 @@ function fullPrint({data}){
     let reportCard = reportCardTemplate(data);
     let combats = combatPages(data);
     let magics = magicPages(data);
+    let arcana = arcanaPages(data);
 
     let contents = [
         reportCard,
         ...combats,
         ...magics,
+        ...arcana,
     ];
     writeContentsToFile({title: 'Full Print', contents, filename: 'full.html'});
 }
