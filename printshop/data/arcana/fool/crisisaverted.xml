@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Crisis Averted</name>
+    <slug>crisisaverted</slug>
+    <helper>
+        <card>The Tower</card>
+    </helper>
+    <description>
+* When you draw The Tower, perform all of the usual steps of Catastrophe, _but_:
+   * Instead of ending your turn immediately afterwards, instead draw 3 cards (Wise: 4, Foolish: 2) and play them as if they were in your hand.
+</description>
+<flavor>
+"I don't think of it as a mistake, it's more of a happy accident."
+</flavor>
+    <upgrade>Happy Accident</upgrade>
+    <upgradeSlug>happyaccident</upgradeSlug>
+</ability>

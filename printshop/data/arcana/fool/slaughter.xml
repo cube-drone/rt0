@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Slaughter</name>
+    <slug>slaughter</slug>
+    <description>
+* When using Laughter, you may also:
+   * Take 1 Corruption Point
+   * Remove one of the two cards placed on Laughter from your deck forever.
+   * Deal damage equal to 4 times the numerical value of the card so-removed.
+   * If Clever, this is Ranged Damage.
+   * You may not use Slaughter again this Day.
+    </description>
+    <corruption>true</corruption>
+<flavor>
+Nobody finds the violence funny but you.
+</flavor>
+</ability>

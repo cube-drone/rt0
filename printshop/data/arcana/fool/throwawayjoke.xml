@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Throwaway Joke</name>
+    <slug>throwawayjoke</slug>
+    <helper>
+        <card>?</card>
+    </helper>
+    <description>
+* Place any card on Throwaway Joke.
+* Draw and discard the top card of your deck.
+   * If it was The Tower, trigger Catastrophe.
+   * If it was a Major Arcana, nothing happens.
+   * If it was a Sword, deal 3 Damage.
+   * If it was a Cup, gain 3 Shield.
+   * If it was a Wand, deal 1 Ranged Damage.
+   * If it was a Pentacle, you and each of your allies gain 1 Shield.
+* At the end of the turn, discard any card on Throwaway Joke.
+</description>
+<flavor>
+Reaching into your side pockets, you retrieve a random object that will either help or hurt: a rock, some gum, an old ticket...
+</flavor>
+    <upgrade>Surprise Twist</upgrade>
+    <upgradeSlug>surprisetwist</upgradeSlug>
+</ability>

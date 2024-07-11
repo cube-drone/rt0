@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Hit Me</name>
+    <slug>hitme</slug>
+    <description>
+* Any time you take Damage, or offset Damage with your Shield, you may say "Hit Me" to the GM.
+   * Draw a card from the deck.
+   * If it's a Minor Arcana, play it face-down on Blackjack.
+   * If it's The Tower, take 1 Corruption Point _and_ discard all cards on Blackjack.
+   * If it's a Major Arcana, discard it without playing it.
+    </description>
+<flavor>
+Every time you take a hit, you're just one step closer to the jackpot.
+</flavor>
+    <corruption>true</corruption>
+</ability>

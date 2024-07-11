@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>No More Mister Knife Guy</name>
+    <slug>knifeguy</slug>
+    <description>
+* When using the Kitchen Sink, you may instead:
+   * Place a card on Unlikely Weapon AND Unlikely Helmet
+   * Treat the bonuses granted by each as if you were Strong (3) and Fast (3).
+   * Draw 2 cards (Wise: 3, Foolish: 1).
+   * Take 1 Corruption Point
+    </description>
+<flavor>
+"... Where did you find that knife?"  "(shrug) Sometimes I just have a knife."
+</flavor>
+    <corruption>true</corruption>
+</ability>

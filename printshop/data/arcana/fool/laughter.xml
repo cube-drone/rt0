@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Laughter</name>
+    <slug>laughter</slug>
+    <helper>
+        <card>The Fool</card>
+    </helper>
+    <description>
+* Place The Fool on Laughter, as well as any other two cards from your hand that you choose
+* The Tower may not be placed on Laughter
+* Remove all cards from The Fool from your deck for the remainder of the Day.
+* Deal damage equal to the numerical value of any cards placed on Laughter.
+* If Clever, this is Ranged Damage.
+* At the end of the turn, discard The Fool.
+</description>
+<flavor>
+Laughing while you fight is honestly a little unsettling.
+</flavor>
+    <upgrade>Slaughter</upgrade>
+    <upgradeSlug>slaughter</upgradeSlug>
+</ability>

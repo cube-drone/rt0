@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Everyone Loves a Parade</name>
+    <slug>parade</slug>
+    <helper>
+        <card>3</card>
+        <card>4</card>
+        <card>5</card>
+    </helper>
+    <description>
+* Place any card on Everyone Loves a Parade.
+* Once a card has been played on Everyone Loves a Parade, the next card must be either one higher than the highest card on Everyone Loves a Parade,
+    or one lower than the lowest card on Everyone Loves a Parade.
+* When there are 3 cards on Everyone Loves a Parade:
+   * every Adversary is forced to redraw the Intent that they would execute this turn.
+   * discard all cards on Everyone Loves a Parade.
+</description>
+<flavor>
+You're being extremely distracting.
+</flavor>
+    <upgrade>You're Driving Me Crazy</upgrade>
+    <upgradeSlug>drivingcrazy</upgradeSlug>
+</ability>

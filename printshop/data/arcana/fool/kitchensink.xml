@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Kitchen Sink</name>
+    <slug>kitchensink</slug>
+    <helper>
+        <card>The Fool</card>
+    </helper>
+    <description>
+* Place The Fool on Kitchen Sink
+* Place any other card on either Unlikely Weapon or Unlikely Helmet
+* At the end of the turn, discard The Fool
+</description>
+<flavor>
+"That's not a weapon." "It is now."
+</flavor>
+    <upgrade>No More Mister Knife Guy</upgrade>
+    <upgradeSlug>knifeguy</upgradeSlug>
+</ability>

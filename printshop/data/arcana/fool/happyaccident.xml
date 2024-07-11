@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Happy Accident</name>
+    <slug>happyaccident</slug>
+    <description>
+* When you trigger Crisis Averted, you may choose to also:
+   * Take 1 Corruption Point
+   * Draw 6 additional cards (Wise: 8, Foolish: 4)
+   * If you draw The Tower again this turn, you may trigger Happy Accident without taking Corruption.
+    </description>
+<flavor>
+It looks like you stumbled, but you're actually dancing.
+</flavor>
+    <corruption>true</corruption>
+</ability>

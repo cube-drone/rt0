@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Surprise Twist</name>
+    <slug>surprisetwist</slug>
+    <description>
+* While using Throwaway Joke:
+   * If the card drawn was The Fool, The Hierophant, The Emperor, The Hermit, or The Moon, instead of discarding it you may add it to your hand.
+   * If the card drawn was The Chariot, you may move 1 Zone and add it to your hand.
+   * If the card drawn was Death, deal 150 Magic Ranged Damage.
+   * If the card drawn was the Wheel of Fortune, draw and discard three additional cards and apply the Surprise Twist / Throwaway Joke effects to them, as well.
+   * If the card drawn was Judgement, deal 10 Magic Ranged Damage to all Adversaries, and take 1 Corruption Point.
+   * If the card drawn was The World, heal every Ally's HP to full and take 1 Corruption Point.
+   * If the card drawn was The Tower, trigger Catastrophe and take 1 Corruption Point.
+    </description>
+<flavor>
+Reaching in to your side pockets, you retrieve a random object that will either help or hurt: a very long pistol, a full-sized two-handed hammer, a car, a bomb...
+</flavor>
+    <corruption>true</corruption>
+</ability>
