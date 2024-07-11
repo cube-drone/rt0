@@ -17,9 +17,12 @@
     </combatDescription>
     <skillName>Light</skillName>
     <skillDescription>
-* As often as you want, you can use Leo to cast a bright light in a 30 foot radius around you.
+* As often as you want, you can use Leo to cast a bright light in a 30 foot straight line.
 * Once per Day, you can use Leo to dramatically reduce the weight of an object.
     </skillDescription>
+    <flavor>
+        The lion is bright and brave.
+    </flavor>
     <type>
         Magic
     </type>

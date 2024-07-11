@@ -12,6 +12,9 @@
 * Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest.
 * Discard the card played on Study at the start of your turn.
     </description>
+    <flavor>
+        You read about a situation like this in a book, once: you know just what to do.
+    </flavor>
     <type>
         Clever
     </type>

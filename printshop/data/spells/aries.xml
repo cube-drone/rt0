@@ -17,6 +17,9 @@
     <skillDescription>
 * Use Aries to make a Skill check for a skill marked "Fast" as if it were Easy, once per Day.
     </skillDescription>
+    <flavor>
+        The ram is quick and nimble.
+    </flavor>
     <type>
         Magic
     </type>

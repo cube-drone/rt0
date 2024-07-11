@@ -19,6 +19,9 @@
 * The duplicate cannot interact with, pick up, or touch anything - anything touching the illusory copy will simply go right through.
 * The duplicate lasts for about thirty minutes.
     </skillDescription>
+    <flavor>
+        The twins are masters of illusion.
+    </flavor>
     <type>
         Magic
     </type>

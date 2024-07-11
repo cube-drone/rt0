@@ -13,6 +13,9 @@
 * While there is a card on Blur, your Shield are not discarded at the end of the round.
 * Discard the card played on Blur at the beginning of your next turn.
     </description>
+    <flavor>
+        You've moved so fast that even you're not sure where you are.
+    </flavor>
     <type>
         Fast
     </type>

@@ -13,6 +13,9 @@
   * You may force an Adversary to redraw an Intent.
 * Discard the card played on Feint at the end of the turn.
     </description>
+    <flavor>
+        With a well-considered feint, you can make your opponent show their hand.
+    </flavor>
     <type>
         Wise
     </type>

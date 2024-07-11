@@ -23,6 +23,9 @@
 * Or maybe: You can Swap a Spell (even this Spell) for a different Spell.
 * If you Swap something with a player, they must agree to the Swap.
     </skillDescription>
+    <flavor>
+        The scales of justice weigh all things.
+    </flavor>
     <type>
         Magic
     </type>

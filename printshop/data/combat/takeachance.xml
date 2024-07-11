@@ -14,6 +14,9 @@
   * Otherwise, choose one of Good Idea!, Feint, Flex, Blur, or Study, and use that ability as if you had played a card there.
 * Discard the card played on Take a Chance at the end of the turn.
     </description>
+    <flavor>
+        Throwing caution to the wind, you take a chance on... something.
+    </flavor>
     <type>
         Lucky
     </type>

@@ -14,6 +14,9 @@
   * deal 5 (Strong: 7 / Weak: 3) Damage or
   * deal 2 (Strong: 3 / Weak: 1) Ranged Damage.
     </description>
+    <flavor>
+        You don't need a weapon to be dangerous. Hit them! Hit them hard!
+    </flavor>
     <type>
         Strong / Weak
     </type>

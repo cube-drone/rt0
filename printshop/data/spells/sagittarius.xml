@@ -20,6 +20,9 @@
 * Once per day, name a person, object, or concept. A spectral arrow will appear, and to the best of its ability, it will point towards that thing.
 * This arrow is only visible to you, and it only lasts for 30 minutes.
     </skillDescription>
+    <flavor>
+        The archer is unerring.
+    </flavor>
     <type>
         Magic
     </type>

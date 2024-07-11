@@ -26,6 +26,9 @@
    * remove a Minor Injury entirely.
 * Aquarius's heal effect can not be used more than once per day, in or out of combat.
     </skillDescription>
+    <flavor>
+        The water bearer brings life and healing.
+    </flavor>
     <type>
         Magic / Charming
     </type>

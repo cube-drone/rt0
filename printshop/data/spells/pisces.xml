@@ -18,6 +18,9 @@
 * Any time you want, throw a spectral grappling hook.
 * This can be used to grab distant things or to set up difficult climbs.
     </skillDescription>
+    <flavor>
+        The fish can be elusive, which is why you need a good hook.
+    </flavor>
     <type>
         Magic
     </type>

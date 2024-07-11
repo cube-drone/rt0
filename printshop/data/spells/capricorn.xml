@@ -22,6 +22,9 @@
     <skillDescription>
 * Once per Day, when any player fails a Skill Check, you can use Capricorn to allow them to try again.
     </skillDescription>
+    <flavor>
+        The goat... loves the ladies.
+    </flavor>
     <type>
         Magic
     </type>

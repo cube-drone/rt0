@@ -30,6 +30,9 @@
 * (As a guideline, it should about half as powerful as the other spells.)
 * If it is, it happens.
     </skillDescription>
+    <flavor>
+        The serpent-bearer is mysterious and unpredictable.
+    </flavor>
     <type>
         Magic / Lucky
     </type>

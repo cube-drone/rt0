@@ -21,6 +21,9 @@
 * The bubble lasts for 30 minutes, and holds enough air for all 30 of those minutes.
 * If fall damage were a problem (on the Moon, where gravity is not so harsh a mistress), the bubble would protect you from that, too.
     </skillDescription>
+    <flavor>
+        The crab is a master of defense.
+    </flavor>
     <type>
         Magic
     </type>

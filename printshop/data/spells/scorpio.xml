@@ -19,6 +19,9 @@
 * This hand will stick around for about 30 minutes. It moves about as fast as a regular person would.
 * This hand can lift up to 5lbs.
     </skillDescription>
+    <flavor>
+        The scorpion is insidious.
+    </flavor>
     <type>
         Magic
     </type>

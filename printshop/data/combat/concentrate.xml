@@ -13,6 +13,9 @@
   * discard all cards on Concentrate and
   * draw a new card
     </description>
+    <flavor>
+        You take a moment to focus: the world slows down around you.
+    </flavor>
     <type>
         Wise / Foolish
     </type>

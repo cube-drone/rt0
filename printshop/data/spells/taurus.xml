@@ -17,6 +17,9 @@
     <skillDescription>
 * Use Taurus to make a Skill check for a skill marked "Strong" as if it were Easy, once per Day.
     </skillDescription>
+    <flavor>
+        The bull is an unstoppable force.
+    </flavor>
     <type>
         Magic
     </type>

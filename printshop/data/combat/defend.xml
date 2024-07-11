@@ -12,6 +12,9 @@
 * When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Defend and
   * generate 5 (Fast: 7 / Slow: 3) Shield.
     </description>
+    <flavor>
+        Dodge, or brace yourself for the impact. Either way, you're ready.
+    </flavor>
     <type>
         Fast / Slow
     </type>

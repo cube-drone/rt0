@@ -12,6 +12,9 @@
 * While there is a card on Flex, any damage generated is multiplied by 2.
 * Discard the card played on Flex at the end of the turn.
     </description>
+    <flavor>
+        With a great strain, you can push yourself to the limits of what you're capable of.
+    </flavor>
     <type>
         Strong
     </type>

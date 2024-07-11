@@ -11,6 +11,9 @@
 * The player discards all cards on all of their abilities, including The Tower, then shuffles the discard pile back into their deck and ends their turn.
 * If Lucky, gain 10 Shield.
     </description>
+    <flavor>
+        In the heat of battle, you've made a terrible mistake.
+    </flavor>
     <category>
         Combat
     </category>
