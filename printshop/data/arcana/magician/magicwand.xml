@@ -5,11 +5,15 @@
     <slug>magicwand</slug>
     <description>
 * Instead of playing a Page of Cups on Cups and Balls, you may play the Page of Wands:
-   * Gain 2 Corruption Points.
    * While the Page of Wands is on Cups and Balls:
    * All Wands now count as the Magician, as well as counting as their original suit and value.
+   * The first Wand played in this way is free, but for each subsequent Wand used in this way, take 1 Corruption Point.
     </description>
     <corruption>
         true
     </corruption>
+<flavor>
+"It's not the wand that's magic - the wand is nothing more than a prop to guide the eyes away from what's really happening.
+    It's the magician who's magic."
+</flavor>
 </ability>

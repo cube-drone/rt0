@@ -11,6 +11,9 @@
 * Choose a spell that nobody has learned. While there is a card on Abracadabra, you can use this spell as if you had learned it.
 * Discard the Magician whenever you want.
 </description>
+<flavor>
+"I didn't know you knew that one!"  "Yeah, I didn't either."
+</flavor>
     <upgrade>For My Next Trick</upgrade>
     <upgradeSlug>nexttrick</upgradeSlug>
 

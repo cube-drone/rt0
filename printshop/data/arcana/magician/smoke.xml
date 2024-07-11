@@ -9,5 +9,8 @@
    * Take no damage for the remainder of the round.
    * Take 1 Corruption Point.
     </description>
+<flavor>
+One moment you're there, the next you're gone.
+</flavor>
     <corruption>true</corruption>
 </ability>

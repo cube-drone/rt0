@@ -6,8 +6,12 @@
     <description>
 * When Abracadabra's effect triggers, you may choose to, instead:
    * Take 1 Corruption Point
-   * While there is a card on Abracadabra, you can use _any_ spell as if you had learned it.
+   * While there is a card on Abracadabra, you can use _any_ spell as if you had learned it,
+      even if you don't meet the card's requirements.
     </description>
+<flavor>
+All of the knowledge in the world is at your fingertips, if you're willing to pay the price.
+</flavor>
     <corruption>
         true
     </corruption>

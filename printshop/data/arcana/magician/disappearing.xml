@@ -11,6 +11,9 @@
 * Discard The Moon on any time during your turn to:
     * Move to any Zone in the current combat.
     </description>
+<flavor>
+Poof.
+</flavor>
     <upgrade>Smoke and Mirrors</upgrade>
     <upgradeSlug>smoke</upgradeSlug>
 </ability>

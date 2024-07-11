@@ -8,5 +8,8 @@
    * Take 1 Corruption Point
    * Draw all four cards into hand, and, for the rest of the turn, treat **each** of them them as The Magician (for example, to trigger a spell).
 </description>
+<flavor>
+For the big finale, you're going to need a volunteer.
+</flavor>
     <corruption>true</corruption>
 </ability>

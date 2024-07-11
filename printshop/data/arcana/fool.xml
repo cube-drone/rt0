@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<arcana>
+    <name>The Fool</name>
+    <slug>fool</slug>
+    <description>
+Lucky, reckless, unreliable, and full of surprises, The Fool is a bit of a wildcard, a bit of a class clown, but
+when the chips are down, they're definitely... something.
+    </description>
+    <special>
+* The Fool can treat The Fool as a true wildcard: any card they choose, in any situation.
+* The Fool gains the Lucky ability.
+    </special>
+    <narrativeAbility>
+
+### Skill: Deus Ex Machina
+Once per Day, The Fool can request a Deus Ex Machina from the GM: The universe itself intervenes to provide a hint,
+happy accident, fortuitous coincidence, or other stroke of unexpected luck.
+    </narrativeAbility>
+    <type>
+        Fool
+    </type>
+    <category>
+        Combat
+    </category>
+</arcana>

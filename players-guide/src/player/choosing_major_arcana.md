@@ -8,10 +8,14 @@ into which your player fits, and provides a variety of abilities and skills with
 The Major Arcana available to the players are:
 
 * [The Fool](./arcana/0_the_fool.md) - A class clown. Carefree. Naive. Random.
-* [The Magician](./arcana/1_the_magician.md) - A mastermind spellcaster who always has a plan.
+* [The Magician](./generated/magician.md) - A mastermind spellcaster who always has a plan.
 * [The High Priestess](./arcana/2_the_high_priestess.md) - A fortuneteller who can see into the future.
 
-_Look, while this game is still in a Rough Draft state, there are only a handful of playable Major Arcana. More to come._
+Each player also chooses 2 of their Arcana's **Signature Abilities** to start off the game.
+
+Players will gain a new Signature Ability at the end of each Day.
+
+_(Look, while this game is still in a Rough Draft state, there are only a handful of playable Major Arcana. More to come.)_
 
 <!--
 The initial run of the Major Arcana used exactly the first six cards and included:

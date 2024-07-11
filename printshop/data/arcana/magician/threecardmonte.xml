@@ -11,6 +11,9 @@
 * Discard two cards from hand, and draw two cards.
 * Discard any cards on Three Card Monte at the end of the turn.
     </description>
+<flavor>
+Your nimble mind helps you rearrange your thoughts as easily as if they were cards.
+</flavor>
     <upgrade>Is This Your Card</upgrade>
     <upgradeSlug>yourcard</upgradeSlug>
 </ability>

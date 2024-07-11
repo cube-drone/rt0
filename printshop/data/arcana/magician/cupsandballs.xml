@@ -13,6 +13,9 @@
    * This includes Major Arcana: A Death, for example, counts as a "13 of Cups".
 * Discard the Page of Cups at will.
 </description>
+<flavor>
+No matter how hard they try to hit you, it seems like you're always one step ahead.
+</flavor>
     <upgrade>Magic Wand</upgrade>
     <upgradeSlug>magicwand</upgradeSlug>
 </ability>

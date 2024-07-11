@@ -16,6 +16,9 @@
    * Discard the lowest three cards
    * Draw the the highest ranked card into hand, and, for the rest of the turn, treat it as The Magician (for example, to trigger a spell).
     </description>
+<flavor>
+A trick isn't that impressive on it's own: line up a few more, and you've got a show.
+</flavor>
     <upgrade>Saw In Half</upgrade>
     <upgradeSlug>saw</upgradeSlug>
 

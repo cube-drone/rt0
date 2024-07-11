@@ -11,5 +11,8 @@
    * If The Tower is one of the drawn cards, take 1 Corruption Point.
    * Is This Your Card cannot be used more than once per turn.
     </description>
+<flavor>
+It's just a little sleight of hand.
+</flavor>
     <corruption>true</corruption>
 </ability>

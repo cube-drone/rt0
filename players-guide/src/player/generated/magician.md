@@ -4,7 +4,7 @@
 
 ## Description
 
-A resourceful, powerful, schemer, The Magician gets access to more spells than any other Arcana.
+A resourceful, powerful schemer, The Magician gets access to more spells than any other Arcana.
 
 * The Magician can treat The Fool as a second The Magician card.
 * The Magician gains the Clever ability.
@@ -16,7 +16,7 @@ Once per Day, The Magician can have planned ahead, retroactively.
 #### Planned Ahead, Retroactively?
 * This means that The Magician can declare that they had a plan in place for a situation that has just arisen, and that they have already taken steps to prepare for it.
 * This can include lots of things: having a piece of vital equipment on hand, or having bribed someone in advance.
-* The GM can veto this if it would break the game, or if its effect would be much too powerful. ("I prepped my escape from the Moon in advance!")
+* The GM can veto or negotiate this.
 
 ## Combat Abilities
 
