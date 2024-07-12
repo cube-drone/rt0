@@ -9,6 +9,7 @@ A resourceful, powerful schemer, The Magician gets access to more spells than an
 * The Magician can treat The Fool as a second The Magician card.
 * The Magician gains the Clever ability.
 * The Magician learns one extra spell at the start of the game.
+* Choose two of the The Magician's Arcana Abilities.
 
 ### Skill: This Was All Part of My Plan
 Once per Day, The Magician can have planned ahead, retroactively.
@@ -89,8 +90,7 @@ _"It's not the wand that's magic - the wand is nothing more than a prop to guide
 
 * Instead of playing a Page of Cups on Cups and Balls, you may play the Page of Wands:
    * While the Page of Wands is on Cups and Balls:
-   * All Wands now count as the Magician, as well as counting as their original suit and value.
-   * The first Wand played in this way is free, but for each subsequent Wand used in this way, take 1 Corruption Point.
+   * All cards now count as any suit, as well as counting as their original suit and value.
 
 ### Three Card Monte
 _Your nimble mind helps you rearrange your thoughts as easily as if they were cards._

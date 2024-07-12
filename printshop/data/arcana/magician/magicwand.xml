@@ -6,8 +6,7 @@
     <description>
 * Instead of playing a Page of Cups on Cups and Balls, you may play the Page of Wands:
    * While the Page of Wands is on Cups and Balls:
-   * All Wands now count as the Magician, as well as counting as their original suit and value.
-   * The first Wand played in this way is free, but for each subsequent Wand used in this way, take 1 Corruption Point.
+   * All cards now count as any suit, as well as counting as their original suit and value.
     </description>
     <corruption>
         true

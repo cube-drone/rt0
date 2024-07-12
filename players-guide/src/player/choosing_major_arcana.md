@@ -11,11 +11,13 @@ The Major Arcana available to the players are:
 * [The Magician](./generated/magician.md) - A mastermind spellcaster who always has a plan.
 * [The High Priestess](./arcana/2_the_high_priestess.md) - A fortuneteller who can see into the future.
 
-Each player also chooses 2 of their Arcana's **Signature Abilities** to start off the game.
+Each Arcana provides a handful of changes to the game: The Fool, for example, can treat "The Fool" as a wildcard, and gains the Lucky ability.
 
-Players will gain a new Signature Ability at the end of each Day.
+Each Arcana also provides a Skill: The Magician, for example, has "This Was All Part of My Plan". The Skill is intended for use outside of combat, although the Skill can be used in Combat with the Movement/Skill Check ability.
 
-_(Look, while this game is still in a Rough Draft state, there are only a handful of playable Major Arcana. More to come.)_
+Each player also chooses 2 of their Arcana's **Arcana Abilities** to start off the game.
+
+## Arcana Abilities
 
 <!--
 The initial run of the Major Arcana used exactly the first six cards and included:

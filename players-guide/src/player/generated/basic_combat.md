@@ -28,8 +28,9 @@ _undefined_
 
 * Place any card on Movement / Skill.
 * When there are 2 (Fast: 1, Slow: 3) cards on Movement / Skill:
-  * Discard all cards on Movement / Skill and
+* Discard all cards on Movement / Skill and
   * Move 1 Zone or
+  * Use a named Skill, like "Charm", "Loop", or "Deus Ex Machina" or
   * Shuffle your discard pile into your deck, then make a skill check.
 
 Some actions during battle call for Skill Checks. "I hack the computer while the battle is raging on", or "I force open the door".

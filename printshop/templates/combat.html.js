@@ -208,6 +208,8 @@ function arcanaAbility({name, slug, description, descriptionHtml, extraHtml, hel
 
                 ${upgradeHtml}
 
+                <div class="box box-bottom-right"></div>
+
             </div>
         `
     }
@@ -215,6 +217,10 @@ function arcanaAbility({name, slug, description, descriptionHtml, extraHtml, hel
         return `
             ${style}
             <div class="combat-ability combat-ability-bottom ${slug} grid-${slug}">
+
+                <div class="box box-top-right"></div>
+                <div class="box box-right invisible"></div>
+
                 <h2>${name}</h2>
                 ${descriptionHtml}
 
@@ -387,7 +393,7 @@ function magicianPage({arcana}){
 
         <style>
             .magician-narrative {
-                grid-row: 1 / 6;
+                grid-row: 1 / 5;
                 grid-column: 2;
                 font-size: x-small;
             }
@@ -402,10 +408,10 @@ function magicianPage({arcana}){
 
         ${arcanaAbility({...arcana.magician.abilities.saw, row: '6 / 9', column: '1'})}
         ${arcanaAbility({...arcana.magician.abilities.rabbit, row: '9 / 13', column: '1'})}
-        ${arcanaAbility({...arcana.magician.abilities.nexttrick, row: '7 / 10', column: '2'})}
-        ${arcanaAbility({...arcana.magician.abilities.abracadabra, row: '10 / 13', column: '2'})}
-        ${arcanaAbility({...arcana.magician.abilities.miser, row: '7 / 10', column: '3'})}
-        ${arcanaAbility({...arcana.magician.abilities.checkears, row: '10 / 13', column: '3'})}
+        ${arcanaAbility({...arcana.magician.abilities.nexttrick, row: '6 / 9', column: '2'})}
+        ${arcanaAbility({...arcana.magician.abilities.abracadabra, row: '9 / 13', column: '2'})}
+        ${arcanaAbility({...arcana.magician.abilities.miser, row: '6 / 9', column: '3'})}
+        ${arcanaAbility({...arcana.magician.abilities.checkears, row: '9 / 13', column: '3'})}
 
     </div>
     `
@@ -414,12 +420,12 @@ function magicianPage({arcana}){
 function magicianPageTwo({arcana}){
     return `
     <div id="magician" class="ability-grid">
-        ${arcanaAbility({...arcana.magician.abilities.magicwand, row: '5 / 8', column: '3'})}
-        ${arcanaAbility({...arcana.magician.abilities.cupsandballs, row: '1 / 5', column: '3'})}
+        ${arcanaAbility({...arcana.magician.abilities.disappearing, row: '1 / 4', column: '1'})}
+        ${arcanaAbility({...arcana.magician.abilities.smoke, row: '5 / 8', column: '1'})}
         ${arcanaAbility({...arcana.magician.abilities.yourcard, row: '4 / 8', column: '2'})}
         ${arcanaAbility({...arcana.magician.abilities.threecardmonte, row: '1 / 4', column: '2'})}
-        ${arcanaAbility({...arcana.magician.abilities.disappearing, row: '1 / 4', column: '1'})}
-        ${arcanaAbility({...arcana.magician.abilities.smoke, row: '4 / 7', column: '1'})}
+        ${arcanaAbility({...arcana.magician.abilities.magicwand, row: '5 / 8', column: '3'})}
+        ${arcanaAbility({...arcana.magician.abilities.cupsandballs, row: '1 / 5', column: '3'})}
     </div>
     `
 }
