@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<arcana>
+    <name>The High Priestess</name>
+    <slug>highpriestess</slug>
+    <description>
+Duality, prophecy, and the subconscious drive this enigmatic figure.
+    </description>
+    <special>
+* The High Priestess can treat The Fool card as a High Priestess.
+* The High Priestess gains the Wise ability.
+* The High Priestess only draws 3, rather than 5 cards per combat turn.
+* At the beginning of every combat turn,
+    the High Priestess may look at the top two cards of their deck and may draw either, none, or both of them.
+* Choose two of The High Priestess's Arcana Abilities.
+    </special>
+    <narrativeAbility>
+
+### Skill: Foresight
+
+* The High Priestess has packed a wide variety of divinatory tools that - unlike for most - actually **work**.
+   * Their Magic 8-Ball is surprisingly accurate.
+   * Their Ouija Board can actually be used to communicate with spirits, if they're present.
+   * Their Tarot Deck can be used to draw a card that actually represents details about their present or future situation.
+   * Their Crystal Ball can show them limited visions of things happening around them or visions of the future.
+   * They've a handful of Fortune Cookies which contain actual, useful situation-appropriate advice.
+* In general, the High Priestess can use these tools to gain insight into the future, or to understand the present,
+    but after using any individual tool, it is exhausted for the Day.
+* The High Priestess can either request that the GM provide a result, or, they can
+    provide their own result and ask the GM to make it come true.
+* If the GM can't or won't (sometimes it's just not going to happen): the item is not exhausted for the Day.
+
+    </narrativeAbility>
+    <type>
+        Fool
+    </type>
+    <category>
+        Combat
+    </category>
+</arcana>

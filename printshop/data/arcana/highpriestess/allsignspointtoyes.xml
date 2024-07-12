@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>All Signs Point to Yes</name>
+    <slug>allsignspointtoyes</slug>
+    <helper>
+        <card>The High Priestess</card>
+    </helper>
+    <description>
+* Place the High Priestess on All Signs Point to Yes
+* While the High Priestess is on All Signs Point to Yes, Threes, Fours and Fives can be used on Concentrate.
+* Discard the High Priestess from All Signs Point to Yes whenever you like.
+* When the High Priestess is discarded from All Signs Point to Yes, deal 1 Magic Ranged Damage to every Adversary.
+</description>
+<flavor>
+It almost seems like they're in a trance.
+</flavor>
+    <upgrade>Better Not Tell You Now</upgrade>
+    <upgradeSlug>betternottellyounow</upgradeSlug>
+</ability>
