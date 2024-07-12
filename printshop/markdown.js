@@ -105,7 +105,7 @@ function generateMagicianMarkdown({data}){
         markdown += '\n\n';
     }
 
-    markdown += `## Combat Abilities\n\n`;
+    markdown += `## Arcana Abilities\n\n`;
     addToMarkdown(data.arcana.magician.abilities.rabbit);
     addToMarkdown(data.arcana.magician.abilities.saw);
 
@@ -159,7 +159,7 @@ function generateFoolMarkdown({data}){
         markdown += '\n\n';
     }
 
-    markdown += `## Combat Abilities\n\n`;
+    markdown += `## Arcana Abilities\n\n`;
     addToMarkdown(data.arcana.fool.abilities.kitchensink);
     addToMarkdown(data.arcana.fool.abilities.knifeguy);
     addToMarkdown(data.arcana.fool.abilities.unlikelyhelmet);

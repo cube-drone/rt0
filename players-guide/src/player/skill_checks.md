@@ -44,6 +44,9 @@ The player is _bad_ at this skill and won't generally be able to pass skill chec
 
 _Any_ skill check against a failed Skill becomes [Unlikely](#determining-the-difficulty-of-a-skill-check) for the player.
 
+## Skill Corruption
+
+Players can mark Corruption Points on the "Skill Corruption" box on their Report Card. When all three of the _Corruption Circles_ are filled, you may gain a new Skill, and fail a new skill.
 
 ## Skill Checks
 

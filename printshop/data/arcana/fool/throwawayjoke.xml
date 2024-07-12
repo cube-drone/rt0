@@ -10,6 +10,7 @@
 * Place any card on Throwaway Joke.
 * Draw and discard the top card of your deck.
    * If it was The Tower, trigger Catastrophe.
+   * If it was The Magician, play a card from your hand on Unlikely Weapon or Unlikely Helmet.
    * If it was a Major Arcana, nothing happens.
    * If it was a Sword, deal 3 Damage.
    * If it was a Cup, gain 3 Shield.

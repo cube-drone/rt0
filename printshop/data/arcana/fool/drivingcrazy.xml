@@ -5,7 +5,9 @@
     <slug>drivingcrazy</slug>
     <description>
 * When Everyone Loves a Parade triggers, after Adversaries have redrawn their Intents, you may also:
-   * Discard any of the newly drawn Intents. Take 1 Corruption Point for each discarded Intent.
+   * Discard any of the newly drawn Intents.
+   * An Adversary with a discarded Intent does not take an action this turn.
+   * Take 1 Corruption Point for each discarded Intent after the first (which is a freebie).
     </description>
 <flavor>
 You're such a spectacle that even your foes can't help but watch.

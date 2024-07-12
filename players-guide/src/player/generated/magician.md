@@ -19,7 +19,7 @@ Once per Day, The Magician can have planned ahead, retroactively.
 * This can include lots of things: having a piece of vital equipment on hand, or having bribed someone in advance.
 * The GM can veto or negotiate this.
 
-## Combat Abilities
+## Arcana Abilities
 
 ### Rabbit Out of a Hat
 _A trick isn't that impressive on it's own: line up a few more, and you've got a show._
