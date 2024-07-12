@@ -127,8 +127,66 @@ function generateMagicianMarkdown({data}){
     return markdown;
 }
 
+function generateFoolMarkdown({data}){
+    let markdown = '';
+
+    markdown += `# 0 - The Fool\n\n`;
+
+    markdown += `[Fool Character Sheet](/generated/printables/fool.html)\n\n`;
+
+    markdown += `## Description\n\n`;
+    markdown += data.arcana.fool.description;
+    markdown += '\n\n';
+
+    markdown += data.arcana.fool.special;
+    markdown += '\n\n';
+
+    markdown += data.arcana.fool.narrativeAbility;
+    markdown += '\n\n';
+
+    const addToMarkdown = ({name, flavor, description, extraDescription, corruption}) => {
+        markdown += `### ${name}\n`;
+        markdown += `_${flavor}_\n\n`
+        if(corruption){
+            markdown += `**Corruption Upgrade: Mark 3 Corruption Points on ${name} to Unlock it.**\n\n`;
+        }
+
+        markdown += description;
+        if(extraDescription){
+            markdown += '\n\n';
+            markdown += extraDescription;
+        }
+        markdown += '\n\n';
+    }
+
+    markdown += `## Combat Abilities\n\n`;
+    addToMarkdown(data.arcana.fool.abilities.kitchensink);
+    addToMarkdown(data.arcana.fool.abilities.knifeguy);
+    addToMarkdown(data.arcana.fool.abilities.unlikelyhelmet);
+    addToMarkdown(data.arcana.fool.abilities.unlikelyweapon);
+
+    addToMarkdown(data.arcana.fool.abilities.laughter);
+    addToMarkdown(data.arcana.fool.abilities.slaughter);
+
+    addToMarkdown(data.arcana.fool.abilities.blackjack);
+    addToMarkdown(data.arcana.fool.abilities.hitme);
+
+    addToMarkdown(data.arcana.fool.abilities.parade);
+    addToMarkdown(data.arcana.fool.abilities.drivingcrazy);
+
+    addToMarkdown(data.arcana.fool.abilities.throwawayjoke);
+    addToMarkdown(data.arcana.fool.abilities.surprisetwist);
+
+    addToMarkdown(data.arcana.fool.abilities.crisisaverted);
+    addToMarkdown(data.arcana.fool.abilities.happyaccident);
+
+    return markdown;
+}
+
+
 module.exports = {
     generateCombatMarkdown,
     generateMagicMarkdown,
-    generateMagicianMarkdown
+    generateMagicianMarkdown,
+    generateFoolMarkdown
 }

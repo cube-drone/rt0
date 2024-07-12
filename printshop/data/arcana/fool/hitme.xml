@@ -4,7 +4,7 @@
     <name>Hit Me</name>
     <slug>hitme</slug>
     <description>
-* Any time you take Damage, or offset Damage with your Shield, you may say "Hit Me" to the GM.
+* Any time you take Damage, (even if offset with your Shield), you may say "Hit Me" to the GM.
    * Draw a card from the deck.
    * If it's a Minor Arcana, play it face-down on Blackjack.
    * If it's The Tower, take 1 Corruption Point _and_ discard all cards on Blackjack.

@@ -17,7 +17,7 @@ function strengthsAndWeaknesses(text){
     return text;
 }
 
-function combatAbility({name, slug, description, descriptionHtml, extraHtml, helper, type, category, row, column}){
+function combatAbility({name, slug, flavorHtml, descriptionHtml, extraHtml, helper, type, category, row, column}){
 
     let top = row.startsWith('1') && !row.startsWith('10');
     let bottom = row.endsWith('13');
@@ -59,6 +59,7 @@ function combatAbility({name, slug, description, descriptionHtml, extraHtml, hel
                 </div>
 
                 <h2>${name}</h2>
+                <div class="flavor">${flavorHtml}</div>
                 ${descriptionHtml}
 
                 ${extraHtml}
@@ -78,6 +79,8 @@ function combatAbility({name, slug, description, descriptionHtml, extraHtml, hel
                 </div>
 
                 <h2>${name}</h2>
+                <div class="flavor">${flavorHtml}</div>
+
                 ${descriptionHtml}
 
                 ${extraHtml}
@@ -94,6 +97,9 @@ function combatAbility({name, slug, description, descriptionHtml, extraHtml, hel
             ${style}
             <div class="combat-ability combat-ability-top ${slug} grid-${slug}">
                 <h2>${name}</h2>
+
+                <div class="flavor">${flavorHtml}</div>
+
                 ${descriptionHtml}
 
                 ${extraHtml}
@@ -109,10 +115,11 @@ function combatAbility({name, slug, description, descriptionHtml, extraHtml, hel
 
 }
 
-function spellCombat({name, symbol, combatName, slug, combatDescription, combatDescriptionHtml, skillDescriptionHtml, helper, type, category, row, column}){
+function spellCombat({name, symbol, flavorHtml, combatName, slug, combatDescription, combatDescriptionHtml, skillDescriptionHtml, helper, type, category, row, column}){
     return combatAbility({
         name: `${symbol} ${name} - ${combatName} <small>(Combat)</small>`,
         slug: `${slug}-combat`,
+        flavorHtml,
         description: combatDescription,
         descriptionHtml: combatDescriptionHtml,
         helper,
@@ -144,7 +151,7 @@ function spellSkill({name, symbol, skillName, slug, skillDescription, skillDescr
     `
 }
 
-function arcanaAbility({name, slug, description, descriptionHtml, extraHtml, helper, type, category, row, column, upgrade, corruption}){
+function arcanaAbility({name, slug, flavorHtml, descriptionHtml, extraHtml, helper, type, category, row, column, upgrade, corruption, hidebox}){
 
     let top = row.startsWith('1') && !row.startsWith('10');
     let bottom = row.endsWith('13');
@@ -202,13 +209,16 @@ function arcanaAbility({name, slug, description, descriptionHtml, extraHtml, hel
                 </div>
 
                 <h2>${name}</h2>
+
+                <div class="flavor">${flavorHtml}</div>
+
                 ${descriptionHtml}
 
                 ${extraHtml}
 
                 ${upgradeHtml}
 
-                <div class="box box-bottom-right"></div>
+                ${ hidebox ? '' : `<div class="box box-bottom-right"></div>` }
 
             </div>
         `
@@ -218,10 +228,13 @@ function arcanaAbility({name, slug, description, descriptionHtml, extraHtml, hel
             ${style}
             <div class="combat-ability combat-ability-bottom ${slug} grid-${slug}">
 
-                <div class="box box-top-right"></div>
+                ${ hidebox ? '' : `<div class="box box-top-right"></div>` }
                 <div class="box box-right invisible"></div>
 
                 <h2>${name}</h2>
+
+                <div class="flavor">${flavorHtml}</div>
+
                 ${descriptionHtml}
 
                 ${extraHtml}
@@ -240,6 +253,9 @@ function arcanaAbility({name, slug, description, descriptionHtml, extraHtml, hel
             ${style}
             <div class="combat-ability combat-ability-top ${slug} grid-${slug}">
                 <h2>${name}</h2>
+
+                <div class="flavor">${flavorHtml}</div>
+
                 ${descriptionHtml}
 
                 ${extraHtml}
@@ -400,7 +416,6 @@ function magicianPage({arcana}){
         </style>
 
         <div class="combat-ability combat-ability-top magician-narrative ">
-            <h2> The Magician </h2>
 
             ${arcana.magician.narrativeAbilityHtml}
 
@@ -419,16 +434,80 @@ function magicianPage({arcana}){
 
 function magicianPageTwo({arcana}){
     return `
-    <div id="magician" class="ability-grid">
-        ${arcanaAbility({...arcana.magician.abilities.disappearing, row: '1 / 4', column: '1'})}
-        ${arcanaAbility({...arcana.magician.abilities.smoke, row: '5 / 8', column: '1'})}
-        ${arcanaAbility({...arcana.magician.abilities.yourcard, row: '4 / 8', column: '2'})}
-        ${arcanaAbility({...arcana.magician.abilities.threecardmonte, row: '1 / 4', column: '2'})}
-        ${arcanaAbility({...arcana.magician.abilities.magicwand, row: '5 / 8', column: '3'})}
-        ${arcanaAbility({...arcana.magician.abilities.cupsandballs, row: '1 / 5', column: '3'})}
+    <div id="magician-2" class="ability-grid">
+        ${arcanaAbility({...arcana.magician.abilities.yourcard, row: '5 / 9', column: '1'})}
+        ${arcanaAbility({...arcana.magician.abilities.threecardmonte, row: '1 / 5', column: '1'})}
+        ${arcanaAbility({...arcana.magician.abilities.magicwand, row: '5 / 8', column: '2'})}
+        ${arcanaAbility({...arcana.magician.abilities.cupsandballs, row: '1 / 5', column: '2'})}
+        ${arcanaAbility({...arcana.magician.abilities.disappearing, row: '1 / 4', column: '3'})}
+        ${arcanaAbility({...arcana.magician.abilities.smoke, row: '4 / 7', column: '3'})}
     </div>
     `
 }
+
+function foolPage({arcana}){
+    return `
+    <div id="fool" class="ability-grid">
+
+        <style>
+            .magician {
+                grid-row: 1 / 5;
+                grid-column: 1;
+                font-size: x-small;
+            }
+        </style>
+
+        <div class="combat-ability combat-ability-top magician ">
+            <h2> The Fool </h2>
+
+            ${arcana.fool.descriptionHtml}
+
+            ${arcana.fool.specialHtml}
+
+        </div>
+
+        <style>
+            .fool-narrative {
+                grid-row: 1 / 3;
+                grid-column: 2;
+                font-size: x-small;
+            }
+        </style>
+
+        <div class="combat-ability combat-ability-top fool-narrative ">
+
+            ${arcana.fool.narrativeAbilityHtml}
+
+        </div>
+        ${arcanaAbility({...arcana.fool.abilities.slaughter, row: '5 / 9', column: '1'})}
+        ${arcanaAbility({...arcana.fool.abilities.laughter, row: '9 / 13', column: '1'})}
+
+        ${arcanaAbility({...arcana.fool.abilities.happyaccident, row: '6 / 9', column: '2'})}
+        ${arcanaAbility({...arcana.fool.abilities.crisisaverted, row: '9 / 13', column: '2'})}
+
+        ${arcanaAbility({...arcana.fool.abilities.hitme, row: '2 / 6', column: '3'})}
+        ${arcanaAbility({...arcana.fool.abilities.blackjack, row: '6 / 13', column: '3'})}
+    </div>
+    `
+}
+
+function foolPageTwo({arcana}){
+    return `
+    <div id="fool-2" class="ability-grid">
+        ${arcanaAbility({...arcana.fool.abilities.knifeguy, row: '5 / 9', column: '1'})}
+        ${arcanaAbility({...arcana.fool.abilities.kitchensink, row: '1 / 5', column: '1'})}
+        ${arcanaAbility({...arcana.fool.abilities.unlikelyhelmet, row: '10 / 13', column: '1'})}
+        ${arcanaAbility({...arcana.fool.abilities.unlikelyweapon, row: '10 / 13', column: '2'})}
+
+        ${arcanaAbility({...arcana.fool.abilities.parade, row: '1 / 6', column: '2'})}
+        ${arcanaAbility({...arcana.fool.abilities.drivingcrazy, row: '6 / 9', column: '2'})}
+
+        ${arcanaAbility({...arcana.fool.abilities.surprisetwist, row: '2 / 8', column: '3'})}
+        ${arcanaAbility({...arcana.fool.abilities.throwawayjoke, row: '8 / 13', column: '3'})}
+    </div>
+    `
+}
+
 
 function combatPages(data){
     return [
@@ -449,6 +528,8 @@ function arcanaPages(data){
     return [
         magicianPage(data),
         magicianPageTwo(data),
+        foolPage(data),
+        foolPageTwo(data),
     ];
 }
 
@@ -459,6 +540,13 @@ function magicianPages(data){
     ];
 }
 
+function foolPages(data){
+    return [
+        foolPage(data),
+        foolPageTwo(data),
+    ]
+};
+
 module.exports = {
     combatTemplate,
     combatTemplatePageTwo,
@@ -468,4 +556,5 @@ module.exports = {
     magicPages,
     arcanaPages,
     magicianPages,
+    foolPages,
 }

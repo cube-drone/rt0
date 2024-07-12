@@ -23,6 +23,9 @@ Some actions during battle call for Skill Checks. "I hack the computer while the
 
 Once the player has "paid" for the skill check, while keeping their hand and any current combat cards separate, the player shuffles their discard pile into their deck, then uses the deck to perform a skill check as usual.
     </extraDescription>
+    <flavor>
+        I, too, like to move it move it.
+    </flavor>
     <type>
         Fast / Slow
     </type>

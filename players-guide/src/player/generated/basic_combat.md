@@ -24,7 +24,7 @@ _You take a moment to focus: the world slows down around you._
   * draw a new card
 
 ## Movement / Skill
-_undefined_
+_I, too, like to move it move it._
 
 * Place any card on Movement / Skill.
 * When there are 2 (Fast: 1, Slow: 3) cards on Movement / Skill:
@@ -38,7 +38,7 @@ Some actions during battle call for Skill Checks. "I hack the computer while the
 Once the player has "paid" for the skill check, while keeping their hand and any current combat cards separate, the player shuffles their discard pile into their deck, then uses the deck to perform a skill check as usual.
 
 ## Run Away
-_You're not a coward, you're just... strategic. Strategically shitting your pants._
+_You're not a coward, you're just... tactical. Tactically shitting yourself._
 
 * Place any card on Run Away.
 * Once a card has been placed on Run Away, the next card must either be one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.

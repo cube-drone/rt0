@@ -70,6 +70,9 @@ function prepare(doc, keywords){
     if(doc.narrativeAbility && doc.narrativeAbility.length > 0){
         doc.narrativeAbilityHtml = renderAndReplace(doc.narrativeAbility, keywords);
     }
+    if(doc.flavor && doc.flavor.length > 0){
+        doc.flavorHtml = marked(doc.flavor);
+    }
 
     return doc;
 }

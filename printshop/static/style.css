@@ -436,3 +436,13 @@ h1, h2, h3, h4, h5, h6{
 .upgrade-bottom{
     margin-bottom: 10px;
 }
+
+.flavor{
+    font-style: italic;
+    font-size: x-small;
+}
+
+.flavor p{
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
