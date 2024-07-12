@@ -1,4 +1,6 @@
 ## ♈︎ Aries
+_The ram is quick and nimble._
+
 ### Combat - Dodge
 * Place The Magician on Aries.
 * While Aries has a card on it, any shields the player generates are multiplied by 2 (Clever: 3).
@@ -8,6 +10,8 @@
 * Use Aries to make a Skill check for a skill marked "Fast" as if it were Easy, once per Day.
 
 ## ♉︎ Taurus
+_The bull is an unstoppable force._
+
 ### Combat - Rage
 * Place The Magician on Taurus.
 * While Taurus has a card on it, any damage the player generates is multiplied by 2 (Clever: 3).
@@ -17,6 +21,8 @@
 * Use Taurus to make a Skill check for a skill marked "Strong" as if it were Easy, once per Day.
 
 ## ♋︎ Cancer
+_The crab is a master of defense._
+
 ### Combat - Shell
 * Place The Magician on Cancer.
 * Either:
@@ -30,6 +36,8 @@
 * If fall damage were a problem (on the Moon, where gravity is not so harsh a mistress), the bubble would protect you from that, too.
 
 ## ♌︎ Leo
+_The lion is bright and brave._
+
 ### Combat - Beam
 * Place The Magician on Leo.
 * Either:
@@ -38,10 +46,12 @@
 * Discard the card played on Leo at the end of the turn.
 
 ### Skill - Light
-* As often as you want, you can use Leo to cast a bright light in a 30 foot radius around you.
+* As often as you want, you can use Leo to cast a bright light in a 30 foot straight line.
 * Once per Day, you can use Leo to dramatically reduce the weight of an object.
 
 ## ♊︎ Gemini
+_The twins are masters of illusion._
+
 ### Combat - Twin
 * Place The Magician on Gemini.
 * Draw 5 Cards (Clever: 10)
@@ -53,6 +63,8 @@
 * The duplicate lasts for about thirty minutes.
 
 ## ♐︎ Sagittarius
+_The archer is unerring._
+
 ### Combat - Arrow
 * Place The Magician on Sagittarius.
 * Either:
@@ -65,6 +77,8 @@
 * This arrow is only visible to you, and it only lasts for 30 minutes.
 
 ## ♑︎ Capricorn
+_The goat... loves the ladies._
+
 ### Combat - Capricious
 * Place The Magician on Capricorn, along with one other card.
 * The other card must be The High Priestess, The Empress, The Lovers, The Devil, Strength, The Star, The World, or any Queen.
@@ -78,6 +92,8 @@
 * Once per Day, when any player fails a Skill Check, you can use Capricorn to allow them to try again.
 
 ## ♎︎ Libra
+_The scales of justice weigh all things._
+
 ### Combat - Balance
 * Place The Magician on Libra.
 * While Libra has a card on it, the player generates as much damage and shield as the higher of their damage and shield, each turn.
@@ -93,6 +109,8 @@
 * If you Swap something with a player, they must agree to the Swap.
 
 ## ♏︎ Scorpio
+_The scorpion is insidious._
+
 ### Combat - Venom
 * Place The Magician on Scorpio
 * You may choose to discard The Magician from Libra at any time. (It is automatically discarded at end of combat.)
@@ -104,6 +122,8 @@
 * This hand can lift up to 5lbs.
 
 ## ♓︎ Pisces
+_The fish can be elusive, which is why you need a good hook._
+
 ### Combat - Fishing
 * Place a Magician on Pisces.
 * Search your deck for a card (Clever: 2 cards), place it in your hand, and then shuffle the deck.
@@ -114,6 +134,8 @@
 * This can be used to grab distant things or to set up difficult climbs.
 
 ## ♒︎ Aquarius
+_The water bearer brings life and healing._
+
 ### Combat - Heal
 * Only players with Charming may use or learn Aquarius.
 * Place The Magician on Aquarius.
@@ -132,6 +154,8 @@
 * Aquarius's heal effect can not be used more than once per day, in or out of combat.
 
 ## ♍︎ Virgo
+_The maiden is irresistible._
+
 ### Combat - Charm
 * Only players with Charming may use or learn Virgo.
 * Place The Magician on Virgo.
@@ -154,6 +178,8 @@
 * This effect ends if the target feels seriously threatened, or after 30 minutes.
 
 ## ? Ophiuchus
+_The serpent-bearer is mysterious and unpredictable._
+
 ### Combat - What
 * Only players with Lucky may use or learn Ophiuchus.
 * Place The Magician on Ophiuchus.

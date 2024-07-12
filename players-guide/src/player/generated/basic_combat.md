@@ -1,4 +1,6 @@
 ## Unarmed Strike
+_You don't need a weapon to be dangerous. Hit them! Hit them hard!_
+
 * Place Wands or Swords on Unarmed Strike.
 * Cards sitting on Unarmed Strike remain there.
 * When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Unarmed Strike and
@@ -6,11 +8,15 @@
   * deal 2 (Strong: 3 / Weak: 1) Ranged Damage.
 
 ## Defend
+_Dodge, or brace yourself for the impact. Either way, you're ready._
+
 * Place Cups or Pentacles on Defend.
 * When the sum of the numerical values on the cards reaches (or exceeds) 10, discard all cards on Defend and
   * generate 5 (Fast: 7 / Slow: 3) Shield.
 
 ## Concentrate
+_You take a moment to focus: the world slows down around you._
+
 * Place Major Arcana cards on Concentrate.
 * Cards sitting on Concentrate remain there.
 * When there are 2 (Wise: 1, Foolish: 3) cards on Concentrate:
@@ -18,6 +24,8 @@
   * draw a new card
 
 ## Movement / Skill
+_undefined_
+
 * Place any card on Movement / Skill.
 * When there are 2 (Fast: 1, Slow: 3) cards on Movement / Skill:
   * Discard all cards on Movement / Skill and
@@ -29,6 +37,8 @@ Some actions during battle call for Skill Checks. "I hack the computer while the
 Once the player has "paid" for the skill check, while keeping their hand and any current combat cards separate, the player shuffles their discard pile into their deck, then uses the deck to perform a skill check as usual.
 
 ## Run Away
+_You're not a coward, you're just... strategic. Strategically shitting your pants._
+
 * Place any card on Run Away.
 * Once a card has been placed on Run Away, the next card must either be one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.
 * When there are 4 cards (Fast: 3, Slow: 5) on Run Away:
@@ -43,22 +53,30 @@ You can use Major Arcana cards to make a run - using the numerical value of thei
 So, for example, you could play The Magician (I) after The Fool (0), or The Lovers (VI) after The Chariot (VII).
 
 ## Catastrophe
+_In the heat of battle, you've made a terrible mistake._
+
 * Any time The Tower is drawn, it must be played immediately and before any other cards: on Catastrophe.
 * The player discards all cards on all of their abilities, including The Tower, then shuffles the discard pile back into their deck and ends their turn.
 * If Lucky, gain 10 Shield.
 
 ## Friendship
+_You can't help but feel a connection to the people around you._
+
 * Corruption may be marked on Friendship.
 * At the end of the day, draw 1 (Charming: 2) empty corruption circles on Friendship.
 * Players with Strange may not use Friendship.
 
 ## Flex
+_With a great strain, you can push yourself to the limits of what you're capable of._
+
 * Only players with Strong can use Flex.
 * Place The Emperor on Flex.
 * While there is a card on Flex, any damage generated is multiplied by 2.
 * Discard the card played on Flex at the end of the turn.
 
 ## Blur
+_You've moved so fast that even you're not sure where you are._
+
 * Only players with Fast can use Blur.
 * Place The Chariot on Blur.
 * Generate 5 Shield.
@@ -66,6 +84,8 @@ So, for example, you could play The Magician (I) after The Fool (0), or The Love
 * Discard the card played on Blur at the beginning of your next turn.
 
 ## Feint
+_With a well-considered feint, you can make your opponent show their hand._
+
 * Only players with Wise can use Feint.
 * Place The Moon on Feint.
   * Reveal a hidden Intent and
@@ -73,12 +93,16 @@ So, for example, you could play The Magician (I) after The Fool (0), or The Love
 * Discard the card played on Feint at the end of the turn.
 
 ## Study
+_You read about a situation like this in a book, once: you know just what to do._
+
 * Only players with Clever can use Study.
 * Place The Hermit on Study.
 * Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest.
 * Discard the card played on Study at the start of your turn.
 
 ## Take a Chance
+_Throwing caution to the wind, you take a chance on... something._
+
 * Only players with Lucky can use Take a Chance.
 * Place The Wheel of Fortune on Take a Chance.
 * Draw & discard the top card of your deck.
@@ -87,12 +111,16 @@ So, for example, you could play The Magician (I) after The Fool (0), or The Love
 * Discard the card played on Take a Chance at the end of the turn.
 
 ## Good Idea!
+_Somehow, by cheering your friends on, you've encouraged them to do better._
+
 * Only players with Charming can use Good Idea!.
 * Place The Hierophant on Good Idea!.
 * Choose another player: they draw 3 cards.
 * Discard the card played on Good Idea! at the end of the turn.
 
 ## Honk
+_Honk!_
+
 * Players with Foolish must use Honk, once per turn.
 * Any player can use Honk.
 * Play any card on Honk, then discard it.
