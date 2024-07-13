@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Ballistics</name>
+    <slug>ballistics</slug>
+    <helper>
+        <card>Wand</card>
+    </helper>
+    <description>
+* Place any Wand on Ballistics
+* While there is a Wand on Ballistics, all of your Damage and Magic Damage becomes Ranged Magic Damage.
+* If an effect would target all Adversaries in the same Zone, it now targets all Adversaries.
+* Discard the card on Ballistics at the end of your turn.
+</description>
+<flavor>
+Any object, if thrown hard enough, can become a deadly weapon.
+</flavor>
+    <upgrade>GOOD BYE</upgrade>
+    <upgradeSlug>goodbye</upgradeSlug>
+</ability>

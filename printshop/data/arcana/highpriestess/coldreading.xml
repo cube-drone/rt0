@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Cold Reading</name>
+    <slug>coldreading</slug>
+    <helper>
+    </helper>
+    <description>
+* You may play a card on Cold Reading at any time: when you do:
+   * Choose two of Strong, Fast, Lucky, Charming, and Clever:
+   * Palm Reading acts as if you **also** had these traits.
+   * However, if you draw The Tower or The Moon, take 1 Corruption Point.
+* You may discard the card on Cold Reading at any time. This cancels the above effect.
+    </description>
+    <flavor>
+"Your lifeline is... short. Very short."
+    </flavor>
+    <corruption>true</corruption>
+</ability>

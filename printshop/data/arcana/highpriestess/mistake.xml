@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>A Mistake Will Soon Be Corrected</name>
+    <slug>mistake</slug>
+    <helper>
+        <card>2</card>
+        <card>3</card>
+        <card>4</card>
+        <card>5</card>
+        <card>6</card>
+    </helper>
+    <description>
+* Play any five-card straight on A Mistake Will Soon Be Corrected.
+* These cards must all be played at the same time.
+    * Sum the cards's values: deal half that much Magic Damage, rounded down, to all Adversaries in your Zone.
+    * Discard all cards on A Mistake Will Soon Be Corrected.
+    * If the five cards are not all in the same suit, take 1 Corruption Point and deal 1HP of Magic Damage to yourself and any allies in your Zone.
+    * If the five cards are all Major Arcana, deal full Magic Damage rather than half.
+    </description>
+    <flavor>
+Never draw to an inside straight, and, more importantly, never stand near a High Priestess when they're focusing.
+    </flavor>
+    <corruption>true</corruption>
+</ability>

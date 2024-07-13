@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>YES NO</name>
+    <slug>yesno</slug>
+    <helper>
+        <card>The High Priestess</card>
+    </helper>
+    <description>
+* Place the High Priestess on YES NO
+* Look at the top five cards of your deck.
+* Place any of them that you choose, shuffled, at the bottom of your deck.
+* Place the rest on top of your deck in any order.
+* Draw three cards.
+* Discard the High Priestess from YES NO at the end of your turn.
+</description>
+<flavor>
+Their eyes are wide with anticipation. Their third eye is wide with malice.
+</flavor>
+    <upgrade>GOOD BYE</upgrade>
+    <upgradeSlug>goodbye</upgradeSlug>
+</ability>

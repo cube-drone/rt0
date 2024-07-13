@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Lucky Numbers: 3, 4, 5, 6, 7, 8</name>
+    <slug>yesno</slug>
+    <helper>
+        <card>3</card>
+        <card>4</card>
+        <card>5</card>
+        <card>6</card>
+        <card>7</card>
+        <card>8</card>
+    </helper>
+    <keywords>
+        <k>Lucky Numbers</k>
+    </keywords>
+    <description>
+* At the start of combat, draw a card from your deck and place it face-up on Lucky Numbers.
+* If that card is The Tower, instead shuffle it back into your deck and replace it with a new card.
+* Place a a 3, a 4, a 5, a 6, a 7, or an 8 on Lucky Numbers.
+* Cards placed on Lucky Numbers remain at the end of the turn.
+* Once you've placed a numbered card on Lucky Numbers, you can't place that number again until all numbers have been placed.
+* When seven cards are on Lucky Numbers:
+   * Return all cards on Lucky Numbers to your hand.
+   * Draw a new card from your deck and place it face-up on Lucky Numbers.
+   * You may not do this more than once per combat turn.
+</description>
+<extraDescription>
+Remember that Major Arcana have numerical values, too: you could play a 4 of Cups and a V: The Hierophant, for example.
+</extraDescription>
+<flavor>
+If you can predict the future, every number is lucky.
+</flavor>
+    <upgrade>A Mistake Will Soon Be Corrected</upgrade>
+    <upgradeSlug>mistake</upgradeSlug>
+</ability>

@@ -3,9 +3,6 @@
 <ability>
     <name>Better Not Tell You Now</name>
     <slug>betternottellyounow</slug>
-    <helper>
-        <card>The High Priestess</card>
-    </helper>
     <description>
 * When the High Priestess is placed on Better Not Tell You Now, you may also:
    * Take 1 Corruption Point

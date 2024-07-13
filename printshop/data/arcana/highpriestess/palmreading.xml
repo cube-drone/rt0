@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Palm Reading</name>
+    <slug>palm</slug>
+    <helper>
+    </helper>
+    <description>
+* If you are Strong, every time you draw a card, if it is a Sword, deal 1 Damage.
+* If you are Fast, every time you draw a card, if it is a Cup, generate 1 Shield.
+* If you are Lucky, every time you draw a card, if it is a King or Queen, draw another card.
+* If you are Charming, every time you draw a card, if it is a Page or Knight, choose one ally: that ally regains 1HP.
+* If you are Clever, every time you draw a card, if it is a Wand, deal 1 Ranged Magic Damage.
+</description>
+<flavor>
+The trick with palm reading is to strike others with your palms and then read their faces.
+</flavor>
+    <upgrade>Cold Reading</upgrade>
+    <upgradeSlug>coldreading</upgradeSlug>
+</ability>

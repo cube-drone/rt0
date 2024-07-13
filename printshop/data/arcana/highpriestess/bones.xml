@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Rolling Bones</name>
+    <slug>bones</slug>
+    <helper>
+    </helper>
+    <description>
+* Origami Folding now triggers when there are 6 cards, rather than 8.
+* Do not discard cards from Origami Folding when it triggers.
+* When there are 18 cards on Rolling Bones:
+   * Gain 1 Corruption Point.
+   * Discard all cards from Rolling Bones.
+   * Deal 18 Magic Damage.
+    </description>
+    <flavor>
+"Let's see what the future holds. Oh... it's bad. It's really bad. You should probably run."
+    </flavor>
+    <corruption>true</corruption>
+</ability>
