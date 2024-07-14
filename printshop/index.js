@@ -6,7 +6,7 @@ const fs = require('fs');
 
 const { pages } = require('./templates/base.html.js');
 const { reportCardTemplate } = require('./templates/reportcard.html.js');
-const {combatPages, magicPages, arcanaPages, magicianPages, foolPages } = require('./templates/combat.html.js');
+const {combatPages, magicPages, arcanaPages, magicianPages, foolPages, priestessPages } = require('./templates/combat.html.js');
 const { prepareData } = require('./data.js');
 
 const { generateCombatMarkdown, generateMagicMarkdown, generateMagicianMarkdown,
@@ -83,6 +83,11 @@ function foolPrint({data}){
     writeContentsToFile({title: 'Fool', contents: fool, filename: 'fool.html'});
 }
 
+function priestessPrint({data}){
+    let priestess = priestessPages(data);
+    writeContentsToFile({title: 'High Priestess', contents: priestess, filename: 'priestess.html'});
+}
+
 
 function main() {
 
@@ -100,6 +105,7 @@ function main() {
     spellsPrint({data});
     magicianPrint({data});
     foolPrint({data});
+    priestessPrint({data});
 
     let combatMarkdown = generateCombatMarkdown({data});
     let spellsMarkdown = generateMagicMarkdown({data});

@@ -6,7 +6,7 @@
 
 A resourceful, powerful schemer, The Magician gets access to more spells than any other Arcana.
 
-* The Magician can treat The Fool as a second The Magician card.
+* The Magician can treat The Fool card as a second The Magician card.
 * The Magician gains the Clever ability.
 * The Magician learns one extra spell at the start of the game.
 * Choose two of the The Magician's Arcana Abilities.

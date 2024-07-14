@@ -508,6 +508,51 @@ function foolPageTwo({arcana}){
     `
 }
 
+function priestessPage({arcana}){
+    return `
+    <div id="priestess" class="ability-grid">
+
+        <style>
+            .priestess {
+                grid-row: 1 / 5;
+                grid-column: 1;
+                font-size: x-small;
+            }
+        </style>
+
+        <div class="combat-ability combat-ability-top magician ">
+            <h2> The High Priestess </h2>
+
+            ${arcana.highpriestess.descriptionHtml}
+
+            ${arcana.highpriestess.specialHtml}
+
+        </div>
+
+        <style>
+            .priestess-narrative {
+                grid-row: 1 / 6;
+                grid-column: 2;
+                font-size: x-small;
+            }
+        </style>
+
+        <div class="combat-ability combat-ability-top priestess-narrative ">
+
+            ${arcana.highpriestess.narrativeAbilityHtml}
+
+        </div>
+        ${arcanaAbility({...arcana.highpriestess.abilities.betternottellyounow, row: '5 / 9', column: '1'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.allsignspointtoyes, row: '9 / 13', column: '1'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.bones, row: '6 / 9', column: '2'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.origami, row: '9 / 13', column: '2'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.goodbye, row: '5 / 9', column: '3'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.yesno, row: '9 / 13', column: '3'})}
+    </div>
+    `
+}
+
+
 
 function combatPages(data){
     return [
@@ -530,6 +575,7 @@ function arcanaPages(data){
         magicianPageTwo(data),
         foolPage(data),
         foolPageTwo(data),
+        priestessPage(data),
     ];
 }
 
@@ -547,6 +593,12 @@ function foolPages(data){
     ]
 };
 
+function priestessPages(data){
+    return [
+        priestessPage(data),
+    ]
+};
+
 module.exports = {
     combatTemplate,
     combatTemplatePageTwo,
@@ -557,4 +609,5 @@ module.exports = {
     arcanaPages,
     magicianPages,
     foolPages,
+    priestessPages,
 }

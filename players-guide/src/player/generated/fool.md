@@ -7,7 +7,7 @@
 Lucky, reckless, unreliable, and full of surprises, The Fool is a bit of a wildcard, a bit of a class clown, but
 when the chips are down, they're definitely... something.
 
-* The Fool can treat The Fool as a true wildcard: any card they choose, in any situation.
+* The Fool can treat The Fool card as a true wildcard: any card they choose, in any situation.
 * The Fool gains the Lucky ability.
 * Choose two of The Fool's Arcana Abilities.
 
@@ -137,7 +137,6 @@ _Reaching in to your side pockets, you retrieve a random object that will either
 * While using Throwaway Joke:
    * If the card drawn was The Fool, The Hierophant, The Emperor, The Hermit, or The Moon, instead of discarding it you may add it to your hand.
    * If the card drawn was The Chariot, you may move 1 Zone and add it to your hand.
-   * If the card drawn was The Magician, play a card from your hand on Unlikely Weapon or Unlikely Helmet.
    * If the card drawn was Death, deal 150 Magic Ranged Damage.
    * If the card drawn was the Wheel of Fortune, draw and discard three additional cards and apply the Surprise Twist / Throwaway Joke effects to them, as well.
    * If the card drawn was Judgement, deal 10 Magic Ranged Damage to all Adversaries, and take 1 Corruption Point.
