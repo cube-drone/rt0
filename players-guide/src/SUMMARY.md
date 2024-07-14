@@ -9,7 +9,7 @@
 - [Choosing a Major Arcana](./player/choosing_major_arcana.md)
   - [0 - The Fool](./player/generated/fool.md)
   - [I - The Magician](./player/generated/magician.md)
-  - [II - The High Priestess](./player/arcana/2_the_high_priestess.md)
+  - [II - The High Priestess](./player/generated/priestess.md)
   - [ED - Eddy](./player/arcana/eddy.md)
 - [Abilities](./player/abilities.md)
 - [Skill Checks](./player/skill_checks.md)

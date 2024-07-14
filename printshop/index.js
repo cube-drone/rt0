@@ -10,7 +10,7 @@ const {combatPages, magicPages, arcanaPages, magicianPages, foolPages, priestess
 const { prepareData } = require('./data.js');
 
 const { generateCombatMarkdown, generateMagicMarkdown, generateMagicianMarkdown,
-    generateFoolMarkdown
+    generateFoolMarkdown, generatePriestessMarkdown
  } = require('./markdown.js');
 
 let writeFileSync = (filename, contents) => {
@@ -111,11 +111,13 @@ function main() {
     let spellsMarkdown = generateMagicMarkdown({data});
     let magicianMarkdown = generateMagicianMarkdown({data});
     let foolMarkdown = generateFoolMarkdown({data});
+    let priestessMarkdown = generatePriestessMarkdown({data});
     // write the markdown to ../players-guide/src/player/generated/basic_combat.md
     writeFileSync('../players-guide/src/player/generated/basic_combat.md', combatMarkdown);
     writeFileSync('../players-guide/src/player/generated/basic_spells.md', spellsMarkdown);
     writeFileSync('../players-guide/src/player/generated/magician.md', magicianMarkdown);
     writeFileSync('../players-guide/src/player/generated/fool.md', foolMarkdown);
+    writeFileSync('../players-guide/src/player/generated/priestess.md', priestessMarkdown);
 
 
     // copy the entire static directory to printables/static

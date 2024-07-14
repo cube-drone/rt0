@@ -183,10 +183,65 @@ function generateFoolMarkdown({data}){
     return markdown;
 }
 
+function generatePriestessMarkdown({data}){
+    let markdown = '';
+
+    markdown += `# 2 - The High Priestess\n\n`;
+
+    markdown += `[High Priestess Character Sheet](/generated/printables/priestess.html)\n\n`;
+
+    markdown += `## Description\n\n`;
+    markdown += data.arcana.highpriestess.description;
+    markdown += '\n\n';
+
+    markdown += data.arcana.highpriestess.special;
+    markdown += '\n\n';
+
+    markdown += data.arcana.highpriestess.narrativeAbility;
+    markdown += '\n\n';
+
+    const addToMarkdown = ({name, flavor, description, extraDescription, corruption}) => {
+        markdown += `### ${name}\n`;
+        markdown += `_${flavor}_\n\n`
+        if(corruption){
+            markdown += `**Corruption Upgrade: Mark 3 Corruption Points on ${name} to Unlock it.**\n\n`;
+        }
+
+        markdown += description;
+        if(extraDescription){
+            markdown += '\n\n';
+            markdown += extraDescription;
+        }
+        markdown += '\n\n';
+    }
+
+    markdown += `## Arcana Abilities\n\n`;
+    addToMarkdown(data.arcana.highpriestess.abilities.allsignspointtoyes);
+    addToMarkdown(data.arcana.highpriestess.abilities.betternottellyounow);
+
+    addToMarkdown(data.arcana.highpriestess.abilities.yesno);
+    addToMarkdown(data.arcana.highpriestess.abilities.goodbye);
+
+    addToMarkdown(data.arcana.highpriestess.abilities.origami);
+    addToMarkdown(data.arcana.highpriestess.abilities.bones);
+
+    addToMarkdown(data.arcana.highpriestess.abilities.luckynumbers);
+    addToMarkdown(data.arcana.highpriestess.abilities.mistake);
+
+    addToMarkdown(data.arcana.highpriestess.abilities.palmreading);
+    addToMarkdown(data.arcana.highpriestess.abilities.coldreading);
+
+    addToMarkdown(data.arcana.highpriestess.abilities.ballistics);
+    addToMarkdown(data.arcana.highpriestess.abilities.astronomy);
+
+    return markdown;
+}
+
 
 module.exports = {
     generateCombatMarkdown,
     generateMagicMarkdown,
     generateMagicianMarkdown,
-    generateFoolMarkdown
+    generateFoolMarkdown,
+    generatePriestessMarkdown,
 }

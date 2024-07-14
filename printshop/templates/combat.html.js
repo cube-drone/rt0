@@ -525,7 +525,7 @@ function priestessPage({arcana}){
             }
         </style>
 
-        <div class="combat-ability combat-ability-top magician ">
+        <div class="combat-ability combat-ability-top priestess ">
             <h2> The High Priestess </h2>
 
             ${arcana.highpriestess.descriptionHtml}
