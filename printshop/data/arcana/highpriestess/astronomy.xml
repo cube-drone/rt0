@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Astronomy</name>
+    <slug>astronomy</slug>
+    <helper>
+        <card>The World</card>
+        <card>The Moon</card>
+    </helper>
+    <description>
+* Play The World and The Moon on Astronomy.
+* These cards must be played at the same time.
+* Take 1 Corruption Point.
+* At the end of this turn, take another turn.
+* Discard all cards on Astronomy.
+    </description>
+    <flavor>
+Move so fast that the world seems to stop.
+    </flavor>
+    <corruption>true</corruption>
+</ability>

@@ -13,8 +13,8 @@
 * Discard the card on Ballistics at the end of your turn.
 </description>
 <flavor>
-Any object, if thrown hard enough, can become a deadly weapon.
+Any object, sufficiently accelerated, can become a deadly weapon.
 </flavor>
-    <upgrade>GOOD BYE</upgrade>
-    <upgradeSlug>goodbye</upgradeSlug>
+    <upgrade>Astronomy</upgrade>
+    <upgradeSlug>astronomy</upgradeSlug>
 </ability>
