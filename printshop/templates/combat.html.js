@@ -183,6 +183,11 @@ function arcanaAbility({name, slug, flavorHtml, descriptionHtml, extraHtml, help
         extraHtml = '';
     }
 
+    if(corruption){
+        // corruption abilities don't have a box, because they're unlocked rather than selected
+        hidebox = true;
+    }
+
     let upgradeHtml = '';
     if(corruption){
         upgradeHtml = `
@@ -531,8 +536,8 @@ function priestessPage({arcana}){
 
         <style>
             .priestess-narrative {
-                grid-row: 1 / 6;
-                grid-column: 2;
+                grid-row: 1 / 5;
+                grid-column: 2 / 4;
                 font-size: x-small;
             }
         </style>
@@ -544,7 +549,7 @@ function priestessPage({arcana}){
         </div>
         ${arcanaAbility({...arcana.highpriestess.abilities.betternottellyounow, row: '5 / 9', column: '1'})}
         ${arcanaAbility({...arcana.highpriestess.abilities.allsignspointtoyes, row: '9 / 13', column: '1'})}
-        ${arcanaAbility({...arcana.highpriestess.abilities.bones, row: '6 / 9', column: '2'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.bones, row: '5 / 9', column: '2'})}
         ${arcanaAbility({...arcana.highpriestess.abilities.origami, row: '9 / 13', column: '2'})}
         ${arcanaAbility({...arcana.highpriestess.abilities.goodbye, row: '5 / 9', column: '3'})}
         ${arcanaAbility({...arcana.highpriestess.abilities.yesno, row: '9 / 13', column: '3'})}
@@ -552,6 +557,19 @@ function priestessPage({arcana}){
     `
 }
 
+function priestessPageTwo({arcana}){
+    return `
+    <div id="priestess-2" class="ability-grid">
+        ${arcanaAbility({...arcana.highpriestess.abilities.palmreading, row: '1 / 6', column: '1'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.coldreading, row: '8 / 13', column: '1'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.ballistics, row: '1 / 6', column: '2'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.astronomy, row: '8 / 13', column: '2'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.luckynumbers, row: '1 / 7', column: '3'})}
+        ${arcanaAbility({...arcana.highpriestess.abilities.mistake, row: '7 / 13', column: '3'})}
+    </div>
+
+    `
+}
 
 
 function combatPages(data){
@@ -576,6 +594,7 @@ function arcanaPages(data){
         foolPage(data),
         foolPageTwo(data),
         priestessPage(data),
+        priestessPageTwo(data),
     ];
 }
 
@@ -596,6 +615,7 @@ function foolPages(data){
 function priestessPages(data){
     return [
         priestessPage(data),
+        priestessPageTwo(data),
     ]
 };
 

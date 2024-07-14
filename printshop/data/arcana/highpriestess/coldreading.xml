@@ -6,12 +6,20 @@
     <helper>
     </helper>
     <description>
-* You may play a card on Cold Reading at any time: when you do:
+* You may play a card on Cold Reading at any time during your turn: when you do:
    * Choose two of Strong, Fast, Lucky, Charming, and Clever:
    * Palm Reading acts as if you **also** had these traits.
    * However, if you draw The Tower or The Moon, take 1 Corruption Point.
 * You may discard the card on Cold Reading at any time. This cancels the above effect.
     </description>
+    <extraDescription>
+As a small extra clarification, players might attempt to lawyer the order of turn operations
+such that drawing The Tower or The Moon
+with Cold Reading active
+would not cause the Corruption Point to be taken. ("well, if The Tower discards the card from Cold Reading automatically...")
+This is some Magic: The Gathering level bullshit and is not the intent of the card. If you draw The Tower or The Moon, you take
+the Corruption Point.
+    </extraDescription>
     <flavor>
 "Your lifeline is short. Very short."
     </flavor>

@@ -18,6 +18,11 @@
     * If the five cards are not all in the same suit, take 1 Corruption Point and deal 1HP of Magic Damage to yourself and any allies in your Zone.
     * If the five cards are all Major Arcana, deal full Magic Damage rather than half.
     </description>
+<extraDescription>
+* Just to clarify, a five-card straight is five cards in strict numerical order, like "2, 3, 4, 5, 6" or "10, Page, Knight, Queen, King".
+* A straight can also be made out of the Major Arcana, but only if they are in strict numerical order.
+* Wrap-around is not allowed, so "King, Ace, 2, 3, 4" is not a straight.
+</extraDescription>
     <flavor>
 Every loose object in the room whirling around you like celestial bodies, and you are the Sun.
     </flavor>
