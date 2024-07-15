@@ -12,7 +12,7 @@
   - [0 - The Fool](./player/generated/fool.md)
   - [I - The Magician](./player/generated/magician.md)
   - [II - The High Priestess](./player/generated/priestess.md)
-  - [ED - Eddy](./player/arcana/eddy.md)
+  - [EDD - Eddy](./player/arcana/eddy.md)
 - [Abilities](./player/abilities.md)
 - [Skill Checks](./player/skill_checks.md)
 - [Combat](./player/combat.md)

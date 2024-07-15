@@ -1,4 +1,4 @@
-# ED - Eddy
+# EDD - Eddy
 
 Eddy is not so much a chooseable, playable Major Arcana as they are a temporary, lightweight character, intended
 for players who maybe only intend to stay for a single session, for players who've died and
