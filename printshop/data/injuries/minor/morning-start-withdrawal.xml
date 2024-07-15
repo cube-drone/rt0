@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Morning Start Withdrawal</name>
+    <slug>morning-start-withdrawal</slug>
+    <description>
+* If you have consumed a delicious, refreshing Morning Start this Day, Morning Start Withdrawal has no effect.
+   * If you consume a second Morning Start this Day:
+   * Take the "Heart Palpitations" Major Injury.
+* If you have not:
+   * You get Penalty on all checks.
+   * Discard one card from your hand at the start of your combat turn.
+   * If you have not consumed a Morning Start by the end of the Day, remove Morning Start Withdrawal.
+    </description>
+    <flavor>
+    Don't talk to me until I've had my Morning Start.
+    </flavor>
+    <type>
+    </type>
+
+</spell>

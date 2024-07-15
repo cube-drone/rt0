@@ -6,12 +6,7 @@
     <description>
 * Draw 5 cards.
 * Exhaust Morning Start.
-* If you haven't Exhausted a Morning Start this combat:
-   * Draw a card from your deck:
-   * If it's a Major Arcana, also take the "Addicted" Minor Injury.
-* If you have already Exhausted a Morning Start, this combat:
-   * Take the "Addicted" Minor Injury.
-   * Also take the "Heart Palpitations" Major Injury.
+* If you do not have the "Morning Start Withdrawal" Minor Injury, take it.
     </description>
     <flavor>
         With taurine, ginseng, caffeine, amphetamines, and a little bit of our proprietary Formula X,
