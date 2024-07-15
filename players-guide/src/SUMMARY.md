@@ -58,8 +58,8 @@
 - [Lore](./gm/lore.md)
 - [Factions](./gm/factions.md)
 - [Locations](./gm/locations.md)
- - [Swords](./gm/locations/swords.md)
- - [Cups](./gm/locations/cups.md)
+  - [Swords](./gm/locations/swords.md)
+  - [Cups](./gm/locations/cups.md)
 - [Adversaries](./gm/adversaries.md)
 ----------
 # Developer's Notes

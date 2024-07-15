@@ -18,3 +18,8 @@
 * Most items weigh about a fifth of what they weigh on Earth, so weight-based carry capacity is even less of a concern on the Moon than it would be on Earth.
 * However, some things are Big. Objects that have a lot of volume are awkward to carry. You can only carry 1 Big object (Strong: 2, Weak: 0).
 * Some things just _can't be carried around_ - like, your character can probably _lift_ a couch, but they can't just carry a couch around with them wherever they go, because that would be very awkward and also kind of a strange thing to do.
+
+## Exhaust
+
+* When an item "Exhausts", it means that you lose that item, return it to the GM.
+* For example, a grenade "exhausts" when you throw it and it explodes. No getting that grenade back.

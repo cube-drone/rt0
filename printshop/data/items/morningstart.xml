@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<spell>
+    <name>Morning Start</name>
+    <slug>morning-start</slug>
+    <description>
+* Draw 5 cards.
+* Exhaust Morning Start.
+* If you haven't Exhausted a Morning Start this combat:
+   * Draw a card from your deck:
+   * If it's a Major Arcana, also take the "Addicted" Minor Injury.
+* If you have already Exhausted a Morning Start, this combat:
+   * Take the "Addicted" Minor Injury.
+   * Also take the "Heart Palpitations" Major Injury.
+    </description>
+    <flavor>
+        With taurine, ginseng, caffeine, amphetamines, and a little bit of our proprietary Formula X,
+        Morning Start is the perfect way to start your day. Get in the Morning Start habit!
+    </flavor>
+    <type>
+        Caffeinated Performance Beverage
+    </type>
+    <category>
+        Item
+    </category>
+
+</spell>

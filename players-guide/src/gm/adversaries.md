@@ -1,23 +1,65 @@
 # Adversaries
 
-## Security Bot
+## Executare/Terror
 
-## Otto-turret
+### Shadowling
+a little Terror that hasn't found a heart yet
+
+### Executare
+it's a cop but worse
+
+* Tear Gas
+* Baton
+* Pulse Pistol
+
+
+### Terror
+
+### ESW Team
+The Executare Special Weapons Team gets fun extra toys.
+
+#### ESW Netcannon
+they have a big net
+
+#### ESW Psyche
+Psychic Dampener: can't cast spells.
+
+#### ESW Shield
+shell up
+
+#### ESW Flash
+blinded by the light
+
+#### ESW Sledge
+they knock shit down
+
+
+## System / Bound
+
+### RoBORT
+
+* security robot
+* low threat but irritating
+
+### Otto-turret
 
 * doesn't shoot bullets (it's the moon)
 * instead: harmful pulses
+* can and will kill you, though
 
-## Mr. Surgeon
+### Mr. Surgeon
 thinks you need surgery (it's a bug)
 
-* Back to the Suture
+* knives, knives, knives
+* Back to the Suture II
 
-## Drone
+### Drone
+flying (only ranged damage can hit it, all other damage is reduced to 1)
 
-## Drone Throne
+### Drone Throne
 dozens of drones working together
 
-## Arachnedrone
+### Arachnedrone
 skittering little robots designed to hunt rodents
 
 (where did rodents come from?  the meat farms)
@@ -25,48 +67,31 @@ skittering little robots designed to hunt rodents
 * Escape
 * Pounce
 
-## Shadowling
+### Technician
 
-## Executare
-it's a cop but worse
-
-* Tear Gas
-* Baton
-
-
-## Terror
-
-## Executare Special Weapons Netcannon
-they have a big net
-
-## Executare Special Weapons Psychic Dampener
-kill your magic damage output
-
-## Executare Special Weapons Shield
-shell up
-
-## Executare Special Weapons Flash
-
-
-## Mob
-
-* Split
-* Scatter
-* Grow
-
-## Legion
-
-* Split
-* Scatter
-* Grow
-
-## Bureaucrat
-
-## Bound
+### Bound
 
 * Bind
 
-## Company Man
+## Anon/Legion
+
+### Mob
+
+* Split
+* Scatter
+* Grow
+
+### Legion
+
+* Split
+* Scatter
+* Grow
+
+## Company / Ravenous
+
+### Company Muscle
+
+Well equipped, well trained, loyal, and unscrupulous.
 
 
-## Ravenous
+### Ravenous
