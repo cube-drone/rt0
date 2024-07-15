@@ -2,7 +2,9 @@
 
 # Player's Guide
 - [Introduction](./player/introduction.md)
-- [Printables](./player/printables.md)
+- [Supplies](./player/supplies.md)
+  - [Printables](./player/supplies/printables.md)
+  - [Cheap Tarot Deck](./player/supplies/howto-cheap-tarot.md)
 - [Safety Tools & Session Zero](./player/safety.md)
 - [Corruption Points](./player/corruption.md)
 - [Creating a Character](./player/creation.md)
