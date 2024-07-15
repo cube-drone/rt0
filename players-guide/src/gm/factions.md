@@ -145,7 +145,7 @@ Coins are the suit of materialism, finances, and practicality - but when their a
 
 ### The Devil
 
-WorldWide CEO and charismatic frontwoman Lucy Ferrina.
+WorldWide CEO.
 // TODO
 
 ### Temperance
