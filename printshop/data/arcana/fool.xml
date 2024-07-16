@@ -3,6 +3,7 @@
 <arcana>
     <name>The Fool</name>
     <slug>fool</slug>
+    <colorImage>/images/fool.png</colorImage>
     <description>
 Lucky, reckless, unreliable, and full of surprises, The Fool is a bit of a wildcard, a bit of a class clown, but
 when the chips are down, they're definitely... something.

@@ -103,7 +103,7 @@ _If you can predict the future, every number is lucky._
 * When seven cards are on Lucky Numbers:
    * Return all cards on Lucky Numbers to your hand.
    * Draw a new card from your deck and place it face-up on Lucky Numbers.
-   * You may not do this more than once per combat turn.
+   * You can not do this more than once per combat turn.
 
 Remember that Major Arcana have numerical values, too: you could play a 4 of Cups and a V: The Hierophant, for example.
 

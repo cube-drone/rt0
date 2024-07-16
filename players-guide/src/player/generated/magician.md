@@ -1,5 +1,7 @@
 # 1 - The Magician
 
+![the magician](/images/magician.png)
+
 [Magician Character Sheet](/generated/printables/magician.html)
 
 ## Description

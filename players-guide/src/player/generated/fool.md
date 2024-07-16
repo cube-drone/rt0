@@ -1,5 +1,7 @@
 # 0 - The Fool
 
+![the fool](/images/fool.png)
+
 [Fool Character Sheet](/generated/printables/fool.html)
 
 ## Description

@@ -78,6 +78,8 @@ function generateMagicianMarkdown({data}){
 
     markdown += `# 1 - The Magician\n\n`;
 
+    markdown += '![the magician](/images/magician.png)\n\n'
+
     markdown += `[Magician Character Sheet](/generated/printables/magician.html)\n\n`;
 
     markdown += `## Description\n\n`;
@@ -131,6 +133,8 @@ function generateFoolMarkdown({data}){
     let markdown = '';
 
     markdown += `# 0 - The Fool\n\n`;
+
+    markdown += '![the fool](/images/fool.png)\n\n'
 
     markdown += `[Fool Character Sheet](/generated/printables/fool.html)\n\n`;
 
