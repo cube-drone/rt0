@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Groggy</name>
+    <slug>groggy</slug>
+    <description>
+* Take Groggy when you fail to have a restful sleep.
+* While you have Groggy
+   * Knights count as Critical Fails if drawn during skill checks.
+   * If you draw a Knight during combat, immediately discard it.
+* Discard Groggy when you have a restful sleep.
+    </description>
+    <flavor>
+slepey
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

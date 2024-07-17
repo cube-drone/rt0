@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>Headphones</name>
+    <slug>headphones</slug>
+    <description>
+* After succeeding at a FINANCIAL AID check (empathy, perception, or danger sense), but before finding out the results,
+    you may play Headphones to instead fail the check.
+* If you do:
+   * Take the top card of your deck and place it face-down on Headphones.
+   * Headphones can hold up to 3 cards.
+* At the start of combat:
+   * Reveal all cards on Headphones and add them to your hand.
+    </description>
+    <flavor>
+These large, foamy, deluxe, bass-forward noise-cancelling headphones are exactly what you need to drown out Paradise Lua.
+    </flavor>
+    <type>
+        Musical Equipment
+    </type>
+    <category>
+        Helmet
+    </category>
+
+</item>

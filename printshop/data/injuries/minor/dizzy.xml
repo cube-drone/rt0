@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Dizzy</name>
+    <slug>dizzy</slug>
+    <description>
+* While you have Dizziness, you cannot be Wise.
+* You have Penalty on all "Wise" skills.
+* In your first round of combat, discard 1 card.
+* After two nights of rest, remove Dizzy.
+    </description>
+    <flavor>
+You've been spun around one too many times.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

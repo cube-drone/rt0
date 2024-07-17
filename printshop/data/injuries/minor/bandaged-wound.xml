@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Bandaged Wound</name>
+    <slug>bandaged-wound</slug>
+    <description>
+* While you are in combat, you lose 1HP at the beginning of your turn.
+* After two nights of rest, remove Bandaged Wound.
+    </description>
+    <flavor>
+It still hurts but at least it's bandaged.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Splinted Leg</name>
+    <slug>splinted-leg</slug>
+    <description>
+* While you have a Splinted Leg, you cannot be Fast.
+* You have Penalty on all "Fast" skills.
+* In your first round of combat, discard 1 card.
+* After two nights of rest, remove Splinted Leg.
+    </description>
+    <flavor>
+You're hobbling around on a splinted leg.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

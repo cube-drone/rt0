@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Critical Injury</name>
+    <slug>critical-injury</slug>
+    <description>
+* While your character has a Critical Injury, they can not move or deal damage. They can speak. They are incapacitated.
+* A successful AID check can downgrade this to a Major Injury of the GM's choice.
+* If a player receives another critical injury when they are critically injured, they die.
+* Instead of dying, the player can (and probably should) use Corruption Points to heal injuries.
+    </description>
+    <flavor>
+    </flavor>
+    <type>
+        Critical Injury
+    </type>
+</injury>

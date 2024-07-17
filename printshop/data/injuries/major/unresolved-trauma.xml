@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Unresolved Trauma</name>
+    <slug>unresolved-trauma</slug>
+    <description>
+* While you have Unresolved Trauma, you are Strange.
+* You can not use "Charming" skills.
+* This overrides any character traits you might already have (if you were Charming, now you are Strange).
+* If you were already Strange: take one Corruption point at the end of every Combat.
+* A successful FINANCIAL AID (Empathy) check can downgrade this to Stress.
+* After two nights of rest, downgrade this to Massive, Painful Scar.
+    </description>
+    <flavor>
+Emotional damage.
+    </flavor>
+    <type>
+        Major Injury
+    </type>
+</injury>

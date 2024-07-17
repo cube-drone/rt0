@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Slung Arm</name>
+    <slug>slung-arm</slug>
+    <description>
+* While you have a Slung Arm, you cannot be Strong.
+* You have Penalty on all "Strong" skills.
+* In your first round of combat, discard 1 card.
+* After two nights of rest, remove Splinted Arm.
+    </description>
+    <flavor>
+Your arm is in a sling.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

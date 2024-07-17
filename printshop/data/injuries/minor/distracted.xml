@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Distracted</name>
+    <slug>distracted</slug>
+    <description>
+* While you have Distracted
+   * Discard all Wands or Pentacles drawn during your combat turn.
+* Discard Distracted at the end of combat.
+    </description>
+    <flavor>
+        You're not paying attention.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

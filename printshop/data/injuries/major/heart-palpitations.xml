@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Heart Palpitations</name>
+    <slug>heart-palpitations</slug>
+    <description>
+* Draw an extra card on every combat turn.
+* If this card is a Major Arcana, take 2HP of damage and discard the card.
+* If this card is a 3 or 10 of Swords, take a Critical Injury.
+    </description>
+    <flavor>
+Thu-thump. Thu-...thump?
+    </flavor>
+    <type>
+        Major Injury
+    </type>
+</injury>

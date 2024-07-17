@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Bleeding Out</name>
+    <slug>bleeding-out</slug>
+    <description>
+* While you are in combat, you lose 3HP at the beginning of your turn.
+* Outside of combat, you can't use Skills except for AID.
+* A successful AID (First Aid) check can downgrade this to Bandaged Wound.
+* After one night of rest, the player dies.
+* That's right, don't go to sleep while you're bleeding out. You need medical attention.
+* That's _free medical advice_.
+    </description>
+    <flavor>
+Blood is coming out. It's not supposed to be coming out. It's supposed to be inside. Keep it inside.
+    </flavor>
+    <type>
+        Major Injury
+    </type>
+</injury>

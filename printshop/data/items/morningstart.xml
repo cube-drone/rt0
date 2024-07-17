@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<spell>
+<item>
     <name>Morning Start</name>
     <slug>morning-start</slug>
     <description>
 * Draw 5 cards.
 * Exhaust Morning Start.
+* If you have the "Groggy" Minor Injury, remove it.
 * If you do not have the "Morning Start Withdrawal" Minor Injury, take it.
     </description>
     <flavor>
@@ -19,4 +20,4 @@
         Item
     </category>
 
-</spell>
+</item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>Travel Pots</name>
+    <slug>travelpots</slug>
+    <description>
+* Reduce the difficulty of a SHOP check made _to make food edible or water potable_ by 1.
+    </description>
+    <flavor>
+        Small, aluminum pots with lids that can be used to boil water or cook food.
+    </flavor>
+    <type>
+        Travel Equipment
+    </type>
+    <category>
+        Item
+    </category>
+
+</item>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Loopy</name>
+    <slug>loopy</slug>
+    <description>
+* While you have Loopiness, you cannot be Clever.
+* You have Penalty on all "Clever" skills.
+* In your first round of combat, discard 1 card.
+* After two nights of rest, remove Loopy.
+    </description>
+    <flavor>
+You're still a little disoriented.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

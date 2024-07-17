@@ -20,6 +20,12 @@ one might fail at preparing raw meat and end up with *Upset Stomach / Farts Ahoy
 * While you have Upset Stomach / Farts Ahoy!, take a Penalty on all skill checks.
 * Discard Farts Ahoy! at the end of the day.
 
+### Groggy
+* While you have Groggy
+   * Knights count as Critical Fails if drawn during skill checks.
+   * If you draw a Knight during combat, immediately discard it.
+* Discard Groggy when you have a restful sleep.
+
 ### Splinted Arm
 * While you have a Splinted Arm, you cannot be `Strong`.
 * You have Penalty on all "Strong" skills.
@@ -78,76 +84,11 @@ one might fail at preparing raw meat and end up with *Upset Stomach / Farts Ahoy
 If a player receives a second Major injury while they already have a Major Injury, instead give them
 a Critical Injury.
 
-### Broken Arm
-* While you have a Broken Arm, you are `Weak`.
-* You can not use "Strong" skills.
-* If you were already `Weak`: now, you cannot deal non-magical damage, at all.
-* This overrides any character traits you might already have (if you were Strong, now you are Weak).
-* A successful AID check can downgrade this to a Splinted Arm.
-* After one night of rest, mark Broken Arm.
-* After a second night of rest, downgrade this to Massive, Painful Scar.
-
-### Broken Leg
-* While you have a Broken Leg, you are `Slow`.
-* You can not use "Fast" skills.
-* If you were already `Slow`: now, you cannot gain shields, at all.
-* This overrides any character traits you might already have (if you were Fast, now you are Slow).
-* A successful AID (First Aid) check can downgrade this to a Splinted Leg.
-* After one night of rest, mark Broken Leg.
-* After a second night of rest, downgrade this to Massive, Painful Scar.
-
-### Concussion
-* While you have a Concussion, you are `Foolish`.
-* You can not use "Wise" skills.
-* If you were already `Foolish`: now, you must use the `Foolish` ability twice per combat turn and you cannot `Concentrate` at _all_.
-* This overrides any character traits you might already have (if you were Wise, now you are Foolish).
-* A successful AID (First Aid) check can downgrade this to Dizzy.
-* After one night of rest, mark Concussion.
-* After a second night of rest, downgrade this to Massive, Painful Scar.
-
-### Delerium
-* While you have Delerium, you are `Dull`, and you cannot cast spells.
-* You can not use "Clever" skills.
-* If you were already `Dull`: now, you cannot use _any_ Skills.
-* This overrides any character traits you might already have (if you were Clever, now you are Dull).
-* A successful FINANCIAL AID (Empathy) check can downgrade this to Loopy.
-* After one night of rest, mark Delerium.
-* After a second night of rest, downgrade this to Massive, Painful Scar.
-
-### Curse
-* While you have Curse, you are `Unlucky`.
-* You can not use "Lucky" skills.
-* This overrides any character traits you might already have (if you were Lucky, now you are Unlucky).
-* Adjust your deck accordingly.
-* If you were already `Unlucky`: remove all 10s and Knights from your deck, as well as The Fool and The Sun.
-* A successful MISC (???) check can downgrade this to Hex.
-* After one night of rest, mark Curse.
-* After a second night of rest, downgrade this to Massive, Painful Scar.
-
-### Unresolved Trauma
-* While you have Unresolved Trauma, you are `Strange`.
-* You can not use "Charming" skills.
-* This overrides any character traits you might already have (if you were Charming, now you are Strange).
-* If you were already `Strange`: take one Corruption point at the end of every Combat.
-* If you have spells or abilities that can only be used if you are Charming, you can not use them.
-* A successful FINANCIAL AID (Empathy) check can downgrade this to Stress.
-* After one night of rest, mark Unresolved Trauma.
-* After a second night of rest, downgrade this to Massive, Painful Scar.
-
-### Bleeding Out
-* While you are in combat, you lose 3HP at the beginning of your turn.
-* Outside of combat, you can't use Skills except for AID.
-* A successful AID (First Aid) check can downgrade this to Bandaged Wound.
-* After one night of rest, the player dies.
-* That's right, don't _go to sleep_ while you're _bleeding out_. You need *medical attention*. That's _free medical advice_.
-
 ## Critical Injury
-* While your character has a Critical Injury, they can not do _anything_.
-* A successful AID check can downgrade this to Bleeding Out.
-* If a player receives another critical injury when they are critically injured, they die.
-* Instead of dying, the player can (and probably should) use Corruption Points to heal injuries.
+If a player receives a second Critical injury while they already have a Critical Injury: they die.
 
 ## Using Corruption Points to Heal Injuries
+
 At any time players can mark Corruption Points on their sheets to heal injuries:
 
 * For 2 Corruption Points, a Minor Injury can vanish entirely.
@@ -155,6 +96,7 @@ At any time players can mark Corruption Points on their sheets to heal injuries:
 * For 6 Corruption Points, a Critical Injury can vanish entirely.
 
 ## Death
+
 Death is entirely optional! Players can, of course, always take more corruption to avoid this unfortunate result.
 
 The exact rules for player death are, unfortunately, only available to the GM.
@@ -164,6 +106,7 @@ Be assured, however, that this player character will no longer remain playable.
 The amount of corruption the player has taken on _will_ be factored in.
 
 ## Full Corruption
+
 Again, exactly what happens when there are no Corruption spaces left to fill on the character sheet remains a mystery,
 for now (GM: It's explained in the GM's guide!), but presume that going far enough down this path will end up at a point where the character becomes no longer playable.
 

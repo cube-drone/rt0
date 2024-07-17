@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Hex</name>
+    <slug>hex</slug>
+    <description>
+* While you have Hex, you cannot be Lucky.
+* You have Penalty on all "Lucky" skills.
+* In your first round of combat, discard 1 card.
+* After two nights of rest, remove Hex.
+    </description>
+    <flavor>
+It's hard to be lucky when you're hexed.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

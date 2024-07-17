@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Stress</name>
+    <slug>stress</slug>
+    <description>
+* While you have Stress, you cannot be Charming.
+* You have Penalty on all "Charming" skills.
+* In your first round of combat, discard 1 card.
+* After two nights of rest, remove Stress.
+    </description>
+    <flavor>
+It's hard to be charming when you're stressed.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Upset Stomach</name>
+    <slug>upset-stomach</slug>
+    <description>
+* While you have Upset Stomach, take a Penalty on all skill checks.
+* Discard Upset Stomach at the end of the day.
+    </description>
+    <flavor>
+Farts ahoy!
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

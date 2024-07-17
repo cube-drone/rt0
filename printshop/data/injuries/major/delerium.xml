@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Delerium</name>
+    <slug>delerium</slug>
+    <description>
+* While you have Delerium, you are `Dull`.
+* You can not use "Clever" skills.
+* If you were already Dull: now, you cannot use any skills at all.
+* This overrides any character traits you might already have (if you were Clever, now you are Dull).
+* After two nights of rest, downgrade this to Massive, Painful Scar.
+    </description>
+    <flavor>
+Confusion and disorientation.
+    </flavor>
+    <type>
+        Major Injury
+    </type>
+</injury>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Curse</name>
+    <slug>curse</slug>
+    <description>
+* While you have a Curse, you are `Unlucky`.
+* You can not use "Lucky" skills.
+* If you were already "Unlucky": remove all 10s and Knights from your deck, as well as The Fool and The Sun.
+* A successful MISC check can downgrade this to a Minor Injury.
+* After two nights of rest, downgrade this to a Massive, Painful Scar.
+    </description>
+    <flavor>
+Everything is starting to go wrong for you.
+    </flavor>
+    <type>
+        Major Injury
+    </type>
+</injury>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Massive Painful Scar</name>
+    <slug>massive-painful-scar</slug>
+    <description>
+* You can have more than one Massive, Painful Scar.
+* At the beginning of the day, choose one of your combat abilities: It can not be used this day.
+* A different combat ability can be chosen each day, but Massive, Painful Scar must always block at least one ability.
+* Two Massive, Painful Scars cannot block the same ability.
+    </description>
+    <flavor>
+It might be a physical or emotional scar, but either way it isn't going anywhere.
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

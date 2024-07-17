@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<spell>
+<injury>
     <name>Morning Start Withdrawal</name>
     <slug>morning-start-withdrawal</slug>
     <description>
@@ -19,4 +19,4 @@
         Minor Injury
     </type>
 
-</spell>
+</injury>

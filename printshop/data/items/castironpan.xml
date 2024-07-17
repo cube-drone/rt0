@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>Cast Iron Pan</name>
+    <slug>firstaidkit</slug>
+    <description>
+* Reduce the difficulty of a SHOP check made _to make food edible or water potable_ by 1.
+* When using Unarmed Strike, you may deal +1 damage.
+* "Weapon" effects do not stack: only the highest bonus applies.
+    </description>
+    <flavor>
+        A large, heavy, black, cast iron pan. As effective against foes as it is against eggs.
+    </flavor>
+    <type>
+        Medical Equipment
+    </type>
+    <category>
+        Weapon
+    </category>
+
+</item>

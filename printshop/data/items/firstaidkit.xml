@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>First Aid Kit</name>
+    <slug>firstaidkit</slug>
+    <description>
+* Reduce the difficulty of an AID check made _to treat an injury_ by 1.
+* The First Aid Kit can be used twice before it is Exhausted.
+    </description>
+    <uses>
+        2
+    </uses>
+    <flavor>
+        This kit contains bandages, antiseptic, sterile gauze, scissors, and other supplies for treating minor injuries.
+    </flavor>
+    <type>
+        Medical Equipment
+    </type>
+    <category>
+        Item
+    </category>
+
+</item>
