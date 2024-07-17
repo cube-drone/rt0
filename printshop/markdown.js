@@ -293,6 +293,24 @@ function generateMinorInjuryMarkdown({data}){
     return markdown;
 }
 
+function generateItemMarkdown({data}){
+    let markdown = '';
+
+    markdown += `# Items\n\n`;
+
+    const addToMarkdown = ({name, flavor, description}) => {
+        markdown += `### ${name}\n`;
+        markdown += `_${flavor}_\n\n`
+        markdown += description;
+        markdown += '\n\n';
+    }
+
+    for(let [key, item] of Object.entries(data.items)){
+        addToMarkdown(item);
+    }
+    return markdown;
+}
+
 module.exports = {
     generateCombatMarkdown,
     generateMagicMarkdown,
@@ -301,5 +319,6 @@ module.exports = {
     generatePriestessMarkdown,
     generateCriticalInjuryMarkdown,
     generateMajorInjuryMarkdown,
-    generateMinorInjuryMarkdown
+    generateMinorInjuryMarkdown,
+    generateItemMarkdown
 }

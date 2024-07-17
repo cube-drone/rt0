@@ -11,7 +11,8 @@ const { prepareData } = require('./data.js');
 
 const { generateCombatMarkdown, generateMagicMarkdown, generateMagicianMarkdown,
     generateFoolMarkdown, generatePriestessMarkdown,
-    generateCriticalInjuryMarkdown, generateMajorInjuryMarkdown, generateMinorInjuryMarkdown
+    generateCriticalInjuryMarkdown, generateMajorInjuryMarkdown, generateMinorInjuryMarkdown,
+    generateItemMarkdown
  } = require('./markdown.js');
 
 let writeFileSync = (filename, contents) => {
@@ -116,6 +117,7 @@ function main() {
     let criticalInjuryMarkdown = generateCriticalInjuryMarkdown({data});
     let majorInjuryMarkdown = generateMajorInjuryMarkdown({data});
     let minorInjuryMarkdown = generateMinorInjuryMarkdown({data});
+    let itemMarkdown = generateItemMarkdown({data});
     // write the markdown to ../players-guide/src/player/generated/basic_combat.md
     writeFileSync('../players-guide/src/player/generated/basic_combat.md', combatMarkdown);
     writeFileSync('../players-guide/src/player/generated/basic_spells.md', spellsMarkdown);
@@ -125,6 +127,7 @@ function main() {
     writeFileSync('../players-guide/src/player/generated/criticalinjuries.md', criticalInjuryMarkdown);
     writeFileSync('../players-guide/src/player/generated/majorinjuries.md', majorInjuryMarkdown);
     writeFileSync('../players-guide/src/player/generated/minorinjuries.md', minorInjuryMarkdown);
+    writeFileSync('../players-guide/src/player/generated/items.md', itemMarkdown);
 
 
     // copy the entire static directory to printables/static

@@ -31,7 +31,7 @@ so it's kind of a moot point._)
 
 ## Like a Class? What Do You Mean?
 
-So, the game Dungeons & Dragons, the predecessor to most modern tabletop TPGs, introduces the idea of Character Class, which is
+So, the game Dungeons & Dragons, the predecessor to most modern tabletop TPGs, introduced the idea of Character Class, which is
 a _broad archetype_ for your character. There are lots of different characters you can be as a Fighter: a lone wolf with a cape
 rolling in to a dusty frontier town, a three-foot-tall powderkeg with a broadword longer than he is and a Napoleon complex, or
 a man named Gary from Accounting who just happened to find a sword behind a photocopier and is now the Chosen Gary.
