@@ -136,7 +136,34 @@ function prepareData(){
             }
             keywords.push(doc.ability.name);
         }
+    }
 
+    let injuryDirectories = fs.readdirSync('data/injuries');
+    let injuryData = {}
+    for(let dir of injuryDirectories){
+        let files = fs.readdirSync(`data/injuries/${dir}`);
+        injuryData[dir] = {};
+        for(let file of files){
+            let doc = read(`data/injuries/${dir}/${file}`);
+            let name = file.replace('.xml', '');
+            injuryData[dir][name] = doc.injury;
+            if(doc.injury.keywords && doc.injury.keywords.k){
+                keywords.push(doc.injury.keywords.k);
+            }
+            keywords.push(doc.injury.name);
+        }
+    }
+
+    let items = fs.readdirSync('data/items');
+    let itemData = {};
+    for(let file of items){
+        let doc = read(`data/items/${file}`);
+        let name = file.replace('.xml', '');
+        itemData[name] = doc.item;
+        if(doc.item.keywords && doc.item.keywords.k){
+            keywords.push(doc.item.keywords.k);
+        }
+        keywords.push(doc.item.name);
     }
 
     keywords = [...new Set(keywords)];
@@ -156,13 +183,23 @@ function prepareData(){
             arcanaData[key].abilities[abilityKey] = prepare(arcanaData[key].abilities[abilityKey], keywords);
         }
     }
+    for(let key of Object.keys(injuryData)){
+        injuryData[key] = prepare(injuryData[key], keywords);
+    }
+    for(let key of Object.keys(itemData)){
+        itemData[key] = prepare(itemData[key], keywords);
+    }
 
     //console.dir(arcanaData, {depth: 3});
+    //console.dir(injuryData, {depth: 3});
 
     return {
         combat: combatData,
         spells: spellData,
         arcana: arcanaData,
+        injuries: injuryData,
+        injury: injuryData,
+        items: itemData,
         keywordObj,
         keywords,
     };

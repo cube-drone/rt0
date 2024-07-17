@@ -6,8 +6,9 @@
 
 ## Description
 
-Lucky, reckless, unreliable, and full of surprises, The Fool is a bit of a wildcard, a bit of a class clown, but
-when the chips are down, they're definitely... something.
+Lucky, reckless, unreliable, and full of surprises, The Fool is a wildcard, a class clown,
+they don't take anything seriously. When luck is on their side - and it is, more often than not -
+they're unstoppable, but when it's not, they're a disaster waiting to happen.
 
 * The Fool can treat The Fool card as a true wildcard: any card they choose, in any situation.
 * The Fool gains the Lucky ability.

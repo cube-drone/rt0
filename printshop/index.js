@@ -10,7 +10,8 @@ const {combatPages, magicPages, arcanaPages, magicianPages, foolPages, priestess
 const { prepareData } = require('./data.js');
 
 const { generateCombatMarkdown, generateMagicMarkdown, generateMagicianMarkdown,
-    generateFoolMarkdown, generatePriestessMarkdown
+    generateFoolMarkdown, generatePriestessMarkdown,
+    generateCriticalInjuryMarkdown, generateMajorInjuryMarkdown, generateMinorInjuryMarkdown
  } = require('./markdown.js');
 
 let writeFileSync = (filename, contents) => {
@@ -112,12 +113,18 @@ function main() {
     let magicianMarkdown = generateMagicianMarkdown({data});
     let foolMarkdown = generateFoolMarkdown({data});
     let priestessMarkdown = generatePriestessMarkdown({data});
+    let criticalInjuryMarkdown = generateCriticalInjuryMarkdown({data});
+    let majorInjuryMarkdown = generateMajorInjuryMarkdown({data});
+    let minorInjuryMarkdown = generateMinorInjuryMarkdown({data});
     // write the markdown to ../players-guide/src/player/generated/basic_combat.md
     writeFileSync('../players-guide/src/player/generated/basic_combat.md', combatMarkdown);
     writeFileSync('../players-guide/src/player/generated/basic_spells.md', spellsMarkdown);
     writeFileSync('../players-guide/src/player/generated/magician.md', magicianMarkdown);
     writeFileSync('../players-guide/src/player/generated/fool.md', foolMarkdown);
     writeFileSync('../players-guide/src/player/generated/priestess.md', priestessMarkdown);
+    writeFileSync('../players-guide/src/player/generated/criticalinjuries.md', criticalInjuryMarkdown);
+    writeFileSync('../players-guide/src/player/generated/majorinjuries.md', majorInjuryMarkdown);
+    writeFileSync('../players-guide/src/player/generated/minorinjuries.md', minorInjuryMarkdown);
 
 
     // copy the entire static directory to printables/static

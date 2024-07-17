@@ -6,13 +6,13 @@
     <description>
 * Reduce the difficulty of a SHOP check made _to make food edible or water potable_ by 1.
 * When using Unarmed Strike, you may deal +1 damage.
-* "Weapon" effects do not stack: only the highest bonus applies.
+* "Weapon" effects like this do not stack: only the highest damage bonus applies.
     </description>
     <flavor>
         A large, heavy, black, cast iron pan. As effective against foes as it is against eggs.
     </flavor>
     <type>
-        Medical Equipment
+        Cooking/Combat Equipment
     </type>
     <category>
         Weapon

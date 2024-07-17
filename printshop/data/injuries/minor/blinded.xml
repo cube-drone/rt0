@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Blinded</name>
+    <slug>blinded</slug>
+    <description>
+* While you are Blinded, all Ranged Damage becomes Damage, and all Magic Ranged Damage becomes Magic Damage.
+* Any effect that targets all Adversaries will instead target all Adversaries in your Zone.
+* Any skill check that requires sight gets a Penalty.
+* Any time you would deal Damage, draw and discard a card from the top of the deck.
+   * If it is a 1-5, you miss and deal no Damage.
+* Play Temperance to remove Blinded.
+* Take 1 Corruption Point to instantly heal Blinded.
+* Remove Blinded at the end of Combat.
+    </description>
+    <flavor>
+My eyes! The goggles do nothing!
+    </flavor>
+    <type>
+        Minor Injury
+    </type>
+</injury>

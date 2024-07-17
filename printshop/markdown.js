@@ -241,6 +241,57 @@ function generatePriestessMarkdown({data}){
     return markdown;
 }
 
+function generateCriticalInjuryMarkdown({data}){
+    let markdown = '';
+
+    markdown += `# Critical Injury\n\n`;
+
+    const addToMarkdown = ({name, flavor, description}) => {
+        markdown += `### ${name}\n`;
+        markdown += `_${flavor}_\n\n`
+        markdown += description;
+        markdown += '\n\n';
+    }
+
+    addToMarkdown(data.injury.critical.critical);
+    return markdown;
+}
+
+function generateMajorInjuryMarkdown({data}){
+    let markdown = '';
+
+    markdown += `# Major Injury\n\n`;
+
+    const addToMarkdown = ({name, flavor, description}) => {
+        markdown += `### ${name}\n`;
+        markdown += `_${flavor}_\n\n`
+        markdown += description;
+        markdown += '\n\n';
+    }
+
+    for(let [key, injury] of Object.entries(data.injury.major)){
+        addToMarkdown(injury);
+    }
+    return markdown;
+}
+
+function generateMinorInjuryMarkdown({data}){
+    let markdown = '';
+
+    markdown += `# Minor Injury\n\n`;
+
+    const addToMarkdown = ({name, flavor, description}) => {
+        markdown += `### ${name}\n`;
+        markdown += `_${flavor}_\n\n`
+        markdown += description;
+        markdown += '\n\n';
+    }
+
+    for(let [key, injury] of Object.entries(data.injury.minor)){
+        addToMarkdown(injury);
+    }
+    return markdown;
+}
 
 module.exports = {
     generateCombatMarkdown,
@@ -248,4 +299,7 @@ module.exports = {
     generateMagicianMarkdown,
     generateFoolMarkdown,
     generatePriestessMarkdown,
+    generateCriticalInjuryMarkdown,
+    generateMajorInjuryMarkdown,
+    generateMinorInjuryMarkdown
 }

@@ -5,13 +5,14 @@
     <slug>groggy</slug>
     <description>
 * Take Groggy when you fail to have a restful sleep.
-* While you have Groggy
-   * Knights count as Critical Fails if drawn during skill checks.
+* While you have Groggy:
+   * Knights count as a Critical Fail if drawn during skill checks.
    * If you draw a Knight during combat, immediately discard it.
 * Discard Groggy when you have a restful sleep.
+* Take 2 Corruption Points to instantly heal Groggy.
     </description>
     <flavor>
-slepey
+All it takes is one bad knight and all of a sudden you understand why sleep is so important.
     </flavor>
     <type>
         Minor Injury

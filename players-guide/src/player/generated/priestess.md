@@ -4,7 +4,9 @@
 
 ## Description
 
-Duality, prophecy, and the subconscious drive this enigmatic figure, who deals psychic damage and can see the future.
+Duality, prophecy, mystery, and the subconscious drive this enigmatic figure, who deals psychic damage and can literally see the future.
+Blessed with visions and insight, but cryptic, odd, and quiet, the High Priestess can be difficult for their companions to
+understand, but their actions always become clear - eventually.
 
 * The High Priestess can treat The Fool card as a High Priestess.
 * The High Priestess gains the Wise ability.

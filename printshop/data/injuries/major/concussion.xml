@@ -4,12 +4,13 @@
     <name>Concussion</name>
     <slug>concussion</slug>
     <description>
-* While you have a Concussion, you are `Foolish`.
+* While you have a Concussion, you are **Foolish**.
 * You can not use "Wise" skills.
-* If you were already Foolish: now, you must use the Foolish ability twice per combat turn and you cannot Concentrate at all.
+* If you were already Foolish: now, you cannot Concentrate at all.
 * This overrides any character traits you might already have (if you were Wise, now you are Foolish).
 * A successful AID (First Aid) check can downgrade this to Dizzy.
 * After two nights of rest, downgrade this to Massive, Painful Scar.
+* Take 4 Corruption Points to instantly heal Concussion.
     </description>
     <flavor>
 It's only a _mild_ traumatic brain injury.

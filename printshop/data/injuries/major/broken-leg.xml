@@ -4,15 +4,16 @@
     <name>Broken Leg</name>
     <slug>broken-leg</slug>
     <description>
-* While you have a Broken Leg, you are `Slow`.
+* While you have a Broken Leg, you are **Slow**.
 * You can not use "Fast" skills.
 * If you were already Slow: now, you cannot gain shields, at all.
 * This overrides any character traits you might already have (if you were Fast, now you are Slow).
 * A successful AID (First Aid) check can downgrade this to a Splinted Leg.
 * After two nights of rest, downgrade this to Massive, Painful Scar.
+* Take 4 Corruption Points to instantly heal Broken Leg.
     </description>
     <flavor>
-A sickening crack.
+You can't walk this one off.
     </flavor>
     <type>
         Major Injury

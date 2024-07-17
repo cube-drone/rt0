@@ -10,9 +10,10 @@
 * After one night of rest, the player dies.
 * That's right, don't go to sleep while you're bleeding out. You need medical attention.
 * That's _free medical advice_.
+* Take 4 Corruption Points to instantly heal Bleeding Out.
     </description>
     <flavor>
-Blood is coming out. It's not supposed to be coming out. It's supposed to be inside. Keep it inside.
+Blood is coming out. It's not supposed to be coming out. It's supposed to be inside.
     </flavor>
     <type>
         Major Injury

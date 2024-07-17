@@ -6,7 +6,11 @@
 
 ## Description
 
-A resourceful, powerful schemer, The Magician gets access to more spells than any other Arcana.
+A resourceful, powerful schemer, The Magician has brought a binder full of detailed plans
+that has color-coded tabs for every possible situation and outcome. Sometimes magic is just
+someone spending more time on something than anybody else might reasonably expect. They're always prepared,
+and they always have a trick up their sleeve. The Magician gets access to more spells, and more damaging spells,
+than any other Arcana.
 
 * The Magician can treat The Fool card as a second The Magician card.
 * The Magician gains the Clever ability.

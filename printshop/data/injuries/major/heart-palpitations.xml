@@ -5,8 +5,9 @@
     <slug>heart-palpitations</slug>
     <description>
 * Draw an extra card on every combat turn.
-* If this card is a Major Arcana, take 2HP of damage and discard the card.
-* If this card is a 3 or 10 of Swords, take a Critical Injury.
+* If this card is a Major Arcana, take 1HP of damage and discard the card.
+* If this card is a 3 of Swords, take a Critical Injury.
+* Take 4 Corruption Points to instantly heal Heart Palpitations.
     </description>
     <flavor>
 Thu-thump. Thu-...thump?

@@ -4,10 +4,11 @@
     <name>Massive Painful Scar</name>
     <slug>massive-painful-scar</slug>
     <description>
-* You can have more than one Massive, Painful Scar.
-* At the beginning of the day, choose one of your combat abilities: It can not be used this day.
-* A different combat ability can be chosen each day, but Massive, Painful Scar must always block at least one ability.
-* Two Massive, Painful Scars cannot block the same ability.
+* You can have more than one Massive Painful Scar.
+* At the beginning of the day, choose one combat ability that you can use: It can not be used this Day.
+* A different combat ability can be chosen each Day, but Massive Painful Scar must always block at least one ability.
+* Two Massive Painful Scars cannot block the same ability.
+* Take 2 Corruption Points to instantly heal Massive Painful Scar.
     </description>
     <flavor>
 It might be a physical or emotional scar, but either way it isn't going anywhere.
