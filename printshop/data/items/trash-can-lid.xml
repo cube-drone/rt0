@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>Trash Can Lid</name>
+    <slug>trash-can-lid</slug>
+    <description>
+* Gain 10 Shields.
+* Exhaust Trash Can Lid
+    </description>
+    <flavor>
+    You can use it as an impromptu shield, or also to keep raccoons out of your trash.
+    </flavor>
+    <type>
+        Shield
+    </type>
+    <category>
+        Single-Use
+    </category>
+
+</item>

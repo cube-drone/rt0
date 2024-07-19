@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>Groucho Glasses</name>
+    <slug>beaglepuss</slug>
+    <description>
+Exhaust to gain Bonus on a DRAMA check.
+    </description>
+    <flavor>
+The large plastic nose, glasses, and bushy eyebrows, together, make you look like
+    a totally different person. The only problem is that that totally different
+    person looks like they are wearing a toy on their face, but hey, it's a start.
+    </flavor>
+    <type>
+        Prankster's Gambit
+    </type>
+    <category>
+        Disguise
+    </category>
+
+</item>

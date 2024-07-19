@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>Backpack</name>
+    <slug>backpack</slug>
+    <description>
+* In combat, draw and place a card from the top of your deck into the Backpack.
+* If the card is The Tower, draw a new card and shuffle The Tower back into your deck.
+* Any time during your turn, you may swap a card in your hand with the card on Backpack.
+    </description>
+    <flavor>
+    This sturdy rucksack is perfect for whatever you need to carry.
+    </flavor>
+    <type>
+        Utility
+    </type>
+    <category>
+        Bag
+    </category>
+
+</item>
