@@ -25,7 +25,7 @@
   - [Critical Injuries](./player/generated/criticalinjuries.md)
 - [Money & Equipment](./player/equipment.md)
   - [Items](./player/generated/items.md)
-- [Food, Water, & Sleep](./player/food.md)
+- [Food & Sleep](./player/food.md)
 - [Playlist](./player/playlist.md)
 - [A Brief Guide to the Tarot](./player/card_index.md)
   - [Swords](./player/card_index/swords.md)
@@ -68,3 +68,4 @@
 ----------
 # Developer's Notes
 - [Mechanics](./dev/mechanics.md)
+- [Evocative Words](./dev/evocative.md)

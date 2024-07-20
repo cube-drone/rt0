@@ -23,6 +23,14 @@ must take a [Major Injury](./injuries.md).
 
 ## A Round, and Turn Order
 
+```mermaid
+graph TD;
+    A["Draw an Intent for every Adversary"]-->B;
+    B["Each player takes a Turn"]-->C;
+    C["Each Adversary discards all Shield"]-->D
+    D["Each Adversary executes, then discards their Intent"]-->A
+```
+
 A Round of battle is a cycle where every participant gets one turn.
 
 First, an Intent is drawn for every Adversary. This is a tarot card drawn from the GM's deck
@@ -47,6 +55,16 @@ Finally, each Adversary does whatever their Intent indicates that they will do.
 At the end of the Round, every player discards any Shield that they accumulated but did not use to block Damage from an Adversary.
 
 ## A Turn
+
+```mermaid
+graph TD;
+    A["The player discards all Shield from the previous turn."]-->B;
+    B["The player draws 5 cards from their deck."]-->C;
+    C["If The Tower is ever drawn, activate Catastrophe."]-->D
+    D["The player plays cards on abilities."]-->E
+    E["At the end of the turn, any remaining cards are discarded."]-->F
+    F["Play moves to the next player."]
+```
 
 At the beginning of their turn, a player draws 5 cards from their deck.
 If they have cards in their hand already at the beginning of their turn, they may keep them.

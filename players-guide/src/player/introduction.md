@@ -19,7 +19,7 @@ After it's founding more than 15 years ago, however, news and footage from Parad
 Nobody seems interested in space anymore. What happened up there?
 
 Then, Paradise Lua quietly announced their ACCELER8 program. 8 exceptional teenagers from Earth would
-be invited to a prestigious private academy on the moon: The Zakharov Institute.
+be invited to a prestigious private academy on the moon: The Daybreak Institute.
 It made the news, and thousands of teenagers applied, but only 8 were chosen.
 
 1 died in transit.
