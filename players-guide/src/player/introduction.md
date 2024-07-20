@@ -39,8 +39,8 @@ Bad News: Using these powers comes at a terrible cost.
 * Someone needed to write a game that uses a Tarot deck as a resolution mechanism.
 * Moon. Insane computer. Cassette futurism.
 * Hex-crawl spelunking through abandoned visions of a better future.
-* Slay the Spire (the video game).
-* Citizen Sleeper (the video game).
+* Slay the Spire.
+* Paradise Killer (the video game). Citizen Sleeper (the video game).
 * Retro-tech. Cult. Conspiracy.
 * Paranoia (the RPG). Paranoia (the concept).
 * Heart (the RPG).

@@ -72,6 +72,9 @@ future. Or maybe there won't, and Death just meant "any significant change, at a
 Because the cards have _specific connotations_ but _general outs_, they're able to produce a high velocity of interpretations
 that feel laser-precise even if they're... not, really.
 
+As a bonus, most of the cards are optimized to be easily interpreted as answers for some of the most common questions.
+The four suits are carefully organized around things people want to know about: love (cups), money (pentacles), power (swords), and adventure (wands).
+
 This doesn't mean all fortunetellers are necessarily hucksters, _although many of them are_: many fortunetellers are simply
 intuitive, empathetic people who are as invested in manufacturing the accuracy of their card readings as their customers are.
 They've had many of their own "whoa" moments, and with a little effort they, too, can tune their _inner eye_.

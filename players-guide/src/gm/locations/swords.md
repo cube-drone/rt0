@@ -24,16 +24,20 @@ Deception, "ha ha, I can't believe I got away with all these swords"
 ## Eight of Swords - The Prison
 Self-imposed restrictions.
 
-## Nine -
+## Nine - Looking Out Into Space (Airlock & EVA)
 Anxiety, Fear, Nightmares
 
 ## Ten - The Hospital
 Painful Endings, Deep Wounds, Crisis
 
-## Page of Swords
+## Page of Swords - Broadcast Center - Gossip
+New ideas, curiosity, all talk and no action.
 
-## Knight of Swords
+## Knight of Swords - Broadcast Center - Trends
+Ambitious, action-oriented, driven to succeed, restless, ADHD,
 
-## Queen of Swords
+## Queen of Swords - Broadcast Center - Journalism
+Direct, clear, independent communication.
 
 ## King of Swords
+Mental clarity, intellectual power, manipulation
