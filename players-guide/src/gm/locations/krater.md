@@ -2,7 +2,10 @@
 
 If the Moon had Suburbs, this would be them.
 
-* Arcade/Casino (three, four, five of cups)
+* Home Is Where the Heart Family Practice (two, queen of cups)
+* Candlelight Tryst (ace)
+* The Chalice Bar/Arcade/Casino (three, four, five of cups)
+* ADVERTISING! Office Block (seven)
 * Kindergarten Park (six of cups)
 * Apartment Block (nine of cups)
 * Nuclear Family Complex (ten of cups)
