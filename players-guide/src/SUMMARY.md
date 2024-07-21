@@ -59,7 +59,7 @@
 # GM's Guide
 - [Introduction](./gm/introduction.md)
 - [An Introductory Adventure](./gm/adventure.md)
-- [Lore](./gm/lore.md)
+- [The Moon](./gm/the_moon.md)
 - [Factions](./gm/factions.md)
 - [Locations](./gm/locations.md)
   - [Joyeuse Division](./gm/locations/joyeuse.md)

@@ -15,7 +15,7 @@ _Blood is coming out. It's not supposed to be coming out. It's supposed to be in
 _A sickening crack._
 
 * While you have a Broken Arm, you are **Weak**.
-* You can not use "Strong" skills.
+* You can not use Strong skills.
 * If you were already Weak: now, you cannot deal non-magical damage, at all.
 * This overrides any character traits you might already have (if you were Strong, now you are Weak).
 * A successful AID check can downgrade this to a Splinted Arm Minor Injury.
@@ -63,6 +63,15 @@ _Confusion and disorientation._
 * This overrides any character traits you might already have (if you were Clever, now you are Dull).
 * After two nights of rest, downgrade this to Massive, Painful Scar.
 * Take 4 Corruption Points to instantly heal Delerium.
+
+### Disease
+_Something has made you very sick._
+
+* Disease can not be healed or improved by common AID checks: you must seek professional medical attention.
+* Any time a Five of Pentacles is drawn:
+   * If in Combat: take 8HP of damage. This damage can not be offset with Shields.
+   * If outside of Combat: take a Minor Injury of the GM's choice.
+* Take 4 Corruption Points to instantly heal Disease.
 
 ### Heart Palpitations
 _Thu-thump. Thu-...thump?_

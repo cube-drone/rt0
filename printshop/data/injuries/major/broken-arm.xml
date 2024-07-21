@@ -5,7 +5,7 @@
     <slug>broken-arm</slug>
     <description>
 * While you have a Broken Arm, you are **Weak**.
-* You can not use "Strong" skills.
+* You can not use Strong skills.
 * If you were already Weak: now, you cannot deal non-magical damage, at all.
 * This overrides any character traits you might already have (if you were Strong, now you are Weak).
 * A successful AID check can downgrade this to a Splinted Arm Minor Injury.

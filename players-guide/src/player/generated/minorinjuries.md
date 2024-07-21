@@ -85,23 +85,23 @@ _Don't talk to me until I've had my Morning Start._
    * If you have not consumed a Morning Start by the end of the Day, remove Morning Start Withdrawal.
 * Take 2 Corruption Points to instantly heal Morning Start Withdrawal.
 
-### Slung Arm
-_Your arm is in a sling._
+### Injured Arm
+_A painful injury to a vital limb._
 
-* While you have a Slung Arm, you cannot be Strong.
+* While you have a Injured Arm, you cannot be Strong.
 * You have Penalty on all "Strong" skills.
 * In your first round of combat, discard 1 card.
-* After two nights of rest, remove Splinted Arm.
-* Take 2 Corruption Points to instantly heal Splinted Arm.
+* After two nights of rest, remove Injured Arm.
+* Take 2 Corruption Points to instantly heal Injured Arm.
 
-### Splinted Leg
-_You're hobbling around on a splinted leg._
+### Injured Leg
+_You're hobbling around._
 
-* While you have a Splinted Leg, you cannot be Fast.
+* While you have a Injured Leg, you cannot be Fast.
 * You have Penalty on all "Fast" skills.
 * In your first round of combat, discard 1 card.
-* After two nights of rest, remove Splinted Leg.
-* Take 2 Corruption Points to instantly heal Splinted Leg.
+* After two nights of rest, remove Injured Leg.
+* Take 2 Corruption Points to instantly heal Injured Leg.
 
 ### Stress
 _It's hard to be charming when you're stressed._

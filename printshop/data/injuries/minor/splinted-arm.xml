@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <injury>
-    <name>Slung Arm</name>
+    <name>Injured Arm</name>
     <slug>slung-arm</slug>
     <description>
-* While you have a Slung Arm, you cannot be Strong.
+* While you have a Injured Arm, you cannot be Strong.
 * You have Penalty on all "Strong" skills.
 * In your first round of combat, discard 1 card.
-* After two nights of rest, remove Splinted Arm.
-* Take 2 Corruption Points to instantly heal Splinted Arm.
+* After two nights of rest, remove Injured Arm.
+* Take 2 Corruption Points to instantly heal Injured Arm.
     </description>
     <flavor>
-Your arm is in a sling.
+A painful injury to a vital limb.
     </flavor>
     <type>
         Minor Injury

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <injury>
-    <name>Splinted Leg</name>
+    <name>Injured Leg</name>
     <slug>splinted-leg</slug>
     <description>
-* While you have a Splinted Leg, you cannot be Fast.
+* While you have a Injured Leg, you cannot be Fast.
 * You have Penalty on all "Fast" skills.
 * In your first round of combat, discard 1 card.
-* After two nights of rest, remove Splinted Leg.
-* Take 2 Corruption Points to instantly heal Splinted Leg.
+* After two nights of rest, remove Injured Leg.
+* Take 2 Corruption Points to instantly heal Injured Leg.
     </description>
     <flavor>
-You're hobbling around on a splinted leg.
+You're hobbling around.
     </flavor>
     <type>
         Minor Injury

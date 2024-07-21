@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<injury>
+    <name>Disease</name>
+    <slug>disease</slug>
+    <description>
+* Disease can not be healed or improved by common AID checks: you must seek professional medical attention.
+* Any time a Five of Pentacles is drawn:
+   * If in Combat: take 8HP of damage. This damage can not be offset with Shields.
+   * If outside of Combat: take a Minor Injury of the GM's choice.
+* Take 4 Corruption Points to instantly heal Disease.
+    </description>
+    <flavor>
+Something has made you very sick.
+    </flavor>
+    <type>
+        Major Injury
+    </type>
+</injury>
