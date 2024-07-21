@@ -12,8 +12,5 @@ When you don't have anywhere else on your character sheet to add a Corruption Po
 
 Well that's quite bad.
 
-## Hands, Eyes, Silhouettes, Glitches, Biblically Accurate Angels
-
-(TODO: do art, put it here)
-(ref images:)
+## Inspiration Board: Hands, Eyes, Silhouettes, Glitches, Biblically Accurate Angels
 ![corruption](../images/corruption-board.png)

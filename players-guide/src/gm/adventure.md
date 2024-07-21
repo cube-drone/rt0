@@ -1,45 +1,5 @@
 # An Introductory Adventure
 
-```mermaid
-graph TD;
-    AIRLOCK["Airlock & EVA"];
-    DOCKS["The Docks"];
-    CUSTOMS["Executare PortSec"];
-    COURT["Sector Court"];
-    PRISON["Holding Cells"];
-    CREMATORY["Crematory"];
-    HOSPITAL["Medical Bay"];
-    HUB(("The Galleria"));
-    DAYBREAK{"The Daybreak Institute"};
-    DORMS["Daybreak Dormitories"];
-    ARENA["Gymnasium"];
-    HOTEL["Hotel Pods"];
-    WAREHOUSE[("Warehouse Sector")];
-    TRANSPORT>"Maglev Linkpoint"];
-    STUDIO["Central Broadcasting"];
-    LABS["Engineering"]
-
-    AIRLOCK-->DOCKS;
-    DOCKS-->CUSTOMS;
-    CUSTOMS-->HUB;
-    CUSTOMS-->PRISON;
-    PRISON-->CREMATORY;
-    HUB-->COURT;
-    COURT-->PRISON;
-    HOSPITAL-->CREMATORY;
-    HUB-->HOSPITAL;
-    HUB-->HOTEL;
-    HUB-->DAYBREAK;
-    HUB-->WAREHOUSE;
-    HUB-->TRANSPORT;
-    DAYBREAK-->DORMS;
-    DAYBREAK-->ARENA;
-    CUSTOMS-->WAREHOUSE;
-    TRANSPORT-->WAREHOUSE;
-    HUB-->STUDIO;
-    WAREHOUSE-->LABS;
-    LABS-->STUDIO;
-```
 ## How Does This Work?
 
 Think of the adventure as having parts where it goes wide, and then other parts where it gets really narrow again.
