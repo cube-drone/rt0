@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>Blank Keycard</name>
+    <slug>blank-keycard</slug>
+    <description>
+* Reduce the difficulty of a FREE check made _to open a door_ by 1, then Exhaust Blank Keycard.
+    </description>
+    <flavor>
+        A keycard that can be programmed to open any door.
+    </flavor>
+    <type>
+        Inflitration Gear
+    </type>
+    <category>
+        Item
+    </category>
+
+</item>

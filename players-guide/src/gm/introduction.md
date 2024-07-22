@@ -2,18 +2,31 @@
 
 so you're the gm, huh?
 
-players don't read past this point
-spoilers ahoy
 
+## Exposition
 
-* (2 teens die in the first episode, one to Computer Rules, one to Moon Horror)
+Some people think that it's more important for a game's setting to be evocative and imaginative
+and easy to turn into a fun game than it is for that game's lore to be incredibly detailed.
 
-The loop
+"I don't care who the former comptroller of the sewer department was, I would like
+a handful of exciting settings that get my blood pumping!"
 
-* players explore, looking for food and shelter
-* they flip exploration cards and apply locations to the Moonbase Cluster (think: Concordia)
-* unpredictably, all of the teens are gathered for Classes
+These people are wrong, and also stupid. I bet they don't even _know_ about the
+sewer infrastructure underlying their favorite fantasy cities. Do they have regular inspections?
+Are there city sewer inspectors? Where is the cut-off in sewer maintenance responsibility between the
+ property owner and the city? Can an adventure where you don't know these crucial details
+ _even be said to constitute an adventure at all_?
 
+The former comptroller of the sewer department's name is Rendall Jjenson. He retired 6 years ago,
+to a spartan apartment in Krater Valley's retirement block. He has deep concerns about the new
+comptroller's comparatively loose position on defecit spending, but he's also worried about
+the aging H2O reclamation units and thinks that running up some debt could get that resolved.
+Anyways, it's not his problem any more. He has a mug that says "not my circus, not my monkeys" on it,
+and he plays a lot of solitaire with a real deck of cards that his father brought from Earth.
+
+There _are_ regular inspections. The cut-off in sewer maintenance responsibility between the property
+owner and the city is unclear, even to the city, which results in no small amount of additional
+paperwork. And no: it can't.
 
 ## True Horrors: The Psychic 26
 

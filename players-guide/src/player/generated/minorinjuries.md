@@ -10,14 +10,16 @@ _It still hurts but at least it's bandaged._
 ### Blinded
 _My eyes! The goggles do nothing!_
 
-* While you are Blinded, all Ranged Damage becomes Damage, and all Magic Ranged Damage becomes Magic Damage.
-* Any effect that targets all Adversaries will instead target all Adversaries in your Zone.
+* While you are Blinded
 * Any skill check that requires sight gets a Penalty.
-* Any time you would deal Damage, draw and discard a card from the top of the deck.
-   * If it is a 1-5, you miss and deal no Damage.
+* In Combat:
+   * All Ranged Damage becomes Damage, and all Magic Ranged Damage becomes Magic Damage.
+   * Any effect that targets all Adversaries will instead target all Adversaries in your Zone.
+   * Any time you would deal Damage, draw and discard a card from the top of the deck.
+      * If it is a 1-5, you miss and deal no Damage.
 * Play Temperance to remove Blinded.
 * Take 1 Corruption Point to instantly heal Blinded.
-* Remove Blinded at the end of Combat.
+* Outside of Combat, a Medium AID check and a few minutes of rest will remove Blinded.
 
 ### Distracted
 _You're not paying attention._

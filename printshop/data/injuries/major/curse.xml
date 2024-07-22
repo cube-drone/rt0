@@ -7,7 +7,8 @@
 * While you have a Curse, you are **Unlucky**.
 * You can not use "Lucky" skills.
 * If you were already "Unlucky": while you're Cursed, remove all 10s and Knights from your deck, as well as The Fool and The Sun.
-* A successful MISC check can downgrade this to a Minor Injury.
+* A successful Hard MISC check can downgrade this to a Minor Injury.
+* This check can be retried.
 * After two nights of rest, downgrade this to a Massive, Painful Scar.
 * Take 4 Corruption Points to instantly heal Curse.
     </description>

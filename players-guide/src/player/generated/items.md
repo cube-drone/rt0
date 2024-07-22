@@ -14,6 +14,11 @@ _The large plastic nose, glasses, and bushy eyebrows, together, make you look li
 
 Exhaust to gain Bonus on a DRAMA check.
 
+### Blank Keycard
+_A keycard that can be programmed to open any door._
+
+* Reduce the difficulty of a FREE check made _to open a door_ by 1, then Exhaust Blank Keycard.
+
 ### Cast Iron Pan
 _A large, heavy, black, cast iron pan. As effective against foes as it is against eggs._
 
@@ -21,29 +26,32 @@ _A large, heavy, black, cast iron pan. As effective against foes as it is agains
 * When using Unarmed Strike, you may deal +1 damage.
 * "Weapon" effects like this do not stack: only the highest damage bonus applies.
 
+### EVA Suit
+_It's not the most comfortable thing in the world, but neither is depressurizing your lungs._
+
+* This suit allows you to go outside of Paradise Lua without _immediately dying_.
+* Wearing the EVA Suit _in_ Paradise Lua is surprisingly beneficial in combat situations:
+   * The suit is covered in a thick armored poncho and steel helmet, granting you 3 Shields on every combat turn.
+   * The helmet is airtight, and has its own oxygen supply, rendering you invulnerable to gas and liquid-based attacks.
+* All skill checks except for FINAID made _while wearing the EVA Suit_ are made with Penalty: it's hard to move around in this thing.
+* Putting on the EVA Suit in Combat takes a full round and a successful Medium GYM check.
+
 ### First Aid Kit
 _This kit contains bandages, antiseptic, sterile gauze, scissors, and other supplies for treating minor injuries._
 
-* Reduce the difficulty of an AID check made _to treat an injury_ by 1.
-* The First Aid Kit can be used twice before it is Exhausted.
+* Reduce the difficulty of an AID check made _to treat an injury_ by 1 step, then Exhaust First Aid Kit.
 
 ### Headphones
 _These large, foamy, deluxe, bass-forward noise-cancelling headphones are exactly what you need to drown out Paradise Lua._
 
-* After succeeding at a FINANCIAL AID check (empathy, perception, or danger sense), but before finding out the results,
+* After succeeding at a FINAID check (empathy, perception, or danger sense), but before finding out the results,
     you may instead fail the check.
 * If you do:
-   * Take the top card of your deck and place it face-down on Headphones.
+   * Take the card that you succeeded the check with, and place it face-down on Headphones.
    * Headphones can hold up to 3 cards.
 * At the start of combat:
    * Reveal all cards on Headphones and add them to your hand.
 * Headphones can also be used to make a loud place quiet (perhaps allowing for a more restful sleep).
-
-### Lockpicks
-_This kit contains bandages, antiseptic, and other supplies for treating minor injuries._
-
-* Reduce the difficulty of a FREE BLOCK check made _to open a door_ by 1.
-* Lockpicks can be used twice before they are Exhausted.
 
 ### Morning Start
 _With taurine, ginseng, caffeine, amphetamines, and a little bit of our proprietary Formula X,

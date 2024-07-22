@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<item>
+    <name>EVA Suit</name>
+    <slug>eva-suit</slug>
+    <description>
+* This suit allows you to go outside of Paradise Lua without _immediately dying_.
+* Wearing the EVA Suit _in_ Paradise Lua is surprisingly beneficial in combat situations:
+   * The suit is covered in a thick armored poncho and steel helmet, granting you 3 Shields on every combat turn.
+   * The helmet is airtight, and has its own oxygen supply, rendering you invulnerable to gas and liquid-based attacks.
+* All skill checks except for FINAID made _while wearing the EVA Suit_ are made with Penalty: it's hard to move around in this thing.
+* Putting on the EVA Suit in Combat takes a full round and a successful Medium GYM check.
+    </description>
+    <big>
+    true
+    </big>
+    <flavor>
+It's not the most comfortable thing in the world, but neither is depressurizing your lungs.
+    </flavor>
+    <type>
+        Space
+    </type>
+    <category>
+        Armor
+    </category>
+
+</item>

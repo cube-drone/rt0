@@ -8,6 +8,8 @@
 * You can not use "Clever" skills.
 * If you were already Dull: now, you cannot use any skills at all.
 * This overrides any character traits you might already have (if you were Clever, now you are Dull).
+* A successful Hard AID (First Aid) check can downgrade this to Confusion.
+* This check can be retried.
 * After two nights of rest, downgrade this to Massive, Painful Scar.
 * Take 4 Corruption Points to instantly heal Delerium.
     </description>

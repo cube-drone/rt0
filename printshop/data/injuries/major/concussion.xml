@@ -8,7 +8,8 @@
 * You can not use "Wise" skills.
 * If you were already Foolish: now, you cannot Concentrate at all.
 * This overrides any character traits you might already have (if you were Wise, now you are Foolish).
-* A successful AID (First Aid) check can downgrade this to Dizzy.
+* A successful Hard AID (First Aid) check can downgrade this to Dizzy.
+* This check can be retried.
 * After two nights of rest, downgrade this to Massive, Painful Scar.
 * Take 4 Corruption Points to instantly heal Concussion.
     </description>

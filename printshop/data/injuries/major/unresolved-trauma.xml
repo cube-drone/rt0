@@ -8,7 +8,8 @@
 * You can not use "Charming" skills.
 * This overrides any character traits you might already have (if you were Charming, now you are Strange).
 * If you were already Strange: take one Corruption point at the end of every Combat.
-* A successful FINANCIAL AID (Empathy) check can downgrade this to Stress.
+* A successful Hard FINAID (Empathy) check can downgrade this to Stress.
+* This check can be retried.
 * After two nights of rest, downgrade this to Massive, Painful Scar.
 * Take 4 Corruption Points to instantly heal Unresolved Trauma.
     </description>

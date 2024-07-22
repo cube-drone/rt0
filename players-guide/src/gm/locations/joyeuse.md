@@ -1,16 +1,13 @@
 # Joyeuse Division
 
-This is the "entrance" to Paradise Lua, and the place where players will spend their first few sessions.
+This is the outermost ring, the "entrance" to Paradise Lua, and the place where players will spend their first few sessions.
 
-
-## Map
-
+## Graph
 
 ```mermaid
 graph TD;
     SURFACE["The Surface of the Moon"];
-    AIRLOCK["Airlock & EVA"];
-    DOCKS["The Docks"];
+    AIRLOCK["Docks, Airlock & EVA"];
     CUSTOMS["Executare PortSec"];
     COURT["Rikksverdet Court"];
     PRISON["Holding Cells"];
@@ -27,10 +24,9 @@ graph TD;
 
     SURFACE-->AIRLOCK;
     AIRLOCK-->CUSTOMS;
-    CUSTOMS-->DOCKS;
-    DOCKS-->HUB;
-    DOCKS-->WAREHOUSE;
+    CUSTOMS-->HUB;
     CUSTOMS-->PRISON;
+    CUSTOMS-->WAREHOUSE;
     PRISON-->CEMETARY;
     HUB-->COURT;
     COURT-->PRISON;
@@ -48,6 +44,20 @@ graph TD;
     LABS-->STUDIO;
 ```
 
+### "If Joyeuse is a ring, why isn't the map donut shaped?"
+This is a graph of how to get around Joyeuse Division, not an actual physical map.
+
+(It's useful for determining _how things connect_,
+and extremely easy to modify rapidly,
+which is important to determine way before a finalized map is created:
+which is why it's what we're using while RT:0 is still in a
+ draft format.)
+
+The Seven-Branched Promenade actually wraps around the whole station.
+
+A proper map will be along eventually.
+
+### Locations
 * [Airlock & EVA](./joyeuse/airlock.md) - The Fool
 * [Executare PortSec](./joyeuse/police.md)
 * [The Docks](./joyeuse/docks.md)

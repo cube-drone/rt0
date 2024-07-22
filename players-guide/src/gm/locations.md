@@ -1,5 +1,7 @@
 # Locations
 
+Paradise Lua is described in some detail in [The Moon](./locations/the_moon.md).
+
 Paradise Lua is divided into four Divisions:
 
 * [Joyeuse Division](./locations/joyeuse.md) - The ports, the police, the military-industrial complex - and, of course, The Daybreak Institute.

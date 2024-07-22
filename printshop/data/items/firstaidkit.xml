@@ -4,12 +4,8 @@
     <name>First Aid Kit</name>
     <slug>firstaidkit</slug>
     <description>
-* Reduce the difficulty of an AID check made _to treat an injury_ by 1.
-* The First Aid Kit can be used twice before it is Exhausted.
+* Reduce the difficulty of an AID check made _to treat an injury_ by 1 step, then Exhaust First Aid Kit.
     </description>
-    <uses>
-        2
-    </uses>
     <flavor>
         This kit contains bandages, antiseptic, sterile gauze, scissors, and other supplies for treating minor injuries.
     </flavor>

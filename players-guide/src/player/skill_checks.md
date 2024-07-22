@@ -10,10 +10,10 @@ Skills are on the right side of the Report Card.
 
 A player must choose 1 Skill:
 
-* FINANCIAL AID - Empathy, Perception & Danger Sense (_Fast / Lucky_)
+* FINAID - Empathy, Perception & Danger Sense (_Fast / Lucky_)
 * DRAMA - Deception, Persuasion & Performance (_Charming / Fast_)
 * SCI - Computers, Chemistry, Biology, Physics & Math (_Clever / Charming_)
-* FREE BLOCK - Stealth, Breaking & Entering (_Clever / Fast_)
+* FREE - Stealth, Breaking & Entering (_Clever / Fast_)
 * GYM - Movement, Sport & Dance (_Strong / Fast_)
 * AID - First Aid, Exploration & Survival (_Wise / Charming_)
 * SHOP - Mechanical, Constructive, & Culinary (_Wise / Strong_)
@@ -55,7 +55,7 @@ What is the task the player is hoping to perform, and under which skill does it 
 
 Here are some examples of tasks that might fit under each category:
 
-#### FINANCIAL AID - Empathy, Perception & Danger Sense
+#### FINAID - Empathy, Perception & Danger Sense
 * Determining if someone is lying to you.
 * Searching a room for traps.
 * Noticing something bad about to happen to you.
@@ -76,7 +76,7 @@ Here are some examples of tasks that might fit under each category:
 * Picking out the drugs least likely to harm you while robbing a pharmacy.
 * Guessing valuable information about non-human Adversaries.
 
-#### FREE BLOCK - Stealth, Breaking & Entering
+#### FREE - Stealth, Breaking & Entering
 * Picking a lock.
 * Doing things without drawing attention or while remaining hidden.
 * Knowing stuff about security systems.
@@ -229,6 +229,17 @@ climbing a wall with a [Splinted Leg](./injuries.md), they get a "Penalty" on th
 they draw two cards and use whichever card the GM decides is the worse of the two.
 
 Bonus and Penalty cancel one another out, and do not stack.
+
+### No Retries
+Unless otherwise specified, Skill Checks for a specific _thing_ cannot be made more than once per Day.
+If you fail a skill check, it stays failed. Try to unlock a door and fail at it? You can't go back and
+try again (until a Day has passed).
+
+On top of that, a Skill Check can only be attempted by _one_ player. Another player can help (see: One Player Helps Another, below),
+but only one player gets to _make_ the skill check, and once the card is drawn, the results are final.
+
+However, if the player is in a low-stakes situation where they can take as many tries as they want,
+the GM can make the check _itself_ easier.
 
 ### Interpreting Success and Failure
 

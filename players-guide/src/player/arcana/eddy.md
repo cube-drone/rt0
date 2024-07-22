@@ -54,10 +54,10 @@ Each Eddy can choose only one Skill. That Skill is related to the automated task
 
 For example:
 
-* An Eddy with FINANCIAL AID might be responsible for watching a perimeter for security.
+* An Eddy with FINAID might be responsible for watching a perimeter for security.
 * An Eddy with DRAMA might be responsible for acting as an automated cashier in a convenience store.
 * An Eddy with SCI might be a laboratory assistant.
-* An Eddy with FREE BLOCK might be a door lubricator/maintainer.
+* An Eddy with FREE might be a door lubricator/maintainer.
 * An Eddy with GYM might be a duct cleaner.
 * An Eddy with AID might be an auto-nurse.
 * An Eddy with SHOP might be a constructor or fabricator.

@@ -6,7 +6,8 @@
     <description>
 * While you are in combat, you lose 3HP at the beginning of your turn.
 * Outside of combat, you can't use Skills except for AID.
-* A successful AID (First Aid) check can downgrade this to Bandaged Wound.
+* A successful Hard AID (First Aid) check can downgrade this to Bandaged Wound.
+* This check can be retried.
 * After one night of rest, the player dies.
 * That's right, don't go to sleep while you're bleeding out. You need medical attention.
 * That's _free medical advice_.

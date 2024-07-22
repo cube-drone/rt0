@@ -7,6 +7,7 @@
 * Draw an extra card on every combat turn.
 * If this card is a Major Arcana, take 1HP of damage and discard the card.
 * If this card is a 3 of Swords, take a Critical Injury.
+* At the end of the Day, discard Heart Palpitations.
 * Take 4 Corruption Points to instantly heal Heart Palpitations.
     </description>
     <flavor>

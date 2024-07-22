@@ -5,7 +5,7 @@
     <slug>broken-leg</slug>
     <description>
 * While you have a Broken Leg, you are **Slow**.
-* You can not use "Fast" skills.
+* You can not use Fast skills.
 * If you were already Slow: now, you cannot gain shields, at all.
 * This overrides any character traits you might already have (if you were Fast, now you are Slow).
 * A successful AID (First Aid) check can downgrade this to a Splinted Leg.

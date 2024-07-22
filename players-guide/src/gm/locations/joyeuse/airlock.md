@@ -1,4 +1,4 @@
-# Airlock & EVA
+# Airlock, Docks, & Two Smoking EVAs
 
 This is the first thing that you encounter on Paradise Lua. The entrance.
 
@@ -6,31 +6,64 @@ On their first time through Airlock & EVA, players are quickly ushered out and t
 explore it as much as they would like.
 
 Even if they do return, the airlock has security safeguards out the actual wazoo: PortSec won't let them back out
-to the Airlock, and even if they do, there are systems in place to keep random citizens from walking out
+to the Airlock, and even if they do, there are many systems in place to keep random citizens from walking out
 into space.
 
 ```mermaid
 graph LR;
-    AIRLOCK["Airlock"];
-    PASSENGER["Passenger Port"];
+    AIRLOCK["Humanscale Airlock"];
+    LAUNCHPAD["Output Launchpad"]
+    LANDING["Input Arrival Field"]
+    PASSENGER["Passenger Concourse"];
     CARGO["Cargo Port"];
-    GARAGE["EVA Garage"];
+    GARAGE["EVA Garage & Largelocks"];
     HUB{"Hangar"};
     EXIT>"Executare PortSec"]
 
     AIRLOCK-->HUB;
+    LAUNCHPAD-->PASSENGER;
+    LANDING-->PASSENGER
+    LAUNCHPAD-->CARGO;
+    LANDING-->CARGO;
     PASSENGER-->HUB;
     CARGO-->HUB;
     GARAGE-->HUB;
     HUB-->EXIT;
 ```
 
-## Passenger Port
+
+## Passenger Concourse
+Passengers and Cargo are both delivered to the station in nearly identical Containers.
+The treatment of different categories of Container varies wildly, however.
+Human Containers are treated with the second-highest level of care: collected from the
+Input Arrival Field and delivered gently
+to the Passenger Port where, after a pressure equalization step, passengers can
+step out on to the concourse.
 
 ## Cargo Port
+Many other containers flow back and forth through the station.
 
-## Airlock
-This is just a door that leads out, on to the Moon.
+Things are at their busiest
+after a fresh barge has landed, when containers are picked off of the
+Input Arrival Field by EVA Cargo Trucks in order of their perishability, with humans obviously _first_.
+
+
+
+## Output Launchpad
+The Moon's escape velocity is a mere 8500 km/h, child's play compared to the 40,000 km/h required on Earth.
+
+Getting cargo to that velocity is accomplished with a large magnetic railgun mounted next to Paradise Lua.
+
+## Input Arrival Field
+Large Container Barges land on the Input Arrival Field.
+
+Before the Large Container Barges land, they shoot their Mass Driver at the Input Arrival Field,
+offsetting large amounts of their incoming momentum to provide a softer landing. The Mass Driver hits
+with an incredible amount of force - it would be incredibly loud if there was an atmosphere
+ to carry the shockwave.
+
+## Humanscale Airlock
+This is just a door that leads out, to the Moon.
 
 The Airlock always has a security detail, and the outer and inner doors require an Airlock Keycard to open,
 or an Unlikely SCI check to hack the Keycard panel.
@@ -51,10 +84,12 @@ This depressurization step can be overridden with a Hard SCI check, although it'
 except in an emergency. Check [The Moon: Going Outside Will Kill You](../../the_moon.md#going-outside-will-kill-you) for information
 about what happens. (Hint: it bad.)
 
-Sitting just outside of the Airlock are a handful of EVA Suits, in locked closets.
-Unlocking the closets requires an Airlock Keycard.
+Sitting just outside of the Airlock are rows and rows of fully-charged EVA Suits, each in an individual locked closet.
+Unlocking the closets requires an Airlock Keycard or a Hard SCI check.
 
-## EVA Garage
+## EVA Garage & Largelocks
+Connected to the Hangar are the
+
 
 ## Hangar
 An enormous, busy hangar with uniformed staff and cargo robots scuttling around.
