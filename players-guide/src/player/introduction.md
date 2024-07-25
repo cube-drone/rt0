@@ -12,14 +12,18 @@ It might also work with other player counts!
 
 ## Story
 
-Paradise Lua is the first ever moon colony. Fully privately funded and operating outside of the
+Paradise Lua is the first ever moon colony.
+
+Fully privately funded and operating outside of the
 boundaries of any government entity,  it was marketed as both a luxurious
 land-ownership opportunity for the hyper rich and a brave new frontier for the common man.
-After it's founding more than 15 years ago, however, news and footage from Paradise Lua has trailed off.
-Nobody seems interested in space anymore. What happened up there?
+
+Founded in 1986, more than 50 years ago, news and footage from Paradise Lua have largely trailed off.
+Nobody seems interested in space anymore. What's been happening up there?
 
 Then, Paradise Lua quietly announced their ACCELER8 program. 8 exceptional teenagers from Earth would
 be invited to a prestigious private academy on the moon: The Daybreak Institute.
+
 It made the news, and thousands of teenagers applied, but only 8 were chosen.
 
 1 died in transit.

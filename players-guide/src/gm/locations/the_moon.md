@@ -21,6 +21,10 @@ Other parts are just pressurized buildings.
 
 ![](/images/paradise-lua-slice-diagram.png)
 
+## Area
+
+The Circumference of Paradise Lua is about 40km long, the Radius about 6km.
+
 ## Paradise Lua's Rings
 
 Paradise Lua is divided into four rings:
@@ -88,6 +92,11 @@ Nope, mooned humans just die for the regular reason that humans without access t
 * Temperature is the next problem. Good news/bad news: even though the temperature is _very dangerous_, there's not a lot of medium to do stuff with the players' heat: the moon's exosphere has basically no pressure, so even though the temperatures are wild (-120°C, +120°C), the players' temperature will shift _relatively slowly_. However, in the sunlight,
   players will slowly roast (nowhere for solar heat to go), and outside of it, players will slowly freeze. After 6 hours of uninterrupted light or dark, give players a Critical Injury ("thermal problems").
 
+### Living in a Material World
+The lunar regolith is rich in iron deposits, and one of Paradise Lua's earliest operational industries was a steel foundry. If you're not sure
+what an object on the moon is made out of: if it came from Earth, it's cheap, lightweight plastic. If it came from the Moon: it's probably
+made out of steel, painted with something to help it resist corrosion.
+
 ### EVA Suits
 
 If you go outside in an EVA Suit, most of the "Going Outside Will Kill You" problems are... handled.
@@ -119,29 +128,32 @@ Slim, hyper-absorbent, disposable adult diapers are provided alongside EVA suits
 
 ### EVA Vehicles
 
-EVA Suits can also be paired up with EVA Vehicles, which can resupply some of the suit's supply with a larger, rolling tank. Vehicle-paired EVA adventures can go much longer than EVA Suit ones, with Moontrikes extending the trip's viability to 8 hours, and Moontrucks to 24 hours (past which "sleep, bathroom, and hunger issues" start to get so pressing that while longer trips might be possible, they're unwise.) Trips longer than that require a fully pressurized, self-contained rolling Moontanker (of which only one has ever been built) which essentially provides a fully pressurized micro-moonbase on the go, with its own airlocks and EVA Suits.
+EVA Suits can also be paired up with EVA Vehicles, which can resupply some of the suit's supply with a larger, rolling tank. Vehicle-paired EVA adventures can go much longer than EVA Suit ones, with Moontrikes extending the trip's viability to 8 hours, and Moonvans to 24 hours (past which "sleep, bathroom, and hunger issues" start to get so pressing that while longer trips might be possible, they're unwise.) Trips longer than that require a fully pressurized, self-contained rolling Moontanker (of which only one has ever been built) which essentially provides a fully pressurized micro-moonbase on the go, with its own airlocks and EVA Suits.
 
 ## Lifecycles of the Rich and Famous
 
-About 500 people are required to maintain a genetically diverse breeding pool.
+[About 500 people](https://en.wikipedia.org/wiki/Minimum_viable_population) are required to maintain a genetically diverse breeding pool.
 
-Paradise Lua keeps its population at around 1000 people, generally.
+Paradise Lua keeps its population at around 1500 people, generally.
 
 A Generation is 20 years long, and Paradise Lua is currently on its third Generation.
 
-Lots of people die, some people never marry - every generation, of the 1000 people,
-only about 50-60% are expected to end up in the breeding pool.
+In order for a population to remain stable, enough people have to have children to
+offset the people who _don't_ - because they're incapable, dead, or simply not interested.
 
-So, the ~250 couples are expected - nay, _required_ - to produce about 4 children each, on average.
+In developed countries, this rate is about 2.1 children per woman. On Paradise Lua,
+this number is quite a bit higher, because the _death rate_ is quite a bit higher:
+Paradise Lua's government targets **4** children per woman. That is a lot.
 
-This provides about 50 children per year.
+There are about 75 children per year.
 
 In general, Paradise Lua would rather have too many new citizens rather than _not enough_, so
-there are generous incentives for citizens to _be fruitful and multiply_. If the population
-gets too large, Paradise Lua artificially inflates the death count in a handful of ways -
-dialing back health care, relaxing safety standards in the HIZ, (REDACTED),
-there are lots of unethical ways to organically increase the death rate to
-keep the population from growing too quickly.
+there are generous incentives for citizens to _be fruitful and multiply_.
 
-Most of Paradise Lua's inhabitants are not terribly aware of the few times that death rates had
-to surge. Press coverage was minimal and the history was quickly forgotten.
+The death rate on Paradise Lua actually isn't high enough for that prodigious procreative pace
+to be fully necessary: but the idea is, it's easier to manage the death rate than it is to
+manage the birth rate, so Paradise Lua artificially inflates the death count in a handful of ways -
+dialing back health care, relaxing safety standards in the [HIZ](./joyeuse/industrial.md),
+keeping deaths inflated and the population of the base stable.
+
+The Mortuactuaries who manage these numbers are instructed to keep their work _extremely secret_.

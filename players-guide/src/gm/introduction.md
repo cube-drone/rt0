@@ -2,8 +2,13 @@
 
 so you're the gm, huh?
 
+## Getting Started
 
-## Exposition
+* Familiarize yourself with the setting and lore, through these documents.
+* Customize the setting and lore, using the Customization Toolkit.
+* You're going to have the players go through Character Creation, up-front.
+
+## Exposition Dump
 
 Some people think that it's more important for a game's setting to be evocative and imaginative
 and easy to turn into a fun game than it is for that game's lore to be incredibly detailed.
@@ -19,9 +24,9 @@ Are there city sewer inspectors? Where is the cut-off in sewer maintenance respo
 
 The former comptroller of the sewer department's name is Rendall Jjenson. He retired 6 years ago,
 to a spartan apartment in Krater Valley's retirement block. He has deep concerns about the new
-comptroller's comparatively loose position on defecit spending, but he's also worried about
-the aging H2O reclamation units and thinks that running up some debt could get that resolved.
-Anyways, it's not his problem any more. He has a mug that says "not my circus, not my monkeys" on it,
+comptroller's comparatively loose position on deficit spending, but he's also worried about
+the aging H<sub>2</sub>O reclamation units and thinks that running up some debt could get that resolved.
+Anyways, it's not his problem any more. He has a steel mug that says "not my circus, not my monkeys" on it,
 and he plays a lot of solitaire with a real deck of cards that his father brought from Earth.
 
 There _are_ regular inspections. The cut-off in sewer maintenance responsibility between the property
@@ -38,12 +43,15 @@ These correspond with each of the 22 Major Arcana, as well as The Terror (Swords
  Legion (Cups), and The Bound (Wands).
 
 Earth's atmosphere and magnetosphere offers protection from cosmic radiation and all manner of
-spaceborne harms, but it's Earth's billions of people who form a psychisphere, protecting humans from
+spaceborne harms, but it's Earth's billions of inhaitants who form a psychisphere, protecting humans from
 psychic incursions: the only way for the True Horrors to gain access to the psychic feast that is Earth
 is by first establishing a stronghold on the Moon.
 
-True Horrors offer boons and benefits to the human hosts they bind to, but gradually take more and more
+True Horrors offer boons and benefits to the human hosts they bind to: strength, agility, seemingly magical
+powers -  but gradually take more and more
 control of the host, until the host is nothing more than a meat-puppet for a distant True Horror.
+Once the True Horror has truly taken over, they can turn the body inside out and pop out a monstrous
+servant.
 
 Some of the True Horrors are _Infectuous_. They spread their power by creating circumstances that amplify their
 effects on people's minds and claiming more and more victims. Currently, Legion is the _most_ infectious

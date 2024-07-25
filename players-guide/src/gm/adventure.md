@@ -16,7 +16,7 @@ If the players ask how this works, the answer is "magic".
 * The Players are introduced to Paradise Lua by their digital guide, X0XI ("Shoshi").
 * Their dormitory turns out to be uninhabitable: they will need to find a place to sleep, and food.
 * The players are allowed to explore, but must return by 1900 for The Presentation.
-* They are only allowed to roam in the Yellow Division, for now.
+* They are only allowed to roam in the Joyeuse Division, for now.
 * The players are summoned for The Presentation.
 * The lost teenager forms a Crimson Starlight Angel and the players have to fight them.
 * They win: this produces a Mystical MacGuffin.

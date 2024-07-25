@@ -4,51 +4,51 @@ If the Moon had Suburbs, this would be them.
 
 * Home Is Where the Heart Family Practice (two, queen of cups)
 * Candlelight Tryst (ace)
-* The Chalice Bar/Arcade/Casino (three, four, five of cups)
-* ADVERTISING! Office Block (seven)
-* Kindergarten Park (six of cups)
-* Apartment Block (nine of cups)
-* Nuclear Family Complex (ten of cups)
+* The Chalice (three, four, five of cups)
+* ADVERTISING! Complex (seven)
+* EDUK8 (six of cups)
+* Habcube (nine of cups)
+* Nuclear Family (ten of cups)
 * Micromarkets (supermarkets but smol)
 * Overflow Slums (eight of cups)
 * Executare Outpost
 
-## Ace of Cups - Emotions
-Out of all of the cups, this is the cuppiest cup.
-Overflowing with emotion. There's so much.
-Maybe it's a good emotion, like love.
-Maybe it's a bad emotion, like love for cheese.
+## Candlelight Tryst
+In order to help keep the fertility numbers of the station juiced, Candlelight Tryst is a
+subsidised singles platform.
 
-## Two of Cups - Partners
-I can't help but think of doctors when I see a coiled snake like that.
-These two have a solid rapport.
+* Planned events and activities that shuffle people together at high speeds.
+* Short term hotel pods that are _thoroughly_ cleaned.
 
-## Three of Cups - Shots shots shots shots
-Getting crunked with your friends!
+## Home is Where The Heart Family Practice
+Serious maladies are treated at Misericorde,
+but family planning and pediatrics are provided closer to home at Home is Where The Heart.
+Doctors A and B work together to (something something)
 
-## Four of Cups - Careful
-"No, bad idea cloud, I would NOT like a full glass of high-proof alcohol."
+## The Chalice
+Bar! Arcade! Casino!
 
-## Five of Cups - Regret
-They made the mistake of listening to bad idea cloud, and things got dark.
+## EDUK8
+the education zone
+children learn how to work the various jobs of Paradise Lua, directly from the companies
+responsible!
 
-## Six of Cups - Nostalgia
-Innocence, joy, and remembering those times fondly.
+## ADVERTISING! Complex
+it's a mall? it's a mall!
 
-## Seven of Cups - Advertising
-Whoa, look at all that cool stuff I could own!
+## Overflow Slums
+At any given time there are a few more people than homes, and they accumulate in the
+Overflow Slums, where they are treated awfully.
 
-## Eight of Cups - Abandonment
-The credit card statement from all of that cool stuff has arrived,
-the joy was short-lived,
-and now it's time to bail, run off into the mountains, and hope they never find you.
+## Habcube
+For singles and the vast lower-middle class, tiny apartments with mostly shared facilities.
 
-## Nine of Cups - Contentment
-I don't need anything. I'm content with what I've got.
+## Nuclear Family
+These larger condominiums are meant to approximate American suburbs,
+and accomodate larger families.
 
-## Ten of Cups - The Happy Ending
-This is your picture perfect happy ending. A family, kids, a home, a _rainbow_.
-It's perfect.
+## Geriatridome
+is where they pack the olds
 
 ## Page of Cups - The Conman
 Me and my fish know what's up. This slick double-dealer always has an angle.
