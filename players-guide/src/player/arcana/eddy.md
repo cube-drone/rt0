@@ -13,6 +13,18 @@ The GM is encouraged to print off a few Eddy character sheets and tuck them away
 
 Eddy is a friendly robot who bumbles along and helps out the players.
 
+Eddies are little semi-autonomous, remote-controlled robots that pepper the station,
+doing their best to help wherever they can.
+
+Eddies can not operate outside of the station: their bodies are remote controlled and
+actually fairly disposable - which is good, because the station is dangerous and Eddies
+are not terribly smart.
+
+Their initial digital imprint was built on an architecture that attempted to model the brain
+of a 12-year old Golden Retriever named "Sunny", and it was remarkably successful: as a result,
+the Eddies are unbelievably friendly, helpful, and self-sacrificing. They are also not
+_that much_ smarter than a regular Golden Retriever with opposable thumbs and the ability to speak.
+
 Eddy is a nickname: Eddy's full name is Ed25519, but they go by "Eddy" for short.
 
 Eddies are sentient and cheerful. Each Eddy has a single primary function that they perform around

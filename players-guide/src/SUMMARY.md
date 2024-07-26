@@ -59,7 +59,10 @@
 # GM's Guide
 - [Introduction](./gm/introduction.md)
 - [An Introductory Adventure](./gm/adventure.md)
-- [Factions](./gm/factions.md)
+- [NPCs](./gm/npcs.md)
+    - [Factions](./gm/factions.md)
+    - [The Hanged Man - X0XI](./gm/npc/xoxi.md)
+    - [The Sun - Eddies](./gm/npc/eddy.md)
 - [The Moon](./gm/locations/the_moon.md)
   - [Joyeuse Division](./gm/locations/joyeuse.md)
     - [Airlock, Docks & EVA](./gm/locations/joyeuse/airlock.md)

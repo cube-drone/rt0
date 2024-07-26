@@ -4,7 +4,8 @@ These are just words that feel good to say
 
 * Division
 * Syndicate
-* Doctor Jazz
+* Doctor
+* Jazz
 * Sequence
 * Throw a Number in There
 * Eyes
@@ -19,4 +20,4 @@ These are just words that feel good to say
 * Infinite
 * Terror
 * Cosmic
-*
+* Killer

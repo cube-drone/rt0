@@ -1,6 +1,10 @@
 # Introduction
 
-so you're the gm, huh?
+So you're the gm, huh?
+
+Everything past this point constitutes _spoilers_: if you are a player, beware!
+
+Or read the spoilers. I'm not your dad!
 
 ## Getting Started
 
