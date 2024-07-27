@@ -19,6 +19,8 @@ surprising intelligence has made it more powerful and influential over time. It 
 no official power, and yet by simply being a trusted adviser with read/write access to
 nearly all data in Paradise Lua, it commands tremendous power.
 
+If you draw The Hanged Man in relation to a random event on the base, X0XI intervenes in some way.
+
 ## The Hanged Man
 X0XI's Major Arcana is The Hanged Man, herald of Judgement and The World.
 

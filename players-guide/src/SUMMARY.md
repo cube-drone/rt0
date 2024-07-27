@@ -58,9 +58,10 @@
 ----------
 # GM's Guide
 - [Introduction](./gm/introduction.md)
-- [An Introductory Adventure](./gm/adventure.md)
+- [The Adventure](./gm/adventure.md)
 - [NPCs](./gm/npcs.md)
     - [Factions](./gm/factions.md)
+    - [The Hermit - Herman Ito](./gm/npc/hermit.md)
     - [The Hanged Man - X0XI](./gm/npc/xoxi.md)
     - [The Sun - Eddies](./gm/npc/eddy.md)
 - [The Moon](./gm/locations/the_moon.md)

@@ -1,4 +1,4 @@
-# The Sun - Eddies
+# Eddies
 
 [Eddies](../../player/arcana/eddy.md) are little semi-autonomous, remote-controlled robots that pepper the station,
 doing their best to help wherever they can.
@@ -15,6 +15,8 @@ _that much_ smarter than a regular Golden Retriever with opposable thumbs and th
 The Eddy network has been infiltrated by The Sun, who seeks, with varying levels of success,
  to corrupt the borderline uncorruptable Eddies with its toxic positivity and dubious helpfulness.
 
+If you draw a Sun in relation to an random event on the base, a bunch of Eddies show up. To "help".
+
 ## The Sun
 
 The Sun is the closest True Horror to humanity. It literally lives in Sol, the sun, and it's fascinated with humans.
@@ -23,7 +25,7 @@ It _loves_ humans. It wants to be best friends with humans. It wants to hold hum
 The Sun is constantly bombarding The Earth and The Moon with _good vibes_ and _deadly radiation_.
 
 The problem is, The Sun's attention is ... a lot. It hugs its toys to death, grieves very briefly, and
-then moves on, like a child. Many cults erupted on Earth to worship The Sun, and the ones who successfully
+then moves on. Many cults erupted on Earth to worship The Sun, and the ones who successfully
 made contact mostly died out, in ways that tended towards ironic wish-fulfillment from a friendly but
 clueless god. One was crushed to death by a too-generous harvest.
 Another had a heart attack after having too many sexual encounters in one evening.
