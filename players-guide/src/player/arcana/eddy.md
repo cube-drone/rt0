@@ -1,5 +1,7 @@
 # EDD - Eddy
 
+![eddy](../../images/eddy.png)
+
 Eddy is not so much a chooseable, playable Major Arcana as they are a temporary, lightweight character, intended
 for players who maybe only intend to stay for a single session, for players who've died and
 would like to participate in the rest of the session as a temporary character,
