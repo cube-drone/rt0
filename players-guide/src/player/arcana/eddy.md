@@ -90,7 +90,7 @@ Eddies are nonthreatening and Adversaries won't target them unless no other targ
 
 Eddies have 20 Hit Points, like players do.
 
-In every combat phase, Eddies go before players, draw a 5 card hand, and can play _only two cards out of the five_, discarding the other three.
+In every combat phase, Eddies go before players, draw a 3 card hand, and can play _only two cards out of the three_, discarding the other card.
 
 ### Any Card:
 * Move 1 zone.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Sword/Wand</name>
+    <slug>eddy-sword</slug>
+    <description>
+* Deal 2 melee damage.
+</description>
+</ability>

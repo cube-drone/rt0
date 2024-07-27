@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>The Sun</name>
+    <slug>eddy-sun</slug>
+    <description>
+* Move to any position on the map.
+* Deal 2 melee damage.
+* Give a player in the same zone 2 shields.
+* Flip any face-down card on the table, including the top card of any player's deck. Everyone can play with that card visible.
+* Choose a player: they may draw an extra card.
+* Choose an Adversary in the same Zone: they cannot move this turn.
+</description>
+</ability>

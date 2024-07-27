@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>The Hanged Man</name>
+    <slug>eddy-hanged</slug>
+    <description>
+* Choose an Adversary in the same Zone. They cannot Move this turn.
+</description>
+</ability>

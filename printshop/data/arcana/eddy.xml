@@ -12,6 +12,9 @@ Eddies can not operate outside of the station: their bodies are remote controlle
 actually fairly disposable - which is good, because the station is dangerous and Eddies
 are not terribly smart.
     </description>
+    <special>
+* Draw 3 cards. Play 2 cards.
+    </special>
     <type>
         Eddy
     </type>

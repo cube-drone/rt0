@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>The Tower</name>
+    <slug>eddy-tower</slug>
+    <description>
+* If The Tower is drawn, The Tower must be played.
+* Explode, dealing 5 Magic Ranged Damage to everyone, Friend or Foe, in the same Zone.
+* Take 20 hit points of damage.
+</description>
+</ability>

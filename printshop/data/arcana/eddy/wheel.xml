@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Wheel of Fortune</name>
+    <slug>eddy-wheel</slug>
+    <description>
+* Draw and discard a card.
+   * If it was a Major Arcana, trigger The Tower.
+   * If it was any other card, trigger The Sun.
+</description>
+</ability>

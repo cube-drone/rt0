@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Any Major Arcana</name>
+    <slug>eddy-major</slug>
+    <description>
+* Deal 1 melee damage to an Adversary in the same Zone.
+* Give another player in the same Zone 1 Shield.
+</description>
+</ability>

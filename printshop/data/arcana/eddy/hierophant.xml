@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>The Hierophant</name>
+    <slug>eddy-hierophant</slug>
+    <description>
+* Choose a player. They may draw an extra card.
+</description>
+</ability>

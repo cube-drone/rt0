@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>The Empress/The Emperor</name>
+    <slug>eddy-empress</slug>
+    <description>
+* Restore 2 Hit Points to a player in the same Zone.
+</description>
+</ability>

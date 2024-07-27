@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>Cup/Pentacles</name>
+    <slug>eddy-cup</slug>
+    <description>
+* Gain 2 shields OR
+* Give another player in the same Zone 2 shields.
+</description>
+</ability>

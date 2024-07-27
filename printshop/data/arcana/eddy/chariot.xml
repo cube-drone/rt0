@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>The Chariot</name>
+    <slug>eddy-chariot</slug>
+    <description>
+* Move to any position on the map.
+</description>
+</ability>

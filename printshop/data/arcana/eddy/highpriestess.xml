@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ability>
+    <name>The High Priestess</name>
+    <slug>eddy-high</slug>
+    <description>
+* Flip any face-down card on the table face-up.
+</description>
+</ability>
