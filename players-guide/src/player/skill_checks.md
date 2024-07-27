@@ -11,7 +11,7 @@ Skills are on the right side of the Report Card.
 A player must choose 1 Skill:
 
 * FINAID - Empathy, Perception & Danger Sense (_Fast / Lucky_)
-* DRAMA - Deception, Persuasion & Performance (_Charming / Fast_)
+* ART - Performance, Disguise & Forgery (_Charming / Fast_)
 * SCI - Computers, Chemistry, Biology, Physics & Math (_Clever / Charming_)
 * FREE - Stealth, Breaking & Entering (_Clever / Fast_)
 * GYM - Movement, Sport & Dance (_Strong / Fast_)
@@ -61,9 +61,7 @@ Here are some examples of tasks that might fit under each category:
 * Noticing something bad about to happen to you.
 * Helping someone work through an emotional issue.
 
-#### DRAMA - Deception, Persuasion & Performance
-* Convincingly lying to someone else.
-* Talking.
+#### ART - Performance, Disguise & Forgery
 * Disguising yourself as someone else.
 * Performing in a musical.
 * Forging a note.
@@ -107,6 +105,9 @@ Here are some examples of tasks that might fit under each category:
 #### MISC - Everything Else
 * It doesn't fit into the above categories
 * ???
+
+### Wait, there's no "deception" or "communication" skill! How do I talk to people?
+You have to actually talk to them.
 
 ### Determining the Difficulty of a Skill Check
 

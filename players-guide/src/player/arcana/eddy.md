@@ -110,10 +110,18 @@ In every combat phase, Eddies go before players, draw a 5 card hand, and can pla
 * Take 20 Hit Points of damage.
 
 ### The Fool:
-* Choose any Eddy ability, use that ability.
+* Choose any Eddy ability except for The Sun, use that ability.
+
+### The Sun:
+* Move to any position on the map.
+* Deal 2 melee damage.
+* Give a player in the same zone 2 shields.
+* Flip any face-down card on the table, including the top card of any player's deck. Everyone can play with that card visible.
+* Choose a player: they may draw an extra card.
+* Choose an Adversary in the same Zone: they cannot move this turn.
 
 ### High Priestess:
-* Reveal an Adversary's Intent, if it's hidden.
+* Flip any face-down card on the table, including the top card of any player's deck. Everyone can play with that card visible.
 
 ### The Empress / The Emperor:
 * Restore 2 Hit Points to a player in the same zone.

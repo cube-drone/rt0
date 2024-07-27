@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<arcana>
+    <name>Eddy</name>
+    <slug>eddy</slug>
+    <colorImage>/images/eddy.png</colorImage>
+    <description>
+Eddies are little semi-autonomous, remote-controlled robots that pepper the station,
+doing their best to help wherever they can.
+
+Eddies can not operate outside of the station: their bodies are remote controlled and
+actually fairly disposable - which is good, because the station is dangerous and Eddies
+are not terribly smart.
+    </description>
+    <type>
+        Eddy
+    </type>
+    <category>
+        Eddy
+    </category>
+</arcana>
