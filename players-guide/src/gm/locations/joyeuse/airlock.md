@@ -214,6 +214,10 @@ and players might be able to make off with this one without a fight, even: but G
 
 There are about 30 Dockworkers, total.
 
+## Act 2 Changes
+## Act 3 Changes
+## Act 4 Changes
+
 
 ## 78 Airlock Ideas
 
@@ -242,15 +246,20 @@ There are about 30 Dockworkers, total.
    * All hands are now on deck to try and get the Largelock repaired: the Largelocks are a flurry of activity.
 * **5 of Swords**: A team of PortSec Executare are on patrol, led by Sgt. Starman, a squat, beefy man with his head shaved.
    * They're bristling for a fight: they might pick a fight with the Dockworkers, but they'd even more like to pick a fight with the players.
+   * If they win, they're likely to arrest whoever they've just beaten for picking a fight with an Executare.
 * **6 of Swords**: The Maglev is not working properly: there's a red light blinking above the maglev tunnel, and cargo is piling up in the hanger.
    * This happens to the Dockworkers pretty regularly at this point and they're perfectly happy to sit on their hands and let cargo pile up,
    * Except for Junior Supervisor Speff Brinkley, who is convinced (he's probably not incorrect) that if he doesn't get this resolved quickly,
      he will be the one who is blamed/fired over it.
    * The Eggheads are dragging their feet about sending someone to manage getting the Maglev reactivated.
 * **7 of Swords**: The Dockworkers are organizing a raffle draw. Buy a card for 20 credits and, if it's drawn, win the pot.
-   * If players win, they might get jumped by some angry Dockworkers.
+   * If players win, they _might_ get jumped by some angry Dockworkers.
 * **8 of Swords**: (prison) A team of PortSec Executare are carting off Dockworker Bagels for a crime that Bagels didn't commit.
-   * One of the Executare committed the crime and has pinned it on Dockworker Bagels.
+   * While being dragged away, Dockworker Bagels shouts "I've been framed! Find the recording!"
+   * Dockworker Bagels is being arrested for the murder of Davis Garfield.
+   * The recording is being stored in the records room of [Rikksvardet Court](./court.md).
+   * There are two recordings there, side by side, one marked "original" and one marked "edited"
+     * The "original" shows Officer Cream committing the crime, the "edited" shows Bagels doing it.
 * **9 of Swords**: (anxiety / space) there's something outside and it's terrifying
 * **10 of Swords**: (trauma)
 * **Page of Swords**: (exploration)

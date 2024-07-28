@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<arcana>
+    <name>Laborer</name>
+    <slug>laborer</slug>
+    <colorImage></colorImage>
+    <hp>25</hp>
+    <description>
+Dockworkers, miners, and other tradesworkers are the heart of the station.
+They're not well armed, but they're tough, brave, and often carrying some kind of
+heavy equipment that can be used as a weapon in a pinch.
+    </description>
+    <intents>
+* Sword: Move 1 towards the nearest player, 8 damage melee attack.
+* Wand: Move 1 towards the nearest player, 4 damage melee attack, +1 for every Laborer in the same Zone.
+* Cup: Provide 2 shields to all Laborers in the same Zone.
+* Pentacle: Catch breath. Heal 1 HP.
+* Major Arcana:
+    </intents>
+    <type>
+        Laborer
+    </type>
+    <difficulty>
+        Easy
+    </difficulty>
+</arcana>

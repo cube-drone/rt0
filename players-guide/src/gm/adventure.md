@@ -27,6 +27,10 @@ In this act, players are introduced to Paradise Lua and allowed to roam Joyeuse 
 * Maybe "The First Combat" and "The Dorms are Unsuitable for Human Habitation" are the same event?
 
 #### Quest
+* True Horrors are attempting to infiltrate Paradise Lua
+* Players must find citizens grappling with True Horrors and help them to balance their Horror.
+* Temperance, The Hermit, and The Sun are allies?
+
 * The introduction of the Magical MacGuffins: players must do X things to prevent the end of the world as we know it.
 
 #### Act Break
@@ -38,12 +42,27 @@ In this act, players are introduced to Paradise Lua and allowed to roam Joyeuse 
 
 ### Act 3: Florin, Collapse
 In this act, players gain access to the seat of Paradisa Lua's power, Florin,
-just as the government is collapsing in on itself.
+just as the story hits its "darkest before the dawn".
+
+* The Hanged Man reveals themselves and fully corrupts all of the other True Horrors.
+* The Sun gets corrupted by The Hanged Man and the Sun itself _goes dark_, giving
+   Paradise Lua maybe 48 hours on battery before it, too, goes dark.
+* The Hanged Man is destroyed: Judgement is awakened.
+* If The World wakes up, the universe itself will come to an end.
+
 
 ### Act 4: Nadir, Walk Backwards Into Hell, The Surface of the Moon
 The final act.
 
+Players start on the run and hopeless in a Paradise Lua that's much less hospitable
+than even the horrible Paradise Lua from Act 1.
+
+However: any of the hosts that they Saved in Acts 1, 2, and 3, they can shut down
+their connection to their True Horrors, losing all powers but breaking The Hanged Man's
+link to them, weakening Judgement.
+
 
 ## Running A Smaller Version of the Campaign, or A One Shot
+Just run Act 1?
 
 ## How Does This Work?
