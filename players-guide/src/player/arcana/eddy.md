@@ -11,7 +11,7 @@ or for players who exceed the _recommended player count_ for RT: 0.
 
 (_Having too many players can make turns drag on forever, so having a fifth or six player play as an Eddy can hopefully clear things up a bit._)
 
-The GM is encouraged to print off a few Eddy character sheets and tuck them away, for a rainy day.
+The GM is encouraged to print off a few [Eddy character sheets](/generated/printables/eddy.html) and tuck them away, for a rainy day.
 
 Eddy is a friendly robot who bumbles along and helps out the players.
 
@@ -66,6 +66,8 @@ Eddy is not the only "Eddy" - there are dozens of Eddy-class robots who might st
 
 Each Eddy can choose only one Skill. That Skill is related to the automated task they perform around Paradise Lua.
 
+The Eddy can _only_ make checks for that Skill.
+
 For example:
 
 * An Eddy with FINAID might be responsible for watching a perimeter for security.
@@ -94,53 +96,9 @@ Eddies have 20 Hit Points, like players do.
 
 In every combat phase, Eddies go before players, draw a 3 card hand, and can play _only two cards out of the three_, discarding the other card.
 
-### Any Card:
-* Move 1 zone.
+### What Do They Do With Those Cards?
 
-### Sword or Wand:
-* Deal 2 melee damage.
-
-### Cup or Pentacle:
-* Gain 2 shields, OR give another player in the same zone 2 shields.
-
-### Major Arcana:
-* Deal 1 melee damage AND give another player in the same zone 1 shield.
-
-### The Tower:
-* If The Tower is drawn, The Tower must be played.
-* Explode, dealing 5 magic ranged damage to everyone, friend or foe, in the same zone.
-* Take 20 Hit Points of damage.
-
-### The Fool:
-* Choose any Eddy ability except for The Sun, use that ability.
-
-### The Sun:
-* Move to any position on the map.
-* Deal 2 melee damage.
-* Give a player in the same zone 2 shields.
-* Flip any face-down card on the table, including the top card of any player's deck. Everyone can play with that card visible.
-* Choose a player: they may draw an extra card.
-* Choose an Adversary in the same Zone: they cannot move this turn.
-
-### High Priestess:
-* Flip any face-down card on the table, including the top card of any player's deck. Everyone can play with that card visible.
-
-### The Empress / The Emperor:
-* Restore 2 Hit Points to a player in the same zone.
-
-### The Hierophant:
-* Choose a player: they may draw an extra card.
-
-### The Chariot:
-* Move to any position on the map.
-
-### The Hanged Man:
-* Choose an Adversary in the same Zone: they cannot move this turn.
-
-### Wheel of Fortune:
-* Flip a coin.
-* On a Heads, choose any Eddy ability, use that ability.
-* On a Tails, trigger The Tower.
+Check the [Eddy character sheet](/generated/printables/eddy.html).
 
 ## There's Always More Eddies
 

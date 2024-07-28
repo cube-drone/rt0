@@ -91,6 +91,10 @@ function priestessPrint({data}){
     writeContentsToFile({title: 'High Priestess', contents: priestess, filename: 'priestess.html'});
 }
 
+function eddyPrint({data}){
+    let eddy = eddyTemplate(data);
+    writeContentsToFile({title: 'Eddy', contents: [eddy], filename: 'eddy.html'});
+}
 
 function main() {
 
@@ -109,6 +113,7 @@ function main() {
     magicianPrint({data});
     foolPrint({data});
     priestessPrint({data});
+    eddyPrint({data});
 
     let combatMarkdown = generateCombatMarkdown({data});
     let spellsMarkdown = generateMagicMarkdown({data});
