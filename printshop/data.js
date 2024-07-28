@@ -48,7 +48,6 @@ function renderAndReplace(text, keywords){
     }
 
     return html;
-
 }
 
 function prepare(doc, keywords){
@@ -166,6 +165,12 @@ function prepareData(){
         keywords.push(doc.item.name);
     }
 
+    let snippets = read(`data/snippets.xml`);
+    let snippetData = snippets.snippets;
+
+    let skills = read(`data/skills.xml`);
+    let skillData = skills.skills;
+
     keywords = [...new Set(keywords)];
     // sort the keywords so that the longest keywords are first
     keywords = keywords.sort((a, b) => b.length - a.length);
@@ -189,9 +194,9 @@ function prepareData(){
     for(let key of Object.keys(itemData)){
         itemData[key] = prepare(itemData[key], keywords);
     }
-
-    //console.dir(arcanaData, {depth: 3});
-    //console.dir(injuryData, {depth: 3});
+    for(let key of Object.keys(snippetData)){
+        snippetData[`${key}Html`] = renderAndReplace(snippetData[key], keywords);
+    }
 
     return {
         combat: combatData,
@@ -200,6 +205,8 @@ function prepareData(){
         injuries: injuryData,
         injury: injuryData,
         items: itemData,
+        snippets: snippetData,
+        skills: skillData.skill,
         keywordObj,
         keywords,
     };

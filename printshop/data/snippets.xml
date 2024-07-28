@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<snippets>
+    <skillchecks>
+### Skill Checks
+
+* **The Tower, The Devil, Death**: **Critical Failure**, always fails.
+* **The Player's Major Arcana**: **Critical Success**, always succeeds.
+* **The Fool, The World, The Sun**: **Critical Success**, always succeeds.
+* **Wheel of Fortune**: Draw another card.
+   * 10-K or Major Arcana: **Critical Success**
+    * Otherwise: **Critical Failure**
+* **Ace to Five**: Can pass a trivial check, otherwise fails
+* **Six to Nine**: Can pass an easy or trivial check, otherwise fails
+* **Ten to King**: Can pass a medium, easy, or trivial check, otherwise fails
+* **Major Arcana**: Can pass a hard, medium, easy, or trivial check, otherwise fails
+
+### Bonus / Penalty
+* **bonus** on a skill check: draw an additional card and choose the best one.
+* **penalty** on a skill check: draw an additional card and choose the worst one.
+
+### Corruption Retry
+Take a corruption point to retry a failed skill check: this time, one step easier.
+    </skillchecks>
+</snippets>

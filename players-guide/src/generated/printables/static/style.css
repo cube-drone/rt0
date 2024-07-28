@@ -139,13 +139,10 @@ h1, h2, h3, h4, h5, h6{
 
 .report-card .skill-check-helper{
     grid-column: 2;
-    grid-row: 5 / 14;
+    grid-row: 7 / 14;
     border: 1px solid black;
     padding: 2px;
     background-color: white;
-}
-
-.report-card .skill-check-helper .skill-card-description{
     font-size: x-small;
 }
 
@@ -217,7 +214,7 @@ h1, h2, h3, h4, h5, h6{
 
 .report-card .creation{
     grid-column: 2;
-    grid-row: 3 / 5;
+    grid-row: 5 / 7;
     overflow: hidden;
 }
 
@@ -234,51 +231,6 @@ h1, h2, h3, h4, h5, h6{
 .report-card .skill-corruption{
     grid-column: 3;
     grid-row: 3 / 4;
-}
-
-.report-card .finaid{
-    grid-column: 3;
-    grid-row: 5 / 6;
-}
-
-.report-card .drama{
-    grid-column: 3;
-    grid-row: 6 / 7;
-}
-
-.report-card .sci{
-    grid-column: 3;
-    grid-row: 7 / 8;
-}
-
-.report-card .free{
-    grid-column: 3;
-    grid-row: 8 / 9;
-}
-
-.report-card .gym{
-    grid-column: 3;
-    grid-row: 9 / 10;
-}
-
-.report-card .aid{
-    grid-column: 3;
-    grid-row: 10 / 11;
-}
-
-.report-card .shop{
-    grid-column: 3;
-    grid-row: 11 / 12;
-}
-
-.report-card .law{
-    grid-column: 3;
-    grid-row: 12 / 13;
-}
-
-.report-card .misc{
-    grid-column: 3;
-    grid-row: 13 / 14;
 }
 
 .ability-title{

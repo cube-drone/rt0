@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<skills>
+    <skill>
+        <name>FinAid</name>
+        <slug>skill-finaid</slug>
+        <description>
+            Empathy, Perception, &amp; Danger Sense
+        </description>
+        <abilities>Fast/Lucky</abilities>
+    </skill>
+    <skill>
+        <name>Art</name>
+        <slug>skill-art</slug>
+        <description>
+            Disguise, Forgery &amp; Performance
+        </description>
+        <abilities>Charming/Fast</abilities>
+    </skill>
+    <skill>
+        <name>Sci</name>
+        <slug>skill-sci</slug>
+        <description>
+            Computers, Chemistry, Biology, Physics &amp; Mathematics
+        </description>
+        <abilities>Clever/Charming</abilities>
+    </skill>
+    <skill>
+        <name>Free</name>
+        <slug>skill-free</slug>
+        <description>
+            Stealth, Sleight of Hand, &amp; Breaking &amp; Entering
+        </description>
+        <abilities>Clever/Fast</abilities>
+    </skill>
+    <skill>
+        <name>Gym</name>
+        <slug>skill-gym</slug>
+        <description>
+            Movement, Sport &amp; Dance
+        </description>
+        <abilities>Strong/Fast</abilities>
+    </skill>
+    <skill>
+        <name>Aid</name>
+        <slug>skill-aid</slug>
+        <description>
+            First Aid, Exploration &amp; Survival
+        </description>
+        <abilities>Wise/Charming</abilities>
+    </skill>
+    <skill>
+        <name>Shop</name>
+        <slug>skill-shop</slug>
+        <description>
+            Mechanical, Constructive &amp; Culinary
+        </description>
+        <abilities>Wise/Strong</abilities>
+    </skill>
+    <skill>
+        <name>Law</name>
+        <slug>skill-law</slug>
+        <description>
+            Bureaucracy, Legal &amp; Investigative
+        </description>
+        <abilities>Wise/Clever</abilities>
+    </skill>
+    <skill>
+        <name>Misc</name>
+        <slug>skill-misc</slug>
+        <description>
+            Everything not otherwise covered
+        </description>
+        <abilities>Lucky/Strong</abilities>
+    </skill>
+</skills>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ability>
-    <name>Cup/Pentacles</name>
+    <name>Cups/Pentacles</name>
     <slug>eddy-cup</slug>
     <description>
 * Gain 2 shields OR

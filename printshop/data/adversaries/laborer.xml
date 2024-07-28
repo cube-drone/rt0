@@ -11,11 +11,26 @@ They're not well armed, but they're tough, brave, and often carrying some kind o
 heavy equipment that can be used as a weapon in a pinch.
     </description>
     <intents>
-* Sword: Move 1 towards the nearest player, 8 damage melee attack.
-* Wand: Move 1 towards the nearest player, 4 damage melee attack, +1 for every Laborer in the same Zone.
-* Cup: Provide 2 shields to all Laborers in the same Zone.
-* Pentacle: Catch breath. Heal 1 HP.
-* Major Arcana:
+        <intent>
+            <trigger>Sword</trigger>
+            <effect>Move 1 towards the nearest player, 8 damage melee attack.</effect>
+        </intent>
+        <intent>
+            <trigger>Wand</trigger>
+            <effect>Move 1 towards the nearest player, 4 damage melee attack, +1 for every Laborer in the same Zone.</effect>
+        </intent>
+        <intent>
+            <trigger>Cup</trigger>
+            <effect>Provide 2 shields to all Laborers in the same Zone.</effect>
+        </intent>
+        <intent>
+            <trigger>Pentacle</trigger>
+            <effect>Catch breath. Heal 1 HP.</effect>
+        </intent>
+        <intent>
+            <trigger>Major Arcana</trigger>
+            <effect>Do this right away: draw a new card and, if it's not a Major Arcana, play it face down.</effect>
+        </intent>
     </intents>
     <type>
         Laborer

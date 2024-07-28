@@ -37,7 +37,10 @@ In this act, players are introduced to Paradise Lua and allowed to roam Joyeuse 
 * A "boss fight"
 * The players get access to Krater Valley.
 
-### Act 2: Krater, Things Get Worse
+### Act 2: Krater, Things Seem Like They're Going Well
+
+#### A Few Major and Minor Arcana Get Defeated By The Players
+* Let the players explore a bit and get embroiled in their own nemeses.
 
 
 ### Act 3: Florin, Collapse

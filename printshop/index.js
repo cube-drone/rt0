@@ -6,6 +6,7 @@ const fs = require('fs');
 
 const { pages } = require('./templates/base.html.js');
 const { reportCardTemplate } = require('./templates/reportcard.html.js');
+const { eddyTemplate } = require('./templates/eddy.html.js');
 const {combatPages, magicPages, arcanaPages, magicianPages, foolPages, priestessPages } = require('./templates/combat.html.js');
 const { prepareData } = require('./data.js');
 
@@ -42,13 +43,13 @@ function writeContentsToFile({title, contents, filename}) {
 
 
 function fullPrint({data}){
-    let reportCard = reportCardTemplate(data);
     let combats = combatPages(data);
     let magics = magicPages(data);
     let arcana = arcanaPages(data);
 
     let contents = [
-        reportCard,
+        reportCardTemplate(data),
+        eddyTemplate(data),
         ...combats,
         ...magics,
         ...arcana,

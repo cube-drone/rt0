@@ -1,4 +1,4 @@
-function reportCardTemplate({}){
+function reportCardTemplate({snippets, skills}){
     return `
     <div id="reportcard" class="report-card">
         <header>
@@ -7,52 +7,7 @@ function reportCardTemplate({}){
         </header>
 
         <div class="skill-check-helper">
-            <h3>Skill Checks</h3>
-
-            <ul>
-                <li>
-                    <h4 class="skill-card">Tower, The Devil, Death</h4>
-                    <div class="skill-card-description"><span class="keyword">Critical Failure</span>, always fails.</div>
-                </li>
-                <li>
-                    <h4 class="skill-card">The Player's Major Arcana</h4>
-                    <div class="skill-card-description"><span class="keyword">Critical Success</span>, always succeeds.</div>
-                </li>
-                <li>
-                    <h4 class="skill-card">Fool, The World, The Sun</h4>
-                    <div class="skill-card-description"><span class="keyword">Critical Success</span>, always succeeds.</div>
-                </li>
-                <li>
-                    <h4 class="skill-card">Wheel of Fortune</h4>
-                    <div class="skill-card-description">Draw another card.</div>
-                    <div class="skill-card-description">10-K or Major Arcana: <span class="keyword">Critical Success</span>
-                    <div class="skill-card-description">Otherwise: <span class="keyword">Critical Failure</span></div>
-                </li>
-                <li>
-                    <h4 class="skill-card">Ace to Five</h4>
-                    <div class="skill-card-description">Can pass a trivial check, otherwise fails</div>
-                </li>
-                <li>
-                    <h4 class="skill-card">Six to Nine</h4>
-                    <div class="skill-card-description">Can pass an easy or trivial check, otherwise fails</div>
-                </li>
-                <li>
-                    <h4 class="skill-card">Ten to King</h4>
-                    <div class="skill-card-description">Can pass a medium, easy, or trivial check, otherwise fails</div>
-                </li>
-                <li>
-                    <h4 class="skill-card">Major Arcana</h4>
-                    <div class="skill-card-description">Can pass a hard, medium, easy, or trivial check, otherwise fails</div>
-                </li>
-            </ul>
-
-            <h3>Bonus / Penalty</h3>
-            <p> <span class="keyword">bonus</span> on a skill check: draw an additional card and choose the best one.</p>
-            <p> <span class="keyword">penalty</span> on a skill check: draw an additional card and choose the worst one.</p>
-
-            <h3>Corruption Retry</h3>
-            <p> Take a corruption point to retry a failed skill check: this time, one step easier. </p>
-
+            ${snippets.skillchecksHtml}
         </div>
 
         <div class="ability strong">
@@ -156,68 +111,21 @@ function reportCardTemplate({}){
             <p> When all circles are filled, gain a magic spell if not <span class="keyword">Dull</span>. </p>
         </div>
 
-        <div class="skill finaid">
-            <h3 class="class-title">FinAid</h3>
-            <div class="skill-title">Empathy, Perception & Danger Sense</div>
-            <div class="skill-attributes">Fast / Lucky</div>
-            <div class="box box-bottom-right"></div>
-        </div>
+        ${ skills.map((skill, i) => `
+            <style>
+                .skill.${skill.slug} {
+                    grid-column: 3;
+                    grid-row: ${5+i} / ${6+i};
+                }
 
-        <div class="skill drama">
-            <h3 class="class-title">Art</h3>
-            <div class="skill-title">Disguise, Forgery & Performance</div>
-            <div class="skill-attributes">Charming / Fast</div>
-            <div class="box box-bottom-right"></div>
-        </div>
-
-        <div class="skill sci">
-            <h3 class="class-title">Sce</h3>
-            <div class="skill-title">Computers, Chemistry, Biology, Physics & Math</div>
-            <div class="skill-attributes">Clever / Charming</div>
-            <div class="box box-bottom-right"></div>
-        </div>
-
-        <div class="skill free">
-            <h3 class="class-title">Free</h3>
-            <div class="skill-title">Stealth, Breaking & Entering</div>
-            <div class="skill-attributes">Clever / Fast</div>
-            <div class="box box-bottom-right"></div>
-        </div>
-
-        <div class="skill gym">
-            <h3 class="class-title">Gym</h3>
-            <div class="skill-title">Movement, Sport & Dance</div>
-            <div class="skill-attributes">Strong / Fast</div>
-            <div class="box box-bottom-right"></div>
-        </div>
-
-        <div class="skill aid">
-            <h3 class="class-title">Aid</h3>
-            <div class="skill-title">First Aid, Exploration & Survival</div>
-            <div class="skill-attributes">Wise / Charming</div>
-            <div class="box box-bottom-right"></div>
-        </div>
-
-        <div class="skill shop">
-            <h3 class="class-title">Shop</h3>
-            <div class="skill-title">Mechanical, Constructive & Culinary</div>
-            <div class="skill-attributes">Wise / Strong</div>
-            <div class="box box-bottom-right"></div>
-        </div>
-
-        <div class="skill law">
-            <h3 class="class-title">Law</h3>
-            <div class="skill-title">Bureaucracy, Legal & Investigative</div>
-            <div class="skill-attributes">Wise / Clever</div>
-            <div class="box box-bottom-right"></div>
-        </div>
-
-        <div class="skill misc">
-            <h3 class="class-title">Misc</h3>
-            <div class="skill-title">Everything Not Otherwise Covered</div>
-            <div class="skill-attributes">Lucky / Strong</div>
-            <div class="box box-bottom-right"></div>
-        </div>
+            </style>
+            <div class="skill ${skill.slug}">
+                <h3 class="class-title">${skill.name}</h3>
+                <div class="skill-title">${skill.description}</div>
+                <div class="skill-attributes">${skill.abilities}</div>
+                <div class="box box-bottom-right"></div>
+            </div>`).join('')
+        }
     </div>
     `;
 
