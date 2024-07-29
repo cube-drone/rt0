@@ -77,9 +77,9 @@ _"They're just standing there, playing with a little piece of paper."_
 
 * Instead of discarding cards from Concentrate, place them on Origami Folding.
 * When there are 8 cards on Origami Folding, you may either:
-    * Look at the top card of the deck and decide whether or not to draw it OR
-    * Look at the top five cards of the deck, place any number of them on the bottom of the deck, then return them to the top of the deck in any order OR
-    * Deal 2 Magic Damage to all Adversaries in your Zone.
+    * Look at the top five cards of the deck, place any number of them on the bottom of the deck, then return them to the top of the deck in any order AND
+    * Draw the top card of the deck AND
+    * Deal 3 Magic Damage to all Adversaries in your Zone.
 * Then, discard all cards from Origami Folding.
 
 ### Rolling Bones

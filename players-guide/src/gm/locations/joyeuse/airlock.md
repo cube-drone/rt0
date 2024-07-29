@@ -120,7 +120,7 @@ very expensive craters in the Nevada desert. This is widely considered fatal to 
 for piles of vanadium) so non-cargo trips between the two planets are considerably more expensive and difficult.
 
 Anything shipped from Earth, fired out of the Nevada HEO Supercannon, is going to be a hyper-expensive luxury item on Paradise Lua,
-tending towards low-density items that are impossible to replicate on the moon, like seeds, polymers, and electronic components.
+tending towards low-density items that are impossible to replicate on the moon, like seeds, [polymer nurdles](https://en.wikipedia.org/wiki/Nurdle_(bead)), and electronic components.
 Again, humans are not generally capable of surviving the acceleration of the HEO Supercannon, so human round trips require
 more traditional rocketry and re-entry and tend to cost eye-watering sums of money to arrange.
 
