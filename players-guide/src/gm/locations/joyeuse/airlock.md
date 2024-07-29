@@ -257,7 +257,7 @@ There are about 30 Dockworkers, total.
 * **8 of Swords**: (prison) A team of PortSec Executare are carting off Dockworker Bagels for a crime that Bagels didn't commit.
    * While being dragged away, Dockworker Bagels shouts "I've been framed! Find the recording!"
    * Dockworker Bagels is being arrested for the murder of Davis Garfield.
-   * The recording is being stored in the records room of [Rikksvardet Court](./court.md).
+   * The recording is being stored in the records room of [Rikksverdet Court](./court.md).
    * There are two recordings there, side by side, one marked "original" and one marked "edited"
      * The "original" shows Officer Cream committing the crime, the "edited" shows Bagels doing it.
 * **9 of Swords**: (anxiety / space) there's something outside and it's terrifying

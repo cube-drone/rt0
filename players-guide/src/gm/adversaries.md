@@ -1,5 +1,18 @@
 # Adversaries
 
+## Common
+
+### Laborer
+
+HP: 20
+
+* Swords: Move 1 Zone, Deal 6 damage
+* Wands: Move 1 Zone, Deal 4 damage, +1 damage for every other Adversary in the same Zone
+* Pentacles: Take a breather. Regain 2HP.
+* Cups: 2 Shields, and give 2 Shields to every other Adversary in the same Zone
+* Major: (Immediately) Draw a card and play it face-down. That is the new Intent.
+
+
 ## Executare/Terror
 
 ### Shadowling

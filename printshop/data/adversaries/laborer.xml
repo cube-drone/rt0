@@ -13,11 +13,17 @@ heavy equipment that can be used as a weapon in a pinch.
     <intents>
         <intent>
             <trigger>Sword</trigger>
-            <effect>Move 1 towards the nearest player, 8 damage melee attack.</effect>
+            <effect>
+                * Move 1 towards the nearest player, 8 damage melee attack.
+                * **Union:** If another Laborer has already drawn a Sword, instead Catch Breath and Heal 2 HP.
+            </effect>
         </intent>
         <intent>
             <trigger>Wand</trigger>
-            <effect>Move 1 towards the nearest player, 4 damage melee attack, +1 for every Adversary in the same Zone.</effect>
+            <effect>
+                * Move 1 towards the nearest player, 4 damage melee attack, +1 for every Adversary in the same Zone.
+                * **Union:** If another Laborer has already drawn a Wand, instead Catch Breath and Heal 2 HP.
+            </effect>
         </intent>
         <intent>
             <trigger>Cup</trigger>
