@@ -42,13 +42,14 @@ Then, players each take a turn. Fast players first, then players without Fast or
 
 "What if there are more than one player who can take a turn at the same time?"
 
-They can decide between themselves who goes first. Players cannot play simultaneously.
+They can decide between themselves who goes first. Players can play simultaneously, with the following caveat.
 
 > ##### Why _can't_ players play simultaneously?
 > I'm pretty sure that there's a way for players operating at the same time to trigger some kind of infinite loop.
 > Player A gives player B more cards, which allow Player B to give player A more cards...
 >
-> If you want to speed things up, you're free to house-rule this restriction away.
+> If this happens for some reason, the GM can call shenanigans and demand that one player finish their turn
+> before the other player continues.
 
 Finally, each Adversary does whatever their Intent indicates that they will do.
 
@@ -86,6 +87,17 @@ Most Damage is melee-range: see "[Movement](#movement)" below.
 When an Adversary's Hit Points reach 0, they are no longer participants in the combat. The player who pushed the Adversary
 over the line gets to decide whether they killed, incapacitated, or scared off the Adversary.
 
+### What Happens when an Adversary Can Choose Who to Damage?
+
+Unless otherwise specified, an Adversary will hit:
+* The player with the most remaining Shields. If all players have 0 Shields:
+* The player with the least remaining HP.
+
+Some Adversaries operate differently:
+
+* A **Strategic** Adversary will target whichever target the GM wants, and will choose wisely.
+* A **Dimwitted** Adversary will target whichever target the GM wants, and will choose badly.
+
 ## Movement
 
 Movement in combat happens on a small grid.
@@ -100,6 +112,14 @@ the two of you are in melee range of one another.
 Some rooms are large, these are represented by a 5x5 grid.
 
 Some rooms are cramped, these are represented by a 1x1 grid. (_Which is, notably, just a single square. Sorry, ranged abilities!_)
+
+### What Happens when an Adversary Gets to Move?
+
+Unless otherwise specified, an Adversary will:
+* Move towards the nearest Player.
+* if they are in the same Zone as a player, they won't move at all.
+
+* A **Strategic** Adversary can use their move however the GM wants.
 
 ## Shield
 
@@ -134,21 +154,9 @@ Adversaries knocked down to 0HP may have been knocked unconscious, killed, or si
 up to the players and the GM.
 
 When a Combat concludes, open up the Supremacy Worksheet:
-* If every player has full HP, mark one tally in the Supremacy box.
-* If any player has full HP, mark one tally in the Supremacy box.
-* If every player has accumulated 0 Corruption, mark one tally in the Supremacy box.
-* If any player has accumulated 0 Corruption, mark one tally in the Supremacy box.
+* If any player has received an Injury, do not add anything to the Supremacy Worksheet. Stop here.
+* If any player has received 2 or more Corruption, do not add anything to the Supremacy Worksheet. Stop here.
+* Add a tally to the Supremacy Worksheet.
+* If all players have full HP: add another tally to the Supremacy Worksheet.
 
 Accumulated Supremacy makes combat _more difficult_ as the game goes on.
-
-## A Sample Adversary
-This is _Brock_, an example of the kind of fellow one might get in a scuffle with:
-
-### Brock: A Regular Guy With No Special Qualities Whatsoever, But He Is Definitely a Real Jerk
-HP: 30
-
-* Simple: Brock draws 1 card per turn.
-* Mobile: If there is nobody to hit in Brock's zone, Brock will move 1 space towards any player on his turn.
-* Swords, Wands: "Punch", Do 8 melee damage.
-* Cups, Pentacles: "Dodge", Generate 6 shields.
-* Major Arcana: "Pocket Sand!", Make one player in melee range "Weak" until the beginning of Brock's next turn.

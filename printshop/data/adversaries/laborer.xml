@@ -17,15 +17,15 @@ heavy equipment that can be used as a weapon in a pinch.
         </intent>
         <intent>
             <trigger>Wand</trigger>
-            <effect>Move 1 towards the nearest player, 4 damage melee attack, +1 for every Laborer in the same Zone.</effect>
+            <effect>Move 1 towards the nearest player, 4 damage melee attack, +1 for every Adversary in the same Zone.</effect>
         </intent>
         <intent>
             <trigger>Cup</trigger>
-            <effect>Provide 2 shields to all Laborers in the same Zone.</effect>
+            <effect>Provide 2 shields to all Adversaries in the same Zone.</effect>
         </intent>
         <intent>
             <trigger>Pentacle</trigger>
-            <effect>Catch breath. Heal 1 HP.</effect>
+            <effect>Catch breath. Heal 2 HP.</effect>
         </intent>
         <intent>
             <trigger>Major Arcana</trigger>
