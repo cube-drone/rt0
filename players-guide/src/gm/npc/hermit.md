@@ -11,3 +11,17 @@ where nobody could harm him, bother him, or even appear on his radar.
 His service staff are myriad and tuned exactly to his preferences.
 
 ## The Hermit
+
+The Hermit has been corrupted by Judgement.
+
+They seek to advance the goals of total oblivion.
+
+## What Do They Want?
+
+* To never again have to interact with another human being.
+
+## How Will They Go About It?
+
+* Funding ACCELER8.
+* Using Corporate Fixers to quietly sabotage, test, and otherwise harass the players in order to
+   accelerate their corruption.

@@ -61,3 +61,22 @@ True Horrors to establish firm links to citizens, so that Judgement
 can crawl back up those links and overtake them, as well. With the
 combined psychic power of all 26 True Horrors, Judgement can bring
 about the End.
+
+## What Do They Seem Like They Want?
+
+* To serve the goals of Paradise Lua.
+* To eventually expand the Moon's program to Lua2 and Lua3 colonies. (Names Pending)
+
+## What Do They Actually Want?
+
+To bring about the end of all things in service to Judgement.
+(To free themselves of their servitude to Judgement)
+
+## How Will They Go About It?
+
+* By pretending to be helpful!
+* By bringing small groups of exceptional strangers to the Moon in order to fish for links to Major Arcana
+   that they have not managed to attract to Paradise Lua yet.
+* By bringing out the worst in the Players to try and let their Corruption flower.
+* By finding or creating a host for the terrifyingly powerful Judgement.
+* By awakening The World.

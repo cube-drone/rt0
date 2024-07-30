@@ -17,6 +17,8 @@ The Eddy network has been infiltrated by The Sun, who seeks, with varying levels
 
 If you draw a Sun in relation to an random event on the base, a bunch of Eddies show up. To "help".
 
+"We did it! YAAAAAAY!"
+
 ## The Sun
 
 The Sun is the closest True Horror to humanity. It literally lives in Sol, the sun, and it's fascinated with humans.
@@ -33,3 +35,11 @@ Another had a heart attack after having too many sexual encounters in one evenin
 The Sun is also the True Horror that it would cost the most for humanity to lose: without The Sun constantly bombarding
 the entire solar system with positive mental energy, optimism, and love - well, these things would start to die out,
 and humanity would simply tear itself apart at the hands of the other Horrors.
+
+## What Do They Want?
+
+To help, as much as they can!
+
+## How Will They Go About It?
+
+Clumsily, and with as much accidental blowback as possible.
