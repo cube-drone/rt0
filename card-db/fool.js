@@ -30,6 +30,11 @@ class KitchenSink {
         return card == "fool";
     }
 
+    reset(){
+        this.shieldBonusGenerated = false;
+        this.damageBonusGenerated = false;
+    }
+
     play(card, state) {
         state.discard.push(card);
         state.log.push(`Using ${card} to play the Kitchen Sink!`);
@@ -37,23 +42,31 @@ class KitchenSink {
             state.log.push(`this shouldn't happen: kitchen sink used three times`);
             return;
         }
-        if(this.shieldBonusGenerated){
-            state.log.push(`The fool draws an improvised weapon out of the kitchen sink`)
-            state.damageBonus = 2;
-            return;
-        }
-        if(this.damageBonusGenerated){
+        if(this.damageBonusGenerated || Math.random() < 0.5){
             state.log.push(`The fool draws an improvised shield out of the kitchen sink`)
-            state.shieldBonus = 2;
+            if(state.tags.includes('fast')){
+                state.shieldBonus = 4;
+            }
+            else if(state.tags.includes('slow')){
+                state.shieldBonus = 2;
+            }
+            else{
+                state.shieldBonus = 3;
+            }
             return;
-        }
-        if(Math.random() < 0.5){
-            state.log.push(`The fool draws an improvised shield out of the kitchen sink`)
-            state.shieldBonus = 2;
         }
         else{
             state.log.push(`The fool draws an improvised weapon out of the kitchen sink`)
-            state.damageBonus = 2;
+            if(state.tags.includes('strong')){
+                state.damageBonus = 4;
+            }
+            else if(state.tags.includes('weak')){
+                state.damageBonus = 2;
+            }
+            else{
+                state.damageBonus = 3;
+            }
+            return;
         }
     }
 }
@@ -62,8 +75,7 @@ class KnifeGuy {
     constructor() {
         this.name = 'Knife Guy';
         this.bin = [];
-        this.shieldBonusGenerated = false;
-        this.damageBonusGenerated = false;
+        this.bonusGenerated = false;
     }
 
     priorities() {
@@ -73,8 +85,12 @@ class KnifeGuy {
         }
     }
 
+    reset(){
+        this.bonusGenerated = false;
+    }
+
     accepts(card, state) {
-        if(this.shieldBonusGenerated && this.damageBonusGenerated){
+        if(this.bonusGenerated){
             return false;
         }
         if(state.corruption <= 0){
@@ -85,30 +101,14 @@ class KnifeGuy {
 
     play(card, state) {
         state.discard.push(card);
+        state.log.push(`Using ${card} to play Mister Knife Guy!`);
+        if(this.bonusGenerated){
+            state.log.push(`this shouldn't happen: knife guy used twice`);
+            return;
+        }
         state.corruption -= 1;
-        state.log.push(`Using ${card} to play the Kitchen Sink!`);
-        if(this.shieldBonusGenerated && this.damageBonusGenerated){
-            state.log.push(`this shouldn't happen: kitchen sink used three times`);
-            return;
-        }
-        if(this.shieldBonusGenerated){
-            state.log.push(`The fool draws a knife, and takes 1 corruption`)
-            state.damageBonus = 5;
-            return;
-        }
-        if(this.damageBonusGenerated){
-            state.log.push(`The fool draws a hat, and takes 1 corruption`)
-            state.shieldBonus = 5;
-            return;
-        }
-        if(Math.random() < 0.5){
-            state.log.push(`The fool draws a hat, and takes 1 corruption`)
-            state.shieldBonus = 5;
-        }
-        else{
-            state.log.push(`The fool draws a knife, and takes 1 corruption`)
-            state.damageBonus = 5;
-        }
+        state.damageBonus = 4;
+        state.shieldBonus = 4;
     }
 }
 
@@ -134,7 +134,7 @@ class Laughter{
         let totalValueOfCardsExiled = cardsExiled.reduce((acc, c) => acc + numericalValue(c), 0);
         state.hand = state.hand.filter(c => isMinorArcana(c));
         state.log.push(`Using ${card} to play Laughter! with ${cardsExiled.join(",")}`);
-        state.doDamage(totalValueOfCardsExiled);
+        state.doMagicRangedDamage(totalValueOfCardsExiled);
     }
 }
 
@@ -163,7 +163,7 @@ class Slaughter{
         let totalValueOfCardExiled = numericalValue(cardExiled);
         state.hand = state.hand.filter(c => c != cardExiled);
         state.log.push(`Using ${card} to play Slaughter! with ${cardExiled}`);
-        state.doDamage(totalValueOfCardExiled * 5);
+        state.doMagicRangedDamage(totalValueOfCardExiled * 5);
     }
 }
 
@@ -184,11 +184,13 @@ class Blackjack{
         return isCups(card) || isSwords(card);
     }
 
-    tokenBonus(state){
-        if(state.hitMe){
-            return this.tokens + (state.hitMe * 3);
-        }
+    tokenBonus(){
         return this.tokens;
+    }
+
+    reset(){
+        this.bin = [];
+        this.tokens = 0;
     }
 
     play(card, state){
@@ -200,22 +202,22 @@ class Blackjack{
         if(valueOfBin >= 21){
             state.log.push(`Using ${this.bin.join(",")} to play Blackjack!`);
             if(state.getTags().includes('strong')){
-                state.doDamage(5 + this.tokenBonus(state));
+                state.doDamage(6 + this.tokenBonus());
             }
             else if(state.getTags().includes('weak')){
-                state.doDamage(1 + this.tokenBonus(state));
+                state.doDamage(2 + this.tokenBonus());
             }
             else{
-                state.doDamage(3 + this.tokenBonus(state));
+                state.doDamage(4 + this.tokenBonus());
             }
             if(state.getTags().includes('fast')){
-                state.addShields(5 + this.tokenBonus(state));
+                state.addShields(6 + this.tokenBonus());
             }
             else if(state.getTags().includes('slow')){
-                state.addShields(1 + this.tokenBonus(state));
+                state.addShields(2 + this.tokenBonus());
             }
             else{
-                state.addShields(3 + this.tokenBonus(state));
+                state.addShields(4 + this.tokenBonus());
             }
             this.tokens += 1;
             for(let card of this.bin){
@@ -223,36 +225,6 @@ class Blackjack{
             }
             this.bin = [];
         }
-    }
-}
-
-class HitMe{
-    constructor(){
-        this.name = 'Blackjack';
-        this.bin = [];
-    }
-
-    priorities(){
-        return {
-            'default': 4,
-        }
-    }
-
-    accepts(card, state){
-        if(state.corruption <= 0){
-            return false;
-        }
-        return card == "fool";
-    }
-
-    play(card, state){
-        if(!state.hitMe){
-            state.hitMe = 0;
-        }
-        state.log.push(`Using ${card} to play Hit Me!`);
-        state.hitMe += 1;
-        state.corruption += 1;
-        state.discard.push(card);
     }
 }
 
@@ -341,7 +313,7 @@ class SurpriseTwist{
             return;
         }
         if(topCard == "death"){
-            state.doDamage(150);
+            state.doDamage(50);
             return;
         }
         if(topCard == "wheel of fortune"){
@@ -386,7 +358,6 @@ module.exports = {
     Laughter,
     Slaughter,
     Blackjack,
-    HitMe,
     ThrowawayJoke,
     SurpriseTwist
 }

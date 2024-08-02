@@ -163,8 +163,12 @@ class Tower {
     }
 
     play(card, state) {
-        state.flush();
         state.log.push("The tower has fallen! Catastrophe strikes!");
+        if(state.getTags().includes('lucky')){
+            state.log.push("Lucky: 10 shields anyways!");
+            state.addShields(10);
+        }
+        state.flush();
         return {type: "tower"};
     }
 }

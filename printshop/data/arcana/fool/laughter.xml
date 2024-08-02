@@ -9,8 +9,8 @@
     <description>
 * Place The Fool on Laughter, as well as any other two cards from your hand that you choose
 * The Tower may not be placed on Laughter
-* Remove all cards from The Fool from your deck for the remainder of the Day.
-* Deal damage equal to the numerical value of any cards placed on Laughter.
+* Remove all cards on Laughter, except The Fool, from your deck for the remainder of the Day.
+* Deal damage equal to the numerical value of all cards placed on Laughter.
 * If Clever, this is Ranged Damage.
 * At the end of the turn, discard The Fool.
 </description>

@@ -1,7 +1,5 @@
 # Barkeep
 
-a bar called Ten Parents
-
 bartender
 
 ## Temperance
@@ -9,8 +7,6 @@ bartender
 Temperance has not been corrupted by The Hanged Man.
 
 Temperance is a True Horror, although one of the more benign of the horrors.
-
-
 
 ## What Do They Want?
 
