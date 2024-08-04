@@ -146,7 +146,7 @@ class Slaughter{
     constructor(){
         this.name = 'Slaughter';
         this.bin = [];
-        this.tags = ['ranged', 'magic', 'corruption', 'fool']
+        this.tags = ['rangedDmg', 'magic', 'corruption', 'fool']
     }
 
     priorities(){
@@ -487,6 +487,9 @@ class Crazy{
 
 }
 
+/*
+    I have no idea how to model Crisis Averted and Happy Accident
+*/
 
 module.exports = {
     KitchenSink,

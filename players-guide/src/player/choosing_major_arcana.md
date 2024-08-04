@@ -15,7 +15,8 @@ Each Arcana provides a handful of changes to the game: The Fool, for example, ca
 
 Each Arcana also provides a Skill: The Magician, for example, has "This Was All Part of My Plan". The Skill is intended for use outside of combat, although the Skill can be used in Combat with the Movement/Skill Check ability.
 
-Each player also chooses 2 of their Arcana's **Arcana Abilities** to start off the game. These are powerful combat abilities that only your Arcana can use.
+Each player also chooses 2 of their Arcana's **Arcana Abilities** to start off the game. (_Ed: Consider allowing players to choose which 2 abilities before each combat?_)
+These are powerful combat abilities that only your Arcana can use.
 
 Each **Arcana Ability** comes with a **Corruption Upgrade**: you can mark Corruption Points on the Corruption Upgrade.
 When all three of the _Corruption Circles_ are filled, you gain the Corruption Upgrade, which makes the Arcana Ability more powerful.
