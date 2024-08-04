@@ -11,11 +11,10 @@
 * Place Minor Arcana cards of suit Cup or Sword on Blackjack.
 * Cards sitting on Blackjack remain there.
 * When the sum of the numerical values of the cards on Blackjack reaches or exceeds 21:
-   * Take one of the cards on Blackjack. Play it, face-down, on Blackjack.
-   * Discard all remaining cards on Blackjack.
    * Deal 2 Damage (Strong: 3 Damage, Weak: 1 Damage), plus 1 additional Damage for every face-down card on Blackjack.
    * Gain 2 Shield (Fast: 3 Shields, Slow: 1 Shield), plus 1 additional Shield for every face-down card on Blackjack.
-* When you draw The Tower, do _not_ discard all cards on Blackjack.
+   * Take two of the cards on Blackjack. Play them, face-down, on Blackjack.
+   * Discard all remaining cards on Blackjack.
 * At the end of combat, discard all cards on Blackjack.
 </description>
 <flavor>

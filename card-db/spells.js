@@ -4,7 +4,9 @@ const {
     isSwords,
     isWands,
     isPentacles,
-    numericalValue
+    numericalValue,
+    isGirl,
+    randomCard,
 } = require('./tarot.js');
 
 
@@ -12,6 +14,7 @@ class Leo {
     constructor() {
         this.name = 'leo';
         this.bin = [];
+        this.tags = ['spell', 'clever', 'magicDmg'];
     }
 
     priorities() {
@@ -27,6 +30,8 @@ class Leo {
 
     play(card, state) {
         this.bin.push(card);
+        // leo can also do 8 damage to all adversaries in your zone
+        // todo?
         if(state.getTags().includes('clever')){
             state.doMagicDamage(30);
         }
@@ -37,10 +42,42 @@ class Leo {
     }
 }
 
+class Sagittarius {
+    constructor() {
+        this.name = 'sagittarius';
+        this.bin = [];
+        this.tags = ['spell', 'clever', 'magicDmg', 'rangedDmg'];
+    }
+
+    priorities() {
+        return {
+            'damage': 3,
+            'default': 2,
+        }
+    }
+
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
+    }
+
+    play(card, state) {
+        this.bin.push(card);
+        // sagitarrius can also do 5 ranged damage to ALL adversaries
+        if(state.getTags().includes('clever')){
+            state.doRangedMagicDamage(20);
+        }
+        else{
+            state.doRangedMagicDamage(10);
+        }
+        state.log.push(`Casting sagittarius with the magician!`);
+    }
+}
+
 class Cancer {
     constructor() {
         this.name = 'cancer';
         this.bin = [];
+        this.tags = ['spell', 'clever', 'shields'];
     }
 
     priorities() {
@@ -70,6 +107,7 @@ class Aries {
     constructor() {
         this.name = 'aries';
         this.bin = [];
+        this.tags = ['spell', 'clever', 'shields'];
     }
 
     priorities() {
@@ -102,6 +140,7 @@ class Taurus {
     constructor() {
         this.name = 'taurus';
         this.bin = [];
+        this.tags = ['spell', 'clever'];
     }
 
     priorities() {
@@ -134,6 +173,7 @@ class Gemini{
     constructor() {
         this.name = 'gemini';
         this.bin = [];
+        this.tags = ['spell', 'clever', 'draw'];
     }
 
     priorities() {
@@ -171,48 +211,35 @@ class Capricorn {
     constructor() {
         this.name = 'capricorn';
         this.bin = [];
+        this.tags = ['spell', 'clever', 'magicDmg', 'shields'];
     }
 
     priorities() {
         return {
-            'damage': 3,
-            'default': 2,
+            'damage': 4,
+            'default': 3,
         }
     }
 
     accepts(card, state) {
-        return card === 'magician' || (state.className === 'magician' && card === 'fool');
+        let girlInHand = false;
+        for(let card of state.hand){
+            if(isGirl(card)){
+                girlInHand = true;
+            }
+        }
+
+        return (card === 'magician' || (state.className === 'magician' && card === 'fool')) && girlInHand;
     }
 
     play(card, state) {
-        if(state.deck.length === 0){
-            state.log.push(`Casting capricorn with the magician, but the deck is empty!`);
-            return;
+        if(state.getTags().includes('clever')){
+            state.doMagicRangedDamage(80);
         }
-        let peek = state.deck[0];
-        if( peek === "fool" || isCups(peek) || isPentacles(peek) ){
-            state.log.push(`Casting capricorn with the magician to generate shields!`);
-            if(state.getTags().includes('clever')){
-                state.addShields(48);
-            }
-            else{
-                state.addShields(24);
-            }
+        else{
+            state.doMagicRangedDamage(40);
+        }
 
-        }
-        else if( isSwords(peek) || isWands(peek) ){
-            state.log.push(`Casting capricorn with the magician to do damage!`);
-            if(state.getTags().includes('clever')){
-                state.doMagicDamage(48);
-            }
-            else{
-                state.doMagicDamage(24);
-            }
-        }
-        else {
-            state.log.push(`Casting capricorn with the magician... failed!`);
-
-        }
         state.discard.push(card);
     }
 }
@@ -221,6 +248,7 @@ class Scorpio {
     constructor() {
         this.name = 'scorpio';
         this.bin = [];
+        this.tags = ['spell', 'clever', 'magicDmg'];
     }
 
     priorities() {
@@ -252,6 +280,7 @@ class Libra{
     constructor() {
         this.name = 'libra';
         this.bin = [];
+        this.tags = ['spell', 'clever', 'magicDmg', 'shields'];
     }
 
     priorities() {
@@ -284,8 +313,68 @@ class Libra{
             state.log.push(`Balancing with libra!`);
             state.addShields(shieldsGenerated - damageDealt);
         }
-
     }
+}
+
+class Virgo{
+    constructor() {
+        this.name = 'virgo';
+        this.tags = ['spell', 'charming', 'shields'];
+        this.bin = [];
+    }
+
+    priorities() {
+        return {
+            'defense': 3,
+            'default': 2,
+        }
+    }
+
+    accepts(card, state) {
+        return card === 'magician' || (state.className === 'magician' && card === 'fool');
+    }
+
+    play(card, state) {
+        // this activates Virgo
+        state.log.push(`Charming with Virgo!`);
+        this.bin.push(card);
+    }
+
+    onTurnEnd(state){
+        if(this.bin.length === 0){
+            return;
+        }
+        let rCard = randomCard();
+        if(isSwords(rCard)){
+            // discard the card used to play Virgo
+            state.log.push(`A sword is drawn! Virgo is cancelled!`);
+            let card = this.bin.pop();
+            state.discard.push(card);
+        }
+        else{
+            state.log.push(`Virgo is still active! Cancelling enemy intent!`);
+            state.cancelIntent();
+        }
+    }
+}
+
+class Worthless{
+    // this should perform significantly worse than baseline
+    constructor(){
+        this.name = 'worthless';
+        this.tags = ['spell', 'test'];
+    }
+
+    priorities(){
+        return {
+            'default': 1,
+        }
+    }
+
+    accepts(card, state){
+        return false;
+    }
+
 }
 
 module.exports = {
@@ -293,8 +382,11 @@ module.exports = {
     Cancer,
     Aries,
     Taurus,
+    Sagittarius,
     Gemini,
     Capricorn,
     Scorpio,
     Libra,
+    Virgo,
+    Worthless
 }

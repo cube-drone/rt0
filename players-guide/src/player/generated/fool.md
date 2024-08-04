@@ -23,6 +23,8 @@ happy accident, fortuitous coincidence, or other stroke of unexpected luck.
 ### Kitchen Sink
 _"That's not a weapon." "It is now."_
 
+_Corruption Upgrade: No More Mister Knife Guy_
+
 * Place The Fool on Kitchen Sink
 * Place any other card on either Unlikely Weapon or Unlikely Helmet
 * At the end of the turn, discard The Fool
@@ -55,10 +57,12 @@ _A long wooden spoon, a rolling pin, a broom, a mop, a rake, a shovel, a sword._
 ### Laughter
 _Laughing while you fight is honestly a little unsettling._
 
+_Corruption Upgrade: Slaughter_
+
 * Place The Fool on Laughter, as well as any other two cards from your hand that you choose
 * The Tower may not be placed on Laughter
-* Remove all cards from The Fool from your deck for the remainder of the Day.
-* Deal damage equal to the numerical value of any cards placed on Laughter.
+* Remove all cards on Laughter, except The Fool, from your deck for the remainder of the Day.
+* Deal damage equal to the numerical value of all cards placed on Laughter.
 * If Clever, this is Ranged Damage.
 * At the end of the turn, discard The Fool.
 
@@ -77,14 +81,15 @@ _Nobody finds the violence funny but you._
 ### Blackjack
 _It looks like you're biding your time, but you're really just waiting for the right moment to strike._
 
+_Corruption Upgrade: Hit Me_
+
 * Place Minor Arcana cards of suit Cup or Sword on Blackjack.
 * Cards sitting on Blackjack remain there.
 * When the sum of the numerical values of the cards on Blackjack reaches or exceeds 21:
-   * Take one of the cards on Blackjack. Play it, face-down, on Blackjack.
-   * Discard all remaining cards on Blackjack.
    * Deal 2 Damage (Strong: 3 Damage, Weak: 1 Damage), plus 1 additional Damage for every face-down card on Blackjack.
    * Gain 2 Shield (Fast: 3 Shields, Slow: 1 Shield), plus 1 additional Shield for every face-down card on Blackjack.
-* When you draw The Tower, do _not_ discard all cards on Blackjack.
+   * Take two of the cards on Blackjack. Play them, face-down, on Blackjack.
+   * Discard all remaining cards on Blackjack.
 * At the end of combat, discard all cards on Blackjack.
 
 ### Hit Me
@@ -95,17 +100,19 @@ _The fool, like a gong, is more effective when struck._
 * Any time you take Damage, (even if offset with your Shield), you may say "Hit Me" to the GM.
    * Draw a card from the deck.
    * If it's a Minor Arcana, play it face-down on Blackjack.
-   * If it's The Tower, take 1 Corruption Point _and_ discard all cards on Blackjack.
+   * If it's The Tower, take 1 Corruption Point, trigger Catastrophe, _and_ discard all cards on Blackjack.
    * If it's a Major Arcana, discard it without playing it.
 
 ### Everyone Loves a Parade
 _You're being extremely distracting._
 
-* Place any card on Everyone Loves a Parade.
-* Once a card has been played on Everyone Loves a Parade, the next card must be either one higher than the highest card on Everyone Loves a Parade,
-    or one lower than the lowest card on Everyone Loves a Parade.
-* When there are 3 cards on Everyone Loves a Parade:
+_Corruption Upgrade: You're Driving Me Crazy_
+
+* Place any Minor Arcana on Everyone Loves a Parade.
+* Once a card has been played on Everyone Loves a Parade, the next card must be the same numerical value as the card on Everyone Loves a Parade.
+* When there are 2 cards on Everyone Loves a Parade:
    * every Adversary is forced to redraw the Intent that they would execute this turn.
+   * gain 3 Shield.
    * discard all cards on Everyone Loves a Parade.
 
 ### You're Driving Me Crazy
@@ -113,16 +120,17 @@ _You're such a spectacle that even your foes can't help but watch._
 
 **Corruption Upgrade: Mark 3 Corruption Points on You're Driving Me Crazy to Unlock it.**
 
-* When Everyone Loves a Parade triggers, after Adversaries have redrawn their Intents, you may also:
-   * Discard any of the newly drawn Intents.
-   * An Adversary with a discarded Intent does not take an action this turn.
-   * Take 1 Corruption Point for each discarded Intent after the first (which is a freebie).
+* Take 1 Corruption Point to activate You're Driving Me Crazy.
+* While You're Driving Me Crazy is active, every time you cause all Adversaries to redraw their Intent,
+    you may also force one Adversary to discard their Intent entirely.
+* An Adversary with no Intent will not perform an action this turn.
 
 ### Throwaway Joke
 _Reaching into your side pockets, you retrieve a random object that will either help or hurt: a rock, some gum, an old ticket..._
 
-* Place any card on Throwaway Joke.
-* Draw and discard the top card of your deck.
+_Corruption Upgrade: Surprise Twist_
+
+* At the end of your turn, draw and discard the top card of your deck.
    * If it was The Tower, trigger Catastrophe.
    * If it was The Magician, play a card from your hand on Unlikely Weapon or Unlikely Helmet.
    * If it was a Major Arcana, nothing happens.
@@ -149,16 +157,16 @@ _Reaching in to your side pockets, you retrieve a random object that will either
 ### Crisis Averted
 _"I don't think of it as a mistake, it's more of a happy accident."_
 
-* When you draw The Tower, perform all of the usual steps of Catastrophe, _but_:
-   * Instead of ending your turn immediately afterwards, instead draw 3 cards (Wise: 4, Foolish: 2) and play them as if they were in your hand.
+_Corruption Upgrade: Happy Accident_
+
+* In combat, when you draw any card, including The Tower, instead of adding that card to your hand, you may
+    instead shuffle that card back into your deck without triggering any special effect associated with that card.
 
 ### Happy Accident
 _It looks like you stumbled, but you're actually dancing._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Happy Accident to Unlock it.**
 
-* When you trigger Crisis Averted, you may choose to also:
-   * Take 1 Corruption Point
-   * Draw 6 additional cards (Wise: 8, Foolish: 4)
-   * If you draw The Tower again this turn, you may trigger Happy Accident without taking Corruption.
+* Take 1 Corruption Point to activate Happy Accident.
+  * Every other player may use Crisis Averted as if they _also_ had it.
 

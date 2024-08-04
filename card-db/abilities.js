@@ -135,6 +135,10 @@ class Concentrate {
             state.discard = state.discard.concat(this.bin);
             this.bin = [];
             state.draw();
+            if(state.getTags().includes('clever')){
+                state.doMagicDamage(1);
+                state.addShields(1);
+            }
             return {type: 'draw', cards: 1};
         }
         else{
@@ -264,6 +268,7 @@ class Feint{
 }
 
 class Flex {
+    // note: currently unused
     constructor() {
         this.name = 'Flex';
     }
@@ -288,6 +293,7 @@ class Flex {
 }
 
 class Blur {
+    // currently unused
     constructor() {
         this.name = 'Blur';
     }
@@ -329,14 +335,21 @@ class Study {
     }
 
     play(card, state){
+        // just draw a card
+        state.draw();
+        // then: tutor
         // remove the top four cards from the deck
-        let cards = state.deck.splice(0, 4);
+        let cards = state.deck.splice(0, 5);
 
         // what card do we want to select?
         let cardToSelect = cards[0];
         if (cards.includes('tower')) {
             state.log.push(`Studying with ${card} and found the tower! Catastrophe strikes!`);
             cardToSelect = 'tower';
+        }
+        else if (cards.includes('magician')) {
+            state.log.push(`Studying with ${card} and found the magician!`);
+            cardToSelect = 'magician';
         }
         else if(cards.filter(card => isMajorArcana(card)).length >= 1){
             state.log.push(`Studying with ${card} and found the fool! Honk honk! `);
@@ -365,6 +378,7 @@ class Study {
 }
 
 class TakeAChance{
+    // removed from the game
     constructor(){
         this.name = 'Take A Chance';
     }

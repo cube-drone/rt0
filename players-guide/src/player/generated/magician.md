@@ -30,6 +30,8 @@ Once per Day, The Magician can have planned ahead, retroactively.
 ### Rabbit Out of a Hat
 _A trick isn't that impressive on it's own: line up a few more, and you've got a show._
 
+_Corruption Upgrade: Saw In Half_
+
 * Place one card of each suit on Rabbit Out of a Hat
 * Cards sitting on Rabbit Out of a Hat remain there.
 * When all four cards are present:
@@ -48,6 +50,8 @@ _For the big finale, you're going to need a volunteer._
 ### Abracadabra
 _"I didn't know you knew that one!"  "Yeah, I didn't either."_
 
+_Corruption Upgrade: For My Next Trick_
+
 * Place a Magician on Abracadabra
 * Choose a spell that nobody has learned. While there is a card on Abracadabra, you can use this spell as if you had learned it.
 * Discard the Magician whenever you want.
@@ -65,6 +69,8 @@ _All of the knowledge in the world is at your fingertips, if you're willing to p
 ### Check Behind Your Ears
 _"Where did you get that?"_
 
+_Corruption Upgrade: Miser's Dream_
+
 * Place any card of suit Pentacles on Check Behind Your Ears and discard it, immediately.
 * Deal 1 Magic Damage
 * The Adversary who is dealt damage by Check Behind Your Ears must redraw their Intent.
@@ -81,6 +87,8 @@ _A seemingly endless supply of wealth - of course, it's all an illusion._
 
 ### Cups and Balls
 _No matter how hard they try to hit you, it seems like you're always one step ahead._
+
+_Corruption Upgrade: Magic Wand_
 
 * Place the Page of Cups on Cups and Balls
 * While a card is on Cups and Balls:
@@ -101,6 +109,8 @@ _"It's not the wand that's magic - the wand is nothing more than a prop to guide
 ### Three Card Monte
 _Your nimble mind helps you rearrange your thoughts as easily as if they were cards._
 
+_Corruption Upgrade: Is This Your Card_
+
 * Place any card of suit Cups on Three Card Monte
 * Discard two cards from hand, and draw three cards.
 * Discard any cards on Three Card Monte at the end of the turn.
@@ -119,6 +129,8 @@ _It's just a little sleight of hand._
 
 ### Disappearing Act
 _Poof._
+
+_Corruption Upgrade: Smoke and Mirrors_
 
 * Place The Moon on Disappearing Act.
 * Discard The Moon on any time during your turn to:

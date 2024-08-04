@@ -1,9 +1,9 @@
 
-const { KitchenSink, KnifeGuy, Laughter, Slaughter, Blackjack, ThrowawayJoke, SurpriseTwist } = require('./fool.js');
-const { Leo, Cancer, Aries, Taurus, Gemini, Capricorn, Scorpio, Libra } = require('./spells.js');
+const fool = require('./fool.js');
+const spells = require('./spells.js');
+const {GoodIdea, Flex, Feint, Study, TakeAChance, Blur} = require('./abilities.js');
 const Player = require('./Player.js');
-
-const { shuffle } = require('./utils.js');
+const Table = require('cli-table');
 
 // there are two things we want to accomplish
 // 1. just run a simulation against a single player to determine the raw power output of a player with a given ability or set of abilities
@@ -24,47 +24,120 @@ const { shuffle } = require('./utils.js');
 //  (before playtesting, which is the real gold standard)
 
 
+let table = new Table({
+    head: ['Name', 'Min', 'Max', 'StdDev', 'Score', 'Tags'],
+    colWidths: [20, 10, 10, 10, 10, 30]
+})
+
+let tablePush = (name, min, max, stdDev, score, tags) => {
+    table.push([String(name), String(min.toFixed(1)), String(max.toFixed(1)), String(stdDev.toFixed(2)), String(score.toFixed(1)),  String(tags)]);
+}
+
+let nCycles = 500;
+
 let player = Player.generateDefaultPlayer();
-let histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 500});
-console.dir("default");
-console.log(histogram.toString());
+let histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles});
+let baselines = {};
+baselines['default'] = histogram.score;
+tablePush("default", histogram.minScore, histogram.maxScore, histogram.stdDev, histogram.brickScore, []);
 
-let spells = [new Leo(), new Cancer(), new Aries(), new Taurus(), new Gemini(), new Capricorn(), new Scorpio(), new Libra()];
-for(let spell of spells){
-    console.dir(spell.name);
-    player = Player.generateDefaultPlayer();
-    player.addAbility(spell);
-    histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 500});
-    console.log(histogram.toString());
-}
-let goodtags = ['strong', 'fast', 'wise', 'lucky', 'clever', 'charming'];
-let badtags = ['weak', 'slow', 'foolish', 'unlucky', 'dull', 'repulsive'];
-for(let tag of goodtags){
-    player = Player.generatePlayerWithTags({tags: [tag]});
-    console.dir(tag);
-    histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 500});
-    console.log(histogram.toString());
-}
-for(let tag of badtags){
-    player = Player.generatePlayerWithTags({tags: [tag]});
-    console.dir(tag);
-    histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 500});
-    console.log(histogram.toString());
-}
+let playerS = Player.generateDefaultPlayer();
+playerS.addAbility(spells.Leo); // the baseline spell is Leo
+let histogramS = playerS.generateUsefulnessHistogram({nTurns: 15, nCycles});
+baselines['spells'] = histogramS.score;
+tablePush("spells", histogramS.minScore, histogramS.maxScore, histogramS.stdDev, histogramS.brickScore, []);
 
-let foolabilities = [new KitchenSink(), new KnifeGuy(), new Laughter(), new Slaughter(), new Blackjack(), new ThrowawayJoke(), new SurpriseTwist()];
-for(let ability of foolabilities){
+
+let pushTag = (tag) => {
+    player = Player.generatePlayerWithTags({tags: [tag]});
+    histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles});
+    baselines[tag] = histogram.score;
+    let score = histogram.score - baselines['spells'];
+    tablePush(tag, histogram.minScore, histogram.maxScore, histogram.stdDev, score, ['ability']);
+}
+let pushSpell = (ability) => {
     player = Player.generateDefaultPlayer();
     player.addAbility(ability);
-    console.dir(ability.name);
-    histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 500});
-    console.log(histogram.toString());
+    histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles});
+    let score = histogram.score - baselines['spells'];
+    tablePush(ability.name, histogram.minScore, histogram.maxScore, histogram.stdDev, score, (new ability()).tags ?? []);
+}
+let pushAbility = (ability) => {
+    player = Player.generateDefaultPlayer();
+    player.addAbility(ability);
+    histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles});
+    let score = histogram.score - baselines['default'];
+    tablePush(ability.name, histogram.minScore, histogram.maxScore, histogram.stdDev, score, (new ability()).tags ?? []);
+}
+let pushTagsAndAbilities = (tags, abilities) => {
+    player = Player.generateDefaultPlayer();
+    player.tags = tags;
+    let fullTags = [];
+    let abilityNames = [];
+    for(let ability of abilities){
+        tags = tags.concat(ability.tags ?? []);
+        abilityNames.push(ability.name);
+        player.addAbility(ability);
+    }
+    player.buildDeck();
+
+    histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 5000});
+    let name = [tags.join("-"), abilityNames.join("-")].join("-");
+    let baseline = baselines['default'];
+    if(tags.length === 1){
+        baseline = baselines[tags[0]];
+    }
+    tablePush(name, histogram.minScore, histogram.maxScore, histogram.stdDev, histogram.score - baseline, fullTags);
+}
+
+let goodtags = ['strong', 'fast', 'wise', 'lucky', 'clever', 'charming', 'nothing'];
+let badtags = ['weak', 'slow', 'foolish', 'unlucky', 'dull', 'repulsive'];
+for(let tag of goodtags.concat(badtags)){
+    pushTag(tag);
 }
 
 /*
+let specialAbilities = [GoodIdea, Flex, Feint, Study, TakeAChance, Blur];
+for(let ability of specialAbilities){
+    pushAbility(ability);
+}
+*/
+
+let allSpells = Object.values(spells);
+for(let spell of allSpells){
+    pushSpell(spell);
+    pushTagsAndAbilities(['clever'], [spell]);
+}
+
+let foolabilities = Object.values(fool);
+for(let ability of foolabilities){
+    pushAbility(ability);
+}
+
+console.dir(baselines);
+
+/*
+for(let ability of foolabilities){
+    for(let ability2 of foolabilities){
+        if(ability.name === ability2.name){
+            continue;
+        }
+        player = Player.generateDefaultPlayer();
+        player.addAbility(ability);
+        player.addAbility(ability2)
+        console.dir([ability.name, ability2.name].join("-"));
+        histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 500});
+        console.log(histogram.toString());
+
+    }
+}
+*/
+
+console.log(table.toString());
+
 //debugging
-let bj = new Blackjack();
+/*
 player = Player.generateDefaultPlayer();
-player.addAbility(bj);
+player.addAbility(spells.Capricorn);
 console.log(player.generateLog())
 */

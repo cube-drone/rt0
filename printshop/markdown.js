@@ -22,12 +22,14 @@ function generateCombatMarkdown({data}){
     addToMarkdown(data.combat.catastrophe);
     addToMarkdown(data.combat.friendship);
 
+    /*
     addToMarkdown(data.combat.flex);
     addToMarkdown(data.combat.blur);
     addToMarkdown(data.combat.feint);
     addToMarkdown(data.combat.study);
     addToMarkdown(data.combat.takeachance);
     addToMarkdown(data.combat.goodidea);
+    */
 
     addToMarkdown(data.combat.honk);
 
@@ -92,11 +94,14 @@ function generateMagicianMarkdown({data}){
     markdown += data.arcana.magician.narrativeAbility;
     markdown += '\n\n';
 
-    const addToMarkdown = ({name, flavor, description, extraDescription, corruption}) => {
+    const addToMarkdown = ({name, flavor, description, extraDescription, corruption, upgrade}) => {
         markdown += `### ${name}\n`;
         markdown += `_${flavor}_\n\n`
         if(corruption){
             markdown += `**Corruption Upgrade: Mark 3 Corruption Points on ${name} to Unlock it.**\n\n`;
+        }
+        if(upgrade){
+            markdown += `_Corruption Upgrade: ${upgrade}_\n\n`;
         }
 
         markdown += description;
@@ -148,11 +153,14 @@ function generateFoolMarkdown({data}){
     markdown += data.arcana.fool.narrativeAbility;
     markdown += '\n\n';
 
-    const addToMarkdown = ({name, flavor, description, extraDescription, corruption}) => {
+    const addToMarkdown = ({name, flavor, description, extraDescription, corruption, upgrade}) => {
         markdown += `### ${name}\n`;
         markdown += `_${flavor}_\n\n`
         if(corruption){
             markdown += `**Corruption Upgrade: Mark 3 Corruption Points on ${name} to Unlock it.**\n\n`;
+        }
+        if(upgrade){
+            markdown += `_Corruption Upgrade: ${upgrade}_\n\n`;
         }
 
         markdown += description;
@@ -204,11 +212,14 @@ function generatePriestessMarkdown({data}){
     markdown += data.arcana.highpriestess.narrativeAbility;
     markdown += '\n\n';
 
-    const addToMarkdown = ({name, flavor, description, extraDescription, corruption}) => {
+    const addToMarkdown = ({name, flavor, description, extraDescription, corruption, upgrade}) => {
         markdown += `### ${name}\n`;
         markdown += `_${flavor}_\n\n`
         if(corruption){
             markdown += `**Corruption Upgrade: Mark 3 Corruption Points on ${name} to Unlock it.**\n\n`;
+        }
+        if(upgrade){
+            markdown += `_Corruption Upgrade: ${upgrade}_\n\n`;
         }
 
         markdown += description;

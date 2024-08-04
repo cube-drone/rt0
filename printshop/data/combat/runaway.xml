@@ -12,7 +12,7 @@
     <description>
 * Place any card on Run Away.
 * Once a card has been placed on Run Away, the next card must either be one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.
-* When there are 4 cards (Fast: 3, Slow: 5) on Run Away:
+* When there are 3 cards (Fast: 2, Slow: 4) on Run Away:
   * Move yourself to any unoccupied Zone in the current Room or
   * Remove yourself from battle entirely. Your participation in this combat is over! The GM decides where you are hiding.
 * Then: discard all cards on Run Away.

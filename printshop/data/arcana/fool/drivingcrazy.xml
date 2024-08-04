@@ -4,10 +4,10 @@
     <name>You're Driving Me Crazy</name>
     <slug>drivingcrazy</slug>
     <description>
-* When Everyone Loves a Parade triggers, after Adversaries have redrawn their Intents, you may also:
-   * Discard any of the newly drawn Intents.
-   * An Adversary with a discarded Intent does not take an action this turn.
-   * Take 1 Corruption Point for each discarded Intent after the first (which is a freebie).
+* Take 1 Corruption Point to activate You're Driving Me Crazy.
+* While You're Driving Me Crazy is active, every time you cause all Adversaries to redraw their Intent,
+    you may also force one Adversary to discard their Intent entirely.
+* An Adversary with no Intent will not perform an action this turn.
     </description>
 <flavor>
 You're such a spectacle that even your foes can't help but watch.

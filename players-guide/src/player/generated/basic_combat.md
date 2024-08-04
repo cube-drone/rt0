@@ -22,6 +22,8 @@ _You take a moment to focus: the world slows down around you._
 * When there are 2 (Wise: 1, Foolish: 3) cards on Concentrate:
   * discard all cards on Concentrate and
   * draw a new card
+  * if Clever, deal 1 Magic Damage and gain 1 Shield
+  * if Charming, you may choose to make an Adversary redraw their Intent
 
 ## Movement / Skill
 _I, too, like to move it move it._
@@ -30,8 +32,8 @@ _I, too, like to move it move it._
 * When there are 2 (Fast: 1, Slow: 3) cards on Movement / Skill:
 * Discard all cards on Movement / Skill and
   * Move 1 Zone or
-  * Use a named Skill, like "Charm", "Loop", or "Deus Ex Machina" or
-  * Shuffle your discard pile into your deck, then make a skill check.
+  * Perform a non-combat action, such as hacking a computer or forcing open a door.
+     (_Shuffle your discard pile into your deck, then make a skill check_)
 
 Some actions during battle call for Skill Checks. "I hack the computer while the battle is raging on", or "I force open the door".
 
@@ -42,7 +44,7 @@ _You're not a coward, you're just... tactical. Tactically shitting yourself._
 
 * Place any card on Run Away.
 * Once a card has been placed on Run Away, the next card must either be one higher than the highest card on Run Away, or one lower than the lowest card on Run Away.
-* When there are 4 cards (Fast: 3, Slow: 5) on Run Away:
+* When there are 3 cards (Fast: 2, Slow: 4) on Run Away:
   * Move yourself to any unoccupied Zone in the current Room or
   * Remove yourself from battle entirely. Your participation in this combat is over! The GM decides where you are hiding.
 * Then: discard all cards on Run Away.
@@ -66,58 +68,6 @@ _You can't help but feel a connection to the people around you._
 * Corruption may be marked on Friendship.
 * At the end of the day, draw 1 (Charming: 2) empty corruption circles on Friendship.
 * Players with Strange may not use Friendship.
-
-## Flex
-_With a great strain, you can push yourself to the limits of what you're capable of._
-
-* Only players with Strong can use Flex.
-* Place The Emperor on Flex.
-* While there is a card on Flex, any damage generated is multiplied by 2.
-* Discard the card played on Flex at the end of the turn.
-
-## Blur
-_You've moved so fast that even you're not sure where you are._
-
-* Only players with Fast can use Blur.
-* Place The Chariot on Blur.
-* Generate 5 Shield.
-* While there is a card on Blur, your Shield are not discarded at the end of the round.
-* Discard the card played on Blur at the beginning of your next turn.
-
-## Feint
-_With a well-considered feint, you can make your opponent show their hand._
-
-* Only players with Wise can use Feint.
-* Place The Moon on Feint.
-  * Reveal a hidden Intent and
-  * You may force an Adversary to redraw an Intent.
-* Discard the card played on Feint at the end of the turn.
-
-## Study
-_You read about a situation like this in a book, once: you know just what to do._
-
-* Only players with Clever can use Study.
-* Place The Hermit on Study.
-* Draw the top 4 cards from your deck. Choose one and add it to your hand. Discard the rest.
-* Discard the card played on Study at the start of your turn.
-
-## Take a Chance
-_Throwing caution to the wind, you take a chance on... something._
-
-* Only players with Lucky can use Take a Chance.
-* Place The Wheel of Fortune on Take a Chance.
-* Draw & discard the top card of your deck.
-  * If it was an Ace through 9, do nothing.
-  * Otherwise, choose one of Good Idea!, Feint, Flex, Blur, or Study, and use that ability as if you had played a card there.
-* Discard the card played on Take a Chance at the end of the turn.
-
-## Good Idea!
-_Somehow, by cheering your friends on, you've encouraged them to do better._
-
-* Only players with Charming can use Good Idea!.
-* Place The Hierophant on Good Idea!.
-* Choose another player: they draw 3 cards.
-* Discard the card played on Good Idea! at the end of the turn.
 
 ## Honk
 _Honk!_

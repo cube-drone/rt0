@@ -54,7 +54,7 @@ _The twins are masters of illusion._
 
 ### Combat - Twin
 * Place The Magician on Gemini.
-* Draw 5 Cards (Clever: 10)
+* Draw 5 Cards (Clever or Wise: 10 Cards)
 * Discard the card played on Gemini at the end of the turn.
 
 ### Skill - Clone
@@ -80,12 +80,11 @@ _The archer is unerring._
 _The goat... loves the ladies._
 
 ### Combat - Capricious
-* Place The Magician on Capricorn, along with one other card.
-* The other card must be The High Priestess, The Empress, The Lovers, The Devil, Strength, The Star, The World, or any Queen.
-* These cards must be played on the same turn.
+* Place The Magician on Capricorn.
+* Capricorn can _only_ be played if you have The High Priestess, The Empress, The Lovers, The Devil, Strength, The Star, The World, or any Queen in hand.
 * Either:
-   * Deal 30 Magic Damage (Clever: 60) or
-   * Gain 30 Shield (Clever: 60).
+   * Deal 40 Magic Ranged Damage (Clever: 80) or
+   * Gain 40 Shield (Clever: 80).
 * At the end of the turn, discard all cards placed on Capricorn.
 
 ### Skill - Loop

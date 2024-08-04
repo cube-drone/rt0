@@ -1,3 +1,5 @@
+let assert = require('assert');
+
 let deck = [];
 
 let majorArcana = [
@@ -52,6 +54,21 @@ for(let value of ['ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'page', '
 for(let card of majorArcana) {
     deck.push(card);
 }
+
+let girls = [
+    'queen of swords',
+    'queen of wands',
+    'queen of cups',
+    'queen of pentacles',
+    'high priestess',
+    'empress',
+    'lovers',
+    'strength',
+    'devil',
+    'star',
+    'world'
+];
+
 
 function getDeck() {
     return JSON.parse(JSON.stringify(deck));
@@ -123,6 +140,14 @@ function isPentacles(card) {
     return setPentacles.has(card);
 }
 
+function isGirl(card){
+    return girls.includes(card);
+}
+assert(isGirl('queen of swords'));
+assert(isGirl('queen of wands'));
+assert(isGirl('high priestess'));
+assert(!isGirl('knight of wands'));
+
 // freeze the arrays to prevent modification
 Object.freeze(deck);
 Object.freeze(majorArcana);
@@ -193,6 +218,11 @@ function randomHand(size){
     return hand;
 }
 
+function randomCard(){
+    let deck = getDeck();
+    return deck[Math.floor(Math.random() * deck.length)];
+}
+
 // the "get" functions produce a deep copy
 // (the arrays are frozen to prevent modification)
 module.exports = {
@@ -217,6 +247,8 @@ module.exports = {
     pentacles,
     getPentacles,
     isPentacles,
+    isGirl,
     numericalValue,
     randomHand,
+    randomCard,
 };

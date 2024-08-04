@@ -8,12 +8,14 @@ const {
     isMinorArcana
 } = require('./tarot.js');
 
+const { Tower } = require('./abilities.js');
 class KitchenSink {
     constructor() {
         this.name = 'Kitchen Sink';
         this.bin = [];
         this.shieldBonusGenerated = false;
         this.damageBonusGenerated = false;
+        this.tags = ['fool'];
     }
 
     priorities() {
@@ -45,26 +47,26 @@ class KitchenSink {
         if(this.damageBonusGenerated || Math.random() < 0.5){
             state.log.push(`The fool draws an improvised shield out of the kitchen sink`)
             if(state.tags.includes('fast')){
-                state.shieldBonus = 4;
+                state.shieldBonus = 5;
             }
             else if(state.tags.includes('slow')){
-                state.shieldBonus = 2;
+                state.shieldBonus = 3;
             }
             else{
-                state.shieldBonus = 3;
+                state.shieldBonus = 4;
             }
             return;
         }
         else{
             state.log.push(`The fool draws an improvised weapon out of the kitchen sink`)
             if(state.tags.includes('strong')){
-                state.damageBonus = 4;
+                state.damageBonus = 5;
             }
             else if(state.tags.includes('weak')){
-                state.damageBonus = 2;
+                state.damageBonus = 3;
             }
             else{
-                state.damageBonus = 3;
+                state.damageBonus = 4;
             }
             return;
         }
@@ -76,6 +78,7 @@ class KnifeGuy {
         this.name = 'Knife Guy';
         this.bin = [];
         this.bonusGenerated = false;
+        this.tags = ['corruption', 'fool'];
     }
 
     priorities() {
@@ -107,14 +110,15 @@ class KnifeGuy {
             return;
         }
         state.corruption -= 1;
-        state.damageBonus = 4;
-        state.shieldBonus = 4;
+        state.damageBonus = 5;
+        state.shieldBonus = 5;
     }
 }
 
 class Laughter{
     constructor(){
         this.name = 'Laughter';
+        this.tags = ['rangedDmg', 'magicDmg', 'fool']
         this.bin = [];
     }
 
@@ -134,7 +138,7 @@ class Laughter{
         let totalValueOfCardsExiled = cardsExiled.reduce((acc, c) => acc + numericalValue(c), 0);
         state.hand = state.hand.filter(c => isMinorArcana(c));
         state.log.push(`Using ${card} to play Laughter! with ${cardsExiled.join(",")}`);
-        state.doMagicRangedDamage(totalValueOfCardsExiled);
+        state.doMagicRangedDamage(totalValueOfCardsExiled * 2);
     }
 }
 
@@ -142,6 +146,7 @@ class Slaughter{
     constructor(){
         this.name = 'Slaughter';
         this.bin = [];
+        this.tags = ['ranged', 'magic', 'corruption', 'fool']
     }
 
     priorities(){
@@ -163,7 +168,7 @@ class Slaughter{
         let totalValueOfCardExiled = numericalValue(cardExiled);
         state.hand = state.hand.filter(c => c != cardExiled);
         state.log.push(`Using ${card} to play Slaughter! with ${cardExiled}`);
-        state.doMagicRangedDamage(totalValueOfCardExiled * 5);
+        state.doMagicRangedDamage(totalValueOfCardExiled * 10);
     }
 }
 
@@ -172,6 +177,7 @@ class Blackjack{
         this.name = 'Blackjack';
         this.bin = [];
         this.tokens = 0;
+        this.tags = ['fool'];
     }
 
     priorities(){
@@ -202,24 +208,24 @@ class Blackjack{
         if(valueOfBin >= 21){
             state.log.push(`Using ${this.bin.join(",")} to play Blackjack!`);
             if(state.getTags().includes('strong')){
-                state.doDamage(6 + this.tokenBonus());
+                state.doDamage(3 + this.tokenBonus());
             }
             else if(state.getTags().includes('weak')){
+                state.doDamage(1 + this.tokenBonus());
+            }
+            else{
                 state.doDamage(2 + this.tokenBonus());
             }
-            else{
-                state.doDamage(4 + this.tokenBonus());
-            }
             if(state.getTags().includes('fast')){
-                state.addShields(6 + this.tokenBonus());
+                state.addShields(3 + this.tokenBonus());
             }
             else if(state.getTags().includes('slow')){
-                state.addShields(2 + this.tokenBonus());
+                state.addShields(1 + this.tokenBonus());
             }
             else{
-                state.addShields(4 + this.tokenBonus());
+                state.addShields(2 + this.tokenBonus());
             }
-            this.tokens += 1;
+            this.tokens += 2;
             for(let card of this.bin){
                 state.discard.push(card);
             }
@@ -228,10 +234,57 @@ class Blackjack{
     }
 }
 
+class HitMe {
+    constructor(){
+        this.name = 'Hit Me';
+        this.blackjack = new Blackjack();
+        this.tags = ['corruption', 'fool'];
+    }
+
+    priorities(){
+        return {
+            'default': 4,
+        }
+    }
+
+    accepts(card, state){
+        return this.blackjack.accepts(card, state);
+    }
+
+    reset(){
+        this.blackjack.reset();
+    }
+
+    play(card, state){
+        this.blackjack.play(card, state);
+    }
+
+    onTurnEnd(state){
+        // maybe a 50% chance of getting hit, which we'll interpret as a coinflip, here
+        if(Math.random() < 0.5){
+            state.log.push("Hit Me!");
+            let topCard = state.deck[state.deck.length - 1];
+            if(topCard == "tower"){
+                state.corruption -= 1;
+                return;
+            }
+            else if(isMajorArcana(topCard)){
+                return;
+            }
+            else if(isMinorArcana(topCard)){
+                this.blackjack.tokens += 1;
+                return;
+            }
+        }
+    }
+
+}
+
 class ThrowawayJoke {
     constructor(){
         this.name = 'Throwaway Joke';
         this.bin = [];
+        this.tags = ['fool', 'passive'];
     }
 
     priorities(){
@@ -241,11 +294,15 @@ class ThrowawayJoke {
     }
 
     accepts(card){
-        return isMinorArcana(card) && numericalValue(card) <= 5;
+        return false;
+    }
+
+    onTurnEnd(state){
+        this.play(null, state);
     }
 
     play(card, state){
-        state.log.push(`Playing ${card} to make a throwaway joke!`);
+        state.log.push(`Playing a throwaway joke!`);
 
         let topCard = state.deck.pop();
 
@@ -254,7 +311,6 @@ class ThrowawayJoke {
             state.log.push(`The joke was too good! Tower was drawn, ${card} was returned to hand.`);
         }
 
-        state.discard.push(card);
         state.discard.push(topCard);
         /*
             * * If it is a Sword, deal 3 Damage.
@@ -281,6 +337,7 @@ class SurpriseTwist{
     constructor(){
         this.name = 'Surprise Twist';
         this.bin = [];
+        this.tags = ['corruption', 'fool', 'passive'];
     }
 
     priorities(){
@@ -290,24 +347,23 @@ class SurpriseTwist{
     }
 
     accepts(card, state){
-        if(state.corruption <= 0){
-            return false;
-        }
-        return isMinorArcana(card) && numericalValue(card) <= 5;
+        return false;
+    }
+
+    onTurnEnd(state){
+        this.play(null, state);
     }
 
     play(card, state){
-        state.log.push(`Playing ${card} to make a surprise twist!`);
+        state.log.push(`Adding a surprise twist!`);
 
         let topCard = state.deck.pop();
 
         if(topCard == "tower"){
             state.corruption -= 1;
-            state.hand.push(card);
-            state.log.push(`The twist was too good! Tower was drawn, ${card} was returned to hand.`);
+            return (new Tower()).play(topCard, state);
         }
 
-        state.discard.push(card);
         if(topCard == "fool" || topCard == "hierophant" || topCard == "emperor" || topCard == "chariot" || topCard == "hermit" || topCard == "moon" || topCard == "chariot"){
             state.hand.push(topCard);
             return;
@@ -347,9 +403,89 @@ class SurpriseTwist{
         }
         state.discard.push(topCard);
     }
-
 }
 
+class Parade{
+    constructor(){
+        this.name = 'Parade';
+        this.bin = [];
+        this.tags = ['fool', 'intent'];
+    }
+
+    priorities(){
+        return {
+            'default': 4,
+        }
+    }
+
+    accepts(card){
+        if(this.bin.length == 0){
+            return isMinorArcana(card) && numericalValue(card) < 8;
+        }
+        else{
+            return numericalValue(card) == numericalValue(this.bin[0]);
+        }
+    }
+
+    play(card, state){
+        state.log.push(`Playing a parade!`);
+        if( this.bin.length == 0){
+            this.bin.push(card);
+            return;
+        }
+        else{
+            state.discard.push(card);
+            state.discard.push(this.bin[0]);
+            this.bin = [];
+            state.redrawAllIntents();
+            state.addShields(3);
+        }
+    }
+}
+
+class Crazy{
+    constructor(){
+        this.name = 'Crazy';
+        this.active = false;
+        this.bin = [];
+        this.tags = ['fool', 'intent', 'corruption'];
+    }
+
+    priorities(){
+        return {
+            'default': 5,
+        }
+    }
+
+    accepts(card, state){
+        if(state.corruption >= 0 && !this.active){
+            state.corruption -= 1;
+            this.active = true;
+        }
+        if(this.bin.length == 0){
+            return isMinorArcana(card) && numericalValue(card) < 8;
+        }
+        else{
+            return numericalValue(card) == numericalValue(this.bin[0]);
+        }
+    }
+
+    play(card, state){
+        state.log.push(`You're driving me crazy!`);
+        if( this.bin.length == 0){
+            this.bin.push(card);
+            return;
+        }
+        else{
+            state.discard.push(card);
+            state.discard.push(this.bin[0]);
+            this.bin = [];
+            state.redrawAllIntents();
+            state.cancelIntent();
+        }
+    }
+
+}
 
 
 module.exports = {
@@ -358,6 +494,9 @@ module.exports = {
     Laughter,
     Slaughter,
     Blackjack,
+    HitMe,
     ThrowawayJoke,
-    SurpriseTwist
+    SurpriseTwist,
+    Parade,
+    Crazy,
 }

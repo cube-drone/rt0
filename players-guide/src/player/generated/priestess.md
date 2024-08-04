@@ -34,6 +34,8 @@ understand, but their actions always become clear - eventually.
 ### All Signs Point to Yes
 _It almost seems like you're in a trance._
 
+_Corruption Upgrade: Better Not Tell You Now_
+
 * Place the High Priestess on All Signs Point to Yes
 * While the High Priestess is on All Signs Point to Yes, Aces, Twos, Threes, and Nines can be used on Concentrate.
 * Discard the High Priestess from All Signs Point to Yes whenever you like.
@@ -52,6 +54,8 @@ _Changing minds. Breaking minds._
 
 ### YES NO
 _Their eyes are wide with anticipation. Their third eye is wide with malice._
+
+_Corruption Upgrade: GOOD BYE_
 
 * Place the High Priestess on YES NO
 * Look at the top five cards of your deck.
@@ -75,6 +79,8 @@ _The visions aren't always contained: sometimes they spill out, causing a mass h
 ### Origami Folding
 _"They're just standing there, playing with a little piece of paper."_
 
+_Corruption Upgrade: Rolling Bones_
+
 * Instead of discarding cards from Concentrate, place them on Origami Folding.
 * When there are 8 cards on Origami Folding, you may either:
     * Look at the top five cards of the deck, place any number of them on the bottom of the deck, then return them to the top of the deck in any order AND
@@ -96,6 +102,8 @@ _"Let's see what the future holds. Oh... it's bad. It's really bad. You should p
 
 ### Lucky Numbers: 3, 4, 5, 6, 7, 8
 _If you can predict the future, every number is lucky._
+
+_Corruption Upgrade: A Mistake Will Soon Be Corrected_
 
 * At the start of combat, draw a card from your deck and place it face-up on Lucky Numbers.
 * If that card is The Tower, instead shuffle it back into your deck and replace it with a new card.
@@ -128,6 +136,8 @@ _Every loose object in the room whirling around you like celestial bodies, and y
 ### Palm Reading
 _The trick with palm reading is to strike others with your palms and then read their faces._
 
+_Corruption Upgrade: Cold Reading_
+
 * If you are Strong, every time you draw a card, if it is a Sword, deal 1 Damage.
 * If you are Fast, every time you draw a card, if it is a Cup, generate 1 Shield.
 * If you are Lucky, every time you draw a card, if it is a King or Queen, draw another card.
@@ -154,6 +164,8 @@ the Corruption Point.
 
 ### Ballistics
 _Any object, sufficiently accelerated, can become a deadly weapon._
+
+_Corruption Upgrade: Astronomy_
 
 * Place any Wand on Ballistics
 * While there is a Wand on Ballistics, all of your Damage and Magic Damage becomes Ranged Magic Damage.

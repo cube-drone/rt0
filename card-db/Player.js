@@ -2,7 +2,7 @@ const { getDeck } = require('./tarot.js');
 const { shuffle } = require('./utils.js');
 
 const { Strike, Defend, Concentrate, Tower, Foolish, GoodIdea, Feint, Flex, Blur, Study, TakeAChance } = require('./abilities.js');
-const { Leo, Cancer, Aries, Taurus, Gemini, Capricorn, Scorpio, Libra } = require('./spells.js');
+const { Leo, Cancer, Sagittarius, Aries, Taurus, Gemini, Capricorn, Scorpio, Libra } = require('./spells.js');
 
 class PlayReport {
     constructor({damages, shields, rangedDamages, nTurns}){
@@ -11,11 +11,17 @@ class PlayReport {
         let nCycles = damages.length;
         this.averageDamage = damages.reduce((a, b) => a + b, 0) / nCycles;
         this.averageShields = shields.reduce((a, b) => a + b, 0) / nCycles;
+        this.scores = damages.map((dmg, i) => (dmg + (shields[i] * 1.05))/nTurns );
         this.averageRangedDamage = rangedDamages.reduce((a, b) => a + b, 0) / nCycles;
         this.averageDamagePerTurn = this.averageDamage / nTurns;
         this.averageShieldsPerTurn = this.averageShields / nTurns;
         this.averageRangedDamagePerTurn = this.averageRangedDamage / nTurns;
-        this.score = this.averageDamagePerTurn + (this.averageShieldsPerTurn * 1.05); // we should bias slightly towards shields
+
+        // score is the average of all scores
+        this.score = this.scores.reduce((a, b) => a + b, 0) / nCycles;
+        this.minScore = Math.min(...this.scores);
+        this.maxScore = Math.max(...this.scores);
+        this.stdDev = Math.sqrt(this.scores.map(score => Math.pow(score - this.score, 2)).reduce((a, b) => a + b, 0) / nCycles);
         this.brickScore = this.score - 10.5;
     }
 
@@ -25,8 +31,12 @@ class PlayReport {
 }
 
 class Player {
-    constructor({priority, extraTags}={}) {
+    constructor({priority, extraTags, className}={}) {
+
+        this.abilityConstructors = [];
         this.abilities = [];
+        // className might be "magician", "fool", "emperor", etc.
+        this.className = className ?? 'default';
 
         this.hand = [];
         this.handSize = 5;
@@ -77,10 +87,9 @@ class Player {
 
         this.log = [];
 
-        for(let ability of this.abilities){
-            if(ability.reset){
-                ability.reset();
-            }
+        this.abilities = [];
+        for(let abilityConstructor of this.abilityConstructors){
+            this.abilities.push(new abilityConstructor());
         }
 
         this.buildDeck();
@@ -120,28 +129,14 @@ class Player {
         // "brick" is the most basic character, with no special abilities
         let brick = new Player();
 
-        brick.addAbility(new Strike());
-        brick.addAbility(new Defend());
-        brick.addAbility(new Concentrate());
-        brick.addAbility(new Tower());
+        brick.addAbility(Strike);
+        brick.addAbility(Defend);
+        brick.addAbility(Concentrate);
+        brick.addAbility(Tower);
 
         brick.buildDeck();
 
         return brick;
-    }
-
-    static generateDefaultPlayerWithSpells(){
-        let player = Player.generateDefaultPlayer();
-        let spells = [
-            new Leo(),
-            new Cancer()
-        ]
-        shuffle(spells);
-        player.addAbility(spells.pop());
-
-        player.buildDeck();
-
-        return player;
     }
 
     static generatePlayerWithTags({tags}){
@@ -151,24 +146,24 @@ class Player {
         }
         let brick = new Player({extraTags: tags});
 
-        brick.addAbility(new Strike());
-        brick.addAbility(new Defend());
-        brick.addAbility(new Concentrate());
-        brick.addAbility(new Tower());
+        brick.addAbility(Strike);
+        brick.addAbility(Defend);
+        brick.addAbility(Concentrate);
+        brick.addAbility(Tower);
 
         let defaultSpells = [
-            new Leo(),
-            new Cancer(),
-            new Taurus(),
-            new Aries(),
-            new Gemini(),
-            new Capricorn(),
+            Leo,
+            Cancer,
+            Taurus,
+            Aries,
+            Gemini,
+            Capricorn,
         ]
         shuffle(defaultSpells);
         if(tags.includes("clever")){
             let cleverSpells = [
-                new Scorpio(),
-                new Libra()
+                Scorpio,
+                Libra
             ]
             shuffle(cleverSpells);
             brick.addAbility(cleverSpells.pop());
@@ -178,16 +173,16 @@ class Player {
         }
 
         if(tags.includes("foolish")){
-            brick.addAbility(new Foolish());
+            brick.addAbility(Foolish);
         }
         if(tags.includes("wise")){
-            brick.addAbility(new Feint());
+            brick.addAbility(Feint);
         }
         if(tags.includes("clever")){
-            brick.addAbility(new Study());
+            brick.addAbility(Study);
         }
         if(tags.includes("charming")){
-            brick.addAbility(new GoodIdea());
+            brick.addAbility(GoodIdea);
         }
 
         return brick;
@@ -222,7 +217,9 @@ class Player {
         return this.tags;
     }
 
-    addAbility(ability) {
+    addAbility(abilityConstructor) {
+        this.abilityConstructors.push(abilityConstructor);
+        let ability = new abilityConstructor();
         if(!ability.name){
             throw new Error("Ability must have a name, got " + ability);
         }
@@ -352,6 +349,7 @@ class Player {
         // shuffle discard into deck
         this.hand = [];
         this.discard = [];
+        // this technically completely rebuilds the deck, so if we pulled some hacks to change the deck they are not reflected here
         this.buildDeck();
     }
 
@@ -400,12 +398,22 @@ class Player {
         // the idea is that players will only redraw enemy intents if the alternative is better, so
         //  (at least in our modeling) we should treat it as block?
         this.log.push(`Redrawing intent!`);
-        this.shieldsThisTurn += 10;
-        // if this.fight, there's a fight going on, so we should redraw the enemy intent, preferably whichever one is the nastiest
+        this.addShields(5);
+        // TODO: model this better by starting with the average of all Adversary damage?
+    }
+
+    cancelIntent(){
+        // presumably, the intent WOULD have dealt damage, so
+        //  we should definitely treat cancelIntent as if it were block
+        this.log.push(`Redrawing intent!`);
+        this.addShields(10);
+        // TODO: model this better by starting with the average of all Adversary damage?
     }
 
     redrawAllIntents(){
         // this one's easier to code but it doesn't so much work, yet
+        this.log.push(`Redrawing all intents!`);
+        this.addShields(8);
     }
 }
 

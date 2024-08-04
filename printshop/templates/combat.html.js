@@ -283,6 +283,7 @@ function combatTemplate({combat}){
         ${combatAbility({...combat.runaway, row: '9 / 13', column: '1'})}
 
         ${combatAbility({...combat.defend, row: '1 / 5', column: '2'})}
+        ${combatAbility({...combat.honk, row: '5 / 9', column: '2'})}
         ${combatAbility({...combat.movement, row: '9 / 13', column: '2'})}
 
         ${combatAbility({...combat.concentrate, row: '1 / 5', column: '3'})}
@@ -320,24 +321,6 @@ function combatTemplate({combat}){
 
     </div>
     `;
-}
-
-function combatTemplatePageTwo({combat}){
-    return `
-    <div id="combat-two" class="ability-grid">
-
-        ${combatAbility({...combat.goodidea, row: '1 / 5', column: '1'})}
-        ${combatAbility({...combat.honk, row: '5 / 9', column: '1'})}
-        ${combatAbility({...combat.blur, row: '9 / 13', column: '1'})}
-
-        ${combatAbility({...combat.feint, row: '1 / 5', column: '2'})}
-        ${combatAbility({...combat.study, row: '9 / 13', column: '2'})}
-
-        ${combatAbility({...combat.flex, row: '1 / 5', column: '3'})}
-        ${combatAbility({...combat.takeachance, row: '9 / 13', column: '3'})}
-
-    </div>
-    `
 }
 
 function magicTemplate({spells}){
@@ -575,7 +558,6 @@ function priestessPageTwo({arcana}){
 function combatPages(data){
     return [
         combatTemplate(data),
-        combatTemplatePageTwo(data)
     ];
 }
 
@@ -621,7 +603,6 @@ function priestessPages(data){
 
 module.exports = {
     combatTemplate,
-    combatTemplatePageTwo,
     combatPages,
     magicTemplate,
     magicTemplatePageTwo,

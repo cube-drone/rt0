@@ -7,8 +7,8 @@
         <card>The Tower</card>
     </helper>
     <description>
-* When you draw The Tower, perform all of the usual steps of Catastrophe, _but_:
-   * Instead of ending your turn immediately afterwards, instead draw 3 cards (Wise: 4, Foolish: 2) and play them as if they were in your hand.
+* In combat, when you draw any card, including The Tower, instead of adding that card to your hand, you may
+    instead shuffle that card back into your deck without triggering any special effect associated with that card.
 </description>
 <flavor>
 "I don't think of it as a mistake, it's more of a happy accident."

@@ -12,6 +12,8 @@
 * When there are 2 (Wise: 1, Foolish: 3) cards on Concentrate:
   * discard all cards on Concentrate and
   * draw a new card
+  * if Clever, deal 1 Magic Damage and gain 1 Shield
+  * if Charming, you may choose to make an Adversary redraw their Intent
     </description>
     <flavor>
         You take a moment to focus: the world slows down around you.
