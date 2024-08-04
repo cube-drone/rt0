@@ -283,7 +283,7 @@ function combatTemplate({combat}){
         ${combatAbility({...combat.runaway, row: '9 / 13', column: '1'})}
 
         ${combatAbility({...combat.defend, row: '1 / 5', column: '2'})}
-        ${combatAbility({...combat.honk, row: '5 / 9', column: '2'})}
+        ${combatAbility({...combat.honk, row: '5 / 7', column: '2'})}
         ${combatAbility({...combat.movement, row: '9 / 13', column: '2'})}
 
         ${combatAbility({...combat.concentrate, row: '1 / 5', column: '3'})}
@@ -294,6 +294,12 @@ function combatTemplate({combat}){
             .turn {
                 grid-row: 5 / 9;
                 grid-column: 1;
+                font-size: x-small;
+            }
+
+            .corruption-heal {
+                grid-row: 7 / 9;
+                grid-column: 2;
                 font-size: x-small;
             }
         </style>
@@ -319,6 +325,26 @@ function combatTemplate({combat}){
 
         </div>
 
+        <div class="combat-ability corruption-heal">
+            <h3>Uncanny Resilience</h3>
+            <ul>
+                <li>Take a corruption point. </li>
+                <li> Draw a card, then gain HP eqivalent to the
+                    numerical value of that card. </li>
+                <li> This can heal you above your maximum HP. </li>
+            </ul>
+        </div>
+
+
+    </div>
+    `;
+}
+
+function magicPage({spell}){
+    return `
+    <div id="magic-${spell.slug}" class="ability-grid">
+        ${spellCombat({...spell, row: '1 / 7', column: '1'})}
+        ${spellSkill({...spell, row: '7 / 14', column: '1'})}
     </div>
     `;
 }
@@ -562,11 +588,11 @@ function combatPages(data){
 }
 
 function magicPages(data){
-    return [
-        magicTemplate(data),
-        magicTemplatePageTwo(data),
-        magicTemplatePageThree(data)
-    ];
+    let spellPages = [];
+    for(let spell of Object.values(data.spells)){
+        spellPages.push(magicPage({spell}));
+    }
+    return spellPages;
 }
 
 function arcanaPages(data){

@@ -126,6 +126,9 @@ _The fish can be elusive, which is why you need a good hook._
 ### Combat - Fishing
 * Place a Magician on Pisces.
 * Search your deck for a card (Clever: 2 cards), place it in your hand, and then shuffle the deck.
+* You may move any or all Adversaries in the combat to your current Zone.
+   * Deal 5 Damage to any Adversary so moved.
+   * If they had Flying, they no longer have Flying.
 * At the end of the turn, discard The Magician.
 
 ### Skill - Hook

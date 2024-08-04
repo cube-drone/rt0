@@ -75,5 +75,4 @@ _Honk!_
 * Players with Foolish must use Honk, once per turn.
 * Any player can use Honk.
 * Play any card on Honk, then discard it.
-* Make a funny face at the GM, or a silly noise, or honk, or blow a raspberry, or say "Farts ahoy!" in your best pirate voice.
 
