@@ -451,8 +451,8 @@ function magicianPageTwo({arcana}){
     <div id="magician-2" class="ability-grid">
         ${arcanaAbility({...arcana.magician.abilities.yourcard, row: '6 / 9', column: '1'})}
         ${arcanaAbility({...arcana.magician.abilities.threecardmonte, row: '1 / 6', column: '1'})}
-        ${arcanaAbility({...arcana.magician.abilities.magicwand, row: '5 / 8', column: '2'})}
-        ${arcanaAbility({...arcana.magician.abilities.cupsandballs, row: '1 / 5', column: '2'})}
+        ${arcanaAbility({...arcana.magician.abilities.magicwand, row: '1 / 5', column: '2'})}
+        ${arcanaAbility({...arcana.magician.abilities.cupsandballs, row: '5 / 8', column: '2'})}
         ${arcanaAbility({...arcana.magician.abilities.disappearing, row: '1 / 6', column: '3'})}
         ${arcanaAbility({...arcana.magician.abilities.smoke, row: '6 / 9', column: '3'})}
     </div>

@@ -4,16 +4,16 @@
     <name>Magic Wand</name>
     <slug>magicwand</slug>
     <description>
-* You may also play a Wand on Cups and Balls.
-* While a Wand is on Cups and Balls:
-    * All cards now count as Wands, as well as their original suit.
-    * This includes Major Arcana: A Justice, for example, counts as a "11 of Wands".
+* Place any Wand on Magic Wand.
+* While a Wand is on Magic Wand:
+   * All of your cards now count as Wands, as well as their original suit.
+   * This includes Major Arcana: A Death, for example, counts as a "13 of Wands".
+* Discard the card on Magic Wand at will.
     </description>
-    <corruption>
-        true
-    </corruption>
 <flavor>
 "It's not the wand that's magic - the wand is nothing more than a prop to guide the eyes away from what's really happening.
     It's the magician who's magic."
 </flavor>
+    <upgrade>Cups and Balls</upgrade>
+    <upgradeSlug>cupsandballs</upgradeSlug>
 </ability>

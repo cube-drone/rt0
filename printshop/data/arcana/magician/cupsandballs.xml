@@ -3,19 +3,16 @@
 <ability>
     <name>Cups and Balls</name>
     <slug>cupsandballs</slug>
-    <helper>
-        <card>Cup</card>
-    </helper>
     <description>
-* Place any Cup on Cups and Balls.
-* While a Cup is on Cups and Balls:
+* You may also place a Cup on Magic Wand.
+* While a Cup is on Magic Wand:
    * All of your cards now count as Cups, as well as their original suit.
    * This includes Major Arcana: A Death, for example, counts as a "13 of Cups".
-* Discard the card on Cups and Balls at will.
 </description>
 <flavor>
 No matter how hard they try to hit you, it seems like you're always one step ahead.
 </flavor>
-    <upgrade>Magic Wand</upgrade>
-    <upgradeSlug>magicwand</upgradeSlug>
+    <corruption>
+        true
+    </corruption>
 </ability>
