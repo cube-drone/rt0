@@ -199,6 +199,10 @@ class Blackjack{
         this.tokens = 0;
     }
 
+    onFlush(){
+        this.tokens = 0;
+    }
+
     play(card, state){
         this.bin.push(card);
         let valueOfBin = this.bin.reduce((acc, c) => acc + numericalValue(c), 0);
@@ -257,6 +261,10 @@ class HitMe {
 
     play(card, state){
         this.blackjack.play(card, state);
+    }
+
+    onFlush(){
+        this.blackjack.tokens = 0;
     }
 
     onTurnEnd(state){

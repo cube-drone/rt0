@@ -7,8 +7,7 @@
 * When using Laughter, you may also:
    * Take 1 Corruption Point
    * Remove one of the two cards placed on Laughter from your deck forever.
-   * Deal damage equal to 4 times the numerical value of the card so-removed.
-   * If Clever, this is Ranged Damage.
+   * Deal Ranged Magic Damage equal to 10 times the numerical value of the card so-removed.
    * You may not use Slaughter again this Day.
     </description>
     <corruption>true</corruption>

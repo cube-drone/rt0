@@ -32,8 +32,8 @@ _A trick isn't that impressive on it's own: line up a few in a row, though, and 
 
 _Corruption Upgrade: Saw In Half_
 
-* You may not place a card on Rabbit Out of a Hat if it matches the suit of the card already on Rabbit Out of a Hat.
-* The suit of Major Arcana cards is "Major".
+* In order to activate Rabbit Out of a Hat, one card of each suit must be played.
+* The suit of Major Arcana cards is "Major" and also must be included.
 * Cards sitting on Rabbit Out of a Hat remain there.
 * While there are any cards on Rabbit Out of a Hat, you cannot play cards on Unarmed Strike or Defend.
 * When all five cards (one from each suit) are present:
@@ -71,9 +71,9 @@ _"Where did you get that?"_
 _Corruption Upgrade: Miser's Dream_
 
 * Place any card of suit Pentacles on Check Behind Your Ears and discard it, immediately.
-* Deal 1 Magic Damage
+* Deal 1 Damage to an Adversary in your Zone.
 * The Adversary who is dealt damage by Check Behind Your Ears must redraw their Intent.
-* Produce the numeric value of the card played on Check Behind Your Ears, in Credits, for the player, in the form of a credit chit.
+* You gain 1 empty Credit Token (worth: 1 Credit).
 
 ### Miser's Dream
 _A seemingly endless supply of wealth - of course, it's all an illusion._
@@ -89,11 +89,11 @@ _No matter how hard they try to hit you, it seems like you're always one step ah
 
 _Corruption Upgrade: Magic Wand_
 
-* Place the Page of Cups on Cups and Balls
-* While a card is on Cups and Balls:
+* Place any Cup on Cups and Balls.
+* While a Cup is on Cups and Balls:
    * All of your cards now count as Cups, as well as their original suit.
    * This includes Major Arcana: A Death, for example, counts as a "13 of Cups".
-* Discard the Page of Cups at will.
+* Discard the card on Cups and Balls at will.
 
 ### Magic Wand
 _"It's not the wand that's magic - the wand is nothing more than a prop to guide the eyes away from what's really happening.
@@ -101,47 +101,50 @@ _"It's not the wand that's magic - the wand is nothing more than a prop to guide
 
 **Corruption Upgrade: Mark 3 Corruption Points on Magic Wand to Unlock it.**
 
-* Instead of playing a Page of Cups on Cups and Balls, you may play the Page of Wands:
-   * While the Page of Wands is on Cups and Balls:
-   * All cards now count as any suit, as well as counting as their original suit and value.
+* You may also play a Wand on Cups and Balls.
+* While a Wand is on Cups and Balls:
+    * All cards now count as Wands, as well as their original suit.
+    * This includes Major Arcana: A Justice, for example, counts as a "11 of Wands".
 
 ### Three Card Monte
 _Your nimble mind helps you rearrange your thoughts as easily as if they were cards._
 
 _Corruption Upgrade: Is This Your Card_
 
-* Place any card of suit Cups on Three Card Monte
-* Discard two cards from hand, and draw three cards.
-* Discard any cards on Three Card Monte at the end of the turn.
+* Place any "3" on Three Card Monte
+* Draw three cards face-down from your deck. Hand them to the GM.
+* The GM will show you one card, then mix it with the other two.
+* Choose one of the three cards. If it is the card you saw, you may add it to your hand, treating it as a Magician.
+* If it is not the card you saw, add it to your hand.
+* Shuffle the other two cards back into your deck.
 
 ### Is This Your Card
 _It's just a little sleight of hand._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Is This Your Card to Unlock it.**
 
-* At any time during your turn:
-   * Name any single card from your deck.
-   * Draw 4 cards.
-   * If the named card is not among the drawn cards, take 1 Corruption Point.
-   * If The Tower is one of the drawn cards, take 1 Corruption Point.
-   * Is This Your Card cannot be used more than once per turn.
+* When Three Card Monte's effect triggers, after drawing the face-down cards, but before the GM shows you one:
+   * You may guess which card is the one that will be revealed.
+   * If you are correct, you do not need to play the game: the card is immediately added to your hand, treating it as a Magician.
+   * If you are incorrect, the game proceeds as normal, but if you lose AND the card you guessed is not one of the three cards, take 1 Corruption Point.
 
 ### Disappearing Act
 _Poof._
 
 _Corruption Upgrade: Smoke and Mirrors_
 
-* Place The Moon on Disappearing Act.
-* Discard The Moon on any time during your turn to:
-    * Move to any Zone in the current combat.
+* Place The Moon or The Devil on Disappearing Act.
+* If there is a card on Disappearing Act, the next time you would take damage, instead
+   * Discard a card from Disappearing Act.
+   * Take no damage
+   * Move to any Zone in the current combat.
 
 ### Smoke & Mirrors
 _One moment you're there, the next you're gone._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Smoke & Mirrors to Unlock it.**
 
-* You may discard The Moon from Disappearing Act at any time, even on an Adversary's turn.
-   * If you do, move to any Zone in the current combat
-   * Take no damage for the remainder of the round.
-   * Take 1 Corruption Point.
+* Take 1 Corruption Point to activate Smoke & Mirrors.
+* While Smoke & Mirrors is active:
+   * Any time Disappearing Act would prevent damage, instead deal that damage to the attacker.
 

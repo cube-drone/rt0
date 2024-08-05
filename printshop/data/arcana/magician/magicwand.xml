@@ -4,9 +4,10 @@
     <name>Magic Wand</name>
     <slug>magicwand</slug>
     <description>
-* Instead of playing a Page of Cups on Cups and Balls, you may play the Page of Wands:
-   * While the Page of Wands is on Cups and Balls:
-   * All cards now count as any suit, as well as counting as their original suit and value.
+* You may also play a Wand on Cups and Balls.
+* While a Wand is on Cups and Balls:
+    * All cards now count as Wands, as well as their original suit.
+    * This includes Major Arcana: A Justice, for example, counts as a "11 of Wands".
     </description>
     <corruption>
         true

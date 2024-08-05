@@ -4,12 +4,15 @@
     <name>Three Card Monte</name>
     <slug>threecardmonte</slug>
     <helper>
-        <card>Cup</card>
+        <card>3</card>
     </helper>
     <description>
-* Place any card of suit Cups on Three Card Monte
-* Discard two cards from hand, and draw three cards.
-* Discard any cards on Three Card Monte at the end of the turn.
+* Place any "3" on Three Card Monte
+* Draw three cards face-down from your deck. Hand them to the GM.
+* The GM will show you one card, then mix it with the other two.
+* Choose one of the three cards. If it is the card you saw, you may add it to your hand, treating it as a Magician.
+* If it is not the card you saw, add it to your hand.
+* Shuffle the other two cards back into your deck.
     </description>
 <flavor>
 Your nimble mind helps you rearrange your thoughts as easily as if they were cards.

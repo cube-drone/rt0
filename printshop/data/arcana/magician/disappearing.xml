@@ -7,9 +7,11 @@
         <card>The Moon</card>
     </helper>
     <description>
-* Place The Moon on Disappearing Act.
-* Discard The Moon on any time during your turn to:
-    * Move to any Zone in the current combat.
+* Place The Moon or The Devil on Disappearing Act.
+* If there is a card on Disappearing Act, the next time you would take damage, instead
+   * Discard a card from Disappearing Act.
+   * Take no damage
+   * Move to any Zone in the current combat.
     </description>
 <flavor>
 Poof.

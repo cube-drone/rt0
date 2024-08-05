@@ -7,11 +7,11 @@
         <card>The Fool</card>
     </helper>
     <description>
-* Place The Fool on Laughter, as well as any other two cards from your hand that you choose
+* Place The Fool on Laughter, as well as any other cards from your hand that you choose
 * The Tower may not be placed on Laughter
-* Remove all cards on Laughter, except The Fool, from your deck for the remainder of the Day.
-* Deal damage equal to the numerical value of all cards placed on Laughter.
-* If Clever, this is Ranged Damage.
+  * Sum the total value of all cards placed on Laughter.
+  * Deal Ranged Magic Damage equal to double the sum.
+  * Remove all cards on Laughter, except The Fool, from your deck for the remainder of the Day.
 * At the end of the turn, discard The Fool.
 </description>
 <flavor>

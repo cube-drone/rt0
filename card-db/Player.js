@@ -195,7 +195,7 @@ class Player {
         for(let i = 0; i < nCycles; i++){
             this.takeNTurns(nTurns);
             if(this.totalDamage > 500 || this.totalShields > 500){
-                console.log(this.dumpLog());
+                //console.log(this.dumpLog());
             }
             rangedDamages.push(this.totalRangedDamage);
             damages.push(this.totalDamage);
@@ -346,6 +346,10 @@ class Player {
                 this.abilities[key].onFlush(this);
             }
         }
+        this.damageBonus = 0;
+        this.shieldBonus = 0;
+        this.damageMultiplier = 1;
+        this.shieldMultiplier = 1;
         // shuffle discard into deck
         this.hand = [];
         this.discard = [];

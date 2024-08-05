@@ -180,9 +180,6 @@ function numericalValue(card){
     if(!isCard(card)){
         return null;
     }
-    if(isMajorArcana(card)){
-        return 0;
-    }
     if(card.includes('ace')){
         return 1;
     }
@@ -214,17 +211,84 @@ function numericalValue(card){
         return 10;
     }
     if(card.includes('page')){
-        return 10;
+        return 11;
     }
     if(card.includes('knight')){
-        return 10;
+        return 12;
     }
     if(card.includes('queen')){
-        return 10;
+        return 13;
     }
     if(card.includes('king')){
+        return 14;
+    }
+    if(card === 'fool'){
+        return 0;
+    }
+    if(card === 'magician'){
+        return 1;
+    }
+    if(card === 'high priestess'){
+        return 2;
+    }
+    if(card === 'empress'){
+        return 3;
+    }
+    if(card === 'emperor'){
+        return 4;
+    }
+    if(card === 'hierophant'){
+        return 5;
+    }
+    if(card === 'lovers'){
+        return 6;
+    }
+    if(card === 'chariot'){
+        return 7;
+    }
+    if(card === 'strength'){
+        return 8;
+    }
+    if(card === 'hermit'){
+        return 9;
+    }
+    if(card === 'wheel of fortune'){
         return 10;
     }
+    if(card === 'justice'){
+        return 11;
+    }
+    if(card === 'hanged man'){
+        return 12;
+    }
+    if(card === 'death'){
+        return 13;
+    }
+    if(card === 'temperance'){
+        return 14;
+    }
+    if(card === 'devil'){
+        return 15;
+    }
+    if(card === 'tower'){
+        return 16;
+    }
+    if(card === 'star'){
+        return 17;
+    }
+    if(card === 'moon'){
+        return 18;
+    }
+    if(card === 'sun'){
+        return 19;
+    }
+    if(card === 'judgement'){
+        return 20;
+    }
+    if(card === 'world'){
+        return 21;
+    }
+    return 0;
 }
 
 function randomHand(size){

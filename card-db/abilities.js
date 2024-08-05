@@ -27,6 +27,14 @@ class Strike {
             if(ability.name === 'Rabbit' && ability.bin.length > 0){
                 return false;
             }
+            if(ability.name === 'Saw' && ability.rabbit.bin.length > 0){
+                return false;
+            }
+        }
+        for(let ability of state.abilities){
+            if(ability.name === 'MagicWand' && ability.bin.length > 0){
+                return true; // with Magic Wand active, every card is any suit!
+            }
         }
 
         return isSwords(card) || isWands(card);
@@ -80,6 +88,14 @@ class Defend {
         for(let ability of state.abilities){
             if(ability.name === 'Rabbit' && ability.bin.length > 0){
                 return false;
+            }
+        }
+        for(let ability of state.abilities){
+            if(ability.name === 'Cups' && ability.bin.length > 0){
+                return true; // with Cups & Balls active, every card is a cup!
+            }
+            if(ability.name === 'MagicWand' && ability.bin.length > 0){
+                return true; // with Magic Wand active, every card is any suit!
             }
         }
         return isCups(card) || isPentacles(card);

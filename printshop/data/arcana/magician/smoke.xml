@@ -4,10 +4,9 @@
     <name>Smoke &amp; Mirrors</name>
     <slug>smoke</slug>
     <description>
-* You may discard The Moon from Disappearing Act at any time, even on an Adversary's turn.
-   * If you do, move to any Zone in the current combat
-   * Take no damage for the remainder of the round.
-   * Take 1 Corruption Point.
+* Take 1 Corruption Point to activate Smoke &amp; Mirrors.
+* While Smoke &amp; Mirrors is active:
+   * Any time Disappearing Act would prevent damage, instead deal that damage to the attacker.
     </description>
 <flavor>
 One moment you're there, the next you're gone.

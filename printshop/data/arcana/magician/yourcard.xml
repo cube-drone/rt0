@@ -4,12 +4,10 @@
     <name>Is This Your Card</name>
     <slug>yourcard</slug>
     <description>
-* At any time during your turn:
-   * Name any single card from your deck.
-   * Draw 4 cards.
-   * If the named card is not among the drawn cards, take 1 Corruption Point.
-   * If The Tower is one of the drawn cards, take 1 Corruption Point.
-   * Is This Your Card cannot be used more than once per turn.
+* When Three Card Monte's effect triggers, after drawing the face-down cards, but before the GM shows you one:
+   * You may guess which card is the one that will be revealed.
+   * If you are correct, you do not need to play the game: the card is immediately added to your hand, treating it as a Magician.
+   * If you are incorrect, the game proceeds as normal, but if you lose AND the card you guessed is not one of the three cards, take 1 Corruption Point.
     </description>
 <flavor>
 It's just a little sleight of hand.

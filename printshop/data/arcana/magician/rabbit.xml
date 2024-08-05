@@ -11,11 +11,11 @@
         <card>Major</card>
     </helper>
     <description>
-* You may not place a card on Rabbit Out of a Hat if it matches the suit of the card already on Rabbit Out of a Hat.
-* The suit of Major Arcana cards is "Major".
+* In order to activate Rabbit Out of a Hat, one card of each suit must be played.
+* The suit of Major Arcana cards is "Major" and also must be included.
 * Cards sitting on Rabbit Out of a Hat remain there.
 * While there are any cards on Rabbit Out of a Hat, you cannot play cards on Unarmed Strike or Defend.
-* When all five cards (one from each suit) are present:
+* When every suit is represented on Rabbit Out of a Hat:
     * Discard the Minor Arcana from Rabbit Out of a Hat.
     * Draw the remaining card from Rabbit Out of a Hat into hand: treat it as a Magician for the remainder of the turn.
     </description>
