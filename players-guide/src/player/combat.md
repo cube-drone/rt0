@@ -13,6 +13,14 @@ Players also have access to [Magic](./magic.md) as well as a suite of abilities 
 
 These cards mostly are involved with generating [Damage](#damage) and [Shields](#shield).
 
+## Choosing Arcana Abilities
+
+Once players can see the Adversaries they will be fighting, they can choose which of their Arcana Abilities they will be bringing in to combat. Players can choose 2 Arcana Abilities. Mark the Arcana Abilities so chosen (perhaps by dropping a token on them).
+
+On top of that, players can take a Corruption Point at _any time during combat_ to bring in an extra Arcana Ability.
+
+Any Arcana Ability that has been fully upgraded with Corruption is also _automatically added_ to the set of Arcana Abilities available to the player: this allows players with a lot of Corruption to field lots of extra abilities.
+
 ## Hit Points
 Players start every combat with 20 HP, a number that resets with _every combat_.
 
