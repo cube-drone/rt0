@@ -7,7 +7,6 @@ const Table = require('cli-table');
 
 const cliProgress = require('cli-progress');
 
-
 // there are two things we want to accomplish
 // 1. just run a simulation against a single player to determine the raw power output of a player with a given ability or set of abilities
 // 2. run a full battle simulation to estimate the likelihood of a team of players winning a fight
