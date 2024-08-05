@@ -212,22 +212,22 @@ class Blackjack{
         if(valueOfBin >= 21){
             state.log.push(`Using ${this.bin.join(",")} to play Blackjack!`);
             if(state.getTags().includes('strong')){
-                state.doDamage(3 + this.tokenBonus());
+                state.doDamage(4 + this.tokenBonus());
             }
             else if(state.getTags().includes('weak')){
-                state.doDamage(1 + this.tokenBonus());
-            }
-            else{
                 state.doDamage(2 + this.tokenBonus());
             }
+            else{
+                state.doDamage(3 + this.tokenBonus());
+            }
             if(state.getTags().includes('fast')){
-                state.addShields(3 + this.tokenBonus());
+                state.addShields(4 + this.tokenBonus());
             }
             else if(state.getTags().includes('slow')){
-                state.addShields(1 + this.tokenBonus());
+                state.addShields(2 + this.tokenBonus());
             }
             else{
-                state.addShields(2 + this.tokenBonus());
+                state.addShields(3 + this.tokenBonus());
             }
             this.tokens += 2;
             for(let card of this.bin){
