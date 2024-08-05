@@ -1,6 +1,6 @@
 
-const fool = require('./fool.js');
-const magician = require('./magician.js');
+const fool = require('./arcana/fool.js');
+const magician = require('./arcana/magician.js');
 const spells = require('./spells.js');
 const Player = require('./Player.js');
 const Table = require('cli-table');

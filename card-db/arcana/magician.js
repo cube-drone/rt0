@@ -7,7 +7,7 @@ const {
     numericalValue,
     isMinorArcana,
     suit
-} = require('./tarot.js');
+} = require('../tarot.js');
 
 class Rabbit{
     constructor(){

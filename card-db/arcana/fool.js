@@ -6,9 +6,9 @@ const {
     isPentacles,
     numericalValue,
     isMinorArcana
-} = require('./tarot.js');
+} = require('../tarot.js');
 
-const { Tower } = require('./abilities.js');
+const { Tower } = require('../abilities.js');
 class KitchenSink {
     constructor() {
         this.name = 'Kitchen Sink';
