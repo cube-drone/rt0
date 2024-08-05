@@ -20,7 +20,15 @@ class Strike {
         }
     }
 
-    accepts(card) {
+    accepts(card, state) {
+
+        // while Rabbit has cards in the bin, you can't play strike cards
+        for(let ability of state.abilities){
+            if(ability.name === 'Rabbit' && ability.bin.length > 0){
+                return false;
+            }
+        }
+
         return isSwords(card) || isWands(card);
     }
 
@@ -67,7 +75,13 @@ class Defend {
         }
     }
 
-    accepts(card) {
+    accepts(card, state) {
+        // while Rabbit has cards in the bin, you can't play defend cards
+        for(let ability of state.abilities){
+            if(ability.name === 'Rabbit' && ability.bin.length > 0){
+                return false;
+            }
+        }
         return isCups(card) || isPentacles(card);
     }
 

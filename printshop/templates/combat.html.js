@@ -435,8 +435,8 @@ function magicianPage({arcana}){
 
         </div>
 
-        ${arcanaAbility({...arcana.magician.abilities.saw, row: '6 / 9', column: '1'})}
-        ${arcanaAbility({...arcana.magician.abilities.rabbit, row: '9 / 13', column: '1'})}
+        ${arcanaAbility({...arcana.magician.abilities.saw, row: '5 / 8', column: '1'})}
+        ${arcanaAbility({...arcana.magician.abilities.rabbit, row: '8 / 13', column: '1'})}
         ${arcanaAbility({...arcana.magician.abilities.nexttrick, row: '6 / 9', column: '2'})}
         ${arcanaAbility({...arcana.magician.abilities.abracadabra, row: '9 / 13', column: '2'})}
         ${arcanaAbility({...arcana.magician.abilities.miser, row: '6 / 9', column: '3'})}

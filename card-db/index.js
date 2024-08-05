@@ -1,9 +1,10 @@
 
 const fool = require('./fool.js');
+const magician = require('./magician.js');
 const spells = require('./spells.js');
-const {GoodIdea, Flex, Feint, Study, TakeAChance, Blur} = require('./abilities.js');
 const Player = require('./Player.js');
 const Table = require('cli-table');
+
 
 // there are two things we want to accomplish
 // 1. just run a simulation against a single player to determine the raw power output of a player with a given ability or set of abilities
@@ -111,10 +112,13 @@ for(let spell of allSpells){
 
 let foolabilities = Object.values(fool);
 for(let ability of foolabilities){
-    pushAbility(ability);
+    pushTagsAndAbilities(['lucky'], [ability, spells.Leo]);
 }
 
-console.dir(baselines);
+let magicianabilities = Object.values(magician);
+for(let ability of magicianabilities){
+    pushTagsAndAbilities(['clever'], [ability, spells.Leo]);
+}
 
 /*
 for(let ability of foolabilities){
@@ -136,8 +140,7 @@ for(let ability of foolabilities){
 console.log(table.toString());
 
 //debugging
-/*
 player = Player.generateDefaultPlayer();
-player.addAbility(spells.Capricorn);
+player.addAbility(magician.Rabbit);
+player.addAbility(spells.Leo);
 console.log(player.generateLog())
-*/

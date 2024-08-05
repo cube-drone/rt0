@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ability>
-    <name>Abracadabra</name>
-    <slug>abracadabra</slug>
+    <name>Spellbook</name>
+    <slug>spellbook</slug>
     <helper>
-        <card>The Magician</card>
+        <card>P</card>
     </helper>
     <description>
-* Place a Magician on Abracadabra
-* Choose a spell that nobody has learned. While there is a card on Abracadabra, you can use this spell as if you had learned it.
-* Discard the Magician whenever you want.
+* Place any Page on Spellbook. Discard it immediately.
+* Choose a spell that nobody has learned. For the rest of combat, you can use this spell as if you had learned it.
 </description>
 <flavor>
 "I didn't know you knew that one!"  "Yeah, I didn't either."

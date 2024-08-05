@@ -14,7 +14,7 @@ _The bull is an unstoppable force._
 
 ### Combat - Rage
 * Place The Magician on Taurus.
-* While Taurus has a card on it, any damage the player generates is multiplied by 2 (Clever: 3).
+* While Taurus has a card on it, any non-Magic damage the player generates is multiplied by 2 (Clever: 3).
 * You may discard the card played on Taurus whenever you choose.
 
 ### Skill - Strength

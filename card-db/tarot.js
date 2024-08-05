@@ -140,6 +140,25 @@ function isPentacles(card) {
     return setPentacles.has(card);
 }
 
+function suit(card){
+    if(isCups(card)){
+        return 'cups';
+    }
+    if(isSwords(card)){
+        return 'swords';
+    }
+    if(isWands(card)){
+        return 'wands';
+    }
+    if(isPentacles(card)){
+        return 'pentacles';
+    }
+    if(isMajorArcana(card)){
+        return 'major';
+    }
+    return null;
+}
+
 function isGirl(card){
     return girls.includes(card);
 }
@@ -248,6 +267,7 @@ module.exports = {
     getPentacles,
     isPentacles,
     isGirl,
+    suit,
     numericalValue,
     randomHand,
     randomCard,

@@ -28,43 +28,42 @@ Once per Day, The Magician can have planned ahead, retroactively.
 ## Arcana Abilities
 
 ### Rabbit Out of a Hat
-_A trick isn't that impressive on it's own: line up a few more, and you've got a show._
+_A trick isn't that impressive on it's own: line up a few in a row, though, and you've got a show._
 
 _Corruption Upgrade: Saw In Half_
 
-* Place one card of each suit on Rabbit Out of a Hat
+* You may not place a card on Rabbit Out of a Hat if it matches the suit of the card already on Rabbit Out of a Hat.
+* The suit of Major Arcana cards is "Major".
 * Cards sitting on Rabbit Out of a Hat remain there.
-* When all four cards are present:
-   * Discard the lowest three cards
-   * Draw the the highest ranked card into hand, and, for the rest of the turn, treat it as The Magician (for example, to trigger a spell).
+* While there are any cards on Rabbit Out of a Hat, you cannot play cards on Unarmed Strike or Defend.
+* When all five cards (one from each suit) are present:
+    * Discard the Minor Arcana from Rabbit Out of a Hat.
+    * Draw the remaining card from Rabbit Out of a Hat into hand: treat it as a Magician for the remainder of the turn.
 
 ### Saw in Half
 _For the big finale, you're going to need a volunteer._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Saw in Half to Unlock it.**
 
-* When Pull a Rabbit's effect triggers, you may choose to, instead:
-   * Take 1 Corruption Point
-   * Draw all four cards into hand, and, for the rest of the turn, treat **each** of them them as The Magician (for example, to trigger a spell).
+* Take 1 Corruption Point:
+   * For the remainder of combat, when a card is on Pull a Rabbit Out of a Hat, you may still use Defend.
 
-### Abracadabra
+### Spellbook
 _"I didn't know you knew that one!"  "Yeah, I didn't either."_
 
 _Corruption Upgrade: For My Next Trick_
 
-* Place a Magician on Abracadabra
-* Choose a spell that nobody has learned. While there is a card on Abracadabra, you can use this spell as if you had learned it.
-* Discard the Magician whenever you want.
+* Place any Page on Spellbook. Discard it immediately.
+* Choose a spell that nobody has learned. For the rest of combat, you can use this spell as if you had learned it.
 
 ### And For My Next Trick
 _All of the knowledge in the world is at your fingertips, if you're willing to pay the price._
 
 **Corruption Upgrade: Mark 3 Corruption Points on And For My Next Trick to Unlock it.**
 
-* When Abracadabra's effect triggers, you may choose to, instead:
+* When Spellbook's effect triggers, you may choose to, instead:
    * Take 1 Corruption Point
-   * While there is a card on Abracadabra, you can use _any_ spell as if you had learned it,
-      even if you don't meet the card's requirements.
+   * For the rest of combat, you can use _any_ spell as if you had learned it.
 
 ### Check Behind Your Ears
 _"Where did you get that?"_

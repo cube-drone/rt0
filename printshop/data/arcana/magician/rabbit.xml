@@ -8,16 +8,19 @@
         <card>Sword</card>
         <card>Wand</card>
         <card>Pentacle</card>
+        <card>Major</card>
     </helper>
     <description>
-* Place one card of each suit on Rabbit Out of a Hat
+* You may not place a card on Rabbit Out of a Hat if it matches the suit of the card already on Rabbit Out of a Hat.
+* The suit of Major Arcana cards is "Major".
 * Cards sitting on Rabbit Out of a Hat remain there.
-* When all four cards are present:
-   * Discard the lowest three cards
-   * Draw the the highest ranked card into hand, and, for the rest of the turn, treat it as The Magician (for example, to trigger a spell).
+* While there are any cards on Rabbit Out of a Hat, you cannot play cards on Unarmed Strike or Defend.
+* When all five cards (one from each suit) are present:
+    * Discard the Minor Arcana from Rabbit Out of a Hat.
+    * Draw the remaining card from Rabbit Out of a Hat into hand: treat it as a Magician for the remainder of the turn.
     </description>
 <flavor>
-A trick isn't that impressive on it's own: line up a few more, and you've got a show.
+A trick isn't that impressive on it's own: line up a few in a row, though, and you've got a show.
 </flavor>
     <upgrade>Saw In Half</upgrade>
     <upgradeSlug>saw</upgradeSlug>
