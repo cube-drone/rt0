@@ -4,10 +4,11 @@
     <name>Is This Your Card</name>
     <slug>yourcard</slug>
     <description>
-* When Three Card Monte's effect triggers, after drawing the face-down cards, but before the GM shows you one:
-   * You may guess which card is the one that will be revealed.
-   * If you are correct, you do not need to play the game: the card is immediately added to your hand, treating it as a Magician.
-   * If you are incorrect, the game proceeds as normal, but if you lose AND the card you guessed is not one of the three cards, take 1 Corruption Point.
+* When Three Card Monte's effect triggers:
+  * If you guess the card correctly, instead of the normal effects:
+  * Keep just the card you guessed correctly, adding it to your hand and treating it as a Magician.
+  * Shuffle the other two cards back into your deck.
+  * If you guess incorrectly, and any of the three cards are The Tower, take 1 Corruption Point.
     </description>
 <flavor>
 It's just a little sleight of hand.

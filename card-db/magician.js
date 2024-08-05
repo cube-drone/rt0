@@ -292,8 +292,47 @@ class ThreeCardMonte{
         state.log.push(`Three Card Monte: ${card}`);
         let oneInThreeChance = Math.random() < 0.333;
         if(oneInThreeChance){
-            state.log.push(`You win! You get a magician!`);
-            state.hand.push('magician');
+            state.log.push(`You win! You get stuff!`);
+            state.draw();
+            state.draw();
+            state.draw();
+            state.doDamage(3);
+            state.addShields(3);
+        }
+        else{
+            state.log.push(`You lose! You get nothing!`);
+        }
+
+    }
+}
+
+class IsThisYourCard{
+    constructor(){
+        this.name = 'Is This Your Card?';
+        this.tags = ['magician'];
+    }
+
+    priorities(){
+        return {
+            'default': 4,
+        }
+    }
+
+    accepts(card, state){
+        if(numericalValue(card) === 3){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    play(card, state){
+        state.log.push(`Three Card Monte: ${card}`);
+        let oneInThreeChance = Math.random() < 0.333;
+        if(oneInThreeChance){
+            state.log.push(`You win! You get stuff!`);
+            state.hand.push("magician");
         }
         else{
             state.log.push(`You lose! You get nothing!`);
@@ -311,5 +350,6 @@ module.exports = {
     MagicWand,
     DisappearingAct,
     SmokeAndMirrors,
-    ThreeCardMonte
+    ThreeCardMonte,
+    IsThisYourCard
 }

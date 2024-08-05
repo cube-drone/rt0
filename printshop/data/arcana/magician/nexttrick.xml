@@ -4,9 +4,9 @@
     <name>And For My Next Trick</name>
     <slug>nexttrick</slug>
     <description>
-* When Spellbook's effect triggers, you may choose to, instead:
-   * Take 1 Corruption Point
-   * For the rest of combat, you can use _any_ spell as if you had learned it.
+* Take 1 Corruption Point to activate And For My Next Trick.
+* When you cast a spell that you have not yet cast this combat:
+   * Draw 5 cards.
     </description>
 <flavor>
 All of the knowledge in the world is at your fingertips, if you're willing to pay the price.

@@ -36,7 +36,7 @@ _Corruption Upgrade: Saw In Half_
 * The suit of Major Arcana cards is "Major" and also must be included.
 * Cards sitting on Rabbit Out of a Hat remain there.
 * While there are any cards on Rabbit Out of a Hat, you cannot play cards on Unarmed Strike or Defend.
-* When all five cards (one from each suit) are present:
+* When every suit is represented on Rabbit Out of a Hat:
     * Discard the Minor Arcana from Rabbit Out of a Hat.
     * Draw the remaining card from Rabbit Out of a Hat into hand: treat it as a Magician for the remainder of the turn.
 
@@ -45,7 +45,7 @@ _For the big finale, you're going to need a volunteer._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Saw in Half to Unlock it.**
 
-* Take 1 Corruption Point:
+* Take 1 Corruption Point to active Saw in Half:
    * For the remainder of combat, when a card is on Pull a Rabbit Out of a Hat, you may still use Defend.
 
 ### Spellbook
@@ -61,9 +61,9 @@ _All of the knowledge in the world is at your fingertips, if you're willing to p
 
 **Corruption Upgrade: Mark 3 Corruption Points on And For My Next Trick to Unlock it.**
 
-* When Spellbook's effect triggers, you may choose to, instead:
-   * Take 1 Corruption Point
-   * For the rest of combat, you can use _any_ spell as if you had learned it.
+* Take 1 Corruption Point to activate And For My Next Trick.
+* When you cast a spell that you have not yet cast this combat:
+   * Draw 5 cards.
 
 ### Check Behind Your Ears
 _"Where did you get that?"_
@@ -114,19 +114,25 @@ _Corruption Upgrade: Is This Your Card_
 * Place any "3" on Three Card Monte
 * Draw three cards face-down from your deck. Hand them to the GM.
 * The GM will show you one card, then mix it with the other two.
-* Choose one of the three cards. If it is the card you saw, you may add it to your hand, treating it as a Magician.
-* If it is not the card you saw, add it to your hand.
+* (If the card shown is The Tower, trigger Catastrophe)
+* Choose one of the three cards. If it is the card you saw:
+    * Keep all three cards. Add them to your hand.
+    * Deal 3 Damage.
+    * Gain 3 Shield.
+* If it is not the card you saw, return it to the top of your deck.
 * Shuffle the other two cards back into your deck.
+* Discard the 3 from Three Card Monte.
 
 ### Is This Your Card
 _It's just a little sleight of hand._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Is This Your Card to Unlock it.**
 
-* When Three Card Monte's effect triggers, after drawing the face-down cards, but before the GM shows you one:
-   * You may guess which card is the one that will be revealed.
-   * If you are correct, you do not need to play the game: the card is immediately added to your hand, treating it as a Magician.
-   * If you are incorrect, the game proceeds as normal, but if you lose AND the card you guessed is not one of the three cards, take 1 Corruption Point.
+* When Three Card Monte's effect triggers:
+  * If you guess the card correctly, instead of the normal effects:
+  * Keep just the card you guessed correctly, adding it to your hand and treating it as a Magician.
+  * Shuffle the other two cards back into your deck.
+  * If you guess incorrectly, and any of the three cards are The Tower, take 1 Corruption Point.
 
 ### Disappearing Act
 _Poof._

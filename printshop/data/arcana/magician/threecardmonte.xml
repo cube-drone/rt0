@@ -10,9 +10,14 @@
 * Place any "3" on Three Card Monte
 * Draw three cards face-down from your deck. Hand them to the GM.
 * The GM will show you one card, then mix it with the other two.
-* Choose one of the three cards. If it is the card you saw, you may add it to your hand, treating it as a Magician.
-* If it is not the card you saw, add it to your hand.
+* (If the card shown is The Tower, trigger Catastrophe)
+* Choose one of the three cards. If it is the card you saw:
+    * Keep all three cards. Add them to your hand.
+    * Deal 3 Damage.
+    * Gain 3 Shield.
+* If it is not the card you saw, return it to the top of your deck.
 * Shuffle the other two cards back into your deck.
+* Discard the 3 from Three Card Monte.
     </description>
 <flavor>
 Your nimble mind helps you rearrange your thoughts as easily as if they were cards.
