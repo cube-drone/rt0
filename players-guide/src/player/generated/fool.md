@@ -34,11 +34,11 @@ _"... Where did you find that knife?"_
 
 **Corruption Upgrade: Mark 3 Corruption Points on No More Mister Knife Guy to Unlock it.**
 
+* Take 1 Corruption Point to activate No More Mister Knife Guy.
 * When using the Kitchen Sink, you may instead:
    * Place a card on Unlikely Weapon AND Unlikely Helmet
-   * Treat the bonuses granted by each as if you were Strong (3) and Fast (3).
-   * Draw 2 cards (Wise: 3, Foolish: 1).
-   * Take 1 Corruption Point
+   * Treat the bonuses granted by each as if you were Strong and Fast.
+   * Draw 2 cards.
 
 ### Unlikely Helmet
 _A pail, a pot, a bucket, a colander, a sieve, a strainer, a helmet._
@@ -59,8 +59,7 @@ _Laughing while you fight is honestly a little unsettling._
 
 _Corruption Upgrade: Slaughter_
 
-* Place The Fool on Laughter, as well as any other cards from your hand that you choose
-* The Tower may not be placed on Laughter
+* Place The Fool on Laughter, as well as any other Minor Arcana cards from your hand that you choose
   * Sum the total value of all cards placed on Laughter.
   * Deal Ranged Magic Damage equal to double the sum.
   * Remove all cards on Laughter, except The Fool, from your deck for the remainder of the Day.
@@ -71,9 +70,10 @@ _Nobody finds the violence funny but you._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Slaughter to Unlock it.**
 
-* When using Laughter, you may also:
+* When using Laughter, you may instead:
    * Take 1 Corruption Point
-   * Remove one of the two cards placed on Laughter from your deck forever.
+   * Play the Fool, but only one Minor Arcana card on Laughter
+   * Remove the Minor Arcana card from your deck permanently.
    * Deal Ranged Magic Damage equal to 10 times the numerical value of the card so-removed.
    * You may not use Slaughter again this Day.
 
@@ -158,11 +158,11 @@ _"I don't think of it as a mistake, it's more of a happy accident."_
 
 _Corruption Upgrade: Happy Accident_
 
-* In combat, when you draw any card (par example: The Tower), instead of doing what you had planned with that card, you may
-    instead shuffle that card back into your deck without triggering any special effect associated with that card.
+* In combat, when you draw any card (example: The Tower), instead of doing what you had planned with that card, you may
+    instead take 2HP of damage and shuffle that card back into your deck without triggering any special effect associated with that card.
 * Yes, you can use this to keep Catastrophe from triggering.
 * Yes, you can use this to keep Surprise Twist from giving you Corruption points.
-* No, you can not use this to turn a failed Skill Check into a "non-attempted" skill check.
+* No, you can not use this to affect the outcome of an in-combat Skill Check.
 
 ### Happy Accident
 _It looks like you stumbled, but you're actually dancing._

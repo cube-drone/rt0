@@ -4,9 +4,10 @@
     <name>Slaughter</name>
     <slug>slaughter</slug>
     <description>
-* When using Laughter, you may also:
+* When using Laughter, you may instead:
    * Take 1 Corruption Point
-   * Remove one of the two cards placed on Laughter from your deck forever.
+   * Play the Fool, but only one Minor Arcana card on Laughter
+   * Remove the Minor Arcana card from your deck permanently.
    * Deal Ranged Magic Damage equal to 10 times the numerical value of the card so-removed.
    * You may not use Slaughter again this Day.
     </description>

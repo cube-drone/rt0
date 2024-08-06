@@ -27,9 +27,6 @@ class Strike {
             if(ability.name === 'Rabbit' && ability.bin.length > 0){
                 return false;
             }
-            if(ability.name === 'Saw' && ability.rabbit.bin.length > 0){
-                return false;
-            }
         }
         for(let ability of state.abilities){
             if(ability.name === 'MagicWand' && ability.bin.length > 0){
@@ -49,6 +46,11 @@ class Strike {
     }
 
     play(card, state) {
+        for(let ability of state.abilities){
+            if(ability.onStrike){
+                ability.onStrike(card, state);
+            }
+        }
         this.bin.push(card);
         if(this.totalValueOfBin() >= 10){
             state.log.push(`Striking with ${this.bin}`);
@@ -110,6 +112,11 @@ class Defend {
     }
 
     play(card, state) {
+        for(let ability of state.abilities){
+            if(ability.onDefend){
+                ability.onDefend(card, state);
+            }
+        }
         this.bin.push(card);
         if(this.totalValueOfBin() >= 10){
             state.log.push(`Defending with ${this.bin}`);
@@ -145,7 +152,15 @@ class Concentrate {
         }
     }
 
-    accepts(card) {
+    accepts(card, state) {
+        for(let ability of state.abilities){
+            if(ability.name === 'All Signs Point To Yes' && ability.bin.length > 0){
+                let num = numericalValue(card);
+                if(num == 1 || num == 2 || num == 3 || num == 9){
+                    return true;
+                }
+            }
+        }
         return isMajorArcana(card);
     }
 
@@ -158,6 +173,12 @@ class Concentrate {
         }
         else if(state.getTags().includes('foolish')){
             binLengthRequired = 3;
+        }
+
+        for(let ability of state.abilities){
+            if(ability.onConcentrate){
+                ability.onConcentrate(card, state);
+            }
         }
 
         if(this.bin.length >= binLengthRequired){

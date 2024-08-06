@@ -1,6 +1,7 @@
 
 const fool = require('./arcana/fool.js');
 const magician = require('./arcana/magician.js');
+const highpriestess = require('./arcana/highpriestess.js');
 const spells = require('./spells.js');
 const Player = require('./Player.js');
 const Table = require('cli-table');
@@ -132,6 +133,11 @@ for(let ability of magicianabilities){
     progress.increment();
 }
 
+let hpabilities = Object.values(highpriestess);
+for(let ability of hpabilities){
+    pushTagsAndAbilities(['wise'], [ability, spells.Leo]);
+    progress.increment();
+}
 
 /*
 let alreadyDone = new Set();

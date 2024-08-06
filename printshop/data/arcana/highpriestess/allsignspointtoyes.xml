@@ -8,9 +8,13 @@
     </helper>
     <description>
 * Place the High Priestess on All Signs Point to Yes
-* While the High Priestess is on All Signs Point to Yes, Aces, Twos, Threes, and Nines can be used on Concentrate.
+* While the High Priestess is on All Signs Point to Yes:
+   * Twos, Threes, Fours, and Nines can be used on Concentrate.
+   * When a Two, Three, Four, or Nine is used on Concentrate, instead of discarding it, place it
+      on All Signs Point to Yes.
 * Discard the High Priestess from All Signs Point to Yes whenever you like.
-* When the High Priestess is discarded from All Signs Point to Yes, deal 1 Magic Ranged Damage to every Adversary.
+   * When you do, deal 2 Magic Ranged Damage to every Adversary for each card on All Signs Point to Yes,
+   * then discard all cards on All Signs Point to Yes.
 </description>
 <flavor>
 It almost seems like you're in a trance.

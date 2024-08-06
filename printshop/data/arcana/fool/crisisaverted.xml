@@ -7,11 +7,11 @@
         <card>The Tower</card>
     </helper>
     <description>
-* In combat, when you draw any card (par example: The Tower), instead of doing what you had planned with that card, you may
-    instead shuffle that card back into your deck without triggering any special effect associated with that card.
+* In combat, when you draw any card (example: The Tower), instead of doing what you had planned with that card, you may
+    instead take 2HP of damage and shuffle that card back into your deck without triggering any special effect associated with that card.
 * Yes, you can use this to keep Catastrophe from triggering.
 * Yes, you can use this to keep Surprise Twist from giving you Corruption points.
-* No, you can not use this to turn a failed Skill Check into a "non-attempted" skill check.
+* No, you can not use this to affect the outcome of an in-combat Skill Check.
 </description>
 <flavor>
 "I don't think of it as a mistake, it's more of a happy accident."

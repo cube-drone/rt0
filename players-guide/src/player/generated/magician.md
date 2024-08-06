@@ -45,8 +45,8 @@ _For the big finale, you're going to need a volunteer._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Saw in Half to Unlock it.**
 
-* Take 1 Corruption Point to active Saw in Half:
-   * For the remainder of combat, when a card is on Pull a Rabbit Out of a Hat, you may still use Defend.
+* Take 1 Corruption Point to activate Saw in Half:
+   * You may still use Defend and Unarmed Strike while Pull Rabbit Out of Hat is active.
 
 ### Spellbook
 _"I didn't know you knew that one!"  "Yeah, I didn't either."_
