@@ -104,19 +104,17 @@ _"Let's see what the future holds. Oh... it's bad. It's really bad. You should p
    * Discard all cards from Rolling Bones.
    * Deal 18 Magic Damage.
 
-### Lucky Numbers: 3, 4, 5, 6, 7, 8
+### Lucky Numbers
 _If you can predict the future, every number is lucky._
 
 _Corruption Upgrade: A Mistake Will Soon Be Corrected_
 
-* At the start of combat, draw a card from your deck and place it face-up on Lucky Numbers.
-* If that card is The Tower, instead shuffle it back into your deck and replace it with a new card.
+* Any time a 7 is drawn, immediately gain 4 Shield.
 * Place a a 3, a 4, a 5, a 6, a 7, or an 8 on Lucky Numbers.
-* Cards placed on Lucky Numbers remain at the end of the turn.
 * Once you've placed a numbered card on Lucky Numbers, you can't place that number again until all numbers have been placed.
-* When seven cards are on Lucky Numbers:
+* When all six cards are on Lucky Numbers:
    * Return all cards on Lucky Numbers to your hand.
-   * Draw a new card from your deck and place it face-up on Lucky Numbers.
+   * These count as card draws and trigger any effects that would trigger on a card draw.
    * You can not do this more than once per combat turn.
 
 Remember that Major Arcana have numerical values, too: you could play a 4 of Cups and a V: The Hierophant, for example.
@@ -142,11 +140,10 @@ _The trick with palm reading is to strike others with your palms and then read t
 
 _Corruption Upgrade: Cold Reading_
 
-* If you are Strong, every time you draw a card, if it is a Sword, deal 1 Damage.
-* If you are Fast, every time you draw a card, if it is a Cup, generate 1 Shield.
-* If you are Lucky, every time you draw a card, if it is a King or Queen, draw another card.
-* If you are Charming, every time you draw a card, if it is a Page or Knight, choose one ally: that ally regains 1HP.
-* If you are Clever, every time you draw a card, if it is a Wand, deal 1 Ranged Magic Damage.
+* Every time you draw a card:
+   * If it is a 5, draw another card
+   * If it is a King, do 1 Damage
+   * If it is a Queen, gain 1 Shield
 
 ### Cold Reading
 _"Your lifeline is short. Very short."_

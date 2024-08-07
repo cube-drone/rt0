@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ability>
-    <name>Lucky Numbers: 3, 4, 5, 6, 7, 8</name>
+    <name>Lucky Numbers</name>
     <slug>luckynumbers</slug>
     <helper>
         <card>3</card>
@@ -15,14 +15,12 @@
         <k>Lucky Numbers</k>
     </keywords>
     <description>
-* At the start of combat, draw a card from your deck and place it face-up on Lucky Numbers.
-* If that card is The Tower, instead shuffle it back into your deck and replace it with a new card.
+* Any time a 7 is drawn, immediately gain 4 Shield.
 * Place a a 3, a 4, a 5, a 6, a 7, or an 8 on Lucky Numbers.
-* Cards placed on Lucky Numbers remain at the end of the turn.
 * Once you've placed a numbered card on Lucky Numbers, you can't place that number again until all numbers have been placed.
-* When seven cards are on Lucky Numbers:
+* When all six cards are on Lucky Numbers:
    * Return all cards on Lucky Numbers to your hand.
-   * Draw a new card from your deck and place it face-up on Lucky Numbers.
+   * These count as card draws and trigger any effects that would trigger on a card draw.
    * You can not do this more than once per combat turn.
 </description>
 <extraDescription>

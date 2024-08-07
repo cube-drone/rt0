@@ -6,7 +6,11 @@ const {
     isWands,
     isPentacles,
     numericalValue,
-    isMinorArcana
+    isMinorArcana,
+    isKing,
+    isQueen,
+    isPage,
+    isKnight
 } = require('../tarot.js');
 
 
@@ -57,6 +61,138 @@ class AllSignsPointToYes{
 }
 
 
+class LuckyNumber{
+    /*
+        at the start of combat, draw cards until you draw a numbered minor arcana card: that's your lucky number
+        every time your lucky number comes up, gain 4 shields
+    */
+    constructor(){
+        this.name = "Lucky Number";
+        this.tags = ['highpriestess'];
+    }
+
+    priorities() {
+        return {
+            'default': 3,
+        }
+    }
+
+    accepts(card) {
+        return false;
+    }
+
+    onDraw(card, state){
+        let num = numericalValue(card);
+        if(num == 7 && !isCups(card)){
+            state.addShields(4);
+        }
+    }
+}
+
+class LuckyNumbers{
+    constructor(){
+        this.name = "Lucky Numbers";
+        this.tags = ['highpriestess'];
+        this.bin = [];
+        this.exhausted = false;
+    }
+
+    priorities() {
+        return {
+            'default': 3,
+        }
+    }
+
+    accepts(card) {
+        // Lucky Numbers accepts any card of numerical value 3-8 whose numerical value is not already in the bin
+        let num = numericalValue(card);
+        let numbersInBin = this.bin.map(numericalValue);
+        return num >= 3 && num <= 8 && !numbersInBin.includes(num) && !this.exhausted;
+    }
+
+    play(card, state) {
+        this.bin.push(card);
+
+        if(this.bin.length === 6){
+            for(let card of this.bin){
+                // when the bin is full, dump the entire bin back into the players' hand
+                state.forceDraw(card);
+            }
+            this.bin = [];
+            this.exhausted = true;
+        }
+    }
+
+    onTurnEnd(state){
+        this.exhausted = false;
+    }
+
+    onDraw(card, state){
+        let num = numericalValue(card);
+        if(num == 7){
+            state.addShields(4);
+        }
+    }
+}
+
+
+class PalmReading{
+    constructor(){
+        this.name = "Palm Reading";
+        this.tags = ['highpriestess'];
+    }
+
+    priorities() {
+        return {
+            'default': 3,
+        }
+    }
+
+    accepts(card) {
+        return false;
+    }
+
+    onDraw(card, state){
+        if(numericalValue(card) == 5){
+            state.draw();
+        }
+        if(isKing(card)){
+            state.doDamage(1);
+        }
+        if(isQueen(card)){
+            state.addShields(1);
+        }
+    }
+}
+
+class ColdReading{
+    constructor(){
+        this.name = "Palm Reading";
+        this.tags = ['highpriestess', 'corruption'];
+    }
+
+    priorities() {
+        return {
+            'default': 3,
+        }
+    }
+
+    accepts(card) {
+        return false;
+    }
+
+    onDraw(card, state){
+        state.doDamage(1);
+    }
+
+}
+
+
+
 module.exports = {
-    AllSignsPointToYes
+    AllSignsPointToYes,
+    LuckyNumber,
+    LuckyNumbers,
+    PalmReading,
+    ColdReading
 }

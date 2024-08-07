@@ -167,6 +167,22 @@ assert(isGirl('queen of wands'));
 assert(isGirl('high priestess'));
 assert(!isGirl('knight of wands'));
 
+function isKing(card){
+    return card.includes('king');
+}
+
+function isQueen(card){
+    return card.includes('queen');
+}
+
+function isKnight(card){
+    return card.includes('knight');
+}
+
+function isPage(card){
+    return card.includes('page');
+}
+
 // freeze the arrays to prevent modification
 Object.freeze(deck);
 Object.freeze(majorArcana);
@@ -331,6 +347,10 @@ module.exports = {
     getPentacles,
     isPentacles,
     isGirl,
+    isKing,
+    isQueen,
+    isKnight,
+    isPage,
     suit,
     numericalValue,
     randomHand,

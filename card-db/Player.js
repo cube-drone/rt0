@@ -330,6 +330,21 @@ class Player {
         let card = this.deck.pop();
         this.log.push(`Drawing ${card}`);
         this.hand.push(card);
+        for(let ability of this.abilities){
+            if(ability.onDraw){
+                ability.onDraw(card, this);
+            }
+        }
+    }
+
+    forceDraw(card){
+        this.log.push(`Drawing ${card}`);
+        this.hand.push(card);
+        for(let ability of this.abilities){
+            if(ability.onDraw){
+                ability.onDraw(card, this);
+            }
+        }
     }
 
     shuffle() {

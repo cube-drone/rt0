@@ -26,6 +26,8 @@ const cliProgress = require('cli-progress');
 // but I think that they're still worth doing, because they can give us a rough idea of the power level of a given ability
 //  (before playtesting, which is the real gold standard)
 
+let onlyRunIfMatchingTags = ["highpriestess"];
+
 
 let table = new Table({
     head: ['Name', 'Min', 'Max', 'StdDev', 'Score', 'Tags'],
@@ -56,21 +58,33 @@ let pushTag = (tag) => {
     histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles});
     baselines[tag] = histogram.score;
     let score = histogram.score - baselines['spells'];
-    tablePush(tag, histogram.minScore, histogram.maxScore, histogram.stdDev, score, ['ability']);
+    let tags = ['ability'];
+    if(tags.some(tag => onlyRunIfMatchingTags.includes(tag)) === false && onlyRunIfMatchingTags.length > 0){
+        return;
+    }
+    tablePush(tag, histogram.minScore, histogram.maxScore, histogram.stdDev, score, tags);
 }
 let pushSpell = (ability) => {
     player = Player.generateDefaultPlayer();
     player.addAbility(ability);
     histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles});
     let score = histogram.score - baselines['spells'];
-    tablePush(ability.name, histogram.minScore, histogram.maxScore, histogram.stdDev, score, (new ability()).tags ?? []);
+    let tags = (new ability()).tags ?? [];
+    if(tags.some(tag => onlyRunIfMatchingTags.includes(tag)) === false && onlyRunIfMatchingTags.length > 0){
+        return;
+    }
+    tablePush(ability.name, histogram.minScore, histogram.maxScore, histogram.stdDev, score, tags);
 }
 let pushAbility = (ability) => {
     player = Player.generateDefaultPlayer();
     player.addAbility(ability);
     histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles});
     let score = histogram.score - baselines['default'];
-    tablePush(ability.name, histogram.minScore, histogram.maxScore, histogram.stdDev, score, (new ability()).tags ?? []);
+    let tags = (new ability()).tags ?? [];
+    if(tags.some(tag => onlyRunIfMatchingTags.includes(tag)) === false && onlyRunIfMatchingTags.length > 0){
+        return;
+    }
+    tablePush(ability.name, histogram.minScore, histogram.maxScore, histogram.stdDev, score, tags);
 }
 let pushTagsAndAbilities = (tags, abilities) => {
     player = Player.generateDefaultPlayer();
@@ -82,7 +96,15 @@ let pushTagsAndAbilities = (tags, abilities) => {
         abilityNames.push(ability.name);
         player.addAbility(ability);
     }
+    if(tags.length > 0){
+        fullTags.push("ability");
+        fullTags = fullTags.concat(tags);
+    }
     player.buildDeck();
+
+    if(fullTags.some(tag => onlyRunIfMatchingTags.includes(tag)) === false && onlyRunIfMatchingTags.length > 0){
+        return;
+    }
 
     histogram = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 5000});
     let name = [tags.join("-"), abilityNames.join("-")].join("-");
@@ -104,6 +126,20 @@ for(let tag of goodtags.concat(badtags)){
     pushTag(tag);
     progress.increment();
 }
+
+/*
+for(let tag of goodtags){
+    for(let tag2 of goodtags){
+        if(tag === tag2){
+            continue;
+        }
+        for(let badtag of badtags){
+            pushTagsAndAbilities([tag, tag2, badtag], [spells.Leo]);
+            progress.increment();
+        }
+    }
+}
+*/
 
 
 /*
