@@ -212,6 +212,7 @@ progress.stop();
 console.log(table.toString());
 
 //debugging
+/*
 let a = () => {
     player = Player.generateDefaultPlayer();
     player.tags = ['clever', 'wise'];
@@ -219,19 +220,38 @@ let a = () => {
     player.addAbility(magician.Cups);
     player.addAbility(magician.MagicWand);
     player.addAbility(spells.Leo);
+    player.addAbility(spells.Gemini);
     //console.log(player.generateLog())
     let histo = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 5000});
     console.dir(`magician broken`)
     console.log(histo.toString());
 };
+a();
 
 let b = () => {
     player = Player.generateDefaultPlayer();
     player.tags = ['strong', 'lucky'];
     player.addAbility(fool.HitMe);
     player.addAbility(fool.KnifeGuy);
+    player.addAbility(fool.Parade);
+    player.addAbility(fool.ThrowawayJoke);
     //console.log(player.generateLog())
     console.dir(`fool broken`)
     let histo = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 5000});
     console.log(histo.toString());
 }
+b();
+
+let c = () => {
+    player = Player.generateDefaultPlayer();
+    player.tags = ['wise'];
+    player.addAbility(highpriestess.LuckyNumbers);
+    player.addAbility(highpriestess.AllSignsPointToYes);
+    player.addAbility(highpriestess.ColdReading);
+    player.addAbility(highpriestess.RollingBones);
+    let histo = player.generateUsefulnessHistogram({nTurns: 15, nCycles: 5000});
+    console.dir(`hp broken`)
+    console.log(histo.toString());
+};
+c();
+*/

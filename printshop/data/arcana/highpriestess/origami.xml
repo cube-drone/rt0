@@ -7,10 +7,9 @@
     </helper>
     <description>
 * Instead of discarding cards from Concentrate, place them on Origami Folding.
-* When there are 8 cards on Origami Folding, you may either:
-    * Look at the top five cards of the deck, place any number of them on the bottom of the deck, then return them to the top of the deck in any order AND
-    * Draw the top card of the deck AND
-    * Deal 3 Magic Damage to all Adversaries in your Zone.
+* When there are 5 cards on Origami Folding, you may:
+   * Deal 1 Magic Damage to all Adversaries in your Zone AND
+   * Force 1 Adversary in your Zone to redraw their Intent
 * Then, discard all cards from Origami Folding.
 </description>
 <flavor>

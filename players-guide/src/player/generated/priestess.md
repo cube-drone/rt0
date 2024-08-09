@@ -42,7 +42,8 @@ _Corruption Upgrade: Better Not Tell You Now_
    * When a Two, Three, Four, or Nine is used on Concentrate, instead of discarding it, place it
       on All Signs Point to Yes.
 * Discard the High Priestess from All Signs Point to Yes whenever you like.
-   * When you do, deal 2 Magic Ranged Damage to every Adversary for each card on All Signs Point to Yes,
+   * When the High Priestess is discarded from All Signs Point to Yes (even by The Tower),
+   * deal 7 Magic Damage to every Adversary in your Zone for each card on All Signs Point to Yes,
    * then discard all cards on All Signs Point to Yes.
 
 ### Better Not Tell You Now
@@ -63,9 +64,10 @@ _Corruption Upgrade: GOOD BYE_
 
 * Place the High Priestess on YES NO
 * Look at the top five cards of your deck.
-* Place any of them that you choose, shuffled, at the bottom of your deck.
-* Place the rest on top of your deck in any order.
-* Draw three cards.
+  * Place any of them that you choose, shuffled, at the bottom of your deck.
+  * Place the rest on top of your deck in any order.
+  * Draw three cards.
+* Draw an Intent for each Adversary: this is their Intent for the turn after this one.
 * Discard the High Priestess from YES NO at the end of your turn.
 
 ### GOOD BYE
@@ -86,10 +88,9 @@ _"They're just standing there, playing with a little piece of paper."_
 _Corruption Upgrade: Rolling Bones_
 
 * Instead of discarding cards from Concentrate, place them on Origami Folding.
-* When there are 8 cards on Origami Folding, you may either:
-    * Look at the top five cards of the deck, place any number of them on the bottom of the deck, then return them to the top of the deck in any order AND
-    * Draw the top card of the deck AND
-    * Deal 3 Magic Damage to all Adversaries in your Zone.
+* When there are 5 cards on Origami Folding, you may:
+   * Deal 1 Magic Damage to all Adversaries in your Zone AND
+   * Force 1 Adversary in your Zone to redraw their Intent
 * Then, discard all cards from Origami Folding.
 
 ### Rolling Bones
@@ -97,12 +98,9 @@ _"Let's see what the future holds. Oh... it's bad. It's really bad. You should p
 
 **Corruption Upgrade: Mark 3 Corruption Points on Rolling Bones to Unlock it.**
 
-* Origami Folding now triggers when there are 6 cards, rather than 8.
-* Do not discard cards from Origami Folding when it triggers.
-* When there are 18 cards on Rolling Bones:
-   * Gain 1 Corruption Point.
-   * Discard all cards from Rolling Bones.
-   * Deal 18 Magic Damage.
+* Take 1 Corruption Point to activate Rolling Bones.
+* Every time you use Concentrate:
+   * Deal 3 Magic Damage.
 
 ### Lucky Numbers
 _If you can predict the future, every number is lucky._
@@ -120,20 +118,12 @@ _Corruption Upgrade: A Mistake Will Soon Be Corrected_
 Remember that Major Arcana have numerical values, too: you could play a 4 of Cups and a V: The Hierophant, for example.
 
 ### A Mistake Will Soon Be Corrected
-_Every loose object in the room whirling around you like celestial bodies, and you are the Sun._
+_Sometimes prescience comes from first-hand experience._
 
 **Corruption Upgrade: Mark 3 Corruption Points on A Mistake Will Soon Be Corrected to Unlock it.**
 
-* Play any five-card straight on A Mistake Will Soon Be Corrected.
-* These cards must all be played at the same time.
-    * Sum the cards's values: deal half that much Magic Damage, rounded down, to all Adversaries in your Zone.
-    * Discard all cards on A Mistake Will Soon Be Corrected.
-    * If the five cards are not all in the same suit, take 1 Corruption Point and deal 1HP of Magic Damage to yourself and any allies in your Zone.
-    * If the five cards are all Major Arcana, deal full Magic Damage rather than half.
-
-* Just to clarify, a five-card straight is five cards in strict numerical order, like "2, 3, 4, 5, 6" or "10, Page, Knight, Queen, King".
-* A straight can also be made out of the Major Arcana, but only if they are in strict numerical order.
-* Wrap-around is not allowed, so "King, Ace, 2, 3, 4" is not a straight.
+* Take 2 Corruption Points to activate A Mistake Will Soon Be Corrected.
+* Any HP Damage or injuries received by Players since your last turn are undone.
 
 ### Palm Reading
 _The trick with palm reading is to strike others with your palms and then read their faces._
@@ -150,18 +140,8 @@ _"Your lifeline is short. Very short."_
 
 **Corruption Upgrade: Mark 3 Corruption Points on Cold Reading to Unlock it.**
 
-* You may play a card on Cold Reading at any time during your turn: when you do:
-   * Choose two of Strong, Fast, Lucky, Charming, and Clever:
-   * Palm Reading acts as if you **also** had these traits.
-   * However, if you draw The Tower or The Moon, take 1 Corruption Point.
-* You may discard the card on Cold Reading at any time. This cancels the above effect.
-
-As a small extra clarification, players might attempt to lawyer the order of turn operations
-such that drawing The Tower or The Moon
-with Cold Reading active
-would not cause the Corruption Point to be taken. ("well, if The Tower discards the card from Cold Reading automatically...")
-This is some Magic: The Gathering level bullshit and is not the intent of the card. If you draw The Tower or The Moon, you take
-the Corruption Point.
+* Take 1 Corruption Point to activate Cold Reading.
+   * Every time you draw a card: Deal 1 Damage.
 
 ### Ballistics
 _Any object, sufficiently accelerated, can become a deadly weapon._
@@ -178,9 +158,7 @@ _Move so fast that the world seems to stop._
 
 **Corruption Upgrade: Mark 3 Corruption Points on Astronomy to Unlock it.**
 
-* Play The World and The Moon on Astronomy.
-* These cards must be played at the same time.
-* Take 1 Corruption Point.
-* At the end of this turn, take another turn.
-* Discard all cards on Astronomy.
+* Instead of placing it on Ballistics, you may instead place it on Astronomy and take 1 Corruption Point.
+  * While there is a Wand on Astronomy, any Shield that you generate for yourself is instead generated for all Players.
+  * So, if you generate 4 Shield, each Player (including yourself) gains 4 Shield this turn.
 

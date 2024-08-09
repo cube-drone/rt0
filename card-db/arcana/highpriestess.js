@@ -33,7 +33,7 @@ class AllSignsPointToYes{
             return false;
         }
         else{
-            return card == "highpriestess";
+            return card == "high priestess";
         }
     }
 
@@ -43,15 +43,17 @@ class AllSignsPointToYes{
     }
 
     onConcentrate(card, state){
-        let num = numericalValue(card);
-        if(num == 2 || num == 3 || num == 4 || num == 9){
-            this.tokens += 1;
+        if(this.bin.length > 0){
+            let num = numericalValue(card);
+            if(num == 2 || num == 3 || num == 4 || num == 9){
+                this.tokens += 1;
+            }
         }
     }
 
     onFlush(state){
         // "4 to every adversary" is unclear, so I'm thinking "3 adversaries ", approximately
-        state.doMagicRangedDamage(this.tokens * 3);
+        state.doMagicDamage(this.tokens * 14);
     }
 
     play(card, state) {
@@ -60,14 +62,37 @@ class AllSignsPointToYes{
     }
 }
 
-
-class LuckyNumber{
-    /*
-        at the start of combat, draw cards until you draw a numbered minor arcana card: that's your lucky number
-        every time your lucky number comes up, gain 4 shields
-    */
+class BetterNot{
     constructor(){
-        this.name = "Lucky Number";
+        this.name = "Better Not";
+        this.tags = ['highpriestess'];
+    }
+
+    priorities() {
+        return {
+            'default': 4,
+        }
+    }
+
+    accepts(card) {
+        return false;
+    }
+
+    play(card, state) {
+
+    }
+
+    onConcentrate(card, state){
+    }
+
+    onFlush(state){
+    }
+
+}
+
+class YesNo{
+    constructor(){
+        this.name = "YesNo";
         this.tags = ['highpriestess'];
     }
 
@@ -78,16 +103,44 @@ class LuckyNumber{
     }
 
     accepts(card) {
-        return false;
+        return card == "high priestess";
     }
 
-    onDraw(card, state){
-        let num = numericalValue(card);
-        if(num == 7 && !isCups(card)){
-            state.addShields(4);
-        }
+    play(card, state) {
+        state.draw();
+        state.draw();
+        state.draw();
+
+        state.redrawIntent();
+        state.redrawIntent();
+        state.redrawIntent();
+
+        state.discard.push(card);
     }
 }
+
+class GoodBye{
+    constructor(){
+        this.name = "Goodbye";
+        this.tags = ['highpriestess'];
+    }
+
+    priorities() {
+        return {
+            'default': 4,
+        }
+    }
+
+    accepts(card) {
+        return card == "highpriestess";
+    }
+
+    play(card, state) {
+
+    }
+
+}
+
 
 class LuckyNumbers{
     constructor(){
@@ -133,6 +186,28 @@ class LuckyNumbers{
             state.addShields(4);
         }
     }
+}
+
+class Mistake{
+    constructor(){
+        this.name = "Mistake";
+        this.tags = ['highpriestess'];
+    }
+
+    priorities() {
+        return {
+            'default': 4,
+        }
+    }
+
+    accepts(card) {
+        return card == "highpriestess";
+    }
+
+    play(card, state) {
+
+    }
+
 }
 
 
@@ -187,12 +262,123 @@ class ColdReading{
 
 }
 
+class OrigamiFolding{
+    constructor(){
+        this.name = "Origami Folding";
+        this.tags = ['highpriestess'];
+        this.tokens = 0;
+    }
+
+    priorities() {
+        return {
+            'default': 3,
+        }
+    }
+
+    accepts(card) {
+        return false;
+    }
+
+    reset(){
+        this.tokens = 0;
+    }
+
+    onFlush(){
+        this.tokens = 0;
+    }
+
+    onConcentrate(card, state){
+        this.tokens += 1;
+        if(this.tokens % 5 == 0){
+            state.redrawIntent();
+            state.doDamage(3);
+        }
+    }
+}
+
+class RollingBones{
+    constructor(){
+        this.name = "Rolling Bones";
+        this.tags = ['highpriestess'];
+        this.tokens = 0;
+    }
+
+    priorities() {
+        return {
+            'default': 3,
+        }
+    }
+
+    accepts(card){
+        return false;
+    }
+
+    onConcentrate(card, state){
+        state.doDamage(3);
+    }
+}
+
+class Ballistics{
+    constructor(){
+        this.name = "Ballistics";
+        this.tags = ['highpriestess'];
+        this.bin = [];
+    }
+
+    priorities() {
+        return {
+            'default': 3,
+        }
+    }
+
+    accepts(card){
+        return isWands(card) && this.bin.length == 0;
+    }
+
+    play(card, state){
+        this.bin.push(card);
+        // being able to scoot away and still hit is the same as being better at blocking, right?
+        state.shieldMultiplier = 1.5;
+    }
+}
+
+class Astronomy{
+    constructor(){
+        this.name = "Astronomy";
+        this.tags = ['highpriestess'];
+        this.bin = [];
+    }
+
+    priorities() {
+        return {
+            'default': 3,
+        }
+    }
+
+    accepts(card){
+        return isWands(card) && this.bin.length == 0;
+    }
+
+    play(card, state){
+        this.bin.push(card);
+        // being able to scoot away and still hit is the same as being better at blocking, right?
+        state.shieldMultiplier = 2.5;
+    }
+
+}
 
 
 module.exports = {
     AllSignsPointToYes,
-    LuckyNumber,
+    BetterNot,
+    YesNo,
+    GoodBye,
     LuckyNumbers,
+    Mistake,
     PalmReading,
-    ColdReading
+    ColdReading,
+    OrigamiFolding,
+    RollingBones,
+    Ballistics,
+    Astronomy
 }

@@ -9,9 +9,10 @@
     <description>
 * Place the High Priestess on YES NO
 * Look at the top five cards of your deck.
-* Place any of them that you choose, shuffled, at the bottom of your deck.
-* Place the rest on top of your deck in any order.
-* Draw three cards.
+  * Place any of them that you choose, shuffled, at the bottom of your deck.
+  * Place the rest on top of your deck in any order.
+  * Draw three cards.
+* Draw an Intent for each Adversary: this is their Intent for the turn after this one.
 * Discard the High Priestess from YES NO at the end of your turn.
 </description>
 <flavor>

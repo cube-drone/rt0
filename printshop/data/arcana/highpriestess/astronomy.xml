@@ -4,15 +4,12 @@
     <name>Astronomy</name>
     <slug>astronomy</slug>
     <helper>
-        <card>The World</card>
-        <card>The Moon</card>
+        <card>Wand</card>
     </helper>
     <description>
-* Play The World and The Moon on Astronomy.
-* These cards must be played at the same time.
-* Take 1 Corruption Point.
-* At the end of this turn, take another turn.
-* Discard all cards on Astronomy.
+* Instead of placing it on Ballistics, you may instead place it on Astronomy and take 1 Corruption Point.
+  * While there is a Wand on Astronomy, any Shield that you generate for yourself is instead generated for all Players.
+  * So, if you generate 4 Shield, each Player (including yourself) gains 4 Shield this turn.
     </description>
     <flavor>
 Move so fast that the world seems to stop.
