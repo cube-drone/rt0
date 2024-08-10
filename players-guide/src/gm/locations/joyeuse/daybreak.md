@@ -12,7 +12,7 @@ graph TD;
     CLASS3["Classrooms 3"];
     CLASS4["Classrooms 4"];
     CLASS5["Classrooms 5"];
-    CLASS6["Classrooms 6"];
+    DETENTION["Detention"];
     CAFE["Cafeteria"];
     LHALL["Lower Hall"];
     STAIRS["Stairwell"];
@@ -35,7 +35,7 @@ graph TD;
     STAIRS-->UHALL;
     UHALL-->CLASS4;
     UHALL-->CLASS5;
-    UHALL-->CLASS6;
+    UHALL-->DETENTION;
     UHALL-->ADMIN;
     UHALL-->MED;
 
@@ -62,8 +62,6 @@ graph TD;
 ### Pentacles Classroom
 
 ### Major Classroom
-
-### Null Classroom
 
 ## Cafeteria
 

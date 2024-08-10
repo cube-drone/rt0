@@ -59,6 +59,7 @@
 # GM's Guide
 - [Introduction](./gm/introduction.md)
 - [The Adventure](./gm/adventure.md)
+    - [Act 1: Introduction](./gm/adventure/act1.md)
 - [NPCs](./gm/npcs.md)
     - [Factions](./gm/factions.md)
     - [The Hermit - Herman Ito](./gm/npc/hermit.md)
