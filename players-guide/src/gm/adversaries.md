@@ -2,13 +2,25 @@
 
 ## Common
 
+### Training Attack Robot
+_Beep boop, let's mess things up. Borp._
+
+HP: 15
+
+* Swords: Move 1 Zone, Deal 6 Damage
+* Wands: Move 1 Zone, Deal 3 Damage
+* Pentacles: Regain 2 HP
+* Cups: Gain 5 Shields.
+* Major: (Immediately) Draw a card and play it face-down. That is the new Intent.
+
 ### Laborer
+_Punk kid._
 
 HP: 20
 
-* Swords: Move 1 Zone, Deal 6 damage
+* Swords: Move 1 Zone, Deal 8 damage. Union: Once one laborer takes this action in a turn, any other laborer using Swords will instead take a breather and regain 2 HP.
 * Wands: Move 1 Zone, Deal 4 damage, +1 damage for every other Adversary in the same Zone
-* Pentacles: Take a breather. Regain 2HP.
+* Pentacles: Take a breather. Regain 2 HP.
 * Cups: 2 Shields, and give 2 Shields to every other Adversary in the same Zone
 * Major: (Immediately) Draw a card and play it face-down. That is the new Intent.
 

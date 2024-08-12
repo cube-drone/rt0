@@ -13,12 +13,12 @@ True Horrors.
 
 ## Quest 1. Get to the Daybreak Institute
 * Players touch down in the [Passenger Concourse](./locations/joyeuse/airlock.md#passenger-concourse),
-    along with enough NPC teenagers to count up to 8.
+    along with some NPC teenagers to fill out the crowd a little bit.
 * X0XI's voice greets them and instructs them to proceed, through customs, to the Daybreak Institute as quickly as possible.
 * Some Eddies offer to help with luggage. The players do not have luggage: it was deemed too heavy and expensive.
 
-### Customs
-* An unpleasant experience with some proto-fascists.
+### 1.1 Customs
+* An unpleasant experience with some proto-fascist unpleasant security folks.
 * Here, we introduce a key ally for the players: either...
    * The Hermit: Herman Ito, of Itophonics Industries, trying to negotiate a shipment of supplies with the Executare
    * Strength: Julianna Forza, of the Executare, with her German Shepherd, Snagga - the "good" cop, if such a thing can be said to exist.
@@ -28,7 +28,7 @@ True Horrors.
 * Each one of these three has been investigating Paradise Lua and gives you their card: nobody has been allowed in to the
    Daybreak Institute in some time and they would like your help with some intelligence gathering.
 
-## Initiation
+### 1.2 Initiation
 * Next, Daybreak Institute.
 * The First Combat.
 * Food and Sleep, The Stipend System
@@ -40,23 +40,30 @@ True Horrors.
    * But: this will begin to introduce the players to Daybreak Disciplinary Options.
 * Curfew? Players must be back in the dorms by 20:00, although the enforcement there is quite poor.
 
-## Quest 1: Players Need to Find Food and a Place to Sleep, and they Need to Stay out of Trouble
-* On account of having no money and no place to sleep, the players are going to need to figure out where they can sleep
+## Quest 2: Players Need to Find Food and a Place to Sleep, and they Need to Stay out of Trouble
+* The Dormitories are uninhabitable. The temperature control is extremely broken, and the rooms are kept at a frosty 0C,
+   which would give any players who attempted to sleep there hypothermia.
+* The Cafeteria is unusable. It's an Automat-style delivery system, but most of the food has been sitting for years
+   and is rotten, dessicated, or otherwise inedible. The cooking robot has been quite broken for some time.
+* The players are going to need to figure out where they can sleep and find something to eat.
 * They aren't authorized to leave Joyeuse yet. This doesn't mean that they can't leave Joyeuse, merely that it's harder because they can't trivially get to the other sectors of Paradise Lua.
 * Some obvious places to point the players if they're looking for a place to stay:
-  * The Colada Hotel Pods. Long disused after tourism collapsed, here, and repurposed by (PEOPLE) for (REASON).
-    * In order to sleep here, first players will need to (SIDE QUEST)
+  * The Colada Hotel Pods. Long disused after tourism collapsed, here, and repurposed as an event space: there's one of a few different large events running here:
+    * The Anti-Ouro are throwing a multi-day "convention" to try and get to the bottom of the Ouroborous
+        conspiracy, amongst other conspiracies.
+    * Paradise Lua's LGBT+ community, under fire from an increasingly conservative government, are throwing
+        clandestine dance parties that also conceal a lightly organized resistance movement.
+    * A wedding: there aren't a lot of places to hold weddings in Paradise Lua and this is one of the cheapest.
   * Holding Cells: it's a place to sleep and eat and it's free! Negative side effect: you're imprisoned, though.
   * The Warehouses. Warehouse workers sleep in the stacks all the time, and if players can make friends
      with a Warehouse worker or Dockworker they can help the players find a sleeping nook.
   * Rapier Broadcasting. This office-space is fluorescent lit, but surprisingly ill-guarded at night.
 
-
-### Curfew Problems
+### 2.1 Curfew Problems
 * It's impractical for players to check in to the dorms at 20:00 and stay there for the night.
 * They either need to not show up for curfew (and face the Disciplinary Options) or fool the Curfew system somehow.
 
-### Disciplinary Options
+### 2.2 Disciplinary Options
 * Curfew Problems and Skipping Class can both lead to Disciplinary Options
 * Disciplinary Escalation:
  * A sternly worded note in the players' Disciplinary File
@@ -67,7 +74,7 @@ True Horrors.
  * The Paddle (A fight with a robot that makes everyone uncomfortable)
  * Invoking the Actual Executare (Criminal Charges)
 
-### The Lesson
+### 2.2 Lesson Plan
 * In order to effectively torture the players, the curricula is largely:
  * automated fight training
  * fights with other students
@@ -76,8 +83,14 @@ True Horrors.
  * actually useful information
 * Lessons do not last very long and the players are allowed the rest of the day to themselves
 
-
 ## Quest 2: Raising The Stakes
+* Remind players to follow up with their Mentor
+  * or: have the Mentor show up and help the players out of a jam
+  * it's not cheating to indicate to your players that this is the main quest-line of the game.
+* Their Mentor asks the players to retrieve some important
+   files from the Administrative Offices in Daybreak.
+* If this goes well: great!
+  * If they get caught by X0XI, or this goes very badly: TODO
 * Players must learn, somehow, that their master quest is to sever the psychic links between the station's various psychic
    touchpoints and the distant True Horrors.
 * 3 ways for them to discover this:
@@ -94,7 +107,12 @@ True Horrors.
    Judgement can crawl back up the link overtake the True Horrors themselves.
 * The Hermit knows about this plan and is trying to sever links to the True Horrors by bumping off their Avatars
 
-
 ## Act Break
 * A "boss fight"
 * The players get access to Krater Valley.
+
+## Act 1 Factions
+* Executare
+* Journos
+* The Anti-Ouro
+* Anonymous
