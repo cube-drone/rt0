@@ -1,15 +1,46 @@
 # A Brief Guide to the Tarot
 
 While every Tarot deck includes a little booklet explaining the cards and their meanings and interpretations,
-I have also included one here, for the sake of completeness.
+I have also included one here, mostly so that I don't have to keep looking them up.
 
 A passing familiarity with some of this stuff may enhance the _thematic resonance_ of various elements of the
 game.
 
-## A Note on Cartomancy
+## Designed for Cartomancy
 
-It is, of course, possible to predict the future with startling specificity and accuracy. Astronomers do it
-all the time: with access to a telescope the size of a building and a brain-melting amount of calculus,
+Cartomancy is "fortune-telling or divination using a deck of cards".
+
+The Rider-Waite Tarot has proven an enduringly popular deck of cards for cartomancy, because - well,
+that's what it's designed for. The Tarot was initially a standard playing card deck, like the
+[Standard 52-Card Deck](https://en.wikipedia.org/wiki/Standard_52-card_deck) we use for Poker or Blackjack,
+and intended for use in a [trick-taking game](https://en.wikipedia.org/wiki/Trick-taking_game) where the
+huge set of added trump cards added a spicy extra detail.
+
+When playing cards are designed to be used as _playing cards_, they end up with features like the ones
+in the Standard 52-Card Deck:
+
+* Large, easy to read numbers and symbols that can be parsed regardless of the orientation of the card.
+* A visual language on the card itself that allows even the illiterate to quickly parse the meaning of the card.
+* Cards that can be read comfortably from the corners, allowing players to see their entire hand easily by fanning the cards.
+* A smaller-sized card that's comfortable to fit in hand.
+
+Notably the Rider-Waite Tarot has _none of these properties_ and is actually quite an obtuse and difficult deck to
+play card games with. What it features instead are cards that are useful for cold reading:
+
+* Huge, visually complicated cards carrying a lot of symbol and allegory that can be interpreted in a wide variety of ways.
+* Symbol and allegory that itself is tied to a lot of astrological and occult concepts, giving the cards a pleasing sense of interconnectedness.
+
+The occult imagery is also, funny enough, just rebranded catholicism: the Tarot has hundreds of years of history as
+a set of playing cards in catholic countries, so in order to make the cards sufficiently _witchy_ some last-minute
+rebrandings had to occur. "The Heirophant" my entire ass, that man is The Pope.
+
+## Divination
+
+It is, of course, possible to predict the future with startling specificity and accuracy.
+
+No, I'm not pulling your leg, it's true!
+
+Astronomers do it all the time: with access to a telescope the size of a building and a brain-melting amount of calculus,
 it's possible to do things like predict the precise location of stars in the sky years in advance,
 determine the time and location of future eclipses, and predict exactly when the sun will rise and set.
 
@@ -39,16 +70,18 @@ if we weren't.
 I say this in order to establish that predicting the future is, in fact, possible.
 We do it all the time.
 
-Cartomancy, however, depends on the well-understood practice of [cold reading](https://en.wikipedia.org/wiki/Cold_reading).
+Cartomancy, however, is utter and complete bunkum.
+
+It depends on the well-understood practice of [cold reading](https://en.wikipedia.org/wiki/Cold_reading).
 It's a carefully managed illusion whereby a clever huckster can attempt to predict _the past_, which,
-generally, is much easier to predict than the future, on account of it's having already happened.
+generally, is considered much easier to predict than the future, on account of it's having already happened.
 
 By presenting cards that offer seemingly-specific interpretations, but that can also be re-interpreted and
 re-combined in various and sundry ways by exploiting their rich details and broad archetypes, cartomancy
 offers an extremely powerful engine for cold reading. "The Lovers" and "The Emperor" together can mean
 "you will fall in love with a tall, dark, handsome man within the week" (whoa, chills), but it can also mean
 "you will have or have had a positive interaction with any man, at some point in the future or at any point in your past",
-a prediction that, if you were simply to make it without the aid of fun occult-themed cards, would be
+a prediction that, if you were simply to make it without the aid of fun themed cards, would be
 so non-specific and broadly applicable as to be laughable.
 
 Cold readers watch their clients closely as they draw cards. If they gravitate towards specific cards, it's likely that
@@ -59,7 +92,8 @@ reaction to the patterns presented and using them to zero in on specific details
 most people are happy to reinterpret vague statements into their own frame of reference and volunteer a lot
 of information about themselves.
 
-It doesn't take Sherlock Holmes to see a Patagonia vest and a ten thousand dollar watch
+It's also quite easy to fold in existing, ambient information about the target: it doesn't take Sherlock Holmes
+to see a Patagonia vest and a Cartier watch
 and say "Your connection to the financial world brings you a lot of pain, but also provides welcome structure to your life".
 
 It's also much easier to remember a spookily accurate prediction as a wild and unlikely coincidence, while

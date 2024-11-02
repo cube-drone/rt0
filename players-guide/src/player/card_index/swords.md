@@ -1,5 +1,6 @@
 # Swords
-Swords are the suit of power - ideas and conflict. And swords! Stab stab!
+
+Swords are the suit of intelligence - ideas and conflict. And, also, literal swords! Stab stab!
 
 ## Ace of Swords - Thought
 

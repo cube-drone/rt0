@@ -86,7 +86,47 @@ This part of Paradise Lua tends toward utilitarian, gunmetal gray architecture w
 discourage workers from injuring themselves.
 It exists in varying states of disrepair, some of it rusting and ill-maintained.
 
-The Seven-Branched Promenade is a light commercial area - nowhere near as opulent as Florin Divison's Gigamall, but sufficient for various and sundry.
+The Seven-Branched Promenade is a light commercial area - nowhere near as opulent as Krater's, but sufficient for various and sundry.
+
+## Some Sword Words:
+
+* Wallace
+* Oakeshott
+* Balmung, Gram, and Nothung
+* Hrunting (Beowulf, ineffective)
+* Naegling (Beowulf, snapped)
+* Tizona
+* Almace
+* Ascalon
+* Arondight
+* Legbiter
+* Caliburn (the sword in the stone)
+* Chi Xiao
+* Sheng Xie
+* Chun Jun
+* Claiomh Solais
+* Clarent
+* Hoved
+* Thuận Thiên (Vietnamese)
+* Vajra (wisdom)
+* Glamdring (tolkien)
+* Buster
+* Flamberge
+* Keyblade
+* Master Sword
+* Valentine
+* Victorinox Huntsman
+* Case Trapper
+* Kershaw Leek
+* Buck
+* Sebenza
+* KA-BAR
+* Emerson
+* Schrade
+* Opinel (cheap)
+* Mora
+* Tom Brown
+
 
 ### Inspiration Board - Pipes, Tubes, Catwalks, Tanks, Containers, Extra-Large Industrial Equipment.
 ![inspiration board](/images/joyeuse-board.png)

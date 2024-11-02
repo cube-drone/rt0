@@ -9,6 +9,7 @@ If the Moon had Suburbs, this would be them.
 * EDUK8 (six of cups)
 * Habcube (nine of cups)
 * Nuclear Family (ten of cups)
+* Geriatridome
 * Micromarkets (supermarkets but smol)
 * Overflow Slums (eight of cups)
 * Executare Outpost

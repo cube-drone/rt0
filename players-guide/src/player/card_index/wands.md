@@ -1,5 +1,5 @@
 # Wands
-Wands are the suit of travel, adventure, and freedom.
+Wands are the suit of leadership, travel, adventure, and freedom.
 
 ## Ace of Wands - Double Entendre
 
