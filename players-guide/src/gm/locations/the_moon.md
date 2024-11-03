@@ -40,39 +40,6 @@ Trade and commercial transit between Paradise Lua and Earth are slow, and fairly
 
 Players will arrive at [Airlock, Docks & EVAs](./joyeuse/airlock.md) in the Joyeuse Division.
 
-## Time Keeps on Ticking
-The Moon enjoys an (almost) 15 Earth-day "day" and an almost 15 Earth-day "night" cycle, with a full Moon day taking a moon-th. Er-month.
-
-The Moon orbits the Sun along _with_ the Earth, so a Moon year and an Earth year are the _same year_, and the Moon's days are the Earth's months.
-So, May 5th on the Moon is "about 16% of the way through the fifth Moon-day of the year." I hate moon-days.
-
-Being as Moon-days take 1 Earth month each, and Paradise Lua is located in a place with constant sunlight,
-they are not terribly useful for human circadian rhythms. Also: the surface of the moon comes with constant bombardment
-of dangerous cosmic radiation, so the windows are not _left open_. Instead, Paradise Lua has its own day/night cycle
-enforced with artificial lights,
-synchronized with their original home base in Las Vegas, Nevada (Pacific Standard Time).
-
-Timekeeping on Paradise Lua is almost all done in 24-hour time: "we'll meet at 18-hundred" is the common parlance.
-
-A day on Paradise Lua looks like:
-
-* 0-8:00: Night
-* 6:00-8:00: Dawn
-* 8:00-18:00: Day
-* 20:00-22:00: Evening
-* 22:00-24:00: Night
-
-At Night, lights are _generally_ turned most of the way out in most public places, with _just enough_ soft, recessed light
-to navigate safely.
-
-During Dawn and Evening, lights are slowly cranked up to full power, and during the Day, all of the lights are turned on.
-
-In some areas, like the [Heavy Industrial Zone](./joyeuse/industrial.md), light is simply left on full, all the time: many of the factories there
-simply run 100% of the time with rotating shifts.
-
-In some areas, like the Overflow Slums, lights are left on low, all the time. Why waste electricty on the impoverished?
-A lot of people in Overflow work graveyard shifts in the HIZ, anyways, and appreciate that they can go to sleep at any hour.
-
 ## Going Outside Will Kill You
 
 The tl;dr of this is that "going on to the moon without an EVA suit is a very bad idea and will cause your player characters to die very quickly".
@@ -129,31 +96,3 @@ Slim, hyper-absorbent, disposable adult diapers are provided alongside EVA suits
 ### EVA Vehicles
 
 EVA Suits can also be paired up with EVA Vehicles, which can resupply some of the suit's supply with a larger, rolling tank. Vehicle-paired EVA adventures can go much longer than EVA Suit ones, with Moontrikes extending the trip's viability to 8 hours, and Moonvans to 24 hours (past which "sleep, bathroom, and hunger issues" start to get so pressing that while longer trips might be possible, they're unwise.) Trips longer than that require a fully pressurized, self-contained rolling Moontanker (of which only one has ever been built) which essentially provides a fully pressurized micro-moonbase on the go, with its own airlocks and EVA Suits.
-
-## Lifecycles of the Rich and Famous
-
-[About 500 people](https://en.wikipedia.org/wiki/Minimum_viable_population) are required to maintain a genetically diverse breeding pool.
-
-Paradise Lua keeps its population at around 1500 people, generally.
-
-A Generation is 20 years long, and Paradise Lua is currently on its third Generation.
-
-In order for a population to remain stable, enough people have to have children to
-offset the people who _don't_ - because they're incapable, dead, or simply not interested.
-
-In developed countries, this rate is about 2.1 children per woman. On Paradise Lua,
-this number is quite a bit higher, because the _death rate_ is quite a bit higher:
-Paradise Lua's government targets **4** children per woman. That is a lot.
-
-There are about 75 children per year.
-
-In general, Paradise Lua would rather have too many new citizens rather than _not enough_, so
-there are generous incentives for citizens to _be fruitful and multiply_.
-
-The death rate on Paradise Lua actually isn't high enough for that prodigious procreative pace
-to be fully necessary: but the idea is, it's easier to manage the death rate than it is to
-manage the birth rate, so Paradise Lua artificially inflates the death count in a handful of ways -
-dialing back health care, relaxing safety standards in the [HIZ](./joyeuse/industrial.md),
-keeping deaths inflated and the population of the base stable.
-
-The Mortuactuaries who manage these numbers are instructed to keep their work _extremely secret_.
