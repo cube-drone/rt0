@@ -68,6 +68,7 @@
     - [The Sun - Eddies](./gm/npc/eddy.md)
 - [The Moon](./gm/locations/the_moon.md)
   - [Time](./gm/setting/time.md)
+  - [Food](./gm/setting/food.md)
   - [HEO](./gm/locations/heo.md)
   - [Joyeuse Division](./gm/locations/joyeuse.md)
     - [Airlock, Docks & EVA](./gm/locations/joyeuse/airlock.md)
